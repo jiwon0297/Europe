@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <title>header</title>
 </head>
+<style>
+.nav-link{
+	width:100px;
+	text-align: center;
+}
+
+</style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
