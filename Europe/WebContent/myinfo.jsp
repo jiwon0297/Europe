@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>my info</title>
 </head>
 <body>
-
+<!-- 회원 정보 -->
+<jsp:include page="header.jsp" />
+<jsp:include page="menu.jsp" />
 </body>
 </html>

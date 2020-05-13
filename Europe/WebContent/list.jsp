@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>list</title>
 </head>
 <body>
-
+각종 리스트 출력..
 </body>
 </html>

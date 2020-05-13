@@ -7,6 +7,9 @@
 <title>header</title>
 </head>
 <body>
- 로그인/마이페이지/로그아웃
+<a href="login.jsp">로그인</a>
+<a href="mypage.jsp">마이페이지</a>
+<a href="myinfo.jsp">나의 정보</a>
+로그아웃
 </body>
 </html>

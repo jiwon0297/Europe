@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Index</title>
 </head>
 <body>
-hello friends~~~
+<jsp:include page="home.jsp" />
 </body>
 </html>

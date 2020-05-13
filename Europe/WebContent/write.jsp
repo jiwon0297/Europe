@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>write</title>
 </head>
 <body>
-
+작성목록..
 </body>
 </html>

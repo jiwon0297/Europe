@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Review</title>
 </head>
 <body>
-
+<jsp:include page="header.jsp" />
+<jsp:include page="menu.jsp" />
+<jsp:include page="category.jsp" />
+<a href="글쓰기">write</a>
+reviewlist
 </body>
 </html>

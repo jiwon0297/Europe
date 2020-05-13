@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>category</title>
 </head>
 <body>
-
+나라 목록 
 </body>
 </html>

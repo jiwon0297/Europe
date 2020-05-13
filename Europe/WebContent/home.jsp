@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Home</title>
 </head>
 <body>
-
+<jsp:include page="header.jsp" />
+<jsp:include page="menu.jsp" />
 </body>
 </html>

@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>market</title>
 </head>
 <body>
-
+<jsp:include page="header.jsp" />
+<jsp:include page="menu.jsp" />
+<jsp:include page="category.jsp" />
+marketlist
+<a href="글쓰기">write</a>
 </body>
 </html>
