@@ -8,15 +8,16 @@ public class MemberElementBean implements java.io.Serializable {
    private String email;
    private String address;
    private String nickname;
+   private String gender;
    
    
    // default constructor
    public MemberElementBean() {
-      this(null,null,null,null,null,null,null);
+      this(null,null,null,null,null,null,null,null);
    }
    
    // constructor
-   public MemberElementBean(String id, String password,String name, String phone,String email,String address,String nickname) {
+   public MemberElementBean(String id, String password,String name, String phone,String email,String address,String nickname, String gender) {
       super();
       this.id = id;
       this.name = name;
@@ -24,6 +25,7 @@ public class MemberElementBean implements java.io.Serializable {
       this.email = email;
       this.address = address;
       this.nickname = nickname;
+      this.gender = gender;
    }
 
    // getter & setter
@@ -76,13 +78,22 @@ public class MemberElementBean implements java.io.Serializable {
    public void setNickname(String nickname) {
       this.nickname = nickname;
    }
+   
+   public String getGender() {
+	  return gender;
+   }
+
+   public void setGender(String gender) {
+	  this.gender = gender;
+   }
+
 
    
    @Override
    public String toString() {
       return "MemberElementBean [id=" + id + ", name=" + name + ", phone=" + phone + ", email=" + email
             + ", email=" + email + ", address=" + address
-            + ", nickname=" + nickname +"]";
+            + ", nickname=" + nickname +", gender=" + gender + "]";
    }
 
 }

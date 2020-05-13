@@ -20,7 +20,7 @@ public class MemberTableDAO {
 	public int insert(Connection conn, MemberElementBean me) throws SQLException {
 		PreparedStatement pstmt = null;
 		try {
-			String sql = "insert into member values (?,?,?,?,?,?,?)";
+			String sql = "insert into member values (?,?,?,?,?,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, me.getId());
 			pstmt.setString(2, me.getPassword());
@@ -29,6 +29,7 @@ public class MemberTableDAO {
 			pstmt.setString(5, me.getPhone());
 			pstmt.setString(6, me.getAddress());
 			pstmt.setString(7, me.getNickname());
+			pstmt.setString(8, me.getGender());
 			return pstmt.executeUpdate();
 		} finally {
 			if (pstmt != null) {
@@ -52,20 +53,16 @@ public class MemberTableDAO {
 		}
 	}
 
-	// edit
-	public int edit(Connection conn, MemberElementBean me) throws SQLException {
+	// edit password, nickname
+	public int edit(Connection conn, String id, String password, String nickname) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "update member set password=?, name=?, email=?, phone=?, address=? nickname=? where id=?";
+			String sql = "update member set password=?, nickname=? where id=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, me.getPassword());
-			pstmt.setString(2, me.getName());
-			pstmt.setString(3, me.getEmail());
-			pstmt.setString(4, me.getPhone());
-			pstmt.setString(5, me.getAddress());
-			pstmt.setString(6, me.getNickname());
-			pstmt.setString(7, me.getId());
+			pstmt.setString(1, password);
+			pstmt.setString(2, nickname);
+			pstmt.setString(3, id);
 			return pstmt.executeUpdate();
 		} finally {
 			if (rs != null) {
@@ -111,7 +108,8 @@ public class MemberTableDAO {
 		String phone = rs.getString("phone");
 		String address = rs.getString("address");
 		String nickname = rs.getString("nickname");
-		MemberElementBean me = new MemberElementBean(id, password, name, email, phone, address, nickname);
+		String gender = rs.getString("gender");
+		MemberElementBean me = new MemberElementBean(id, password, name, email, phone, address, nickname, gender);
 		return me;
 	}
 	
