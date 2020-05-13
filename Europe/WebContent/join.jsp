@@ -8,7 +8,12 @@
 </head>
 <body>
 <jsp:include page="header.jsp" />
+<div class="jumbotron">
+	<div class="container">
+		<h1 class="display-3" align="center">Join</h1>
+	</div>
+</div>
 <jsp:include page="menu.jsp" />
-<!-- È¸¿ø °¡ÀÔ -->
+<!-- íšŒì› ê°€ìž… -->
 </body>
 </html>

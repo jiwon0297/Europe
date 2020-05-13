@@ -9,6 +9,11 @@
 <body>
 <!-- 찜목록, 내가 쓴 글 -->
 <jsp:include page="header.jsp" />
+<div class="jumbotron">
+	<div class="container">
+		<h1 class="display-3" align="center">MY PAGE</h1>
+	</div>
+</div>
 <jsp:include page="menu.jsp" />
 </body>
 </html>
