@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>header</title>
 </head>
 <body>
-hello friends~~~
+ 로그인/마이페이지/로그아웃
 </body>
 </html>
