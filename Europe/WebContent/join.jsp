@@ -5,6 +5,16 @@
 <head>
 <meta charset="EUC-KR">
 <title>join</title>
+<style>
+form{
+	margin: 0 auto;
+	width : 500px;
+}
+div.button{
+	margin: auto;
+	width : 50%;
+}
+</style>
 </head>
 <body>
 <jsp:include page="header.jsp" />
@@ -14,10 +24,9 @@
 	</div>
 </div>
 <jsp:include page="menu.jsp" />
-
+<br><br>
 <form>
   <fieldset>
-    <legend>Join Us</legend>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">Id</label>
       <div class="col-sm-10">
@@ -87,7 +96,7 @@
         </label>
       </div>
     </fieldset>
-	<button type="submit" class="btn btn-primary">Submit</button>
+	<div class="button"><button type="submit" class="btn btn-primary">Submit</button></div>
 </form>
 </body>
 </html>
