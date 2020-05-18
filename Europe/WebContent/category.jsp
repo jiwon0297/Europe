@@ -9,28 +9,19 @@
 </head>
 <body>
 
-<div style = "width:200px; height:500px;">
-<ul class="nav nav-pills flex-column">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Category</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="list.jsp?mode=internal">국내</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="true">국외</a>
-    <div class="dropdown-menu" style="" aria-labelledby="dropdown">
-   		<a class="dropdown-item" href="list.jsp?mode=UK">영국</a>
-      	<a class="dropdown-item" href="list.jsp?mode=France">프랑스</a>
-      	<a class="dropdown-item" href="list.jsp?mode=Switzerland">스위스</a>
-      	<a class="dropdown-item" href="list.jsp?mode=Germany">독일</a>
-      	<a class="dropdown-item" href="list.jsp?mode=Czech">체코</a>
-      	<a class="dropdown-item" href="list.jsp?mode=Hungary">헝가리</a>
-      	<a class="dropdown-item" href="list.jsp?mode=Austria">오스트리아</a>
-      	<a class="dropdown-item" href="list.jsp?mode=Italy">이탈리아</a>
-    </div>
-  </li>
-</ul>
+<div class="list-group" style = "width:200px; height:500px;">
+	<a href="#" class="list-group-item list-group-item-action active">Category</a>
+  	<a href="list.jsp?mode=internal" class="list-group-item list-group-item-action">국내 </a>
+  	<a href="#" class="list-group-item list-group-item-action">국외 </a>
+  	<a class="list-group-item list-group-item-action" href="list.jsp?mode=UK"><small>- 영국</small></a>
+    <a class="list-group-item list-group-item-action" href="list.jsp?mode=France"><small>- 프랑스</small></a>
+    <a class="list-group-item list-group-item-action" href="list.jsp?mode=Switzerland"><small>- 스위스</small></a>
+    <a class="list-group-item list-group-item-action" href="list.jsp?mode=Germany"><small>- 독일</small></a>
+    <a class="list-group-item list-group-item-action" href="list.jsp?mode=Czech"><small>- 체코</small></a>
+    <a class="list-group-item list-group-item-action" href="list.jsp?mode=Hungary"><small>- 헝가리</small></a>
+    <a class="list-group-item list-group-item-action" href="list.jsp?mode=Austria"><small>- 오스트리아</small></a>
+   	<a class="list-group-item list-group-item-action" href="list.jsp?mode=Italy"><small>- 이탈리아</small></a>
+  	
 </div>
 
 </body>
