@@ -5,6 +5,16 @@
 <head>
 <meta charset="EUC-KR">
 <title>Login</title>
+<style>
+form{
+	margin: 0 auto;
+	width : 500px;
+}
+div.button{
+	margin: auto;
+	width : 50%;
+}
+</style>
 </head>
 <body>
 <jsp:include page="header.jsp" />
@@ -14,7 +24,26 @@
 	</div>
 </div>
 <jsp:include page="menu.jsp" />
-로그인
-<a href="join.jsp">회원가입</a>
+<br><br>
+<form action="loginprocess.jsp" method="post">
+  <fieldset>
+    <div class="form-group row">
+      <label for="id" class="col-sm-2 col-form-label">ID</label>
+      <div class="col-sm-10">
+        <input type="id" class="form-control" name="id" style="width:300px;">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Password" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="Password" class="form-control" name="pw" style="width:300px;">
+      </div>
+    </div>
+  </fieldset>
+  <div class="button">
+  	<input type="submit" class="btn btn-primary" value="Login">
+  	<input type="button" class="btn btn-primary" value="Join" onclick="location='join.jsp'">
+  </div>
+</form>    
 </body>
 </html>

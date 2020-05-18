@@ -96,7 +96,10 @@ div.button{
         </label>
       </div>
     </fieldset>
-	<div class="button"><button type="submit" class="btn btn-primary">Submit</button></div>
+    <div class="button">
+	<input type="submit" class="btn btn-primary" value="Submit">
+	<input type="reset" class="btn btn-primary" value="Cancel" onclick="location='index.jsp'">
+	</div>
 </form>
 </body>
 </html>
