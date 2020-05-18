@@ -76,14 +76,13 @@ public class MemberTableDAO {
 	}
 	
 	// select(find/get)
-		public MemberElementBean select(Connection conn, String id, String pw) throws SQLException {
+		public MemberElementBean select(Connection conn, String id) throws SQLException {
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			try {
-				String sql = "select * from member where id=?, password=?";
+				String sql = "select * from member where id=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, id);
-				pstmt.setString(2, pw);
 				rs = pstmt.executeQuery();
 				if (rs.next()) {
 					return createFromResultSet(rs);
@@ -160,6 +159,29 @@ public class MemberTableDAO {
 				return 3;
 			}
 		}finally {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pstmt != null) {
+				pstmt.close();
+			}
+		}
+	}
+	
+	public List<MemberElementBean> infolist(Connection conn, String id) throws SQLException {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			String sql = "select * from member where id=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			List<MemberElementBean> mList = new ArrayList<>();
+			while (rs.next()) {
+				mList.add(createFromResultSet(rs));
+			}
+			return mList;
+		} finally {
 			if (rs != null) {
 				rs.close();
 			}

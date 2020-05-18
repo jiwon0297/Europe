@@ -37,15 +37,10 @@ try{
 	if(login!=null && login.equals("yes")){
 		out.println("<script>");
 		out.println("alert('로그인 되었습니다. 환영합니다');");
-		out.println("location.href='welcome.jsp'");
+		out.println("location.href='index.jsp'");
 		out.println("</script>"); 
 	}
 	
-	String logout = request.getParameter("logout");
-	if(logout!=null && logout.equals("yes")){
-		session.removeAttribute("id");
-		session.removeAttribute("login");
-	}
 	
 } catch(SQLException e){
 	e.printStackTrace();

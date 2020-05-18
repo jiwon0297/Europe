@@ -7,8 +7,10 @@
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <title>header</title>
 </head>
-
 <body>
+<%
+String id = (String)session.getAttribute("id");  
+%>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -20,7 +22,11 @@
         <a class="nav-link" href="home.jsp">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.jsp">Login</a>
+		<% if(id==null) { %>
+			<a class="nav-link" href="login.jsp?login=no" role="button">Login</a>
+		<%} else { %>
+			<a class="nav-link" href="logout.jsp" role="button">Logout</a>
+		<%}%>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="mypage.jsp">Mypage</a>
