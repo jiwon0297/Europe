@@ -20,8 +20,18 @@
 <jsp:include page="category.jsp" flush="false"></jsp:include>
 </td>
 <td width="300" valign="top">
-<input type="button" class="btn btn-primary" value="글쓰기" onclick="location='reviewwrite.jsp'">
-<br><br>
+<%  
+  String id = (String)session.getAttribute("id");  
+   
+  if (id == null){%> 
+    <br><br>
+	<a class="nav-link" style="text-align:center; float:left;">로그인을 해야만 글쓰기가 가능합니다.</a>
+	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인 하러가기</a> 
+  <% 
+  }else{%> 
+  	<input type="button" class="btn btn-primary" value="글쓰기" onclick="location='reviewwrite.jsp'">
+  <% 
+  }%>
 <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
       <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>

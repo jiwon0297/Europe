@@ -5,6 +5,12 @@
 <head>
 <meta charset="EUC-KR">
 <title>Home</title>
+<style>
+div.button{
+	margin: auto;
+	width : 10%;
+}
+</style>
 </head>
 <body>
 <jsp:include page="header.jsp" />
@@ -18,12 +24,15 @@
   String id = (String)session.getAttribute("id");  
    
   if (id == null){%> 
-    <input type='button' value='로그인' 
-           onclick="location.href='login.jsp?login=no'">   
+  	<br><br>
+  	<div class="button">
+    <input type='button' value='로그인' class="btn btn-primary"
+           onclick="location.href='login.jsp?login=no'" >
+    </div>
   <% 
   }else{%> 
-  	<h1>안녕하세요! <%=id %>님!</h1>
-    <input type='button' value='로그아웃' 
+  	<a class="nav-link" style="text-align:center;">안녕하세요! <%=id %>님! </a>
+    <input type='button' value='로그아웃'  class="btn btn-primary"
            onclick="location.href='logout.jsp'"> 
   <% 
   }%> 
