@@ -21,6 +21,8 @@
 </td>
 <td width="300" valign="top">
 <input type="button" class="btn btn-primary" value="±Û¾²±â" onclick="location='togetherwrite.jsp'">
+<br><br>
+<jsp:include page="list.jsp" flush="false"></jsp:include>
 </td>
 </tr>
 </table>

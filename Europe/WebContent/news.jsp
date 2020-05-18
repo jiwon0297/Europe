@@ -20,7 +20,8 @@
 <jsp:include page="category.jsp" flush="false"></jsp:include>
 </td>
 <td width="300" valign="top">
-리스트 출력
+<br><br>
+<jsp:include page="list.jsp" flush="false"></jsp:include>
 </td>
 </tr>
 </table>
