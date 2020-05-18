@@ -8,18 +8,5 @@
 </head>
 <body>
 <jsp:include page="home.jsp" />
- <%  
-  String id = (String)session.getAttribute("id");  
-   
-  if (id == null){%> 
-    <input type='button' value='∑Œ±◊¿Œ' 
-           onclick="location.href='login.jsp?login=no'">   
-  <% 
-  }else{%> 
-  	<h1>æ»≥Á«œººø‰! <%=id %>¥‘!</h1>
-    <input type='button' value='∑Œ±◊æ∆øÙ' 
-           onclick="location.href='logout.jsp'"> 
-  <% 
-  }%> 
 </body>
 </html>
