@@ -7,6 +7,10 @@
 <title>list</title>
 </head>
 <body>
-각종 리스트 출력..
+<%
+	String mode = request.getParameter("mode");
+	out.println(mode + "리스트 출력");
+%>
+
 </body>
 </html>
