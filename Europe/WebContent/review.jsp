@@ -22,6 +22,10 @@
 <td width="300" valign="top">
 <input type="button" class="btn btn-primary" value="글쓰기" onclick="location='reviewwrite.jsp'">
 <br><br>
+<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form><br><br>
 <form action="content.jsp" method="post" style ="margin:0 auto; width:1000px;">
 <div class="card mb-3">
   <h3 class="card-header">List(페이지가 아닌 리뷰 전체 리스트)</h3>
