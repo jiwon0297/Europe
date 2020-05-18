@@ -16,37 +16,46 @@
 	String id = request.getParameter("id");
 	String pw = request.getParameter("pw");
 %>
+
 <%
-	Connection conn = null;
-	try{
-	 	conn =ConnectionProvider.getConnection();
-	 	MemberTableDAO dao = MemberTableDAO.getInstance(); //getInstance
-	 	dao.select(conn,id,pw); //select
-	 	if(id.equals(id) && pw.equals(pw)){
-			Cookie cookie = new Cookie("id",id);
-			cookie.setMaxAge(60); //1분동안 유지
-			response.addCookie(cookie);
-			response.sendRedirect("welcome.jsp");
-		} else if(id.equals("") || pw.equals("")){
-			out.println("<script>");
-			out.println("alert('아이디와 비밀번호를 입력해주세요.');");
-			out.println("location.href='login.jsp'");
-			out.println("</script>"); 
-		} else {
-			out.println("<script>");
-			out.println("alert('아이디와 비밀번호가 일치하지않습니다.');");
-			out.println("location.href='login.jsp'");
-			out.println("</script>"); 
-		}
-	}catch (SQLException e){
-		e.printStackTrace();
-	}finally{
-		try{
-	if(conn!=null) conn.close();
-		}catch(SQLException se){
-	se.printStackTrace();
-		}
+Connection conn = null;
+try{
+	conn = ConnectionProvider.getConnection();
+	MemberTableDAO dao = MemberTableDAO.getInstance();
+	int a = dao.login(conn, id, pw); //insert data
+	if(a==1){
+		session.setAttribute("id", id);
+		session.setAttribute("login","yes");
+	} else{
+		out.println("<script>");
+		out.println("alert('존재하지 않는 회원정보입니다. 회원가입을 하시거나, 다시 시도해주세요.');");
+		out.println("location.href='login.jsp'");
+		out.println("</script>"); 
 	}
+	
+	String login = (String)session.getAttribute("login");
+	if(login!=null && login.equals("yes")){
+		out.println("<script>");
+		out.println("alert('로그인 되었습니다. 환영합니다');");
+		out.println("location.href='welcome.jsp'");
+		out.println("</script>"); 
+	}
+	
+	String logout = request.getParameter("logout");
+	if(logout!=null && logout.equals("yes")){
+		session.removeAttribute("id");
+		session.removeAttribute("login");
+	}
+	
+} catch(SQLException e){
+	e.printStackTrace();
+} finally {
+	try {
+		if(conn!=null) conn.close();
+	} catch(SQLException se){
+		se.printStackTrace();
+	}
+}
 %>
 
 </body>

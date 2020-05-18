@@ -15,15 +15,9 @@
 </div>
 <jsp:include page="menu.jsp" />
 <%
-	Cookie[] cookies = request.getCookies();
-
-	for(int i=0; i<cookies.length; i++){
-		String id= cookies[i].getValue();
-		if(id.equals("jiwon"))
-			out.println(id+"¥‘ æ»≥Á«œººø‰." + "<br>");
-	}
+	String id=(String)session.getAttribute("id");
 %>
-
-<a href="logout.jsp">Logout</a>
+<h1>æ»≥Á«œººø‰! <%=id %>¥‘!</h1>
+<input type="button" value="Logout" onclick="location.href='login.jsp?logout=yes'" />
 </body>
 </html>

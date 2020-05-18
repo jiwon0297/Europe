@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ page import="jdbc.ConnectionProvider" %>
+<%@ page import="dao.MemberTableDAO" %>
+<%@ page import="dto.MemberElementBean" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +31,7 @@ div.button{
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">ID</label>
       <div class="col-sm-10">
-        <input type="id" class="form-control" name="id" style="width:300px;">
+        <input type="text" class="form-control" name="id" style="width:300px;">
       </div>
     </div>
     <div class="form-group row">
