@@ -5,6 +5,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.servlet.http.Cookie;
+
 import dto.MemberElementBean;
 
 public class MemberTableDAO {
@@ -25,8 +28,8 @@ public class MemberTableDAO {
 			pstmt.setString(1, me.getId());
 			pstmt.setString(2, me.getPassword());
 			pstmt.setString(3, me.getName());
-			pstmt.setString(4, me.getEmail());
-			pstmt.setString(5, me.getPhone());
+			pstmt.setString(4, me.getPhone());
+			pstmt.setString(5, me.getEmail());
 			pstmt.setString(6, me.getAddress());
 			pstmt.setString(7, me.getNickname());
 			pstmt.setString(8, me.getGender());
@@ -79,7 +82,7 @@ public class MemberTableDAO {
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			try {
-				String sql = "select * from member where id=?, password=?";
+				String sql = "select id, password from member where id=?, password=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, id);
 				pstmt.setString(2, pw);
@@ -89,6 +92,7 @@ public class MemberTableDAO {
 				}
 				else {
 					return null;
+					
 				}
 			} finally {
 				if (rs != null) {

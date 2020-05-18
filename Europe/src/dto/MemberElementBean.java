@@ -20,6 +20,7 @@ public class MemberElementBean implements java.io.Serializable {
    public MemberElementBean(String id, String password,String name, String phone,String email,String address,String nickname, String gender) {
       super();
       this.id = id;
+      this.password = password;
       this.name = name;
       this.phone= phone;
       this.email = email;
@@ -91,7 +92,7 @@ public class MemberElementBean implements java.io.Serializable {
    
    @Override
    public String toString() {
-      return "MemberElementBean [id=" + id + ", name=" + name + ", phone=" + phone + ", email=" + email
+      return "MemberElementBean [id=" + id + ", password=" + password + ", name=" + name + ", phone=" + phone + ", email=" + email
             + ", email=" + email + ", address=" + address
             + ", nickname=" + nickname +", gender=" + gender + "]";
    }
