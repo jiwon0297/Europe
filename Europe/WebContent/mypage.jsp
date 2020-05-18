@@ -15,5 +15,19 @@
 	</div>
 </div>
 <jsp:include page="menu.jsp" />
+<br><br>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab1" href="#">내가 쓴 글</a>
+  </li>
+
+</ul>
+<div id="tab1" class="list-group">
+	<a href="#" class="list-group-item list-group-item-action">쓴 글1</a>
+	<a href="#" class="list-group-item list-group-item-action">쓴 글2</a>
+</div>
+
+
 </body>
 </html>

@@ -21,7 +21,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form action="loginprocess.jsp" method="post" style ="margin:0 auto; width:1000px;">
+<form action="addReviewList.jsp" method="post" style ="margin:0 auto; width:1000px;">
 	<fieldset>
 	<div class="form-group row">
       <label for="Category" class="col-sm-2 com-form-label">°Ô½ÃÆÇ</label>

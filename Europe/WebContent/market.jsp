@@ -22,7 +22,20 @@
 <td width="300" valign="top">
 <input type="button" class="btn btn-primary" value="글쓰기" onclick="location='marketwrite.jsp'">
 <br><br>
-<jsp:include page="list.jsp" flush="false"></jsp:include>
+<form action="content.jsp" method="post" style ="margin:0 auto; width:1000px;">
+<div class="card mb-3">
+  <h3 class="card-header">List(페이지가 아닌 마켓 전체 리스트)</h3>
+  <div class="card-body">
+    <a href="content.jsp" class="card-link">제목1</a>
+  </div>
+  <div class="card-body">
+    <a href="content.jsp" class="card-link">제목2</a>
+  </div>
+  <div class="card-footer text-muted">
+    우선 리스트 끝
+  </div>
+  </div>
+ </form>
 </td>
 </tr>
 </table>
