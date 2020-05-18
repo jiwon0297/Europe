@@ -6,10 +6,6 @@
 <meta charset="EUC-KR">
 <title>Review WriteForm</title>
 <style>
-form{
-	margin: 0 auto;
-	width : 1000px;
-}
 div.button{
 	margin: auto;
 	width : 20%;
@@ -25,7 +21,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form>
+<form action="loginprocess.jsp" method="post" style ="margin:0 auto; width:1000px;">
 	<fieldset>
 	<div class="form-group row">
       <label for="Category" class="col-sm-2 com-form-label">게시판</label>

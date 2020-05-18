@@ -6,10 +6,6 @@
 <meta charset="EUC-KR">
 <title>join</title>
 <style>
-form{
-	margin: 0 auto;
-	width : 500px;
-}
 div.button{
 	margin: auto;
 	width : 50%;
@@ -25,7 +21,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form>
+<form action="loginprocess.jsp" method="post" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">Id</label>
