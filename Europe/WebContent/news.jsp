@@ -15,7 +15,15 @@
 </div>
 <jsp:include page="menu.jsp" />
 <br>
-<jsp:include page="category.jsp"/>
+<table>
+<tr><td width="100" valign="top">
+<jsp:include page="category.jsp" flush="false"></jsp:include>
+</td>
+<td width="300" valign="top">
+리스트 출력
+</td>
+</tr>
+</table>
 <%
 String mode = request.getParameter("mode");
 if(mode == null || mode.isEmpty()) mode = "All";
@@ -29,6 +37,5 @@ else if (mode == "Hungary") mode = "Hungary";			// 헝가리
 else if (mode == "Austria") mode = "Austria";			// 오스트리아
 else if (mode == "Italy") mode = "Italy";				// 이탈리아
 %>
-newslist
 </body>
 </html>

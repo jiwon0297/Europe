@@ -15,8 +15,15 @@
 </div>
 <jsp:include page="menu.jsp" />
 <br>
-<jsp:include page="category.jsp"/>
-<a href="글쓰기">write</a>
+<table>
+<tr><td width="100" valign="top">
+<jsp:include page="category.jsp" flush="false"></jsp:include>
+</td>
+<td width="300" valign="top">
+<input type="button" class="btn btn-primary" value="글쓰기" onclick="location='marketwrite.jsp'">
+</td>
+</tr>
+</table>
 <%
 String mode = request.getParameter("mode");
 if(mode == null || mode.isEmpty()) mode = "All";
@@ -30,6 +37,5 @@ else if (mode == "Hungary") mode = "Hungary";			// 헝가리
 else if (mode == "Austria") mode = "Austria";			// 오스트리아
 else if (mode == "Italy") mode = "Italy";				// 이탈리아
 %>
-marketlist
 </body>
 </html>
