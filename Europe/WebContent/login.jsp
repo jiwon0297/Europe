@@ -16,6 +16,21 @@ div.button{
 	width : 50%;
 }
 </style>
+<script type="text/javascript">
+	function checkForm(){
+		if(!document.login.id.value){
+			alert("아이디를 입력하세요.");
+			return false;
+		}
+		
+		if(!document.login.pw.value){
+			alert("비밀번호를 입력하세요.");
+			return false;
+		}
+		
+		return true;
+	}
+</script>
 </head>
 <body>
 <jsp:include page="header.jsp" />
@@ -26,7 +41,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form action="loginprocess.jsp" method="post" style ="margin:0 auto; width:500px;">
+<form name="login" action="loginprocess.jsp" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">ID</label>
