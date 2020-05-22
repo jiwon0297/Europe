@@ -16,7 +16,7 @@ div.button{
 <jsp:include page="header.jsp" />
 <div class="jumbotron" align="center">
 	<div class="container">
-		<h1 class="display-3">Review</h1>
+		<h1 class="display-3">Tip</h1>
 	</div>
 </div>
 <jsp:include page="menu.jsp" />
@@ -31,12 +31,19 @@ div.button{
 					<option>국내</option>
 					<option>영국</option>
 					<option>프랑스</option>
+					<option>스위스</option>
+					<option>독일</option>
+					<option>체코</option>
+					<option>헝가리</option>
+					<option>오스트리아</option>
+					<option>이탈리아</option>
+					
 	  </select>
 	  <select name="category2" style="width:150px; float:left;">
 					<option>말머리선택</option>
-					<option>일정</option>
-					<option>대중교통</option>
-					<option>입장권</option>
+					<option>예매팁</option>
+					<option>일정팁</option>
+					<option>기타팁</option>
 	  </select>
 	</div>
 	</div>
