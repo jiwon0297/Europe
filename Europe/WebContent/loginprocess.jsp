@@ -26,7 +26,7 @@ try{
 	if(a==1){
 		session.setAttribute("id", id);
 		session.setAttribute("login","yes");
-	} else{
+	} else if(a==2 || a==3){
 		out.println("<script>");
 		out.println("alert('존재하지 않는 회원정보입니다. 회원가입을 하시거나, 다시 시도해주세요.');");
 		out.println("location.href='login.jsp'");

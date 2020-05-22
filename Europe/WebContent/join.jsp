@@ -11,26 +11,28 @@ div.button{
 	width : 50%;
 }
 </style>
-</head>
-<body>
 <script type="text/javascript">
 	function checkForm(){
 		if(!document.join.id.value){
-			alert("ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+			alert("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 			return false;
 		}
 		
-		if(!document.joid.password.value){
-			alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		if(!document.join.password.value){
+			alert("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
 			return false;
 		}
 		
 		if(document.join.password.value != document.join.passwordconfirm.value){
-			alert ("ë¹„ë°€ë²ˆí˜¸ë¥¼ ë™ì¼í•˜ê²Œ ì…ë ¥í•˜ì„¸ìš”.");
+			alert("ºñ¹Ğ¹øÈ£¸¦ µ¿ÀÏÇÏ°Ô ÀÔ·ÂÇÏ¼¼¿ä.");
 			return false;
 		}
+		
+		return true;
 	}
 </script>
+</head>
+<body>
 <jsp:include page="header.jsp" />
 <div class="jumbotron">
 	<div class="container">
@@ -39,7 +41,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form action="joinProcess.jsp" method="post" onsumbmit="return checkForm()" style ="margin:0 auto; width:500px;">
+<form name="join" action="joinProcess.jsp" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">Id</label>
@@ -74,7 +76,7 @@ div.button{
     <div class="form-group row">
       <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Password</label>
       <div class="col-sm-10">
-      <input type="password" class="form-control" name = "password" id="password" placeholder="Password" style="width:300px;">
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password" style="width:300px;">
       </div>
     </div>
     <div class="form-group row">
