@@ -39,12 +39,12 @@ public class MarketTableDAO {
 		}
 
 	// delete
-		public int delete(Connection conn, String number) throws SQLException {
+		public int delete(Connection conn, int number) throws SQLException {
 			PreparedStatement pstmt = null;
 			try {
 				String sql = "delete from market where number=?";
 				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, number);
+				pstmt.setInt(1, number);
 				return pstmt.executeUpdate();
 			} finally {
 				if (pstmt != null) {
@@ -77,14 +77,64 @@ public class MarketTableDAO {
 		}
 	}
 	
-	// select(find/get) 제목 검색?
-			public MarketElementBean select(Connection conn, String title) throws SQLException {
+	// select(find/get) 제목 검색
+			public MarketElementBean titleselect(Connection conn, String title) throws SQLException {
 				PreparedStatement pstmt = null;
 				ResultSet rs = null;
 				try {
 					String sql = "select * from market where title like'" + title + "%'";
 					pstmt = conn.prepareStatement(sql);
 					pstmt.setString(1, title);
+					rs = pstmt.executeQuery();
+					if (rs.next()) {
+						return createFromResultSet(rs);
+					}
+					else {
+						return null;
+					}
+				} finally {
+					if (rs != null) {
+						rs.close();
+					}
+					if (pstmt != null) {
+						pstmt.close();
+					}
+				}
+			}
+	
+	// select(find/get) 작성자 검색
+			public MarketElementBean writerselect(Connection conn, String name) throws SQLException {
+				PreparedStatement pstmt = null;
+				ResultSet rs = null;
+				try {
+					String sql = "select * from market where title like'" + name + "%'";
+					pstmt = conn.prepareStatement(sql);
+					pstmt.setString(1, name);
+					rs = pstmt.executeQuery();
+					if (rs.next()) {
+						return createFromResultSet(rs);
+					}
+					else {
+						return null;
+					}
+				} finally {
+					if (rs != null) {
+						rs.close();
+					}
+					if (pstmt != null) {
+						pstmt.close();
+					}
+				}
+			}
+	
+	// select(find/get) number 검색(글 불러오기)
+			public MarketElementBean select(Connection conn, int number) throws SQLException {
+				PreparedStatement pstmt = null;
+				ResultSet rs = null;
+				try {
+					String sql = "select * from market where number=?";
+					pstmt = conn.prepareStatement(sql);
+					pstmt.setInt(1, number);
 					rs = pstmt.executeQuery();
 					if (rs.next()) {
 						return createFromResultSet(rs);
@@ -120,6 +170,54 @@ public class MarketTableDAO {
 			try {
 				String sql = "select * from market";
 				pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
+				List<MarketElementBean> mList = new ArrayList<>();
+				while (rs.next()) {
+					mList.add(createFromResultSet(rs));
+				}
+				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		// selectListByCategory
+		public List<MarketElementBean> selectListByCategory(Connection conn, String cate3) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from market where cate3=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, cate3);
+				rs = pstmt.executeQuery();
+				List<MarketElementBean> mList = new ArrayList<>();
+				while (rs.next()) {
+					mList.add(createFromResultSet(rs));
+				}
+				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		// selectListByCountry
+		public List<MarketElementBean> selectListByCountry(Connection conn, String country) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from market where country=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, country);
 				rs = pstmt.executeQuery();
 				List<MarketElementBean> mList = new ArrayList<>();
 				while (rs.next()) {

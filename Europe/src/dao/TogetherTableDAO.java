@@ -37,12 +37,12 @@ public class TogetherTableDAO {
 		}
 
 	// delete
-		public int delete(Connection conn, String number) throws SQLException {
+		public int delete(Connection conn, int number) throws SQLException {
 			PreparedStatement pstmt = null;
 			try {
 				String sql = "delete from together where number=?";
 				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, number);
+				pstmt.setInt(1, number);
 				return pstmt.executeUpdate();
 			} finally {
 				if (pstmt != null) {
@@ -74,30 +74,80 @@ public class TogetherTableDAO {
 		}
 	}
 	
-	// select(find/get) 제목 검색?
-			public TogetherElementBean select(Connection conn, String title) throws SQLException {
-				PreparedStatement pstmt = null;
-				ResultSet rs = null;
-				try {
-					String sql = "select * from together where title like'" + title + "%'";
-					pstmt = conn.prepareStatement(sql);
-					pstmt.setString(1, title);
-					rs = pstmt.executeQuery();
-					if (rs.next()) {
-						return createFromResultSet(rs);
-					}
-					else {
-						return null;
-					}
-				} finally {
-					if (rs != null) {
-						rs.close();
-					}
-					if (pstmt != null) {
-						pstmt.close();
-					}
+	// select(find/get) 제목 검색
+		public TogetherElementBean titleselect(Connection conn, String title) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from together where title like'" + title + "%'";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, title);
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					return createFromResultSet(rs);
+				}
+				else {
+					return null;
+				}
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
 				}
 			}
+		}
+
+	// select(find/get) 작성자 검색
+		public TogetherElementBean writerselect(Connection conn, String name) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from together where name like'" + name + "%'";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, name);
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					return createFromResultSet(rs);
+				}
+				else {
+					return null;
+				}
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+
+	// select(find/get) number 검색(글 불러오기)
+		public TogetherElementBean select(Connection conn, int number) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from together where number=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setInt(1, number);
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					return createFromResultSet(rs);
+				}
+				else {
+					return null;
+				}
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
 		
 		public TogetherElementBean createFromResultSet(ResultSet rs) throws SQLException {
 			int number = rs.getInt("number");
@@ -122,6 +172,30 @@ public class TogetherTableDAO {
 					mList.add(createFromResultSet(rs));
 				}
 				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		// selectListByCountry
+		public List<TogetherElementBean> selectListByCountry(Connection conn, String country) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from together where country=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, country);
+				rs = pstmt.executeQuery();
+				List<TogetherElementBean> toList = new ArrayList<>();
+				while (rs.next()) {
+					toList.add(createFromResultSet(rs));
+				}
+				return toList;
 			} finally {
 				if (rs != null) {
 					rs.close();

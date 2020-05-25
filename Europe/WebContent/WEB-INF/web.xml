@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Lab6_2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<description>Add Controller</description>
+  	<display-name>AddController</display-name>
+  	<servlet-name>AddController</servlet-name>
+  	<servlet-class>controller.AddController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<description>Delete Controller</description>
+  	<display-name>DeleteController</display-name>
+  	<servlet-name>DeleteController</servlet-name>
+  	<servlet-class>controller.DeleteController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<description>Edit Controller</description>
+  	<display-name>EditController</display-name>
+  	<servlet-name>EditController</servlet-name>
+  	<servlet-class>controller.EditController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<description>Find Controller</description>
+  	<display-name>FindController</display-name>
+  	<servlet-name>FindController</servlet-name>
+  	<servlet-class>controller.FindController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FindController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<description>List Controller</description>
+  	<display-name>ListController</display-name>
+  	<servlet-name>ListController</servlet-name>
+  	<servlet-class>controller.ListController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ListController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<description>Europe Controller</description>
+  	<display-name>EuropeController</display-name>
+  	<servlet-name>EuropeController</servlet-name>
+  	<servlet-class>controller.EuropeController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EuropeController</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -54,16 +54,15 @@ public class MemberTableDAO {
 		}
 	}
 
-	// edit password, nickname
-	public int edit(Connection conn, String id, String password, String nickname) throws SQLException {
+	// edit password
+	public int passwordedit(Connection conn, String id, String password) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
 			String sql = "update member set password=?, nickname=? where id=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, password);
-			pstmt.setString(2, nickname);
-			pstmt.setString(3, id);
+			pstmt.setString(2, id);
 			return pstmt.executeUpdate();
 		} finally {
 			if (rs != null) {
@@ -75,14 +74,63 @@ public class MemberTableDAO {
 		}
 	}
 	
-	// select(find/get)
-		public MemberElementBean select(Connection conn, String id) throws SQLException {
+	//edit nickname
+	public int nicknameedit(Connection conn, String id, String nickname) throws SQLException {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			String sql = "update member set nickname=? where id=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, nickname);
+			pstmt.setString(2, id);
+			return pstmt.executeUpdate();
+		} finally {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pstmt != null) {
+				pstmt.close();
+			}
+		}
+	}
+	
+	// select(find/get) 아이디 찾기
+	public MemberElementBean findid(Connection conn, String name, String email, String phone) throws SQLException {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			String sql = "select * from member where name=?, email=?, phone=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, name);
+			pstmt.setString(2, email);
+			pstmt.setString(3, phone);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				return createFromResultSet(rs);
+			}
+			else {
+				return null;
+				
+			}
+		} finally {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pstmt != null) {
+				pstmt.close();
+			}
+		}
+	}
+	
+	// select(find/get) 비밀번호 찾기
+		public MemberElementBean findpassword(Connection conn, String id, String email) throws SQLException {
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			try {
-				String sql = "select * from member where id=?";
+				String sql = "select * from member where id=?, email=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, id);
+				pstmt.setString(2, email);
 				rs = pstmt.executeQuery();
 				if (rs.next()) {
 					return createFromResultSet(rs);
