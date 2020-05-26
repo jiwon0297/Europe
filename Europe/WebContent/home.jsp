@@ -21,9 +21,10 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
  <%  
-  String id = (String)session.getAttribute("id");  
+	String userID = (String)session.getAttribute("userID");
+	String userPW = (String)session.getAttribute("userPW");
    
-  if (id == null){%> 
+  if (userID == null && userPW == null){%> 
   	<br><br>
   	<div class="button">
     <input type='button' value='∑Œ±◊¿Œ' class="btn btn-primary"
@@ -31,9 +32,9 @@ div.button{
     </div>
   <% 
   }else{%> 
-  	<a class="nav-link" style="text-align:center;">æ»≥Á«œººø‰! <%=id %>¥‘! </a>
+  	<a class="nav-link" style="text-align:center;">æ»≥Á«œººø‰! ${userID}¥‘! </a>
     <input type='button' value='∑Œ±◊æ∆øÙ'  class="btn btn-primary"
-           onclick="location.href='logout.jsp'"> 
+           onclick="location.href=LoginAction.do"> 
   <% 
   }%> 
 </body>

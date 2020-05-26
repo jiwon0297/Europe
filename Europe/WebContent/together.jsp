@@ -21,12 +21,13 @@
 </td>
 <td width="300" valign="top">
 <%  
-  String id = (String)session.getAttribute("id");  
+	String userID = (String)session.getAttribute("userID");
+	String userPW = (String)session.getAttribute("userPW");
    
-  if (id == null){%> 
+  if (userID == null && userPW == null){%> 
     <br><br>
 	<a class="nav-link" style="text-align:center; float:left;">로그인을 해야만 글쓰기가 가능합니다.</a>
-	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인 하러가기</a> 
+	<a class="nav-link" href="login.jsp" role="button" style="text-align:center;">로그인 하러가기</a> 
   <% 
   }else{%> 
   	<p><a href="TogetherAddviewAction.do" class="btn btn-primary" role="button">글쓰기</a></p>

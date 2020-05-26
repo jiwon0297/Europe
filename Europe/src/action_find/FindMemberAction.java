@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import action.*;
 import dao.MemberTableDAO;
@@ -20,6 +21,7 @@ public class FindMemberAction implements Action {
 	
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		HttpSession session = request.getSession(true);
 		Connection conn = null;
 		try {
 			conn = ConnectionProvider.getConnection();
@@ -42,7 +44,7 @@ public class FindMemberAction implements Action {
 				}
 				request.setAttribute("member", member);
 			} else if(mode.contentEquals("select")) {
-				String id = request.getParameter("id");
+				String id = (String)session.getAttribute("userID");
 				MemberElementBean member = dao.select(conn, id);
 				if (member == null) {
 					throw new NotFoundException("MemberElement Not found : " + id);

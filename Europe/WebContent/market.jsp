@@ -21,9 +21,10 @@
 </td>
 <td width="300" valign="top">
 <%  
-  String id = (String)session.getAttribute("id");  
+	String userID = (String)session.getAttribute("userID");
+	String userPW = (String)session.getAttribute("userPW");
    
-  if (id == null){%> 
+  if (userID == null && userPW == null){%> 
     <br><br>
 	<a class="nav-link" style="text-align:center; float:left;">로그인을 해야만 글쓰기가 가능합니다.</a>
 	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인 하러가기</a> 
@@ -32,6 +33,11 @@
   	<p><a href="MarketAddviewAction.do" class="btn btn-primary" role="button">글쓰기</a></p>
   <% 
   }%>
+  
+ <form class="form-inline my-2 my-lg-0" action="MarketSelectTitle.do" method="POST">
+      <input class="form-control mr-sm-2" type="text" name="title" placeholder="Input String">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Title Search</button>
+ </form>
 <br><br>
 <form action="content.jsp" method="post" style ="margin:0 auto; width:1000px;">
 <div class="card mb-3">

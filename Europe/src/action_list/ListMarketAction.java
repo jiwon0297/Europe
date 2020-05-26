@@ -21,17 +21,15 @@ public class ListMarketAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		Connection conn = null;
 		try {
-			String country = request.getParameter("country");
-			String category = request.getParameter("category");
-			String name = request.getParameter("name");
-			String title = request.getParameter("title");
 			conn = ConnectionProvider.getConnection();
 			MarketTableDAO dao = MarketTableDAO.getInstance();
 			if (mode.contentEquals("listbycategory")) {
+				String category = request.getParameter("category");
 				List<MarketElementBean> mList = dao.selectListByCategory(conn, category);
 				request.setAttribute("mList", mList);
 				request.setAttribute("category", category);
 			} else if(mode.contentEquals("listbycountry")) {
+				String country = request.getParameter("country");
 				List<MarketElementBean> mList = dao.selectListByCountry(conn, country);
 				request.setAttribute("mList", mList);
 				request.setAttribute("country", country);		
@@ -40,10 +38,12 @@ public class ListMarketAction implements Action {
 				request.setAttribute("mList", mList);
 				request.setAttribute("mode", mode);
 			} else if(mode.contentEquals("titleselect")) {
+				String title = request.getParameter("title");
 				List<MarketElementBean> mList = dao.titleselect(conn, title);
 				request.setAttribute("mList", mList);
 				request.setAttribute("mode", mode);
 			} else if(mode.contentEquals("writerselect")) {
+				String name = request.getParameter("name");
 				List<MarketElementBean> mList = dao.writerselect(conn, name);
 				request.setAttribute("mList", mList);
 				request.setAttribute("mode", mode);

@@ -16,7 +16,8 @@ div.button{
 </head>
 <body>
 <%
-String id = (String)session.getAttribute("id");
+String userID = (String)session.getAttribute("userID");
+String userPW = (String)session.getAttribute("userPW"); 
 %>
 <!-- 회원 정보 -->
 <jsp:include page="header.jsp" />
@@ -26,12 +27,12 @@ String id = (String)session.getAttribute("id");
 	</div>
 </div>
 <jsp:include page="menu.jsp" />
-<% if(id==null) { %>
+<% if(userID == null && userPW == null)  { %>
 	<br><br>
 	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인하러가기</a>
 <%} else { %>
 	<br><br>
-<form action="joinProcess.jsp" method="post" onsumbmit="return checkForm()" style ="margin:0 auto; width:500px;">
+<form method="post" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">Id</label>
@@ -77,8 +78,8 @@ String id = (String)session.getAttribute("id");
     </div>
  </fieldset>
     <div class="button">
-            <input type="button" class="btn btn-primary" value="Edit" onclick="location.href='editmyinfo.jsp'" />
-	<input type="button" class="btn btn-primary" value="Logout" onclick="location.href='logout.jsp'" />
+    <input type="button" class="btn btn-primary" value="Edit" onclick="location.href=MemberEditViewAction.do" />
+	<input type="button" class="btn btn-primary" value="Logout" onclick="location.href=LogoutAction.do" />
 	</div>
 </form>
 <%}%>

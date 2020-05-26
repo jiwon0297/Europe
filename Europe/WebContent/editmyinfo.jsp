@@ -4,15 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Add Review</title>
 </head>
 <body>
-<% 
-request.setCharacterEncoding("utf-8"); 
-session.invalidate();//모든 세션변수 제거
- 
-response.sendRedirect("index.jsp");
- 
-%>
+edit info
 </body>
 </html>
