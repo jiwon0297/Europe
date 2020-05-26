@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import jdbc.ConnectionProvider;
 import action.*;
 import dao.TipTableDAO;
+import dto.MarketElementBean;
 import dto.TipElementBean;
 
 
@@ -23,6 +24,8 @@ public class ListTipAction implements Action {
 		try {
 			String country = request.getParameter("country");
 			String category = request.getParameter("category");
+			String name = request.getParameter("name");
+			String title = request.getParameter("title");
 			conn = ConnectionProvider.getConnection();
 			TipTableDAO dao = TipTableDAO.getInstance();
 			if (mode.contentEquals("listbycategory")) {
@@ -34,8 +37,16 @@ public class ListTipAction implements Action {
 				request.setAttribute("tiList", tiList);
 				request.setAttribute("country", country);
 				
-			} else {
+			} else if(mode.contentEquals("list")) {
 				List<TipElementBean> tiList = dao.selectList(conn);
+				request.setAttribute("tiList", tiList);
+				request.setAttribute("mode", mode);
+			} else if(mode.contentEquals("titleselect")) {
+				List<TipElementBean> tiList = dao.titleselect(conn, title);
+				request.setAttribute("tiList", tiList);
+				request.setAttribute("mode", mode);
+			} else if(mode.contentEquals("writerselect")) {
+				List<TipElementBean> tiList = dao.writerselect(conn, name);
 				request.setAttribute("tiList", tiList);
 				request.setAttribute("mode", mode);
 			}

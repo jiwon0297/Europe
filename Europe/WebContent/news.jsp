@@ -7,6 +7,7 @@
 <title>news</title>
 </head>
 <body>
+
 <jsp:include page="header.jsp" />
 <div class="jumbotron" align="center">
 	<div class="container">

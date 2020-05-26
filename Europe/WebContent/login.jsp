@@ -41,7 +41,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form name="login" action="loginprocess.jsp" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
+<form name="login" action="LoginAction.do" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">ID</label>

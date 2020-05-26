@@ -27,7 +27,7 @@ div.button{
 			alert("비밀번호를 동일하게 입력하세요.");
 			return false;
 		}
-		
+		alert("회원가입이 완료되었습니다. 로그인 해주세요.");
 		return true;
 	}
 </script>
@@ -41,7 +41,7 @@ div.button{
 </div>
 <jsp:include page="menu.jsp" />
 <br><br>
-<form name="join" action="joinProcess.jsp" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
+<form name="join" action="JoinMemberAction.do" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label">Id</label>

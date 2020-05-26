@@ -6,6 +6,13 @@
 <meta charset="EUC-KR">
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <title>header</title>
+<script>
+function mySubmit(val){
+  var f = document.myForm;
+  f.myhidden.value = val;
+  f.submit();
+}
+</script>
 </head>
 <body>
 <%
@@ -32,7 +39,10 @@ String id = (String)session.getAttribute("id");
         <a class="nav-link" href="mypage.jsp">Mypage</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="myinfo.jsp">Myinfo</a>
+     	 <form action="MemberDatailViewAction.do" name="myForm" method="POST">
+			<input class="nav-link" type="hidden" name="myhidden" value="<%=id%>">
+		 </form>
+        <a class="nav-link" href="#" onclick="mySubmit('jiwon')">Myinfo</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

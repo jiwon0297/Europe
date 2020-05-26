@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import dto.MarketElementBean;
 import dto.ReviewElementBean;
 
 public class ReviewTableDAO {
@@ -76,55 +77,6 @@ public class ReviewTableDAO {
 			}
 		}
 	
-		// select(find/get) 제목 검색
-		public ReviewElementBean titleselect(Connection conn, String title) throws SQLException {
-			PreparedStatement pstmt = null;
-			ResultSet rs = null;
-			try {
-				String sql = "select * from review where title like'" + title + "%'";
-				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, title);
-				rs = pstmt.executeQuery();
-				if (rs.next()) {
-					return createFromResultSet(rs);
-				}
-				else {
-					return null;
-				}
-			} finally {
-				if (rs != null) {
-					rs.close();
-				}
-				if (pstmt != null) {
-					pstmt.close();
-				}
-			}
-		}
-
-	// select(find/get) 작성자 검색
-		public ReviewElementBean writerselect(Connection conn, String name) throws SQLException {
-			PreparedStatement pstmt = null;
-			ResultSet rs = null;
-			try {
-				String sql = "select * from review where name like'" + name + "%'";
-				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, name);
-				rs = pstmt.executeQuery();
-				if (rs.next()) {
-					return createFromResultSet(rs);
-				}
-				else {
-					return null;
-				}
-			} finally {
-				if (rs != null) {
-					rs.close();
-				}
-				if (pstmt != null) {
-					pstmt.close();
-				}
-			}
-		}
 
 	// select(find/get) number 검색(글 불러오기)
 		public ReviewElementBean select(Connection conn, int number) throws SQLException {
@@ -223,6 +175,52 @@ public class ReviewTableDAO {
 				rList.add(createFromResultSet(rs));
 			}
 			return rList;
+		} finally {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pstmt != null) {
+				pstmt.close();
+			}
+		}
+	}
+	
+	public List<ReviewElementBean> titleselect(Connection conn, String title) throws SQLException {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			String sql = "select * from review where title like'" + title + "%'";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, title);
+			rs = pstmt.executeQuery();
+			List<ReviewElementBean> mList = new ArrayList<>();
+			while (rs.next()) {
+				mList.add(createFromResultSet(rs));
+			}
+			return mList;
+		} finally {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pstmt != null) {
+				pstmt.close();
+			}
+		}
+	}
+	
+	public List<ReviewElementBean> writerselect(Connection conn, String name) throws SQLException {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			String sql = "select * from review where name like'" + name + "%'";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, name);
+			rs = pstmt.executeQuery();
+			List<ReviewElementBean> mList = new ArrayList<>();
+			while (rs.next()) {
+				mList.add(createFromResultSet(rs));
+			}
+			return mList;
 		} finally {
 			if (rs != null) {
 				rs.close();

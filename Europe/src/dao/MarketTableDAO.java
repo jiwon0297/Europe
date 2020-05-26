@@ -77,57 +77,8 @@ public class MarketTableDAO {
 		}
 	}
 	
-	// select(find/get) 제목 검색
-			public MarketElementBean titleselect(Connection conn, String title) throws SQLException {
-				PreparedStatement pstmt = null;
-				ResultSet rs = null;
-				try {
-					String sql = "select * from market where title like'" + title + "%'";
-					pstmt = conn.prepareStatement(sql);
-					pstmt.setString(1, title);
-					rs = pstmt.executeQuery();
-					if (rs.next()) {
-						return createFromResultSet(rs);
-					}
-					else {
-						return null;
-					}
-				} finally {
-					if (rs != null) {
-						rs.close();
-					}
-					if (pstmt != null) {
-						pstmt.close();
-					}
-				}
-			}
 	
-	// select(find/get) 작성자 검색
-			public MarketElementBean writerselect(Connection conn, String name) throws SQLException {
-				PreparedStatement pstmt = null;
-				ResultSet rs = null;
-				try {
-					String sql = "select * from market where title like'" + name + "%'";
-					pstmt = conn.prepareStatement(sql);
-					pstmt.setString(1, name);
-					rs = pstmt.executeQuery();
-					if (rs.next()) {
-						return createFromResultSet(rs);
-					}
-					else {
-						return null;
-					}
-				} finally {
-					if (rs != null) {
-						rs.close();
-					}
-					if (pstmt != null) {
-						pstmt.close();
-					}
-				}
-			}
-	
-	// select(find/get) number 검색(글 불러오기)
+	// select(find/get) 글 불러오기
 			public MarketElementBean select(Connection conn, int number) throws SQLException {
 				PreparedStatement pstmt = null;
 				ResultSet rs = null;
@@ -218,6 +169,52 @@ public class MarketTableDAO {
 				String sql = "select * from market where country=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, country);
+				rs = pstmt.executeQuery();
+				List<MarketElementBean> mList = new ArrayList<>();
+				while (rs.next()) {
+					mList.add(createFromResultSet(rs));
+				}
+				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		public List<MarketElementBean> titleselect(Connection conn, String title) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from market where title like'" + title + "%'";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, title);
+				rs = pstmt.executeQuery();
+				List<MarketElementBean> mList = new ArrayList<>();
+				while (rs.next()) {
+					mList.add(createFromResultSet(rs));
+				}
+				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		public List<MarketElementBean> writerselect(Connection conn, String name) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from market where name like'" + name + "%'";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, name);
 				rs = pstmt.executeQuery();
 				List<MarketElementBean> mList = new ArrayList<>();
 				while (rs.next()) {

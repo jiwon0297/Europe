@@ -23,6 +23,8 @@ public class ListMarketAction implements Action {
 		try {
 			String country = request.getParameter("country");
 			String category = request.getParameter("category");
+			String name = request.getParameter("name");
+			String title = request.getParameter("title");
 			conn = ConnectionProvider.getConnection();
 			MarketTableDAO dao = MarketTableDAO.getInstance();
 			if (mode.contentEquals("listbycategory")) {
@@ -32,10 +34,17 @@ public class ListMarketAction implements Action {
 			} else if(mode.contentEquals("listbycountry")) {
 				List<MarketElementBean> mList = dao.selectListByCountry(conn, country);
 				request.setAttribute("mList", mList);
-				request.setAttribute("country", country);
-				
+				request.setAttribute("country", country);		
 			} else if(mode.contentEquals("list")) {
 				List<MarketElementBean> mList = dao.selectList(conn);
+				request.setAttribute("mList", mList);
+				request.setAttribute("mode", mode);
+			} else if(mode.contentEquals("titleselect")) {
+				List<MarketElementBean> mList = dao.titleselect(conn, title);
+				request.setAttribute("mList", mList);
+				request.setAttribute("mode", mode);
+			} else if(mode.contentEquals("writerselect")) {
+				List<MarketElementBean> mList = dao.writerselect(conn, name);
 				request.setAttribute("mList", mList);
 				request.setAttribute("mode", mode);
 			}

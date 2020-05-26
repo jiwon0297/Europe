@@ -20,7 +20,7 @@
 	try{
 	 	conn =ConnectionProvider.getConnection();
 	 	ReviewTableDAO dao = ReviewTableDAO.getInstance(); //getInstance
-	 	dao.select(conn,title);
+	 	dao.titleselect(conn,title);
 	}catch (SQLException e){
 		e.printStackTrace();
 	}finally{

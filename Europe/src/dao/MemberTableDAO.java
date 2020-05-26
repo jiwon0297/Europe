@@ -148,6 +148,31 @@ public class MemberTableDAO {
 				}
 			}
 		}
+		
+		public MemberElementBean select(Connection conn, String id) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from member where id=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, id);
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					return createFromResultSet(rs);
+				}
+				else {
+					return null;
+					
+				}
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
 	
 	public MemberElementBean createFromResultSet(ResultSet rs) throws SQLException {
 		String id = rs.getString("id");
@@ -216,27 +241,5 @@ public class MemberTableDAO {
 		}
 	}
 	
-	public List<MemberElementBean> infolist(Connection conn, String id) throws SQLException {
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		try {
-			String sql = "select * from member where id=?";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, id);
-			rs = pstmt.executeQuery();
-			List<MemberElementBean> mList = new ArrayList<>();
-			while (rs.next()) {
-				mList.add(createFromResultSet(rs));
-			}
-			return mList;
-		} finally {
-			if (rs != null) {
-				rs.close();
-			}
-			if (pstmt != null) {
-				pstmt.close();
-			}
-		}
-	}
 	
 }

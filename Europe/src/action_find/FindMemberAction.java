@@ -22,20 +22,28 @@ public class FindMemberAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		Connection conn = null;
 		try {
-			String id = request.getParameter("id");
-			String name = request.getParameter("name");
-			String email = request.getParameter("email");
-			String phone = request.getParameter("phone");
 			conn = ConnectionProvider.getConnection();
 			MemberTableDAO dao = MemberTableDAO.getInstance();
 			if (mode.contentEquals("findid")) {
+				String name = request.getParameter("name");
+				String email = request.getParameter("email");
+				String phone = request.getParameter("phone");
 				MemberElementBean member = dao.findid(conn, name, email, phone);
 				if (member == null) {
 					throw new NotFoundException("MemberElement Not found : " + name);
 				}
 				request.setAttribute("member", member);
 			} else if(mode.contentEquals("findpassword")) {
+				String id = request.getParameter("id");
+				String email = request.getParameter("email");
 				MemberElementBean member = dao.findpassword(conn, id, email);
+				if (member == null) {
+					throw new NotFoundException("MemberElement Not found : " + id);
+				}
+				request.setAttribute("member", member);
+			} else if(mode.contentEquals("select")) {
+				String id = request.getParameter("id");
+				MemberElementBean member = dao.select(conn, id);
 				if (member == null) {
 					throw new NotFoundException("MemberElement Not found : " + id);
 				}

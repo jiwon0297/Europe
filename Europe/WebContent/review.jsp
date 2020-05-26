@@ -29,7 +29,7 @@
 	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인 하러가기</a> 
   <% 
   }else{%> 
-  	<input type="button" class="btn btn-primary" value="글쓰기" onclick="location='reviewwrite.jsp'">
+  	<p><a href="ReviewAddviewAction.do" class="btn btn-primary" role="button">글쓰기</a></p>
   <% 
   }%>
 <form class="form-inline my-2 my-lg-0">

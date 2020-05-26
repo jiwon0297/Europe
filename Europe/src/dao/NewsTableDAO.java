@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import dto.MarketElementBean;
 import dto.NewsElementBean;
 
 public class NewsTableDAO {
@@ -72,55 +73,6 @@ public class NewsTableDAO {
 		}
 	}
 	
-	// select(find/get) 제목 검색
-	public NewsElementBean titleselect(Connection conn, String title) throws SQLException {
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		try {
-			String sql = "select * from news where title like'" + title + "%'";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, title);
-			rs = pstmt.executeQuery();
-			if (rs.next()) {
-				return createFromResultSet(rs);
-			}
-			else {
-				return null;
-			}
-		} finally {
-			if (rs != null) {
-				rs.close();
-			}
-			if (pstmt != null) {
-				pstmt.close();
-			}
-		}
-	}
-
-// select(find/get) 작성자 검색
-	public NewsElementBean writerselect(Connection conn, String writer) throws SQLException {
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		try {
-			String sql = "select * from news where writer like'" + writer + "%'";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, writer);
-			rs = pstmt.executeQuery();
-			if (rs.next()) {
-				return createFromResultSet(rs);
-			}
-			else {
-				return null;
-			}
-		} finally {
-			if (rs != null) {
-				rs.close();
-			}
-			if (pstmt != null) {
-				pstmt.close();
-			}
-		}
-	}
 
 // select(find/get) number 검색(글 불러오기)
 	public NewsElementBean select(Connection conn, int number) throws SQLException {
@@ -163,6 +115,52 @@ public class NewsTableDAO {
 			try {
 				String sql = "select * from news";
 				pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
+				List<NewsElementBean> mList = new ArrayList<>();
+				while (rs.next()) {
+					mList.add(createFromResultSet(rs));
+				}
+				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		public List<NewsElementBean> titleselect(Connection conn, String title) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from news where title like'" + title + "%'";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, title);
+				rs = pstmt.executeQuery();
+				List<NewsElementBean> mList = new ArrayList<>();
+				while (rs.next()) {
+					mList.add(createFromResultSet(rs));
+				}
+				return mList;
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+		
+		public List<NewsElementBean> writerselect(Connection conn, String writer) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from news where writer like'" + writer + "%'";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1, writer);
 				rs = pstmt.executeQuery();
 				List<NewsElementBean> mList = new ArrayList<>();
 				while (rs.next()) {

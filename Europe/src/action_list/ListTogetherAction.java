@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import jdbc.ConnectionProvider;
 import action.*;
 import dao.TogetherTableDAO;
+import dto.MarketElementBean;
 import dto.TogetherElementBean;
 
 
@@ -22,6 +23,8 @@ public class ListTogetherAction implements Action {
 		Connection conn = null;
 		try {
 			String country = request.getParameter("country");
+			String name = request.getParameter("name");
+			String title = request.getParameter("title");
 			conn = ConnectionProvider.getConnection();
 			TogetherTableDAO dao = TogetherTableDAO.getInstance();
 			if(mode.contentEquals("listbycountry")) {
@@ -29,8 +32,16 @@ public class ListTogetherAction implements Action {
 				request.setAttribute("toList", toList);
 				request.setAttribute("country", country);
 				
-			} else {
+			} else if(mode.contentEquals("list")) {
 				List<TogetherElementBean> toList = dao.selectList(conn);
+				request.setAttribute("toList", toList);
+				request.setAttribute("mode", mode);
+			} else if(mode.contentEquals("titleselect")) {
+				List<TogetherElementBean> toList = dao.titleselect(conn, title);
+				request.setAttribute("toList", toList);
+				request.setAttribute("mode", mode);
+			} else if(mode.contentEquals("writerselect")) {
+				List<TogetherElementBean> toList = dao.writerselect(conn, name);
 				request.setAttribute("toList", toList);
 				request.setAttribute("mode", mode);
 			}

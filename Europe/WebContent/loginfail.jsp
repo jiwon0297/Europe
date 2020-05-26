@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>content</title>
+<title>Insert title here</title>
 </head>
 <body>
-글내용
+<script>
+	alert("아이디 혹은 비밀번호가 틀렸습니다.");
+</script>
+<jsp:include page="login.jsp"/>
 </body>
 </html>

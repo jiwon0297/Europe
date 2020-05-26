@@ -29,7 +29,7 @@
 	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인 하러가기</a> 
   <% 
   }else{%> 
-  	<input type="button" class="btn btn-primary" value="글쓰기" onclick="location='tipwrite.jsp'">
+  	<p><a href="TipAddviewAction.do" class="btn btn-primary" role="button">글쓰기</a></p>
   <% 
   }%>
 <form action="content.jsp" method="post" style ="margin:0 auto; width:1000px;">
