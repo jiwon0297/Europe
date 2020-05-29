@@ -34,7 +34,7 @@ div.button{
   }else{%> 
   	<a class="nav-link" style="text-align:center;">æ»≥Á«œººø‰! ${userID}¥‘! </a>
     <input type='button' value='∑Œ±◊æ∆øÙ'  class="btn btn-primary"
-           onclick="location.href=LoginAction.do"> 
+           onclick="location.href=LogoutAction.do"> 
   <% 
   }%> 
 </body>
