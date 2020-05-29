@@ -37,7 +37,7 @@
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div class="culmn">
         
-        <jsp:include page="mainheader.jsp" />
+        <jsp:include page="header.jsp" />
         <jsp:include page="country.jsp" />
 		<jsp:include page="recommend.jsp" />
 		

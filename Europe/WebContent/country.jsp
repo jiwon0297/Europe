@@ -10,12 +10,13 @@ h2{
 	margin-top: 30px;
 	font-size:20pt;
 }
+
 </style>
 </head>
-<body>
+<body style="background-color:lightslategray">
 <br><br>
 <!-- Client Logo Section -->
-            <section id="clogo" class="clogo">
+            <section style="background-color:lightslategray" id="clogo" class="clogo">
                 <div class="container">
                     <div class="row">
                         <div class="main_clogo sections text-center">
@@ -23,7 +24,7 @@ h2{
                                 <a href="KoreaMain.jsp" style="background-color:ivory"><h2>KOREA</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="EnglnadMain.jsp" style="background-color:ivory"><h2>ENGLAND</h2></a>
+                                <a href="EnglandMain.jsp" style="background-color:ivory"><h2>ENGLAND</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
                                 <a href="FranceMain.jsp" style="background-color:ivory"><h2>FRANCE</h2></a>
