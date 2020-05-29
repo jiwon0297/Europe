@@ -53,6 +53,7 @@
                                                 <li><a href="#home">HOME</a></li>
                                                 <li><a href="#country">COUNTRY</a></li>
                                                 <li><a href="#history">ABOUT US</a></li>
+                                                <li><a href="#service">SERVICE</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -75,7 +76,7 @@
                                 <div class="col-sm-12 ">
                                     <div class="main_home_slider text-center">
                                         <div class="single_home_slider">
-                                            <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                            <div class="main_home wow fadeInUp" data-wow-duration="500ms">
                                                 <h3>ADVANCED JAVA PROJECT</h3>
                                                 <h1>RECORD OF TRAVEL</h1>
                                                 <div class="separator"></div>
@@ -95,66 +96,7 @@
                     </div>
                 </div>
             </section><!--End of home section -->
-		
-		 <!--feature section -->
-            <section id="feature" class="feature sections">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_feature text-center">
-
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-clone"></i>
-                                    </div>
-
-                                    <h4>INFORMATION</h4>
-                                    <div class="separator3"></div>
-                                    <p>인포 설명</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-heart-o"></i>
-                                    </div>
-
-                                    <h4>MARKET</h4>
-                                    <div class="separator3"></div>
-                                    <p>마켓 설명</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-lightbulb-o"></i>
-                                    </div>
-                                    <h4>TOGETHER</h4>
-                                    <div class="separator3"></div>
-                                    <p>동행 설명</p>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-comments-o"></i>
-                                    </div>
-
-                                    <h4>RECOMMEND</h4>
-                                    <div class="separator3"></div>
-                                    <p>운영자 추천</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div><!--End of container -->
-            </section><!--End of feature Section -->
-          
-		
+	
 		<!-- country -->
 		<section id="country" class="portfolio sections">
                 <div class="container-fluid">
@@ -254,6 +196,7 @@
                 </div><!-- End off container --> 
             </section> <!-- End off Work Section -->   
 		
+	
 		<!-- aboutus -->
 		<section id="history" class="history sections">
                 <div class="container">
@@ -277,6 +220,103 @@
                     </div><!--End of row -->
                 </div><!--End of container -->
             </section><!--End of history -->
+		
+		<!-- service Section -->
+            <section id="service" class="service">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="main_service">
+                            <div class="col-md-6 col-sm-12 no-padding">
+
+                                <div class="single_service single_service_text text-right">
+                                    <div class="head_title">
+                                        <h2>OUR SERVICES</h2>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                            <div class="row">
+
+                                                <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                                                    <article class="single_service_right_text">
+                                                        <h4>INFORMATION</h4>
+                                                        <p>인포 설명</p>
+                                                    </article>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1">
+                                                    <figure class="single_service_icon">
+                                                        <i class="fa fa-heart"></i>
+                                                    </figure><!-- End of figure -->
+                                                </div>
+                                            </div>
+                                        </div><!-- End of col-sm-12 -->
+
+                                        <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                            <div class="row">
+
+                                                <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                                                    <article class="single_service_right_text">
+                                                        <h4>MARKET</h4>
+                                                        <p>마켓 설명</p>
+                                                    </article>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1">
+                                                    <figure class="single_service_icon">
+                                                        <i class="fa fa-heart"></i>
+                                                    </figure><!-- End of figure -->
+                                                </div>
+                                            </div>
+                                        </div><!-- End of col-sm-12 -->
+
+                                        <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                            <div class="row">
+
+                                                <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
+                                                    <article class="single_service_right_text">
+                                                        <h4>TOGETHER</h4>
+                                                        <p>투게더 설명</p>
+                                                    </article>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1">
+                                                    <figure class="single_service_icon">
+                                                        <i class="fa fa-heart"></i>
+                                                    </figure><!-- End of figure -->
+                                                </div>
+                                            </div>
+                                        </div><!-- End of col-sm-12 -->
+                                        
+                                        <div class="col-md-12 col-sm-10 col-xs-10 margin-bottom-60">
+                                            <div class="row">
+
+                                                <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
+                                                    <article class="single_service_right_text">
+                                                        <h4>RECOMMEND</h4>
+                                                        <p>운영자 추천</p>
+                                                    </article>
+                                                </div>
+                                                <div class="col-sm-1 col-xs-1">
+                                                    <figure class="single_service_icon">
+                                                        <i class="fa fa-heart"></i>
+                                                    </figure><!-- End of figure -->
+                                                </div>
+                                            </div>
+                                        </div><!-- End of col-sm-12 -->
+
+                                    </div>
+                                </div>
+                            </div><!-- End of col-sm-6 -->
+
+                            <div class="col-md-6 col-sm-12 no-padding">
+                                <figure class="single_service single_service_img">
+                                    <div class="overlay-img"></div>
+                                    <img src="resources/assets/images/servicerightimg.jpg" alt="" />
+                                </figure><!-- End of figure -->
+                            </div><!-- End of col-sm-6 -->
+
+                        </div>
+                    </div><!-- End of row -->
+                </div><!-- End of Container-fluid -->
+            </section><!-- End of service Section -->
 		
 	</div>>
 	
