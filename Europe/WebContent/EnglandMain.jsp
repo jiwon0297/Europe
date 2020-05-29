@@ -35,7 +35,6 @@
 </head>
 <body>
         <!-- START SCROLL TO TOP  -->
-
         <div class="scrollup">
             <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div>
@@ -55,10 +54,9 @@
 
         <script src="resources/assets/js/plugins.js"></script>
         <script src="resources/assets/js/main.js"></script>
-
-<jsp:include page="mainheader.jsp"/>
+<jsp:include page="mainheader.jsp" />
 <section id="portfolio" class="portfolio sections">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="main_portfolio">
                             <div class="col-sm-12">
@@ -80,19 +78,20 @@
                     <div class="container" style="position: relative; left:145px">
                     <div class="row">
                         <div class="main_feature text-center">
-
+						<a href="EnglandInfoListViewAction.do" style="color:#888888;">
                             <div class="col-sm-3">
                                 <div class="single_feature">
                                     <div class="single_feature_icon">
                                         <i class="fa fa-clone"></i>
                                     </div>
-
                                     <h4>TRAVEL INFORMATION</h4>
                                     <div class="separator3"></div>
                                     <p>You can share your experience and you can get the information, too</p>
                                 </div>
                             </div>
-
+                            </a>
+                            
+                            <a href="EnglandMarketListViewAction.do" style="color:#888888;">
                             <div class="col-sm-3">
                                 <div class="single_feature">
                                     <div class="single_feature_icon">
@@ -104,7 +103,9 @@
                                     <p>You can exchange your USIM, money etc. you can buy or sell, too.</p>
                                 </div>
                             </div>
-
+                            </a>
+                            
+                            <a href="EnglandTogethersListViewAction.do" style="color:#888888;">
                             <div class="col-sm-3">
                                 <div class="single_feature">
                                     <div class="single_feature_icon">
@@ -115,6 +116,7 @@
                                     <p>You can find the travler to trip together.</p>
                                 </div>
                             </div>
+                            </a>
 
                         </div>
                     </div>
