@@ -3,42 +3,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bino html5 free Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link rel="stylesheet" href="resources/assets/css/iconfont.css">
+        <link rel="stylesheet" href="resources/assets/css/slick/slick.css">
+        <link rel="stylesheet" href="resources/assets/css/slick/slick-theme.css">
+        <link rel="stylesheet" href="resources/assets/css/stylesheet.css">
+        <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="resources/assets/css/jquery.fancybox.css">
+        <link rel="stylesheet" href="resources/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="resources/assets/css/bootstrap-theme.min.css">
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="resources/ssets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="resources/assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="resources/assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
+<style>
+div{
+	background-color : lightslategray;
+}
+</style>
 <body>
 <%
 String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
 %>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor03">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="home.jsp">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
+<div class="work_menu text-center" style="text-align:right">
+	<div id="filters" class="toolbar mb2 mt2">
+		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="color:white;">HOME</button>
+		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="color:white;">MENU</button>
 		<% if(userID == null && userPW == null) { %>
-			<a class="nav-link" href="login.jsp?login=no" role="button">Login</a>
+		<button class="btn-md fil-cat filter" onclick="location='login.jsp'" style="color:white;">LOGIN/JOIN</button>
 		<%} else { %>
-			<a class="nav-link" href="LogoutAction.do" role="button">Logout</a>
+		<button class="btn-md fil-cat filter" onclick="location='LogoutAction.do'" style="color:white;">LOGOUT</button>
 		<%}%>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mypage.jsp">Mypage</a>
-      </li>
-      <li class="nav-item">
-     	 <form action="MemberDatailViewAction.do" name="myForm" method="POST">
-			<input class="nav-link" type="hidden" name="myhidden" value="${userID}">
-			<input type="submit" class="nav-link" value="Myinfo">
-		 </form>
-      </li>
-    </ul>
-  </div>
- </nav>
+		<button class="btn-md fil-cat filter" onclick="location='myinfo.jsp'" style="color:white;">MYPAGE</button>
+	</div> 
+</div>
 </body>
 </html>

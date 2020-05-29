@@ -6,9 +6,9 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-color:lightslategray">
 
-<section id="contact" class="contact">
+<section id="contact" class="contact" style="background-color:lightslategray">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">

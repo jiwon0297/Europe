@@ -138,14 +138,14 @@ public class ReviewTableDAO {
 	}
 	
 	// selectListByCategory,Country
-	public List<ReviewElementBean> selectListByCategory(Connection conn, String country, String cate1) throws SQLException {
+	public List<ReviewElementBean> selectListByCategory(Connection conn, String category, String country) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "select * from review where country=?, cate1=?";
+			String sql = "select * from review where cate1=?, country=?";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, country);
-			pstmt.setString(1, cate1);
+			pstmt.setString(1, category);
+			pstmt.setString(2, country);
 			rs = pstmt.executeQuery();
 			List<ReviewElementBean> rList = new ArrayList<>();
 			while (rs.next()) {
