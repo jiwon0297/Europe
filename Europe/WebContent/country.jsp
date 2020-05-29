@@ -19,8 +19,21 @@ h2{
                 <div class="container">
                     <div class="row">
                         <div class="main_clogo sections text-center">
+<<<<<<< HEAD
                             <div class="col-sm-3 col-xs-6"> 
                                 <a href="KoreaMain.jsp" style="background-color:ivory"><h2>KOREA</h2></a>
+=======
+                            <div class="head_title text-center">
+                                <h2>Country</h2>
+                                <div class="subtitle">
+                                    	Choose the country you want to go to.
+                                </div>
+                                <div class="separator"></div>
+                            </div><!-- End off Head_title -->
+
+                            <div class="col-sm-3 col-xs-6"> 
+                                <a href="KoreaMain.jsp" style="background-image:url('./resources/assets/images/korea.jpg');opacity:0.6;"><h2>Korea</h2></a>
+>>>>>>> cc972c8d6de81e29272ebb4df1a7c67a4ceb7259
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
                                 <a href="EnglnadMain.jsp" style="background-color:ivory"><h2>ENGLAND</h2></a>

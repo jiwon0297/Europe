@@ -8,13 +8,13 @@ import java.sql.SQLException;
 public class ConnectionProvider {
 	// JDBC driver name and database URL
 	private static final String PROPERTIES = "?serverTimezone=UTC&useSSL=false"; // MySQL Connector J 8.0
-	private static final String DB_SCHEMAS = "europe_sample";
+	private static final String DB_SCHEMAS = "europe";
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver"; // deprecated "com.mysql.jdbc.Driver";  
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/" + DB_SCHEMAS + PROPERTIES; 
 
 	//  Database credentials
 	private static final String USER = "root";
-	private static final String PASS = "qlalfqjsgh";
+	private static final String PASS = "qkrwldnjs97";
 	
 	public static Connection getConnection() throws SQLException {
 		try {

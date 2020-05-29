@@ -33,7 +33,15 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse">
+<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div class="culmn">
+        
+        <jsp:include page="mainheader.jsp" />
+        <jsp:include page="country.jsp" />
+		<jsp:include page="recommend.jsp" />
+		
+        </div>
         <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
 
@@ -49,8 +57,6 @@
 
         <script src="resources/assets/js/plugins.js"></script>
         <script src="resources/assets/js/main.js"></script>
-        <jsp:include page="mainheader.jsp" />
-        <jsp:include page="country.jsp" />
-		<jsp:include page="recommend.jsp" />
+        
 </body>
 </html>

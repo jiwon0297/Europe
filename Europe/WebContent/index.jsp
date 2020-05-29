@@ -96,6 +96,65 @@
                 </div>
             </section><!--End of home section -->
 		
+		 <!--feature section -->
+            <section id="feature" class="feature sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_feature text-center">
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-clone"></i>
+                                    </div>
+
+                                    <h4>INFORMATION</h4>
+                                    <div class="separator3"></div>
+                                    <p>인포 설명</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-heart-o"></i>
+                                    </div>
+
+                                    <h4>MARKET</h4>
+                                    <div class="separator3"></div>
+                                    <p>마켓 설명</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-lightbulb-o"></i>
+                                    </div>
+                                    <h4>TOGETHER</h4>
+                                    <div class="separator3"></div>
+                                    <p>동행 설명</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-comments-o"></i>
+                                    </div>
+
+                                    <h4>RECOMMEND</h4>
+                                    <div class="separator3"></div>
+                                    <p>운영자 추천</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--End of container -->
+            </section><!--End of feature Section -->
+          
+		
 		<!-- country -->
 		<section id="country" class="portfolio sections">
                 <div class="container-fluid">
@@ -114,7 +173,7 @@
                             <div id="portfoliowork"> 
                                 <div class="single_portfolio tile scale-anm web grid-item-width2 video" >
                                     <img src="resources/assets/images/pf1.jpg" alt="" />
-                                    <a href="main.jsp">
+                                    <a href="KoreaMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>KOREA</h3>
@@ -123,7 +182,7 @@
                                 </div>
                                 <div class="single_portfolio tile scale-anm bcards photo" >
                                     <img src="resources/assets/images/pf2.jpg" alt="" />
-                                     <a href="main.jsp">
+                                     <a href="EnglandMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>UK</h3>
@@ -132,7 +191,7 @@
                                 </div>
                                 <div class="single_portfolio tile scale-anm web video">
                                     <img src="resources/assets/images/pf3.jpg" alt="" />
-                                    <a href="main.jsp">
+                                    <a href="FranceMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>FRANCE</h3>
@@ -141,7 +200,7 @@
                                 </div>
                                 <div class="single_portfolio tile scale-anm web photo" >
                                     <img src="resources/assets/images/pf4.jpg" alt="" />
-                                    <a href="main.jsp">
+                                    <a href="SwissMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>SWITZERLAND</h3>
@@ -150,7 +209,7 @@
                                 </div>
                                 <div class="single_portfolio tile scale-anm bcards design" >
                                     <img src="resources/assets/images/pf5.jpg" alt="" />  
-                                    <a href="main.jsp">
+                                    <a href="ItalyMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>ITALY</h3>
@@ -160,7 +219,7 @@
 
                                 <div class="single_portfolio tile scale-anm flyers video design">
                                     <img src="resources/assets/images/pf6.jpg" alt="" />
-                                    <a href="main.jsp">
+                                    <a href="GermanyMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>GERMANY</h3>
@@ -169,7 +228,7 @@
                                 </div>
                                 <div class="single_portfolio tile scale-anm photo flyers">
                                     <img src="resources/assets/images/pf7.jpg" alt="" />
-                                    <a href="main.jsp">
+                                    <a href="CzechMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>CZECH</h3>
@@ -179,7 +238,7 @@
 
                                 <div class="single_portfolio tile scale-anm bcards video" >
                                     <img src="resources/assets/images/pf8.jpg" alt="" />
-                                    <a href="main.jsp">
+                                    <a href="HungaryMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
                                             <h3>HUNGARY</h3>

@@ -665,6 +665,11 @@ input::-ms-input-placeholder {
     background: url(../images/homebg.jpg) no-repeat center center;
     background-size: cover;
 }
+
+.home2{
+    background: url(../images/top.jpg) no-repeat center center;
+    background-size: cover;
+}
 .home_skew_border{
     position: relative;
 }

@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import action.*;
 import dao.ReviewTableDAO;
@@ -16,10 +17,11 @@ public class AddReviewAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		Connection conn = null;
 		try {
+			HttpSession session = request.getSession(true);
 			int number = Integer.parseInt(request.getParameter("number"));
 			String country = request.getParameter("country");
 			String cate1 = request.getParameter("cate1");
-			String name = request.getParameter("name");
+			String name = (String)session.getAttribute("userID");
 			String title = request.getParameter("title");
 			String detail = request.getParameter("detail");
 
