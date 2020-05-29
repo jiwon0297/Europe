@@ -9,9 +9,7 @@
 }</style>
 <meta charset="EUC-KR">
 </head>
-<body data-spy="scroll" data-target=".navbar-collapse">
-<div class='preloader'><div class='loaded'>&nbsp;</div></div>
-        <div class="culmn">
+<body>
             <header id="main_menu" class="header navbar-fixed-top">            
                 <div class="main_menu_bg">
                     <div class="container">
