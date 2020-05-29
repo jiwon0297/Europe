@@ -3,7 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<style>
+.header{
+   background-color: gray;
+}</style>
 <meta charset="EUC-KR">
 </head>
 <body>
@@ -34,6 +37,6 @@
 
                 </div>
             </header> <!--End of header -->
-
+			
 </body>
 </html>

@@ -27,8 +27,9 @@ h2{
                                 </div>
                                 <div class="separator"></div>
                             </div><!-- End off Head_title -->
+
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="KoreaMain.jsp" style="background-image:url('./resources/assets/images/korea.jpg');opacity:0.6;"><h2>Korea</h2></a>                            
+                                <a href="KoreaMain.jsp" style="background-image:url('./resources/assets/images/korea.jpg');opacity:0.6;"><h2>Korea</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
                                 <a href="EnglandMain.jsp" style="background-image:url('./resources/assets/images/pf2.jpg');opacity:0.6;"><h2>England</h2></a>
