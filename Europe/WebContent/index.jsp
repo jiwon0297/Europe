@@ -96,6 +96,65 @@
                 </div>
             </section><!--End of home section -->
 		
+		 <!--feature section -->
+            <section id="feature" class="feature sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_feature text-center">
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-clone"></i>
+                                    </div>
+
+                                    <h4>INFORMATION</h4>
+                                    <div class="separator3"></div>
+                                    <p>인포 설명</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-heart-o"></i>
+                                    </div>
+
+                                    <h4>MARKET</h4>
+                                    <div class="separator3"></div>
+                                    <p>마켓 설명</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-lightbulb-o"></i>
+                                    </div>
+                                    <h4>TOGETHER</h4>
+                                    <div class="separator3"></div>
+                                    <p>동행 설명</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="single_feature">
+                                    <div class="single_feature_icon">
+                                        <i class="fa fa-comments-o"></i>
+                                    </div>
+
+                                    <h4>RECOMMEND</h4>
+                                    <div class="separator3"></div>
+                                    <p>운영자 추천</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!--End of container -->
+            </section><!--End of feature Section -->
+          
+		
 		<!-- country -->
 		<section id="country" class="portfolio sections">
                 <div class="container-fluid">
