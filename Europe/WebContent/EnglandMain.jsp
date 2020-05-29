@@ -3,35 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Bino html5 free Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-
-        <link rel="stylesheet" href="resources/assets/css/iconfont.css">
-        <link rel="stylesheet" href="resources/assets/css/slick/slick.css">
-        <link rel="stylesheet" href="resources/assets/css/slick/slick-theme.css">
-        <link rel="stylesheet" href="resources/assets/css/stylesheet.css">
-        <link rel="stylesheet" href="resources/assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="resources/assets/css/jquery.fancybox.css">
-        <link rel="stylesheet" href="resources/assets/css/bootstrap.css">
-        <link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="resources/assets/css/magnific-popup.css">
-		<link rel="stylesheet" href="resources/assets/css/bootstrap-theme.min.css">
-
-        <!--For Plugins external css-->
-        <link rel="stylesheet" href="resources/ssets/css/plugins.css" />
-
-        <!--Theme custom css -->
-        <link rel="stylesheet" href="resources/assets/css/style.css">
-
-        <!--Theme Responsive css-->
-        <link rel="stylesheet" href="resources/assets/css/responsive.css" />
-
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+        <style>
+        section {
+        	background-color : lightslategray;
+        	margin-top : -4%;
+        }
+        </style>
 </head>
 <body>
         <!-- START SCROLL TO TOP  -->
@@ -54,15 +33,15 @@
 
         <script src="resources/assets/js/plugins.js"></script>
         <script src="resources/assets/js/main.js"></script>
-<jsp:include page="mainheader.jsp" />
+<jsp:include page="countryheader.jsp"/>
 <section id="portfolio" class="portfolio sections">
                 <div class="container">
                     <div class="row">
                         <div class="main_portfolio">
                             <div class="col-sm-12">
                                 <div class="head_title text-center">
-                                    <h2>England</h2>
-                                    <div class="subtitle">
+                                    <a href="EnglandMain.jsp" style="color:white;"><h2>England</h2></a>
+                                    <div class="subtitle" style="color:white;">
                                         Choose the category what you want.
                                     </div>
                                     <div class="separator"></div>
@@ -78,7 +57,7 @@
                     <div class="container" style="position: relative; left:145px">
                     <div class="row">
                         <div class="main_feature text-center">
-						<a href="EnglandInfoListViewAction.do" style="color:#888888;">
+						<a href="EnglandInfoListViewAction.do" style="color:white">
                             <div class="col-sm-3">
                                 <div class="single_feature">
                                     <div class="single_feature_icon">
@@ -91,7 +70,7 @@
                             </div>
                             </a>
                             
-                            <a href="EnglandMarketListViewAction.do" style="color:#888888;">
+                            <a href="EnglandMarketListViewAction.do" style="color:white">
                             <div class="col-sm-3">
                                 <div class="single_feature">
                                     <div class="single_feature_icon">
@@ -105,7 +84,7 @@
                             </div>
                             </a>
                             
-                            <a href="EnglandTogethersListViewAction.do" style="color:#888888;">
+                            <a href="EnglandTogethersListViewAction.do" style="color:white;">
                             <div class="col-sm-3">
                                 <div class="single_feature">
                                     <div class="single_feature_icon">
