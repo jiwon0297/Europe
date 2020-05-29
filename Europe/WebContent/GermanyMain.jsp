@@ -33,7 +33,7 @@
 
         <script src="resources/assets/js/plugins.js"></script>
         <script src="resources/assets/js/main.js"></script>
-<jsp:include page="countryheader.jsp"/>
+<jsp:include page="header.jsp"/>
 <section id="portfolio" class="portfolio sections">
                 <div class="container">
                     <div class="row">

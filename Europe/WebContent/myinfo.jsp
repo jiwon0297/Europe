@@ -20,7 +20,7 @@ String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
 %>
 <!-- 회원 정보 -->
-<jsp:include page="countryheader.jsp" />
+<jsp:include page="header.jsp" />
 <div class="jumbotron" align="center">
 	<div class="container">
 		<h1 class="display-3">MY INFORMATION</h1>

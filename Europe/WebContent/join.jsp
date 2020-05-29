@@ -33,7 +33,7 @@ div.button{
 </script>
 </head>
 <body>
-<jsp:include page="countryheader.jsp" />
+<jsp:include page="header.jsp" />
 <div class="jumbotron">
 	<div class="container">
 		<h1 class="display-3" align="center">Join</h1>
