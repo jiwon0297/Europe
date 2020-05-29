@@ -137,13 +137,14 @@ public class ReviewTableDAO {
 		}
 	}
 	
-	// selectListByCategory
-	public List<ReviewElementBean> selectListByCategory(Connection conn, String cate1) throws SQLException {
+	// selectListByCategory,Country
+	public List<ReviewElementBean> selectListByCategory(Connection conn, String country, String cate1) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "select * from review where cate1=?";
+			String sql = "select * from review where country=?, cate1=?";
 			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, country);
 			pstmt.setString(1, cate1);
 			rs = pstmt.executeQuery();
 			List<ReviewElementBean> rList = new ArrayList<>();
@@ -161,29 +162,6 @@ public class ReviewTableDAO {
 		}
 	}
 	
-	// selectListByCountry
-	public List<ReviewElementBean> selectListByCountry(Connection conn, String country) throws SQLException {
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		try {
-			String sql = "select * from review where country=?";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, country);
-			rs = pstmt.executeQuery();
-			List<ReviewElementBean> rList = new ArrayList<>();
-			while (rs.next()) {
-				rList.add(createFromResultSet(rs));
-			}
-			return rList;
-		} finally {
-			if (rs != null) {
-				rs.close();
-			}
-			if (pstmt != null) {
-				pstmt.close();
-			}
-		}
-	}
 	
 	public List<ReviewElementBean> titleselect(Connection conn, String title) throws SQLException {
 		PreparedStatement pstmt = null;

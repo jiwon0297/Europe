@@ -12,30 +12,15 @@ import javax.servlet.http.HttpSession;
 
 import action.Action;
 import action.LoginAction;
-import action_add.AddMarketAction;
 import action_add.AddMemberAction;
 import action_add.AddReviewAction;
-import action_add.AddTipAction;
-import action_add.AddTogetherAction;
-import action_delete.DeleteMarketAction;
 import action_delete.DeleteReviewAction;
-import action_delete.DeleteTipAction;
-import action_delete.DeleteTogetherAction;
-import action_edit.EditMarketAction;
 import action_edit.EditReviewAction;
-import action_edit.EditTipAction;
-import action_edit.EditTogetherAction;
-import action_find.FindMarketAction;
 import action_find.FindMemberAction;
 import action_find.FindNewsAction;
 import action_find.FindReviewAction;
-import action_find.FindTipAction;
-import action_find.FindTogetherAction;
-import action_list.ListMarketAction;
 import action_list.ListNewsAction;
 import action_list.ListReviewAction;
-import action_list.ListTipAction;
-import action_list.ListTogetherAction;
 
 
 @WebServlet("/EuropeController")
@@ -72,48 +57,153 @@ public class EuropeController extends HttpServlet {
 		
 		Action action = null;
 		
-		//List
-		if (command.equals("/MarketListViewAction.do")) {
-			action = new ListMarketAction("list");
+		//ENGLAND
+		if (command.equals("/EnglandInfoListViewAction.do")) {
+			action = new ListReviewAction("englandinfo");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("market.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=englandinfo");
 			rd.forward(request, response);
-		} else if(command.equals("/MarketListByCategory.do")) {
-			action = new ListMarketAction("listbycategory");
+		} else if(command.equals("/EnglandMarketListViewAction.do")) {
+			action = new ListReviewAction("englandmarket");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("market.jsp?mode=listbycategory");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=englandmarket");
 			rd.forward(request, response);
-		} else if(command.equals("/MarketListByCountry.do")) {
-			action = new ListMarketAction("listbycountry");
+		} else if(command.equals("/EnglandTogetherListViewAction.do")) {
+			action = new ListReviewAction("englandtogether");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("market.jsp?mode=listbycountry");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=englandtogether");
 			rd.forward(request, response);
-		} else if(command.equals("/MarketSelectTitle.do")) {
-			action = new ListMarketAction("titleselect");
+		} 
+		
+		//FRANCE
+		else if (command.equals("/FranceInfoListViewAction.do")) {
+			action = new ListReviewAction("franceinfo");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("market.jsp?mode=titleselect");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=franceinfo");
 			rd.forward(request, response);
-		} else if(command.equals("/MarketSelectWriter.do")) {
-			action = new ListMarketAction("writerselect");
+		} else if(command.equals("/FranceMarketListViewAction.do")) {
+			action = new ListReviewAction("francemarket");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("market.jsp?mode=writerselect");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=francemarket");
 			rd.forward(request, response);
-		} else if (command.equals("/ReviewListViewAction.do")) {
-			action = new ListReviewAction("list");
+		} else if(command.equals("/FranceTogetherListViewAction.do")) {
+			action = new ListReviewAction("francetogether");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("review.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=francetogether");
 			rd.forward(request, response);
-		} else if(command.equals("/ReviewListByCategory.do")) {
-			action = new ListReviewAction("listbycategory");
+		} 
+		
+		//KOREA
+		else if (command.equals("/KoreaInfoListViewAction.do")) {
+			action = new ListReviewAction("koreainfo");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("review.jsp?mode=category");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=koreainfo");
 			rd.forward(request, response);
-		} else if(command.equals("/ReviewListByCountry.do")) {
-			action = new ListReviewAction("listbycountry");
+		} else if(command.equals("/KoreaMarketListViewAction.do")) {
+			action = new ListReviewAction("koreamarket");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("review.jsp?mode=country");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=koreamarket");
 			rd.forward(request, response);
-		} else if(command.equals("/ReviewSelectTitle.do")) {
+		} else if(command.equals("/KoreaTogetherListViewAction.do")) {
+			action = new ListReviewAction("koreatogether");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=koreatogether");
+			rd.forward(request, response);
+		} 
+		
+		//SWISS
+		else if (command.equals("/SwissInfoListViewAction.do")) {
+			action = new ListReviewAction("Swissinfo");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=swissinfo");
+			rd.forward(request, response);
+		} else if(command.equals("/SwissMarketListViewAction.do")) {
+			action = new ListReviewAction("swissmarket");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=swissmarket");
+			rd.forward(request, response);
+		} else if(command.equals("/SwissTogetherListViewAction.do")) {
+			action = new ListReviewAction("swisstogether");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=swisstogether");
+			rd.forward(request, response);
+		} 
+		
+		//GERMANY
+		else if (command.equals("/GermanyInfoListViewAction.do")) {
+			action = new ListReviewAction("germanyinfo");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=germanyinfo");
+			rd.forward(request, response);
+		} else if(command.equals("/GermanyMarketListViewAction.do")) {
+			action = new ListReviewAction("germanymarket");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=germanymarket");
+			rd.forward(request, response);
+		} else if(command.equals("/GermanyTogetherListViewAction.do")) {
+			action = new ListReviewAction("germanytogether");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=germanytogether");
+			rd.forward(request, response);
+		} 
+		
+		//HUNGARY
+		else if (command.equals("/HungaryInfoListViewAction.do")) {
+			action = new ListReviewAction("hungaryinfo");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=hungaryinfo");
+			rd.forward(request, response);
+		} else if(command.equals("/HungaryMarketListViewAction.do")) {
+			action = new ListReviewAction("hungarymarket");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=hungarymarket");
+			rd.forward(request, response);
+		} else if(command.equals("/HungaryTogetherListViewAction.do")) {
+			action = new ListReviewAction("hungarytogether");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=hungarytogether");
+			rd.forward(request, response);
+		} 
+		
+		//CZECH
+		else if (command.equals("/CzechInfoListViewAction.do")) {
+			action = new ListReviewAction("czechinfo");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=czechinfo");
+			rd.forward(request, response);
+		} else if(command.equals("/CzechMarketListViewAction.do")) {
+			action = new ListReviewAction("czechmarket");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=czechmarket");
+			rd.forward(request, response);
+		} else if(command.equals("/CzechTogetherListViewAction.do")) {
+			action = new ListReviewAction("czechtogether");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=czechtogether");
+			rd.forward(request, response);
+		} 
+		
+		//ITALY
+		else if (command.equals("/ItalyInfoListViewAction.do")) {
+			action = new ListReviewAction("italyinfo");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=italyinfo");
+			rd.forward(request, response);
+		} else if(command.equals("/ItalyMarketListViewAction.do")) {
+			action = new ListReviewAction("italymarket");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=italymarket");
+			rd.forward(request, response);
+		} else if(command.equals("/ItalyTogetherListViewAction.do")) {
+			action = new ListReviewAction("italytogether");
+			action.execute(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=italytogether");
+			rd.forward(request, response);
+		} 
+		
+		
+		//search
+		else if(command.equals("/ReviewSelectTitle.do")) {
 			action = new ListReviewAction("titleselect");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("review.jsp?mode=titleselect");
@@ -138,78 +228,18 @@ public class EuropeController extends HttpServlet {
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("news.jsp?mode=writerselect");
 			rd.forward(request, response);
-		} else if (command.equals("/TipListViewAction.do")) {
-			action = new ListTipAction("list");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("tip.jsp");
-			rd.forward(request, response);
-		} else if(command.equals("/TipListByCategory.do")) {
-			action = new ListTipAction("listbycategory");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("tip.jsp?mode=category");
-			rd.forward(request, response);
-		} else if(command.equals("/TipListByCountry.do")) {
-			action = new ListTipAction("listbycountry");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("tip.jsp?mode=country");
-			rd.forward(request, response);
-		} else if(command.equals("/TipSelectTitle.do")) {
-			action = new ListTipAction("titleselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("tip.jsp?mode=titleselect");
-			rd.forward(request, response);
-		} else if(command.equals("/TipSelectWriter.do")) {
-			action = new ListTipAction("writerselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("tip.jsp?mode=writerselect");
-			rd.forward(request, response);
-		}  else if (command.equals("/TogetherListViewAction.do")) {
-			action = new ListTogetherAction("list");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("together.jsp");
-			rd.forward(request, response);
-		} else if(command.equals("/TogetherListByCountry.do")) {
-			action = new ListTogetherAction("listbycountry");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("together.jsp?mode=country");
-			rd.forward(request, response);
-		} else if(command.equals("/TogetherSelectTitle.do")) {
-			action = new ListTogetherAction("titleselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("together.jsp?mode=titleselect");
-			rd.forward(request, response);
-		} else if(command.equals("/TogetherSelectWriter.do")) {
-			action = new ListTogetherAction("writerselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("together.jsp?mode=writerselect");
-			rd.forward(request, response);
 		}
 		
 		//Find
-		else if (command.equals("/MarketDetailViewAction.do")) {
-			action = new FindMarketAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("MarketdetailView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/ReviewDetailViewAction.do")) {
+		else if (command.equals("/DetailViewAction.do")) {
 			action = new FindReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("ReviewdetailView.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("DetailView.jsp");
 			rd.forward(request, response);
 		} else if (command.equals("/NewsDetailViewAction.do")) {
 			action = new FindNewsAction();
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("NewsdetailView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/TipDetailViewAction.do")) {
-			action = new FindTipAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("TipdetailView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/TogetherDetailViewAction.do")) {
-			action = new FindTogetherAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("TogetherdetailView.jsp");
 			rd.forward(request, response);
 		} else if (command.equals("/MemberDetailViewAction.do")) {
 			action = new FindMemberAction("select");
@@ -226,30 +256,15 @@ public class EuropeController extends HttpServlet {
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("findpw.jsp");
 			rd.forward(request, response);
-		}  else if (command.equals("/MarketEditViewAction.do")) {
-			action = new FindMarketAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("MarketeditView.jsp");
-			rd.forward(request, response);
 		} else if (command.equals("/NewsEditViewAction.do")) {
 			action = new FindNewsAction();
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("NewseditView.jsp");
 			rd.forward(request, response);
-		} else if (command.equals("/ReviewEditViewAction.do")) {
+		} else if (command.equals("/EditViewAction.do")) {
 			action = new FindReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("RevieweditView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/TipEditViewAction.do")) {
-			action = new FindTipAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("TipeditView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/TogetherEditViewAction.do")) {
-			action = new FindMarketAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("TogethereditView.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("EditView.jsp");
 			rd.forward(request, response);
 		} else if (command.equals("/MemberEditViewAction.do")) {
 			action = new FindMemberAction("select");
@@ -259,85 +274,32 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//Add
-		else if (command.equals("/MarketAddviewAction.do")) {
-			RequestDispatcher rd = request.getRequestDispatcher("marketwrite.jsp");
+		else if (command.equals("/AddviewAction.do")) {
+			RequestDispatcher rd = request.getRequestDispatcher("Write.jsp");
 			rd.forward(request, response);
-		} else if (command.equals("/ReviewAddviewAction.do")) {
-			RequestDispatcher rd = request.getRequestDispatcher("reviewwrite.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/TipAddviewAction.do")) {
-			RequestDispatcher rd = request.getRequestDispatcher("tipwrite.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/TogetherAddviewAction.do")) {
-			RequestDispatcher rd = request.getRequestDispatcher("togetherwrite.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/AddMarketAction.do")) {
-			action = new AddMarketAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/MarketListViewAction.do");
-			rd.forward(request, response);
-		}  else if (command.equals("/AddReviewAction.do")) {
+		}  else if (command.equals("/AddAction.do")) {
 			action = new AddReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/ReviewListViewAction.do");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			rd.forward(request, response);
-		}  else if (command.equals("/AddTipAction.do")) {
-			action = new AddTipAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/TipListViewAction.do");
-			rd.forward(request, response);
-		}  else if (command.equals("/AddTogetherAction.do")) {
-			action = new AddTogetherAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/TogetherListViewAction.do");
-			rd.forward(request, response);
-		} 
+		}
 		
 		//Edit
-		else if (command.equals("/EditMarketAction.do")) {
-			action = new EditMarketAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/MarketListViewAction.do");
-			rd.forward(request, response);
-		} else if (command.equals("/EditReviewAction.do")) {
+		else if (command.equals("/EditAction.do")) {
 			action = new EditReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/ReviewListViewAction.do");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			rd.forward(request, response);
-		} else if (command.equals("/EditTipAction.do")) {
-			action = new EditTipAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/TipListViewAction.do");
-			rd.forward(request, response);
-		} else if (command.equals("/EditTogetherAction.do")) {
-			action = new EditTogetherAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/TogetherListViewAction.do");
-			rd.forward(request, response);
-		} 
+		}
 		
 		//Delete
-		else if (command.equals("/DeleteMarketAction.do")) {
-			action = new DeleteMarketAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/MarketListViewAction.do");
-			rd.forward(request, response);
-		} else if (command.equals("/DeleteReviewAction.do")) {
+		else if (command.equals("/DeleteAction.do")) {
 			action = new DeleteReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/ReviewListViewAction.do");
+			RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
 			rd.forward(request, response);
-		} else if (command.equals("/DeleteTipAction.do")) {
-			action = new DeleteTipAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/TipListViewAction.do");
-			rd.forward(request, response);
-		} else if (command.equals("/DeleteTogetherAction.do")) {
-			action = new DeleteTogetherAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/TogetherListViewAction.do");
-			rd.forward(request, response);
-		} 
+		}
+
 		
 		//Login
 		else if (command.equals("/LoginAction.do")) {
@@ -346,7 +308,7 @@ public class EuropeController extends HttpServlet {
 			HttpSession session = request.getSession(true);
 			int member = (int)session.getAttribute("member");
 			if (member == 1) {
-				RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 				rd.forward(request, response);
 			} else {
 				RequestDispatcher rd = request.getRequestDispatcher("loginfail.jsp");
@@ -355,12 +317,12 @@ public class EuropeController extends HttpServlet {
 		} else if (command.equals("/LogoutAction.do")) {
 			action = new LoginAction("logout");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			rd.forward(request, response);
 		} else if (command.equals("/JoinMemberAction.do")) {
 			action = new AddMemberAction("join");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			rd.forward(request, response);
 		}
 	}
