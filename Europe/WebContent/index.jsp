@@ -81,7 +81,7 @@
                                                 <div class="separator"></div>
                                                 <p>1조 박지원 배정원 이승미</p>
                                                 <div class="home_btn">
-                                                    <a href="" class="btn btn-default">START</a>
+                                                    <a href="main.jsp" class="btn btn-default">START</a>
                                                 </div>
                                             </div>
                                         </div>
