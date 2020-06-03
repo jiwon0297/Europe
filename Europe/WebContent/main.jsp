@@ -38,8 +38,9 @@
         <div class="culmn">
         
         <jsp:include page="header.jsp" />
-        <jsp:include page="country.jsp" />
-		<jsp:include page="recommend.jsp" />
+        <jsp:include page="recommend.jsp"/>
+		<jsp:include page="country2.jsp" />
+		
 		
         </div>
         <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>

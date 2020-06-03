@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Bino html5 free Template</title>
+        <title>Header</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -33,11 +33,7 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<style>
-div{
-	background-color : lightslategray;
-}
-</style>
+
 <body>
 <%
 String userID = (String)session.getAttribute("userID");

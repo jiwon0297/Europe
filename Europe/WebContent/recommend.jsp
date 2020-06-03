@@ -3,105 +3,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="utf-8">
+<title>Recommend</title>
 </head>
-<body style="background-color:lightslategray">
+<body data-spy="scroll" data-target=".navbar-collapse">
+		 <!-- Counter Section --> 
+            <section id="counter" class="counter">
+                <div class="video_overlay">
+                    <div class="container">
+                        <div class="row">  
+                            <div class="col-sm-12">               
+                                <div class="main_counter_area text-center">
 
-<section id="contact" class="contact" style="background-color:lightslategray">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="contact_contant sections">
-                                <div class="head_title text-center">
-                                    <h2>kEEP IN TOUCH</h2>
-                                    <div class="subtitle">
-                                        Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.  
-                                    </div>
-                                    <div class="separator"></div>
-                                </div><!-- End off Head_title -->
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="main_contact_info">
-                                            <div class="row">
-                                                <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
-                                                    <div class="col-sm-12">
-                                                        <div class="single_contact_info">
-                                                            <div class="single_info_text">
-                                                                <h3>OUR ADDRESS</h3>
-                                                                <h4>House #13, Streat road, Sydney 
-                                                                    2310 Australia</h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="single_contact_info">
-                                                            <div class="single_info_text">
-                                                                <h3>CALL US</h3>
-                                                                <h4>+ 880 168 109 1425</h4>
-                                                                <h4>+ 0216809142</h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="single_contact_info">
-                                                            <div class="single_info_text">
-                                                                <h3>EMAIL US</h3>
-                                                                <h4>contactus@email.com</h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                    <div class="row">
+                                        <div class="single_counter border_right">
+                                            <div class="col-sm-3 col-xs-12">
+                                                <div class="single_counter_item">
+                                                    <i class="icon icon-thumbs-up"></i>
+                                                    <a href="accommodation.jsp"><h4 class="">Accommodation</h4></a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
 
-                                    <div class="col-sm-6">
-                                        <div class="single_contant_left padding-top-90 padding-bottom-90">
-                                            <form action="#" id="formid">
-                                                <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+                                        <div class="single_counter">
+                                            <div class="col-sm-3 col-xs-12">
+                                                <div class="single_counter_item">
+                                                    <i class="icon icon-business-3"></i>
+                                                    <a href="flight.jsp"><h4 class="">Flight</h4>  </a>
+                                                </div>
+                                            </div>
+                                        </div> 
 
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="name" placeholder="First Name" required="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="single_counter">
+                                            <div class="col-sm-3 col-xs-12">
+                                                <div class="single_counter_item">
+                                                    <i class="icon icon-people-32"></i>
+                                                    <a href="tour.jsp"><h4 class="">Tour</h4></a>
+                                                </div>
 
+                                            </div>
+                                        </div>
 
-                                                    <div class="row">
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-12">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="single_counter">
+                                            <div class="col-sm-3 col-xs-12">
+                                                <div class="single_counter_item">
+                                                    <i class="icon icon-cup"></i>
+                                                    <a href="preparaiton.jsp"><h4 class="">Preparation</h4></a>
 
-
-                                                    <div class="form-group">
-                                                        <textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
-                                                    </div>
-
-                                                    <div class="">
-                                                        <input type="submit" value="SEND MESSAGE" class="btn btn-lg">
-                                                    </div>
-                                                </div> 
-                                            </form>
+                                                </div>
+                                            </div> 
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section><!-- End of contact section -->
+                </div><!-- End off container --> 
+            </section>   <!-- End of counter section -->
 
+
+
+		
 </body>
 </html>
