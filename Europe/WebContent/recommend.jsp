@@ -48,7 +48,7 @@
                                             <div class="col-sm-3 col-xs-12">
                                                 <div class="single_counter_item">
                                                     <i class="icon icon-cup"></i>
-                                                    <a href="preparaiton.jsp"><h4 class="">Preparation</h4></a>
+                                                    <a href="preparation.jsp"><h4 class="">Preparation</h4></a>
 
                                                 </div>
                                             </div> 
