@@ -41,7 +41,7 @@ String userPW = (String)session.getAttribute("userPW");
 <div class="work_menu text-center">
 	<div id="filters" class="toolbar mb2 mt2">
 		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="font-size : 15pt;">HOME</button>
-		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="font-size : 15pt;">MENU</button>
+		<button class="btn-md fil-cat filter" onclick="location='main.jsp'" style="font-size : 15pt;">MENU</button>
 		<% if(userID == null && userPW == null) { %>
 		<button class="btn-md fil-cat filter" onclick="location='login.jsp'" style="font-size : 15pt; color:orangered">LOGIN/JOIN</button>
 		<%} else { %>
