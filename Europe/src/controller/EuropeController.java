@@ -113,7 +113,7 @@ public class EuropeController extends HttpServlet {
 		
 		//SWISS
 		else if (command.equals("/SwissInfoListViewAction.do")) {
-			action = new ListReviewAction("Swissinfo");
+			action = new ListReviewAction("swissinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=swissinfo");
 			rd.forward(request, response);

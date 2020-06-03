@@ -34,7 +34,8 @@
 	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-
+<jsp:include page="header.jsp" />
+<jsp:include page="recommend.jsp"/>
 <!-- Blog Section -->
             <section id="blog" class="blog">
                 <div class="container-fluid">
@@ -54,7 +55,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/klook.JPG" alt="" />
+                                                    <img src="resources/assets/images/klook.png" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
@@ -76,7 +77,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/getyourguide.JPG" alt="" />
+                                                    <img src="resources/assets/images/getyourguide.png" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
@@ -97,7 +98,7 @@
 
                                             <div class="col-sm-6 col-sm-push-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/myrealtrip.JPG" alt="" />
+                                                    <img src="resources/assets/images/myrealtrip.jpg" alt="" />
                                                 </div>
                                             </div>
 
@@ -120,7 +121,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-sm-push-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/onlinetour.JPG" alt="" />
+                                                    <img src="resources/assets/images/onlinetour.jpg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">

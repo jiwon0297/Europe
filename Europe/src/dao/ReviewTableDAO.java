@@ -145,7 +145,7 @@ public class ReviewTableDAO {
 			String sql = "select * from review where cate1=?, country=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, category);
-			pstmt.setString(2, country);
+			// pstmt.setString(2, country);
 			rs = pstmt.executeQuery();
 			List<ReviewElementBean> rList = new ArrayList<>();
 			while (rs.next()) {
