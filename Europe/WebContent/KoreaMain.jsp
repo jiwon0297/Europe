@@ -42,9 +42,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">Italy</h5>
-                                        <h2 style="color:black; font-size:25pt">Italy</h2>
-                                        <p style="color:gray; font-size:14pt">Italy Detail
+                                        <h5 style="font-size:14pt">Korea</h5>
+                                        <h2 style="color:black; font-size:25pt">Korea</h2>
+                                        <p style="color:gray; font-size:14pt">Korea Detail
                                         </p>
                                         <a href="#" class="btn_1">Plan Details</a>
                                     </div>
@@ -55,9 +55,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">Italy</h5>
-                                        <h2 style="color:black; font-size:25pt">Italy</h2>
-                                        <p style="color:gray; font-size:14pt">Italy Detail
+                                        <h5 style="font-size:14pt">Korea</h5>
+                                        <h2 style="color:black; font-size:25pt">Korea</h2>
+                                        <p style="color:gray; font-size:14pt">Korea Detail
                                         </p>
                                         <a href="#" class="btn_1">Plan Details</a>
                                     </div>
@@ -68,9 +68,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">Italy</h5>
-                                        <h2 style="color:black; font-size:25pt">Italy</h2>
-                                        <p style="color:gray; font-size:14pt">Italy Detail
+                                        <h5 style="font-size:14pt">Korea</h5>
+                                        <h2 style="color:black; font-size:25pt">Korea</h2>
+                                        <p style="color:gray; font-size:14pt">Korea Detail
                                         </p>
                                         <a href="#" class="btn_1">Plan Details</a>
                                     </div>
@@ -92,7 +92,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6">
                     <div class="section_tittle text-center">
-                        <h2 style="font-size:50pt; margin-top:-80px; color:#810102">Italy</h2>
+                        <h2 style="font-size:50pt; margin-top:-80px; color:#810102">Korea</h2>
                     </div>
                 </div>
             </div>
