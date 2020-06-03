@@ -13,41 +13,38 @@ h2{
 
 </style>
 </head>
-<body style="background-color:lightslategray">
 <br><br>
 <!-- Client Logo Section -->
-            <section style="background-color:lightslategray" id="clogo" class="clogo">
-                <div class="container">
+                <div class="container" >
                     <div class="row">
                         <div class="main_clogo sections text-center">
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="KoreaMain.jsp" style="background-color:ivory"><h2>KOREA</h2></a>
+                                <a href="KoreaMain.jsp" style="color:gray;"><h2>KOREA</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="EnglandMain.jsp" style="background-color:ivory"><h2>ENGLAND</h2></a>
+                                <a href="EnglandMain.jsp" style="color:gray;"><h2>ENGLAND</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="FranceMain.jsp" style="background-color:ivory"><h2>FRANCE</h2></a>
+                                <a href="FranceMain.jsp" style="color:gray;"><h2>FRANCE</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6">
-                                <a href="SwissMain.jsp" style="background-color:ivory"><h2>SWISS</h2></a>
+                                <a href="SwissMain.jsp" style="color:gray;"><h2>SWISS</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="ItalyMain.jsp" style="background-color:ivory"><h2>ITALY</h2></a>
+                                <a href="ItalyMain.jsp" style="color:gray;"><h2>ITALY</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6">
-                                <a href="GermanyMain.jsp" style="background-color:ivory"><h2>GERMANY</h2></a>
+                                <a href="GermanyMain.jsp" style="color:gray;"><h2>GERMANY</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6"> 
-                                <a href="CzechMain.jsp" style="background-color:ivory"><h2>CZECH</h2></a>
+                                <a href="CzechMain.jsp" style="color:gray;"><h2>CZECH</h2></a>
                             </div>
                             <div class="col-sm-3 col-xs-6">
-                                <a href="HungaryMain.jsp" style="background-color:ivory"><h2>HUNGARY</h2></a>
+                                <a href="HungaryMain.jsp" style="color:gray;"><h2>HUNGARY</h2></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="divider"></div>
-            </section><!-- End off clogo Section -->
 </body>
 </html>

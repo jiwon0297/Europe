@@ -1,107 +1,162 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-        <style>
-        section {
-        	background-color : lightslategray;
-        	margin-top : -4%;
-        }
-        </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Martine</title>
+    <link rel="icon" href="marine/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="marine/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="marine/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="marine/css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="marine/css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="marine/css/flaticon.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="marine/fontawesome/css/all.min.css">
+    <!-- magnific CSS -->
+    <link rel="stylesheet" href="marine/css/magnific-popup.css">
+    <link rel="stylesheet" href="marine/css/gijgo.min.css">
+    <!-- niceselect CSS -->
+    <link rel="stylesheet" href="marine/css/nice-select.css">
+    <!-- slick CSS -->
+    <link rel="stylesheet" href="marine/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="marine/css/style.css">
 </head>
+
 <body>
-        <!-- START SCROLL TO TOP  -->
-        <div class="scrollup">
-            <a href="#"><i class="fa fa-chevron-up"></i></a>
-        </div>
 
-        <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
-
-        <script src="resources/assets/js/jquery.magnific-popup.js"></script>
-        <script src="resources/assets/js/jquery.mixitup.min.js"></script>
-        <script src="resources/assets/js/jquery.easing.1.3.js"></script>
-        <script src="resources/assets/js/jquery.masonry.min.js"></script>
-
-        <!--slick slide js -->
-        <script src="resources/assets/css/slick/slick.js"></script>
-        <script src="resources/assets/css/slick/slick.min.js"></script>
-
-
-        <script src="resources/assets/js/plugins.js"></script>
-        <script src="resources/assets/js/main.js"></script>
-<jsp:include page="header.jsp"/>
-<section id="portfolio" class="portfolio sections">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_portfolio">
-                            <div class="col-sm-12">
-                                <div class="head_title text-center">
-                                    <a href="EnglandMain.jsp" style="color:white;"><h2>England</h2></a>
-                                    <div class="subtitle" style="color:white;">
-                                        Choose the category what you want.
+    <!--top place start-->
+    <section class="event_part section_padding" style="background-image: url('marine/img/towerbridge.jpg'); background-size:cover; height:560px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="event_slider owl-carousel">
+                        <div class="single_event_slider">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="event_slider_content" style="opacity:0.9; background-color:lightgray">
+                                        <h5>United Kingdom</h5>
+                                        <h2>United Kingdom</h2>
+                                        <p>United Kingdom Detail
+                                        </p>
+                                        <a href="#" class="btn_1">Plan Details</a>
                                     </div>
-                                    <div class="separator"></div>
-                                    <div><img src="resources/assets/images/england.PNG" style="width:800px; height:500px"></div>
                                 </div>
                             </div>
-                            </div>
-
-                            <div style="clear:both;"></div>  
                         </div>
-                    </div>
-                    
-                    <div class="container" style="position: relative; left:145px">
-                    <div class="row">
-                        <div class="main_feature text-center">
-						<a href="EnglandInfoListViewAction.do" style="color:white">
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-clone"></i>
+                        <div class="single_event_slider">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="event_slider_content" style="opacity:0.9; background-color:lightgray">
+                                        <h5>United Kingdom</h5>
+                                        <h2>United Kingdom</h2>
+                                        <p>United Kingdom Detail
+                                        </p>
+                                        <a href="#" class="btn_1">Plan Details</a>
                                     </div>
-                                    <h4>TRAVEL INFORMATION</h4>
-                                    <div class="separator3"></div>
-                                    <p>You can share your experience and you can get the information, too</p>
                                 </div>
                             </div>
-                            </a>
-                            
-                            <a href="EnglandMarketListViewAction.do" style="color:white">
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-heart-o"></i>
+                        </div>
+                        <div class="single_event_slider">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="event_slider_content" style="opacity:0.9; background-color:lightgray">
+                                        <h5>United Kingdom</h5>
+                                        <h2>United Kingdom</h2>
+                                        <p>United Kingdom Detail
+                                        </p>
+                                        <a href="#" class="btn_1">Plan Details</a>
                                     </div>
-
-                                    <h4>MARKET</h4>
-                                    <div class="separator3"></div>
-                                    <p>You can exchange your USIM, money etc. you can buy or sell, too.</p>
                                 </div>
                             </div>
-                            </a>
-                            
-                            <a href="EnglandTogethersListViewAction.do" style="color:white;">
-                            <div class="col-sm-3">
-                                <div class="single_feature">
-                                    <div class="single_feature_icon">
-                                        <i class="fa fa-lightbulb-o"></i>
-                                    </div>
-                                    <h4>TOGETHER</h4>
-                                    <div class="separator3"></div>
-                                    <p>You can find the travler to trip together.</p>
-                                </div>
-                            </div>
-                            </a>
-
                         </div>
                     </div>
                 </div>
-            </section> <!-- End off Work Section -->   
-            
-<jsp:include page="country.jsp"/>
+            </div>
+        </div>
+    </section>
+    <!--top place end-->
+    <div style="background-color:whitesmoke;">
+    	<jsp:include page="header.jsp"/>
+    </div>
+    <!--::industries start::-->
+    <section class="hotel_list section_padding" style="background-color:whitesmoke;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="section_tittle text-center">
+                        <h2 style="font-size:50pt; margin-top:-80px">United Kingdom</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="EnglandInfoListViewAction.do"><img src="marine/img/information.jpg" alt=""></a>
+                        <div class="hotel_text_iner">
+                            <h3 style="font-size:23pt;"><a href="EnglandInfoListViewAction.do"> Travel Information</a></h3>
+                            <p style="font-size:13pt;">You can share your experience and you can get the information, too</p><br>
+							<a href="EnglandInfoListViewAction.do"><h5 style="text-align:right; font-size:13pt;"><span>>> Detail</span></h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="EnglandMarketListViewAction.do"><img src="marine/img/market.jpg" alt=""></a>
+                        <div class="hotel_text_iner">
+                            <h3 style="font-size:23pt;"><a href="EnglandMarketListViewAction.do"> Market</a></h3>
+                            <p style="font-size:13pt;">You can exchange your USIM, money etc. you can buy or sell, too.</p><br>
+							<a href="EnglandMarketListViewAction.do"><h5 style="text-align:right; font-size:13pt;"><span>>> Detail</span></h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_ihotel_list">
+                        <a href="EnglandTogetherListViewAction.do"><img src="marine/img/together.jpg" alt=""></a>
+                        <div class="hotel_text_iner">
+                            <h3 style="font-size:23pt;"><a href="EnglandTogetherListViewAction.do"> Together</a></h3>
+                            <p style="font-size:13pt;">You can find the traveler. And you can trip and eat with them.</p><br>
+							<a href="EnglandTogetherListViewAction.do"><h5 style="text-align:right; font-size:13pt;"><span>>> Detail</span></h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div style="position: relative; left:95px"><jsp:include page="country.jsp"/></div>
+    </section>
+    <!--::industries end::-->
+
+
+    <!-- jquery plugins here-->
+    <script src="marine/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="marine/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="marine/js/bootstrap.min.js"></script>
+    <!-- magnific js -->
+    <script src="marine/js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="marine/js/owl.carousel.min.js"></script>
+    <!-- masonry js -->
+    <script src="marine/js/masonry.pkgd.js"></script>
+    <!-- masonry js -->
+    <script src="marine/js/jquery.nice-select.min.js"></script>
+    <script src="marine/js/gijgo.min.js"></script>
+    <!-- contact js -->
+    <script src="marine/js/jquery.ajaxchimp.min.js"></script>
+    <script src="marine/js/jquery.form.js"></script>
+    <script src="marine/js/jquery.validate.min.js"></script>
+    <script src="marine/js/mail-script.js"></script>
+    <script src="marine/js/contact.js"></script>
+    <!-- custom js -->
+    <script src="marine/js/custom.js"></script>
 </body>
+
 </html>

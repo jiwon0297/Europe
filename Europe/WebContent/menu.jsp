@@ -30,5 +30,18 @@
   </div>
 </nav>
 
+<div class="work_menu text-center">
+                                <div id="filters" class="toolbar mb2 mt2">
+                                    <button class="btn-md fil-cat filter active" data-filter="all">ALL</button>/
+                                    <button class="btn-md fil-cat filter" data-rel="web" data-filter=".web">WEB DESIGN</button>/
+                                    <button class="btn-md fil-cat filter" data-rel="design" data-filter=".design">PRINT DESIGN</button>/
+                                    <button class="btn-md fil-cat filter" data-rel="flyers" data-filter=".flyers">ANIMATION</button>/
+                                    <button class="btn-md fil-cat filter" data-rel="bcards" data-filter=".bcards">ART</button>/
+                                    <button class="btn-md fil-cat filter" data-rel="photo" data-filter=".photo">PHOTOGRAPHY</button>/
+                                    <button class="btn-md fil-cat filter" data-rel="video" data-filter=".video">VIDEO</button>
+                                </div> 
+
+                            </div>
+
 </body>
 </html>

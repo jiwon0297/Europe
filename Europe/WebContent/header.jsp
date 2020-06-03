@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Header</title>
+        <title>Bino html5 free Template</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -33,22 +33,21 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-
 <body>
 <%
 String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
 %>
-<div class="work_menu text-center" style="text-align:right">
+<div class="work_menu text-center">
 	<div id="filters" class="toolbar mb2 mt2">
-		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="color:white;">HOME</button>
-		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="color:white;">MENU</button>
+		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="font-size : 15pt;">HOME</button>
+		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="font-size : 15pt;">MENU</button>
 		<% if(userID == null && userPW == null) { %>
-		<button class="btn-md fil-cat filter" onclick="location='login.jsp'" style="color:white;">LOGIN/JOIN</button>
+		<button class="btn-md fil-cat filter" onclick="location='login.jsp'" style="font-size : 15pt; color:orangered">LOGIN/JOIN</button>
 		<%} else { %>
-		<button class="btn-md fil-cat filter" onclick="location='LogoutAction.do'" style="color:white;">LOGOUT</button>
+		<button class="btn-md fil-cat filter" onclick="location='LogoutAction.do'" style="font-size : 15pt; color:orangered">LOGOUT</button>
 		<%}%>
-		<button class="btn-md fil-cat filter" onclick="location='myinfo.jsp'" style="color:white;">MYPAGE</button>
+		<button class="btn-md fil-cat filter" onclick="location='myinfo.jsp'" style="font-size : 15pt;">MYPAGE</button>
 	</div> 
 </div>
 </body>
