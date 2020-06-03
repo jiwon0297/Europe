@@ -35,6 +35,114 @@
 </head>
 <body>
 
+ <!-- Blog Section -->
+            <section id="blog" class="blog">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="main_blog sections">
+                            <div class="head_title text-center">
+                                <h2>Flight</h2>
+                                <div class="subtitle">
+                                    	항공 사이트 추천 
+                                </div>
+                                <div class="separator"></div>
+                            </div><!-- End off Head_title -->
+
+                            <div class="main_blog_content">
+                                <div class="col-sm-6">
+                                    <div class="single_blog_area textwhite">
+                                        <div class="row">
+                                            <div class="col-sm-6 no-padding">
+                                                <div class="single_blog_img">
+                                                    <img src="resources/assets/images/skyscanner.JPG" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 no-padding">
+                                                <div class="single_blog_text s_b_left">
+                                                    <h3>SKY SCANNER</h3>
+                                                    <div class="separator2"></div>
+                                                    <p>얼리버드, 땡처리, 특가 항공권 최저가 가격비교 예매.</p>
+
+                                                    <a href="https://www.skyscanner.co.kr/" class="read_more">GO >></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="single_blog_area textwhite">
+                                        <div class="row">
+                                            <div class="col-sm-6 no-padding">
+                                                <div class="single_blog_img">
+                                                    <img src="resources/assets/images/kayak.JPG" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 no-padding">
+                                                <div class="single_blog_text s_b_left">
+                                                    <h3>KAYAK.COM</h3>
+                                                    <div class="separator2"></div>
+                                                    <p>최저가 항공권을 다양한 항공사와 조합하여 대략적인 최저가 가격을 파악하고 실제로 구매하기 좋음.</p>
+
+                                                    <a href="https://www.kayak.co.kr" class="read_more">GO >></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="single_blog_area textwhite">
+                                        <div class="row">
+
+                                            <div class="col-sm-6 col-sm-push-6 no-padding">
+                                                <div class="single_blog_img">
+                                                    <img src="resources/assets/images/expedia.JPG" alt="" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 col-sm-pull-6 no-padding">
+                                                <div class="single_blog_text s_b_right">
+                                                    <h3>EXPEDIA</h3>
+                                                    <div class="separator2"></div>
+                                                    <p>마이크로소프트에서 독립한 전세계 24개국에 공식 웹사이트를 보유한 세계 최대 온라인 여행사. </p>
+
+                                                    <a href="https://www.expedia.co.kr" class="read_more">GO >></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="single_blog_area textwhite">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-sm-push-6 no-padding">
+                                                <div class="single_blog_img">
+                                                    <img src="resources/assets/images/whypaymore.JPG" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-sm-pull-6 no-padding">
+                                                <div class="single_blog_text s_b_right">
+                                                    <h3>WHYPAYMORE</h3>
+                                                    <div class="separator2"></div>
+                                                    <p>국내 최초 독자기술로 항공 예약 엔진을 개발하여 온라인 항공과 여행 서비스를 제공하는 온라인 여행기업.</p>
+
+                                                    <a href="https://www.whypaymore.co.kr" class="read_more">GO >></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div><!-- End off container -->
+            </section><!-- End off Blog Section -->
+
 
 		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
