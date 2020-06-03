@@ -68,32 +68,32 @@ public class ListReviewAction implements Action {
 			else if(mode.contentEquals("koreainfo")) {
 				country = "korea";
 				category = "information";
-				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
+				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category,country);
 				request.setAttribute("rList", rList);
-			} else if(mode.contentEquals("koreamarket")) {
+			} else if(mode.contentEquals("Koreamarket")) {
 				country = "korea";
 				category = "market";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
 				request.setAttribute("rList", rList);				
-			} else if(mode.contentEquals("koreatogether")) {
-				country = "korea";
+			} else if(mode.contentEquals("Koreatogether")) {
+				country = "Korea";
 				category = "together";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
 				request.setAttribute("rList", rList);
 			} 
 			
 			//hungary
-			else if(mode.contentEquals("hungaryinfo")) {
+			else if(mode.contentEquals("Hungaryinfo")) {
 				country = "hungary";
 				category = "information";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
 				request.setAttribute("rList", rList);
-			} else if(mode.contentEquals("hungarymarket")) {
+			} else if(mode.contentEquals("Hungarymarket")) {
 				country = "hungary";
 				category = "market";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
 				request.setAttribute("rList", rList);				
-			} else if(mode.contentEquals("hungarytogether")) {
+			} else if(mode.contentEquals("Hungarytogether")) {
 				country = "hungary";
 				category = "together";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);

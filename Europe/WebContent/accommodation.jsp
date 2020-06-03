@@ -77,7 +77,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/agoda.jpg" alt="" />
+                                                    <img src="resources/assets/images/agoda.png" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
@@ -98,7 +98,7 @@
 
                                             <div class="col-sm-6 col-sm-push-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/hotel.jpg" alt="" />
+                                                    <img src="resources/assets/images/hotels.jpg" alt="" />
                                                 </div>
                                             </div>
 
