@@ -34,7 +34,8 @@
 	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-
+<jsp:include page="header.jsp" />
+<jsp:include page="recommend.jsp"/>
  <!-- Blog Section -->
             <section id="blog" class="blog">
                 <div class="container-fluid">

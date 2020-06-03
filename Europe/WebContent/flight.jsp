@@ -34,7 +34,8 @@
 	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body>
-
+<jsp:include page="header.jsp" />
+<jsp:include page="recommend.jsp"/>
  <!-- Blog Section -->
             <section id="blog" class="blog">
                 <div class="container-fluid">
@@ -54,7 +55,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/skyscanner.JPG" alt="" />
+                                                    <img src="resources/assets/images/skyscanner.jpg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
@@ -75,7 +76,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/kayak.JPG" alt="" />
+                                                    <img src="resources/assets/images/kayak.png" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
@@ -96,7 +97,7 @@
 
                                             <div class="col-sm-6 col-sm-push-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/expedia.JPG" alt="" />
+                                                    <img src="resources/assets/images/expedia.jpg" alt="" />
                                                 </div>
                                             </div>
 
@@ -119,7 +120,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-sm-push-6 no-padding">
                                                 <div class="single_blog_img">
-                                                    <img src="resources/assets/images/whypaymore.JPG" alt="" />
+                                                    <img src="resources/assets/images/whypaymore.png" alt="" />
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
