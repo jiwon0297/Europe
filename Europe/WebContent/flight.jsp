@@ -126,8 +126,7 @@
                                                 <div class="single_blog_text s_b_right">
                                                     <h3>WHYPAYMORE</h3>
                                                     <div class="separator2"></div>
-                                                    <p>숙박 예약 시 다양한 숙소를 선택할 수 있고, 예약 수수료가 없음.
-                                                    	선예약 후결제가 가능.</p>
+                                                    <p>국내 최초 독자기술로 항공 예약 엔진을 개발하여 온라인 항공과 여행 서비스를 제공하는 온라인 여행기업.</p>
 
                                                     <a href="https://www.whypaymore.co.kr" class="read_more">GO >></a>
                                                 </div>
