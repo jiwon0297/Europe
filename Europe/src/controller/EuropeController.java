@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -279,19 +280,93 @@ public class EuropeController extends HttpServlet {
 			action = new FindMemberAction("select");
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("Write.jsp");
-			rd.forward(request, response);
+			rd.forward(request, response);			
 		}  else if (command.equals("/AddAction.do")) {
 			action = new AddReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
-			rd.forward(request, response);
+			HttpSession session = request.getSession(true);
+			int catee = (int)session.getAttribute("catee");
+			if (catee==1) {
+				RequestDispatcher rd = request.getRequestDispatcher("/EnglandInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if (catee==2) {
+				RequestDispatcher rd = request.getRequestDispatcher("/EnglandMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==3) {
+				RequestDispatcher rd = request.getRequestDispatcher("/EnglandTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==4) {
+				RequestDispatcher rd = request.getRequestDispatcher("/KoreaInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==5) {
+				RequestDispatcher rd = request.getRequestDispatcher("/KoreaMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==6) {
+				RequestDispatcher rd = request.getRequestDispatcher("/KoreaTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==7) {
+				RequestDispatcher rd = request.getRequestDispatcher("/SwissInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==8) {
+				RequestDispatcher rd = request.getRequestDispatcher("/SwissMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==9) {
+				RequestDispatcher rd = request.getRequestDispatcher("/SwissTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==10) {
+				RequestDispatcher rd = request.getRequestDispatcher("/CzechInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==11) {
+				RequestDispatcher rd = request.getRequestDispatcher("/CzechMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==12) {
+				RequestDispatcher rd = request.getRequestDispatcher("/CzechTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==13) {
+				RequestDispatcher rd = request.getRequestDispatcher("/HungaryInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==14) {
+				RequestDispatcher rd = request.getRequestDispatcher("/HungaryMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==15) {
+				RequestDispatcher rd = request.getRequestDispatcher("/HungaryTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==16) {
+				RequestDispatcher rd = request.getRequestDispatcher("/ItalyInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==17) {
+				RequestDispatcher rd = request.getRequestDispatcher("/ItalyMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==18) {
+				RequestDispatcher rd = request.getRequestDispatcher("/ItalyTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==19) {
+				RequestDispatcher rd = request.getRequestDispatcher("/GermanyInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==20) {
+				RequestDispatcher rd = request.getRequestDispatcher("/GermanyMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==21) {
+				RequestDispatcher rd = request.getRequestDispatcher("/GermanyTogetherListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==22) {
+				RequestDispatcher rd = request.getRequestDispatcher("/FranceInfoListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==23) {
+				RequestDispatcher rd = request.getRequestDispatcher("/FranceMarketListViewAction.do");
+				rd.forward(request, response);
+			} else if(catee==24) {
+				RequestDispatcher rd = request.getRequestDispatcher("/FranceTogetherListViewAction.do");
+				rd.forward(request, response);
+			} 
 		}
 		
 		//Edit
 		else if (command.equals("/EditAction.do")) {
+			int number = Integer.parseInt(request.getParameter("number"));
 			action = new EditReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("/DetailViewAction.do?number="+number);
 			rd.forward(request, response);
 		} else if (command.equals("/MemberEditAction.do")) {
 			action = new EditMemberAction();
@@ -304,7 +379,7 @@ public class EuropeController extends HttpServlet {
 		else if (command.equals("/DeleteAction.do")) {
 			action = new DeleteReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/main.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
 			rd.forward(request, response);
 		}
 
@@ -330,7 +405,7 @@ public class EuropeController extends HttpServlet {
 		} else if (command.equals("/JoinMemberAction.do")) {
 			action = new AddMemberAction("join");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 			rd.forward(request, response);
 		}
 	}

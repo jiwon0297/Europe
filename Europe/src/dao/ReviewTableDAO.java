@@ -207,4 +207,73 @@ public class ReviewTableDAO {
 			}
 		}
 	}
+	
+	public int cate(Connection conn, String category, String country) throws SQLException {
+				if(category.equals("information") && country.equals("england")) {
+					return 1;
+				} else if(category.equals("market") && country.equals("england")) {
+					return 2;
+				} else if(category.equals("together") && country.equals("england")) {
+					return 3;
+				} 
+				
+				else if(category.equals("information") && country.equals("korea")) {
+					return 4;
+				} else if(category.equals("market") && country.equals("korea")) {
+					return 5;
+				} else if(category.equals("together") && country.equals("korea")) {
+					return 6;
+				}
+				
+				else if(category.equals("information") && country.equals("swiss")) {
+					return 7;
+				} else if(category.equals("market") && country.equals("swiss")) {
+					return 8;
+				} else if(category.equals("together") && country.equals("swiss")) {
+					return 9;
+				}
+				
+				else if(category.equals("information") && country.equals("czech")) {
+					return 10;
+				} else if(category.equals("market") && country.equals("czech")) {
+					return 11;
+				} else if(category.equals("together") && country.equals("czech")) {
+					return 12;
+				}
+				
+				else if(category.equals("information") && country.equals("hungary")) {
+					return 13;
+				} else if(category.equals("market") && country.equals("hungary")) {
+					return 14;
+				} else if(category.equals("together") && country.equals("hungary")) {
+					return 15;
+				}
+				
+				else if(category.equals("information") && country.equals("italy")) {
+					return 16;
+				} else if(category.equals("market") && country.equals("italy")) {
+					return 17;
+				} else if(category.equals("together") && country.equals("italy")) {
+					return 18;
+				}
+				
+				else if(category.equals("information") && country.equals("germany")) {
+					return 19;
+				} else if(category.equals("market") && country.equals("germany")) {
+					return 20;
+				} else if(category.equals("together") && country.equals("germany")) {
+					return 21;
+				}
+				
+				else if(category.equals("information") && country.equals("france")) {
+					return 22;
+				} else if(category.equals("market") && country.equals("france")) {
+					return 23;
+				} else if(category.equals("together") && country.equals("france")) {
+					return 24;
+				}
+				
+				return 25;
+				
+	}
 }
