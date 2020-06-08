@@ -61,7 +61,7 @@
       <label for="inputfile" style="position: relative; font-size:15pt; left:130px;">파일첨부</label>
       <div class="col-sm-10" style = "position: relative; left:70px; float:right;">
       <input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp">
-      <small id="fileHelp" class="form-text text-muted">글과 관련된 사진만 첨부하여 주십시오.</small>
+      <small id="fileHelp" class="form-text text-muted" style="color:red">※글과 관련된 사진만 첨부하여 주십시오.※</small>
     </div>
     </div>
     <div class="form-group">
