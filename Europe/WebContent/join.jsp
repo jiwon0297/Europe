@@ -122,6 +122,8 @@ div.button{
 	<input type="reset" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Cancel" onclick="location='main.jsp'">
 	</div>
 </form>
+<br><br><br><br><br>
+
 
  <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>

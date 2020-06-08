@@ -14,7 +14,7 @@ public class ConnectionProvider {
 
 	//  Database credentials
 	private static final String USER = "root";
-	private static final String PASS = "qwer87600";
+	private static final String PASS = "qkrwldnjs97";
 	
 	public static Connection getConnection() throws SQLException {
 		try {
