@@ -276,6 +276,8 @@ public class EuropeController extends HttpServlet {
 		
 		//Add
 		else if (command.equals("/AddviewAction.do")) {
+			action = new FindMemberAction("select");
+			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("Write.jsp");
 			rd.forward(request, response);
 		}  else if (command.equals("/AddAction.do")) {

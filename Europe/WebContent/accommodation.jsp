@@ -59,14 +59,14 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
-                                                <div class="single_blog_text s_b_left">
+                                                <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>AIRBNB</h3>
                                                     <div class="separator2"></div>
                                                     <p>현지 아파트나 주택에서 숙박을 할 수 있으며 
                                                     	특정 도시의 경우 현지인이 제공하는 
                                                     	다양한 현지투어나 로컬컬처를 체험할 수 있는 사이트</p>
 
-                                                    <a href="https://www.airbnb.co.kr" class="read_more">GO >></a>
+                                                    <a href="https://www.airbnb.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,12 +82,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
-                                                <div class="single_blog_text s_b_left">
+                                                <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>AGODA</h3>
                                                     <div class="separator2"></div>
                                                     <p>전 세계 호텔 실시간 예약 사이트</p>
 
-                                                    <a href="https://www.agoda.com" class="read_more">GO >></a>
+                                                    <a href="https://www.agoda.com"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -104,13 +104,13 @@
                                             </div>
 
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                                <div class="single_blog_text s_b_right">
+                                                <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>HOTELS.COM</h3>
                                                     <div class="separator2"></div>
                                                     <p>세계 최대 온라인 숙박 사이트.
                                                     	이벤트나 특전을 자주 제공.</p>
 
-                                                    <a href="https://kr.hotels.com" class="read_more">GO >></a>
+                                                    <a href="https://kr.hotels.com"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
 
@@ -127,13 +127,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                                <div class="single_blog_text s_b_right">
+                                                <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>BOOKING.COM</h3>
                                                     <div class="separator2"></div>
                                                     <p>숙박 예약 시 다양한 숙소를 선택할 수 있고, 예약 수수료가 없음.
                                                     	선예약 후결제가 가능.</p>
 
-                                                    <a href="https://www.booking.com" class="read_more">GO >></a>
+                                                    <a href="https://www.booking.com"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
 
@@ -147,6 +147,7 @@
                     </div>
                 </div><!-- End off container -->
             </section><!-- End off Blog Section -->
+            <br><br><br><br><br>
 
 
 		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>

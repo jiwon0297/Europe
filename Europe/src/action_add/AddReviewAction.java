@@ -17,20 +17,16 @@ public class AddReviewAction implements Action {
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		Connection conn = null;
 		try {
-			HttpSession session = request.getSession(true);
-			int number = Integer.parseInt(request.getParameter("number"));
 			String country = request.getParameter("country");
 			String cate1 = request.getParameter("cate1");
-			String name = (String)session.getAttribute("userID");
+			String name = request.getParameter("name");
 			String title = request.getParameter("title");
 			String detail = request.getParameter("detail");
 
-			ReviewElementBean re = new ReviewElementBean(number, country, cate1, name, title, detail);
-			System.out.println(re);
-			
+
 			conn = ConnectionProvider.getConnection();
 			ReviewTableDAO dao = ReviewTableDAO.getInstance();
-			dao.insert(conn, re);
+			dao.insert(conn, country, cate1, name, title, detail);
 			
 			System.out.println("Success Add ReviewElement");
 		} catch(SQLException e){

@@ -19,16 +19,12 @@ public class EditReviewAction implements Action {
 			int number = Integer.parseInt(request.getParameter("number"));
 			String country = request.getParameter("country");
 			String cate1 = request.getParameter("cate1");
-			String name = request.getParameter("name");
 			String title = request.getParameter("title");
 			String detail = request.getParameter("detail");
-
-			ReviewElementBean re = new ReviewElementBean(number, country, cate1, name, title, detail);
-			System.out.println(re);
 			
 			conn = ConnectionProvider.getConnection();
 			ReviewTableDAO dao = ReviewTableDAO.getInstance();
-			dao.edit(conn, re);
+			dao.edit(conn, number, country, cate1, title, detail);
 			
 			System.out.println("Success Edit ReviewElement");
 		} catch(SQLException e){

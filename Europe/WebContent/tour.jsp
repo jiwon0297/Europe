@@ -59,13 +59,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
-                                                <div class="single_blog_text s_b_left">
+                                                <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>KLOOK</h3>
                                                     <div class="separator2"></div>
                                                     <p>각종 현지 패스, 투어 등을 판매.
                                                     	한국어 서비스 제공(카카오톡 상담 가능).</p>
 
-                                                    <a href="https://www.klook.com/" class="read_more">GO >></a>
+                                                    <a href="https://www.klook.com/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -81,12 +81,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
-                                                <div class="single_blog_text s_b_left">
+                                                <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>GET YOUR GUIDE</h3>
                                                     <div class="separator2"></div>
                                                     <p>다양한 현지투어 서비스 제공.</p>
 
-                                                    <a href="https://www.getyourguide.co.kr/" class="read_more">GO >></a>
+                                                    <a href="https://www.getyourguide.co.kr/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,12 +103,12 @@
                                             </div>
 
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                                <div class="single_blog_text s_b_right">
+                                                <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>MY REAL TRIP</h3>
                                                     <div class="separator2"></div>
                                                     <p>항공권 특가부터 세계명소 입장권, 투어까지 다양하게 여행관련 서비스를 제공. </p>
 
-                                                    <a href="https://www.myrealtrip.com/" class="read_more">GO >></a>
+                                                    <a href="https://www.myrealtrip.com/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
 
@@ -125,12 +125,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                                <div class="single_blog_text s_b_right">
+                                                <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>온라인투어</h3>
                                                     <div class="separator2"></div>
                                                     <p>국내 최대 온라인 여행사 사이트. 항공, 패키지 여행, 자유여행, 호텔예약 등 최저가 비교가 편리.</p>
 
-                                                    <a href="https://www.onlinetour.co.kr/" class="read_more">GO >></a>
+                                                    <a href="https://www.onlinetour.co.kr/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
 
@@ -144,6 +144,7 @@
                     </div>
                 </div><!-- End off container -->
             </section><!-- End off Blog Section -->
+            <br><br><br><br><br>
 
 		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>

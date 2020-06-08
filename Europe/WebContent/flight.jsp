@@ -59,12 +59,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
-                                                <div class="single_blog_text s_b_left">
+                                                <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>SKY SCANNER</h3>
                                                     <div class="separator2"></div>
                                                     <p>얼리버드, 땡처리, 특가 항공권 최저가 가격비교 예매.</p>
 
-                                                    <a href="https://www.skyscanner.co.kr/" class="read_more">GO >></a>
+                                                    <a href="https://www.skyscanner.co.kr/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -80,12 +80,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 no-padding">
-                                                <div class="single_blog_text s_b_left">
+                                                <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>KAYAK.COM</h3>
                                                     <div class="separator2"></div>
                                                     <p>최저가 항공권을 다양한 항공사와 조합하여 대략적인 최저가 가격을 파악하고 실제로 구매하기 좋음.</p>
 
-                                                    <a href="https://www.kayak.co.kr" class="read_more">GO >></a>
+                                                    <a href="https://www.kayak.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,12 +102,12 @@
                                             </div>
 
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                                <div class="single_blog_text s_b_right">
+                                                <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>EXPEDIA</h3>
                                                     <div class="separator2"></div>
                                                     <p>마이크로소프트에서 독립한 전세계 24개국에 공식 웹사이트를 보유한 세계 최대 온라인 여행사. </p>
 
-                                                    <a href="https://www.expedia.co.kr" class="read_more">GO >></a>
+                                                    <a href="https://www.expedia.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
 
@@ -124,12 +124,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
-                                                <div class="single_blog_text s_b_right">
+                                                <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>WHYPAYMORE</h3>
                                                     <div class="separator2"></div>
                                                     <p>국내 최초 독자기술로 항공 예약 엔진을 개발하여 온라인 항공과 여행 서비스를 제공하는 온라인 여행기업.</p>
 
-                                                    <a href="https://www.whypaymore.co.kr" class="read_more">GO >></a>
+                                                    <a href="https://www.whypaymore.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
                                             </div>
 

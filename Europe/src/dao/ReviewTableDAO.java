@@ -6,7 +6,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import dto.MarketElementBean;
 import dto.ReviewElementBean;
 
 public class ReviewTableDAO {
@@ -19,17 +18,16 @@ public class ReviewTableDAO {
 	}
 	
 	// insert
-	public int insert(Connection conn, ReviewElementBean re) throws SQLException {
+	public int insert(Connection conn, String country, String cate1, String name, String title, String detail) throws SQLException {
 		PreparedStatement pstmt = null;
 		try {
-			String sql = "insert into review values (?,?,?,?,?,?)";
+			String sql = "insert into review(country, cate1, name,  title, detail) values (?,?,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, re.getNumber());
-			pstmt.setString(2, re.getCountry());
-			pstmt.setString(3, re.getCate1());
-			pstmt.setString(4, re.getName());
-			pstmt.setString(5, re.getTitle());
-			pstmt.setString(6, re.getDetail());	
+			pstmt.setString(1, country);
+			pstmt.setString(2, cate1);
+			pstmt.setString(3, name);
+			pstmt.setString(4, title);
+			pstmt.setString(5, detail);
 			return pstmt.executeUpdate();
 		} finally {
 			if (pstmt != null) {
@@ -54,18 +52,17 @@ public class ReviewTableDAO {
 	}
 
 	// update
-		public int edit(Connection conn, ReviewElementBean re) throws SQLException {
+		public int edit(Connection conn, int number, String country, String cate1, String title, String detail) throws SQLException {
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			try {
-				String sql = "update review set country=?, cate1=?, name=?, title=?, detail=? where number=?";
+				String sql = "update review set country=?, cate1=?, title=?, detail=? where number=?";
 				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, re.getCountry());
-				pstmt.setString(2, re.getCate1());
-				pstmt.setString(3, re.getName());
-				pstmt.setString(4, re.getTitle());
-				pstmt.setString(5, re.getDetail());
-				pstmt.setInt(6, re.getNumber());
+				pstmt.setString(1, country);
+				pstmt.setString(2, cate1);
+				pstmt.setString(3, title);
+				pstmt.setString(4, detail);
+				pstmt.setInt(5, number);
 				return pstmt.executeUpdate();
 			} finally {
 				if (rs != null) {

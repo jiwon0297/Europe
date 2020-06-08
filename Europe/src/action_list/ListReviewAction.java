@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import jdbc.ConnectionProvider;
 import action.*;
 import dao.ReviewTableDAO;
-import dto.MarketElementBean;
 import dto.ReviewElementBean;
 
 

@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ page import="java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +9,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%
+String userID = (String)session.getAttribute("userID");
+String userPW = (String)session.getAttribute("userPW"); 
+%>
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div class="culmn">
         <jsp:include page="header.jsp" />
@@ -55,20 +61,21 @@
 	</div>
 	<div class="form-group row">
       <label for="title" class="col-sm-2 col-form-label" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">제목</label>
-      <input type="text" class="form-control" id="title" placeholder="제목을 입력해주세요." style="background-color:#fbfbfb; width:700px; position: relative; left:95px;">
+      <input type="text" class="form-control" name="title" placeholder="제목을 입력해주세요." style="background-color:#fbfbfb; width:700px; position: relative; left:95px;">
      </div>
      <div class="form-group">
       <label for="inputfile" style="position: relative; font-size:15pt; left:130px;">파일첨부</label>
-      <div class="col-sm-10" style = "position: relative; left:70px; float:right;">
-      <input type="file" class="form-control-file" id="inputfile" aria-describedby="fileHelp">
+      <div class="col-sm-10" style="position: relative; left:70px; float:right;">
+      <input type="file" class="form-control-file" name="inputfile" aria-describedby="fileHelp">
       <small id="fileHelp" class="form-text text-muted" style="color:red">※글과 관련된 사진만 첨부하여 주십시오.※</small>
     </div>
     </div>
     <div class="form-group">
       <label for="detail" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">내용</label>
       <br>
-      <textarea class="form-control" id="content" rows="15" placeholder="내용을 입력해주세요." style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;"></textarea>
+      <input class="form-control" name="detail" placeholder="내용을 입력해주세요." style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;">
     </div>
+    <input type="hidden" name="name" value="${member.getNickname()}">
 	</fieldset>
 	<div style="position: relative; left:350px;">
 	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="글쓰기">

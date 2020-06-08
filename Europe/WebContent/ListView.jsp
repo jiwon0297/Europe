@@ -36,93 +36,50 @@
     <link rel="stylesheet" href="marine/css/style.css">
 </head>
 <body>
+<%
+String userID = (String)session.getAttribute("userID");
+String userPW = (String)session.getAttribute("userPW"); 
+%>
 <c:forEach var="re" items="${rList}" begin="0" end="0">
  <!--top place start-->
-    <section class="event_part section_padding" style="background-image: url('marine/img/${re.getCountry()}.jpg'); background-size:cover; height:560px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="event_slider owl-carousel">
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3"> 
-                                        <h5 style="font-size:14pt">${re.getCountry()}</h5>
-                                        <h2 style="color:black; font-size:25pt">${re.getCountry()}</h2>
-                                        <p style="color:gray; font-size:14pt">${re.getCountry()} Detail
-                                        </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">${re.getCountry()}</h5>
-                                        <h2 style="color:black; font-size:25pt">${re.getCountry()}</h2>
-                                        <p style="color:gray; font-size:14pt">${re.getCountry()} Detail
-                                        </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_event_slider">
-                            <div class="row justify-content-end">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">${re.getCountry()}</h5>
-                                        <h2 style="color:black; font-size:25pt">${re.getCountry()}</h2>
-                                        <p style="color:gray; font-size:14pt">${re.getCountry()} Detail
-                                        </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--top place end-->
-    <div style="background-color:#e6a76b;">
-       <jsp:include page="header.jsp"/>
-    </div>
-    <!--::industries start::-->
-    <section class="hotel_list section_padding" style="height:5px">
-        <div class="container">
+    <section class="event_part section_padding" style="background-image: url('marine/img/${re.getCountry()}.jpg'); background-size:cover; height:400px;">
+            <div class="container" style="background-color:white; opacity:0.6; margin-top:-20px">
             <div class="row justify-content-center">
                 <div class="col-xl-6"><br><br>
                     <div class="section_tittle text-center" >
-                        <h2 style="font-size:30pt; margin-top:-80px; color:#810102">${re.getCountry()} ${re.getCate1()}</h2>
+                        <h2 style="font-size:40pt; color:black; margin-top:20px">${re.getCountry()} ${re.getCate1()}</h2>
                     </div>
                 </div>
-                <p><a href="AddviewAction.do" class="btn btn-secondary" role="button" style="margin-top:-80px">Add &raquo;</a></p>
             </div>
             </div>
-            </section>
+    </section>
+    <!--top place end-->
+    <div style="background-color:beige;">
+       <jsp:include page="header.jsp"/>
+    </div>
+    <!--::industries start::-->
+   			<% if(userID == null && userPW == null) { %>
+   			<small id="fileHelp" class="form-text text-muted" style="position:relative; float:right; font-size:13pt; right:20px; margin-top:20px; margin-bottom:20px ">※로그인을 해야만 글쓰기가 가능합니다.※</small>
+            <%} else { %>
+            <a href="AddviewAction.do" class="btn btn-default" role="button" style="margin-bottom:20px;position:relative; right:20px; color:white; background-color:#68a5f3; float:right">Add &raquo;</a>
+            <%}%>
+            <table class="table table-hover" style="text-align:center">
+			<tr style="background-color:lightgray">
+				<td style="width:200px; text-align:center; font-size:13pt"><strong>말머리</strong></td>
+				<td style="width:300px; text-align:center; font-size:13pt"><strong>작성자</strong></td>
+				<td style="text-align:center; font-size:13pt"><strong>제목</strong></td>
+			</tr>
+				<c:forEach var="re" items="${rList}">
+				<tr role="button" style="background-color:beige" onclick="location='DetailViewAction.do?number=${re.getNumber()}'">
+					<td style="width:200px; text-align:center; font-size:13pt">[${re.getCountry()}/${re.getCate1()}]</td>
+					<td style="width:300px; text-align:center; font-size:13pt">${re.getName()}</td>
+					<td style="text-align:center; font-size:13pt">${re.getTitle()}</td>
+				</tr>
+				</c:forEach>
+		</table>
        </c:forEach>
-mode : ${mode}
-
-<table class="table table-hover" style="text-align:center">
-	<tr>
-		<td><strong>Title</strong></td>
-		<td><strong>Writer</strong></td>
-	</tr>
-		<c:forEach var="re" items="${rList}">
-		<tr>
-			<td>${re.getTitle()}</td>
-			<td>${re.getName()}</td>
-
-			<td>
-			<p><a href="DetailViewAction.do?number=${re.getNumber()}" class="btn btn-secondary" role="button">Detail &raquo;</a></p>
-			</td>
-		</tr>
-		</c:forEach>
-</table>
+       
+       <br><br><br><br><br>
 <!-- jquery plugins here-->
     <script src="marine/js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
