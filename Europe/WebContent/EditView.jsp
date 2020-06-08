@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<% request.setCharacterEncoding("euc-kr"); %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -14,6 +13,7 @@
 	}
 </script>
 <body>
+<% request.setCharacterEncoding("utf-8"); %>
 <%
 String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 

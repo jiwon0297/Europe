@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<% request.setCharacterEncoding("euc-kr"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,6 +37,7 @@ div.button{
 </script>
 </head>
 <body>
+<% request.setCharacterEncoding("utf-8"); %>
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div class="culmn">
         <jsp:include page="header.jsp" />

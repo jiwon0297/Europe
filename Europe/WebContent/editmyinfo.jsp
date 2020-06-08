@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<% request.setCharacterEncoding("euc-kr"); %>
 <%@ page import="java.util.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -17,8 +16,13 @@
 		}
 		return true;
 	}
+	
+	function cancel(){
+		window.history.back(); 
+	}
 </script>
 <body>
+<% request.setCharacterEncoding("utf-8"); %>
 <%
 String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
@@ -92,7 +96,7 @@ String userPW = (String)session.getAttribute("userPW");
  </fieldset>
     <div style="position: relative; left:95px;">
     <input type="submit" class="btn btn-default" value="Edit" style="color:white; background-color:#68a5f3;" />
-	<input type="button" class="btn btn-default" value="Cancle" style="color:white; background-color:#68a5f3;" onclick="location.href='MemberEditViewAction.do'" />
+	<input type="button" class="btn btn-default" value="Cancle" style="color:white; background-color:#68a5f3;" onclick="cancel()" />
 	</div>
 </form>
 <br><br><br><br><br>

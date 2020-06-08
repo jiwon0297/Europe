@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<% request.setCharacterEncoding("euc-kr"); %>
 <%@ page import="java.util.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
@@ -9,7 +8,14 @@
 <meta charset="EUC-KR">
 <title>my info</title>
 </head>
+<script type="text/javascript">
+	function cancel(){
+		window.history.back(); 
+	}
+
+</script>
 <body>
+<% request.setCharacterEncoding("utf-8"); %>
 <%
 String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
@@ -41,6 +47,7 @@ String userPW = (String)session.getAttribute("userPW");
 <br><br><br><br>
 
 <form method="post" style ="margin:0 auto; width:500px;">
+<input type = "button"  class="btn btn-default" style="position:relative; right:200px; color:white; background-color:#68a5f3;" value="Back" onclick="cancel()">
   <fieldset>
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">ID</label>

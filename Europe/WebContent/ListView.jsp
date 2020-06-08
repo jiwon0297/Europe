@@ -36,6 +36,11 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="marine/css/style.css">
 </head>
+<script type="text/javascript">
+	function cancel(){
+		window.history.back(); 
+	}
+</script>
 <body>
 <%
 String userID = (String)session.getAttribute("userID");
