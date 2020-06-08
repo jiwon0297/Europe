@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>my info</title>
 </head>
 <script type="text/javascript">
 	function checkForm(){
 		if(document.join.password.value != document.join.passwordconfirm.value){
-			alert("ºñ¹Ğ¹øÈ£¸¦ µ¿ÀÏÇÏ°Ô ÀÔ·ÂÇÏ¼¼¿ä.");
+			alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ ë™ì¼í•˜ê²Œ ì…ë ¥í•˜ì„¸ìš”.");
 			return false;
 		}
 		return true;
@@ -27,7 +27,7 @@
 String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
 %>
-<!-- È¸¿ø Á¤º¸ -->
+<!-- íšŒì› ì •ë³´ -->
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div class="culmn">
         <jsp:include page="header.jsp" />
@@ -54,7 +54,7 @@ String userPW = (String)session.getAttribute("userPW");
 <br><br><br>
 
 <form name="editinfo" method="post" action="MemberEditAction.do" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;">
-	<small id="fileHelp" class="form-text text-muted" style="color:red; position:relative; left:40px;">¡Øº¯°æÀº ¿ÀÁ÷ ºñ¹Ğ¹øÈ£¿Í ´Ğ³×ÀÓ¸¸ °¡´ÉÇÕ´Ï´Ù.¡Ø</small>
+	<small id="fileHelp" class="form-text text-muted" style="color:red; position:relative; left:40px;">â€»ë³€ê²½ì€ ì˜¤ì§ ë¹„ë°€ë²ˆí˜¸ì™€ ë‹‰ë„¤ì„ë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤.â€»</small>
 	<br>
   <fieldset>
     <div class="form-group row">

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,7 +44,7 @@
                             <div class="head_title text-center">
                                 <h2>Tour</h2>
                                 <div class="subtitle">
-                                    	Åõ¾î »çÀÌÆ® ÃßÃµ 
+                                    	íˆ¬ì–´ ì‚¬ì´íŠ¸ ì¶”ì²œ 
                                 </div>
                                 <div class="separator"></div>
                             </div><!-- End off Head_title -->
@@ -62,8 +62,8 @@
                                                 <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>KLOOK</h3>
                                                     <div class="separator2"></div>
-                                                    <p>°¢Á¾ ÇöÁö ÆÐ½º, Åõ¾î µîÀ» ÆÇ¸Å.
-                                                    	ÇÑ±¹¾î ¼­ºñ½º Á¦°ø(Ä«Ä«¿ÀÅå »ó´ã °¡´É).</p>
+                                                    <p>ê°ì¢… í˜„ì§€ íŒ¨ìŠ¤, íˆ¬ì–´ ë“±ì„ íŒë§¤.
+                                                    	í•œêµ­ì–´ ì„œë¹„ìŠ¤ ì œê³µ(ì¹´ì¹´ì˜¤í†¡ ìƒë‹´ ê°€ëŠ¥).</p>
 
                                                     <a href="https://www.klook.com/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -84,7 +84,7 @@
                                                 <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>GET YOUR GUIDE</h3>
                                                     <div class="separator2"></div>
-                                                    <p>´Ù¾çÇÑ ÇöÁöÅõ¾î ¼­ºñ½º Á¦°ø.</p>
+                                                    <p>ë‹¤ì–‘í•œ í˜„ì§€íˆ¬ì–´ ì„œë¹„ìŠ¤ ì œê³µ.</p>
 
                                                     <a href="https://www.getyourguide.co.kr/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -106,7 +106,7 @@
                                                 <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>MY REAL TRIP</h3>
                                                     <div class="separator2"></div>
-                                                    <p>Ç×°ø±Ç Æ¯°¡ºÎÅÍ ¼¼°è¸í¼Ò ÀÔÀå±Ç, Åõ¾î±îÁö ´Ù¾çÇÏ°Ô ¿©Çà°ü·Ã ¼­ºñ½º¸¦ Á¦°ø. </p>
+                                                    <p>í•­ê³µê¶Œ íŠ¹ê°€ë¶€í„° ì„¸ê³„ëª…ì†Œ ìž…ìž¥ê¶Œ, íˆ¬ì–´ê¹Œì§€ ë‹¤ì–‘í•˜ê²Œ ì—¬í–‰ê´€ë ¨ ì„œë¹„ìŠ¤ë¥¼ ì œê³µ. </p>
 
                                                     <a href="https://www.myrealtrip.com/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -126,9 +126,9 @@
                                             </div>
                                             <div class="col-sm-6 col-sm-pull-6 no-padding">
                                                 <div class="single_blog_text s_b_right" style="height:417px">
-                                                    <h3>¿Â¶óÀÎÅõ¾î</h3>
+                                                    <h3>ì˜¨ë¼ì¸íˆ¬ì–´</h3>
                                                     <div class="separator2"></div>
-                                                    <p>±¹³» ÃÖ´ë ¿Â¶óÀÎ ¿©Çà»ç »çÀÌÆ®. Ç×°ø, ÆÐÅ°Áö ¿©Çà, ÀÚÀ¯¿©Çà, È£ÅÚ¿¹¾à µî ÃÖÀú°¡ ºñ±³°¡ Æí¸®.</p>
+                                                    <p>êµ­ë‚´ ìµœëŒ€ ì˜¨ë¼ì¸ ì—¬í–‰ì‚¬ ì‚¬ì´íŠ¸. í•­ê³µ, íŒ¨í‚¤ì§€ ì—¬í–‰, ìžìœ ì—¬í–‰, í˜¸í…”ì˜ˆì•½ ë“± ìµœì €ê°€ ë¹„êµê°€ íŽ¸ë¦¬.</p>
 
                                                     <a href="https://www.onlinetour.co.kr/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>

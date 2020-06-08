@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,9 +70,9 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="head_title text-center">
-					<h2>¿©Çà ²ÜÆÁ</h2>
+					<h2>ì—¬í–‰ ê¿€íŒ</h2>
 						<div class="subtitle">
-							²ÜÆÁÀ» ¸ð¾Æ¸ð¾Æ
+							ê¿€íŒì„ ëª¨ì•„ëª¨ì•„
 						</div>
 					<div class="separator"></div>                                   
 
@@ -85,34 +85,34 @@
 								<div class="col-lg-12">
 									<div class="client_review_slider owl-carousel">
 										<div class="single_review_slider" style="background-color:#deb887;">
-											<h5>·±´ø ÇØ¸®Æ÷ÅÍ ½ºÆ©µð¿À´Â Á¦ÀÏ Àú·ÅÇÑ °øÈ¨¿¡¼­ ¿¹¾àÇÏ±â!</h5>
+											<h5>ëŸ°ë˜ í•´ë¦¬í¬í„° ìŠ¤íŠœë””ì˜¤ëŠ” ì œì¼ ì €ë ´í•œ ê³µí™ˆì—ì„œ ì˜ˆì•½í•˜ê¸°!</h5>
 											<br>
-				                            <a href="https://blog.naver.com/riacebamboo/221474294182"><strong style="color:#b8860b;">=> ¿¹¾àÇÏ·¯°¡±â</strong></a>  
+				                            <a href="https://blog.naver.com/riacebamboo/221474294182"><strong style="color:#b8860b;">=> ì˜ˆì•½í•˜ëŸ¬ê°€ê¸°</strong></a>  
                         				</div>
                        					<div class="single_review_slider" style="background-color:#deb887;">
-											<h5>ÇÁ¶óÇÏ¿¡¼­ Ã¼½ºÅ° Å©·ë·ÎÇÁ°¡´Â ¹ö½º È¸»ç´Â 2´ë! ¼­·Î Å¸´Â °÷µµ ´Ù¸§!</h5>
+											<h5>í”„ë¼í•˜ì—ì„œ ì²´ìŠ¤í‚¤ í¬ë£¸ë¡œí”„ê°€ëŠ” ë²„ìŠ¤ íšŒì‚¬ëŠ” 2ëŒ€! ì„œë¡œ íƒ€ëŠ” ê³³ë„ ë‹¤ë¦„!</h5>
 											<br>
-				                            <a href="https://blog.naver.com/whj1580/221699302733"><strong style="color:#b8860b;">=> Å¸´Â °÷°ú ½Ã°£ È®ÀÎÇÏ·¯ °¡±â</strong></a>  
+				                            <a href="https://blog.naver.com/whj1580/221699302733"><strong style="color:#b8860b;">=> íƒ€ëŠ” ê³³ê³¼ ì‹œê°„ í™•ì¸í•˜ëŸ¬ ê°€ê¸°</strong></a>  
 				                        </div>
 					                    <div class="single_review_slider" style="background-color:#deb887;">
-											<h5>ÇÑ±¹¿¡¼­ ¹ÞÀº ½Ç¹°Æ¼ÄÏÀº ±³È¯, ¹ÝÇ° Àý´ëºÒ°¡ÇÏ¹Ç·Î À¯ÀÇÇÏ±â!</h5>
+											<h5>í•œêµ­ì—ì„œ ë°›ì€ ì‹¤ë¬¼í‹°ì¼“ì€ êµí™˜, ë°˜í’ˆ ì ˆëŒ€ë¶ˆê°€í•˜ë¯€ë¡œ ìœ ì˜í•˜ê¸°!</h5>
 											<br>
-					                        <a href="https://www.klook.com/ko/"><strong style="color:#b8860b;">=> Å¬·è¿¡ ¿¹¾àÇÏ·¯ °¡±â</strong></a>  
+					                        <a href="https://www.klook.com/ko/"><strong style="color:#b8860b;">=> í´ë£©ì— ì˜ˆì•½í•˜ëŸ¬ ê°€ê¸°</strong></a>  
 					                    </div>
 					                    <div class="single_review_slider" style="background-color:#deb887;">
-											<h5>½ºÀ§½º´Â ¹°°¡°¡ ºñ½Î¹Ç·Î, ºÎ¾ýÀÌ ÀÖ´Â ¼÷¼Ò·Î ¿¹¾àÇØ Á÷Á¢ ¿ä¸®ÇØ¼­ ¸Ô´Â°É ÃßÃµÇØ¿ä</h5>
+											<h5>ìŠ¤ìœ„ìŠ¤ëŠ” ë¬¼ê°€ê°€ ë¹„ì‹¸ë¯€ë¡œ, ë¶€ì—Œì´ ìžˆëŠ” ìˆ™ì†Œë¡œ ì˜ˆì•½í•´ ì§ì ‘ ìš”ë¦¬í•´ì„œ ë¨¹ëŠ”ê±¸ ì¶”ì²œí•´ìš”</h5>
 											<br>
-					                        <a href="https://www.airbnb.co.kr/s/%EC%8A%A4%EC%9C%84%EC%8A%A4/homes?tab_id=all_tab&refinement_paths%5B%5D=%2Fhomes&query=%EC%8A%A4%EC%9C%84%EC%8A%A4&place_id=ChIJYW1Zb-9kjEcRFXvLDxG1Vlw&source=structured_search_input_header&search_type=search_query"><strong style="color:#b8860b;">=> ½ºÀ§½º ¼÷¼Ò º¸·¯°¡±â</strong></a>  
+					                        <a href="https://www.airbnb.co.kr/s/%EC%8A%A4%EC%9C%84%EC%8A%A4/homes?tab_id=all_tab&refinement_paths%5B%5D=%2Fhomes&query=%EC%8A%A4%EC%9C%84%EC%8A%A4&place_id=ChIJYW1Zb-9kjEcRFXvLDxG1Vlw&source=structured_search_input_header&search_type=search_query"><strong style="color:#b8860b;">=> ìŠ¤ìœ„ìŠ¤ ìˆ™ì†Œ ë³´ëŸ¬ê°€ê¸°</strong></a>  
 					                    </div>
 					                    <div class="single_review_slider" style="background-color:#deb887;">
-											<h5>À¶ÇÁ¶ó¿ì °¥¶§´Â ÃÊÄÝ¸´ÀÌ¶û ¹°À» Ã¬°Ü°¡¼¼¿ä! ½ºÀ§½º ¿¡ºñ¾ÓÀÌ Á¦ÀÏ Àú·ÅÇÏ´Ï ¸¹ÀÌ »çµÎ¼¼¿ä</h5>
+											<h5>ìœµí”„ë¼ìš° ê°ˆë•ŒëŠ” ì´ˆì½œë¦¿ì´ëž‘ ë¬¼ì„ ì±™ê²¨ê°€ì„¸ìš”! ìŠ¤ìœ„ìŠ¤ ì—ë¹„ì•™ì´ ì œì¼ ì €ë ´í•˜ë‹ˆ ë§Žì´ ì‚¬ë‘ì„¸ìš”</h5>
 											<br>
-											<a href="http://www.jungfrau.co.kr/main/main.asp"><strong style="color:#b8860b;">=> À¶ÇÁ¶ó¿ì ÆÐ½º ¿¹¸ÅÇÏ·¯ °¡±â</strong></a>  
+											<a href="http://www.jungfrau.co.kr/main/main.asp"><strong style="color:#b8860b;">=> ìœµí”„ë¼ìš° íŒ¨ìŠ¤ ì˜ˆë§¤í•˜ëŸ¬ ê°€ê¸°</strong></a>  
 					                    </div>
 										<div class="single_review_slider" style="background-color:#deb887;">
-											<h5>¹ÀÇî¿¡¼­ Ç¶¼¾ ±âÂ÷´Â »ç¶÷ÀÌ ¸¹À» ¼ö·Ï Àú·ÅÇØÁ®¿ä! ÀúÈñ »çÀÌÆ®¿¡¼­ µ¿ÇàÀ» ±¸ÇØº¸¼¼¿ä!</h5>
+											<h5>ë®Œí—¨ì—ì„œ í“Œì„¼ ê¸°ì°¨ëŠ” ì‚¬ëžŒì´ ë§Žì„ ìˆ˜ë¡ ì €ë ´í•´ì ¸ìš”! ì €í¬ ì‚¬ì´íŠ¸ì—ì„œ ë™í–‰ì„ êµ¬í•´ë³´ì„¸ìš”!</h5>
 											<br>
-											<a href="main.jsp"><strong style="color:#b8860b;">=> µ¿Çà ±¸ÇÏ·¯ °¡±â</strong></a>  
+											<a href="main.jsp"><strong style="color:#b8860b;">=> ë™í–‰ êµ¬í•˜ëŸ¬ ê°€ê¸°</strong></a>  
 										</div>
 									</div>
 								</div>

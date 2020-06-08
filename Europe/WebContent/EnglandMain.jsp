@@ -1,6 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
-<html lang="en">
-
+<html>
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="marine/css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="marine/css/animate.css">
+    <link rel="stylesheet" href="marine/csxs/animate.css">
     <!-- owl carousel CSS -->
     <link rel="stylesheet" href="marine/css/owl.carousel.min.css">
     <!-- themify CSS -->

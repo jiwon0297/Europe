@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
@@ -50,7 +50,7 @@ String userPW = (String)session.getAttribute("userPW");
       <strong><input type="text" class="form-control" name="title" value="[${re.getCountry()}/${re.getCate1()}] ${re.getTitle()}" style="text-align:center; font-size:13pt; background-color:beige; width:700px; position: relative; left:160px;" disabled/></strong>
      </div>
      <div class="form-group row" >
-      <input type="text" class="form-control" name="name" value="ÀÛ¼ºÀÚ : ${re.getName()}" style="background-color:beige; width:700px; position: relative; left:160px;" disabled/>
+      <input type="text" class="form-control" name="name" value="ì‘ì„±ì : ${re.getName()}" style="background-color:beige; width:700px; position: relative; left:160px;" disabled/>
      </div>
     <div class="form-group row">
       <textarea class="form-control" name="content" style="background-color:beige; height:600px; width:700px; position: relative; left:160px; text-align:center; gravity:center;" readonly="readonly" disabled>${re.getDetail()}</textarea>
@@ -58,11 +58,11 @@ String userPW = (String)session.getAttribute("userPW");
     <input type="hidden" name="number" value="${re.getNumber()}">
 	</fieldset>
 	<% if(userID == null && userPW == null) { %>
-	<small id="fileHelp" class="form-text text-muted" style="position:relative; font-size:13pt; left:280px;">¡Ø·Î±×ÀÎÀ» ÇØ¾ß¸¸ ±Û ¼öÁ¤ ¹× »èÁ¦°¡ °¡´ÉÇÕ´Ï´Ù.¡Ø</small>
+	<small id="fileHelp" class="form-text text-muted" style="position:relative; font-size:13pt; left:280px;">â€»ë¡œê·¸ì¸ì„ í•´ì•¼ë§Œ ê¸€ ìˆ˜ì • ë° ì‚­ì œê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤.â€»</small>
 	<%} else { %>
 	<div style="position: relative; left:350px;">
-	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="¼öÁ¤" onclick="location='EditViewAction.do?number=${re.getNumber()}'">
-	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="»èÁ¦"onclick="deleteConfirm('${re.getNumber()}')">
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="ìˆ˜ì •" onclick="location='EditViewAction.do?number=${re.getNumber()}'">
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="ì‚­ì œ"onclick="deleteConfirm('${re.getNumber()}')">
 	<%}%>
 	</div>
 	</form>

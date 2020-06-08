@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ page import="java.util.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <script type="text/javascript">
@@ -46,7 +46,7 @@ String userPW = (String)session.getAttribute("userPW");
 <form action="AddAction.do" method="post" style ="margin:0 auto; width:1000px;">
 	<fieldset>
 	<div class="form-group row">
-      <label for="Category" class="col-sm-2 com-form-label" style="position: relative; font-size:15pt; left:130px;">³ª¶ó/ÁÖÁ¦</label>
+      <label for="Category" class="col-sm-2 com-form-label" style="position: relative; font-size:15pt; left:130px;">ë‚˜ë¼/ì£¼ì œ</label>
       <div style="position: relative; left:95px;">
       <select name="country" style="background-color:#fbfbfb; width:150px; float:left;">
 					<option>korea</option>
@@ -66,26 +66,26 @@ String userPW = (String)session.getAttribute("userPW");
 	</div>
 	</div>
 	<div class="form-group row">
-      <label for="title" class="col-sm-2 col-form-label" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">Á¦¸ñ</label>
-      <input type="text" class="form-control" name="title" placeholder="Á¦¸ñÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä." style="background-color:#fbfbfb; width:700px; position: relative; left:95px;">
+      <label for="title" class="col-sm-2 col-form-label" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">ì œëª©</label>
+      <input type="text" class="form-control" name="title" placeholder="ì œëª©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”." style="background-color:#fbfbfb; width:700px; position: relative; left:95px;">
      </div>
      <div class="form-group">
-      <label for="inputfile" style="position: relative; font-size:15pt; left:130px;">ÆÄÀÏÃ·ºÎ</label>
+      <label for="inputfile" style="position: relative; font-size:15pt; left:130px;">íŒŒì¼ì²¨ë¶€</label>
       <div class="col-sm-10" style="position: relative; left:70px; float:right;">
       <input type="file" class="form-control-file" name="inputfile" aria-describedby="fileHelp">
-      <small id="fileHelp" class="form-text text-muted" style="color:red">¡Ø±Û°ú °ü·ÃµÈ »çÁø¸¸ Ã·ºÎÇÏ¿© ÁÖ½Ê½Ã¿À.¡Ø</small>
+      <small id="fileHelp" class="form-text text-muted" style="color:red">â€»ê¸€ê³¼ ê´€ë ¨ëœ ì‚¬ì§„ë§Œ ì²¨ë¶€í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤.â€»</small>
     </div>
     </div>
     <div class="form-group">
-      <label for="detail" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">³»¿ë</label>
+      <label for="detail" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">ë‚´ìš©</label>
       <br>
-      <textarea class="form-control" name="detail" placeholder="³»¿ëÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä." style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;"></textarea>
+      <textarea class="form-control" name="detail" placeholder="ë‚´ìš©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”." style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;"></textarea>
     </div>
     <input type="hidden" name="name" value="${member.getNickname()}">
 	</fieldset>
 	<div style="position: relative; left:350px;">
-	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="ÀÛ¼º">
-	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Ãë¼Ò" onclick = "cancel()">
+	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="ì‘ì„±">
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="ì·¨ì†Œ" onclick = "cancel()">
 	</div>
 </form>
 

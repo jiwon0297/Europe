@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,7 +44,7 @@
                             <div class="head_title text-center">
                                 <h2>Flight</h2>
                                 <div class="subtitle">
-                                    	Ç×°ø »çÀÌÆ® ÃßÃµ 
+                                    	í•­ê³µ ì‚¬ì´íŠ¸ ì¶”ì²œ 
                                 </div>
                                 <div class="separator"></div>
                             </div><!-- End off Head_title -->
@@ -62,7 +62,7 @@
                                                 <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>SKY SCANNER</h3>
                                                     <div class="separator2"></div>
-                                                    <p>¾ó¸®¹öµå, ¶¯Ã³¸®, Æ¯°¡ Ç×°ø±Ç ÃÖÀú°¡ °¡°Ýºñ±³ ¿¹¸Å.</p>
+                                                    <p>ì–¼ë¦¬ë²„ë“œ, ë•¡ì²˜ë¦¬, íŠ¹ê°€ í•­ê³µê¶Œ ìµœì €ê°€ ê°€ê²©ë¹„êµ ì˜ˆë§¤.</p>
 
                                                     <a href="https://www.skyscanner.co.kr/"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -83,7 +83,7 @@
                                                 <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>KAYAK.COM</h3>
                                                     <div class="separator2"></div>
-                                                    <p>ÃÖÀú°¡ Ç×°ø±ÇÀ» ´Ù¾çÇÑ Ç×°ø»ç¿Í Á¶ÇÕÇÏ¿© ´ë·«ÀûÀÎ ÃÖÀú°¡ °¡°ÝÀ» ÆÄ¾ÇÇÏ°í ½ÇÁ¦·Î ±¸¸ÅÇÏ±â ÁÁÀ½.</p>
+                                                    <p>ìµœì €ê°€ í•­ê³µê¶Œì„ ë‹¤ì–‘í•œ í•­ê³µì‚¬ì™€ ì¡°í•©í•˜ì—¬ ëŒ€ëžµì ì¸ ìµœì €ê°€ ê°€ê²©ì„ íŒŒì•…í•˜ê³  ì‹¤ì œë¡œ êµ¬ë§¤í•˜ê¸° ì¢‹ìŒ.</p>
 
                                                     <a href="https://www.kayak.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -105,7 +105,7 @@
                                                 <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>EXPEDIA</h3>
                                                     <div class="separator2"></div>
-                                                    <p>¸¶ÀÌÅ©·Î¼ÒÇÁÆ®¿¡¼­ µ¶¸³ÇÑ Àü¼¼°è 24°³±¹¿¡ °ø½Ä À¥»çÀÌÆ®¸¦ º¸À¯ÇÑ ¼¼°è ÃÖ´ë ¿Â¶óÀÎ ¿©Çà»ç. </p>
+                                                    <p>ë§ˆì´í¬ë¡œì†Œí”„íŠ¸ì—ì„œ ë…ë¦½í•œ ì „ì„¸ê³„ 24ê°œêµ­ì— ê³µì‹ ì›¹ì‚¬ì´íŠ¸ë¥¼ ë³´ìœ í•œ ì„¸ê³„ ìµœëŒ€ ì˜¨ë¼ì¸ ì—¬í–‰ì‚¬. </p>
 
                                                     <a href="https://www.expedia.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -127,7 +127,7 @@
                                                 <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>WHYPAYMORE</h3>
                                                     <div class="separator2"></div>
-                                                    <p>±¹³» ÃÖÃÊ µ¶ÀÚ±â¼ú·Î Ç×°ø ¿¹¾à ¿£ÁøÀ» °³¹ßÇÏ¿© ¿Â¶óÀÎ Ç×°ø°ú ¿©Çà ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ¿Â¶óÀÎ ¿©Çà±â¾÷.</p>
+                                                    <p>êµ­ë‚´ ìµœì´ˆ ë…ìžê¸°ìˆ ë¡œ í•­ê³µ ì˜ˆì•½ ì—”ì§„ì„ ê°œë°œí•˜ì—¬ ì˜¨ë¼ì¸ í•­ê³µê³¼ ì—¬í–‰ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ì˜¨ë¼ì¸ ì—¬í–‰ê¸°ì—….</p>
 
                                                     <a href="https://www.whypaymore.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>

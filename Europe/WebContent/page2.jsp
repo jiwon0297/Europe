@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,7 +69,7 @@
 					<div class="head_title text-center">
 						<h2>CHECK LIST</h2>
 					<div class="subtitle">
-						¿©Çà Àü ¹Ì¸® È®ÀÎÇÏ¼¼¿ä!
+						ì—¬í–‰ ì „ ë¯¸ë¦¬ í™•ì¸í•˜ì„¸ìš”!
 					</div>
 					<div class="separator"></div>
                   
@@ -80,18 +80,18 @@
 										<div class="row">
 											<div class="col-md-4">
 											<blockquote class="generic-blockquote">
-												<h4>ÇÊ¼ö ÁØºñ¹° & Áß¿ä ¼­·ù</h4>
+												<h4>í•„ìˆ˜ ì¤€ë¹„ë¬¼ & ì¤‘ìš” ì„œë¥˜</h4>
 												<div class="">
 												<ul class="unordered-list">
-													<li>¿©±Ç, ¿©±Ç»çº», ¿©±Ç»çÁø(2¸Å)</li>
-													<li>ºñÇà±â Æ¼ÄÏ</li>
-													<li>ºñÀÚ</li>
-													<li>¼÷¹Ú, ±³Åë ¹Ù¿ìÃ³</li>
-													<li>Çö±Ý(È¯Àü)</li>
-													<li>Ä«µå(½Å¿ë/Ã¼Å©)</li>
-													<li>±¹Á¦ ¸éÇãÁõ</li>
-													<li>±¹Á¦ ÇÐ»ýÁõ</li>
-													<li>ÇÊ±âµµ±¸</li>
+													<li>ì—¬ê¶Œ, ì—¬ê¶Œì‚¬ë³¸, ì—¬ê¶Œì‚¬ì§„(2ë§¤)</li>
+													<li>ë¹„í–‰ê¸° í‹°ì¼“</li>
+													<li>ë¹„ìž</li>
+													<li>ìˆ™ë°•, êµí†µ ë°”ìš°ì²˜</li>
+													<li>í˜„ê¸ˆ(í™˜ì „)</li>
+													<li>ì¹´ë“œ(ì‹ ìš©/ì²´í¬)</li>
+													<li>êµ­ì œ ë©´í—ˆì¦</li>
+													<li>êµ­ì œ í•™ìƒì¦</li>
+													<li>í•„ê¸°ë„êµ¬</li>
 												</ul>
 												</div>
 											</blockquote>
@@ -99,18 +99,18 @@
 											
 											<div class="col-md-4 mt-sm-30">
 											<blockquote class="generic-blockquote">
-												<h4>ÀÇ·ù</h4>
+												<h4>ì˜ë¥˜</h4>
 												<div class="">
 												<ul class="unordered-list">
-													<li>»óÀÇ</li>
-													<li>ÇÏÀÇ</li>
-													<li>¼Ó¿Ê</li>
-													<li>¾ç¸»</li>
-													<li>¿ÜÅõ</li>
-													<li>¸ðÀÚ</li>
-													<li>¿îµ¿È­</li>
-													<li>½½¸®ÆÛ</li>
-													<li>Àá¿Ê</li>
+													<li>ìƒì˜</li>
+													<li>í•˜ì˜</li>
+													<li>ì†ì˜·</li>
+													<li>ì–‘ë§</li>
+													<li>ì™¸íˆ¬</li>
+													<li>ëª¨ìž</li>
+													<li>ìš´ë™í™”</li>
+													<li>ìŠ¬ë¦¬í¼</li>
+													<li>ìž ì˜·</li>
 												</ul>
 												</div>
 											</blockquote>
@@ -118,18 +118,18 @@
 											
 											<div class="col-md-4 mt-sm-30">
 											<blockquote class="generic-blockquote">
-												<h4>ÀüÀÚ±â±â & ÁÖº¯±â±â</h4>
+												<h4>ì „ìžê¸°ê¸° & ì£¼ë³€ê¸°ê¸°</h4>
 												<div class="">
 												<ul class="unordered-list">
-													<li>ÈÞ´ëÆù</li>
-													<li>ÈÞ´ëÆù ÃæÀü±â</li>
-													<li>º¸Á¶¹èÅÍ¸®</li>
-													<li>ÀÌ¾îÆù</li>
-													<li>À¯½É</li>
-													<li>¸ÖÆ¼ÅÇ</li>
-													<li>¸ÖÆ¼¾î´ðÅÍ</li>
-													<li>µå¶óÀÌ±â</li>
-													<li>°íµ¥±â</li>
+													<li>íœ´ëŒ€í°</li>
+													<li>íœ´ëŒ€í° ì¶©ì „ê¸°</li>
+													<li>ë³´ì¡°ë°°í„°ë¦¬</li>
+													<li>ì´ì–´í°</li>
+													<li>ìœ ì‹¬</li>
+													<li>ë©€í‹°íƒ­</li>
+													<li>ë©€í‹°ì–´ëŒ‘í„°</li>
+													<li>ë“œë¼ì´ê¸°</li>
+													<li>ê³ ë°ê¸°</li>
 												</ul>
 												</div>
 											</blockquote>
@@ -146,20 +146,20 @@
 										<div class="row">
 											<div class="col-md-4">
 											<blockquote class="generic-blockquote">
-												<h4>¼¼¸éµµ±¸ & À§»ý¿ëÇ°</h4>
+												<h4>ì„¸ë©´ë„êµ¬ & ìœ„ìƒìš©í’ˆ</h4>
 												<div class="">
 												<ul class="unordered-list">
-													<li>Ä©¼Ö, Ä¡¾à</li>
-													<li>¼¤Çª, ¸°½º</li>
-													<li>¹Ùµð¿ö½Ã</li>
-													<li>ºñ´©</li>
-													<li>Å¸¿Ã</li>
-													<li>Å¬·»Â¡Æû/¿ÀÀÏ</li>
-													<li>¼¼Á¦, ¼¶À¯À¯¿¬Á¦</li>
-													<li>¸éºÀ</li>
-													<li>¿©¼º¿ëÇ°</li>
-													<li>¼ÕÅé±ðÀÌ</li>
-													<li>¸éµµ±â</li>
+													<li>ì¹«ì†”, ì¹˜ì•½</li>
+													<li>ìƒ´í‘¸, ë¦°ìŠ¤</li>
+													<li>ë°”ë””ì›Œì‹œ</li>
+													<li>ë¹„ëˆ„</li>
+													<li>íƒ€ì˜¬</li>
+													<li>í´ë Œì§•í¼/ì˜¤ì¼</li>
+													<li>ì„¸ì œ, ì„¬ìœ ìœ ì—°ì œ</li>
+													<li>ë©´ë´‰</li>
+													<li>ì—¬ì„±ìš©í’ˆ</li>
+													<li>ì†í†±ê¹Žì´</li>
+													<li>ë©´ë„ê¸°</li>
 												</ul>
 												</div>
 											</blockquote>
@@ -167,19 +167,19 @@
 											
 											<div class="col-md-4 mt-sm-30">
 											<blockquote class="generic-blockquote">
-												<h4>ºñ»ó¾à</h4>
+												<h4>ë¹„ìƒì•½</h4>
 												<div class="">
 												<ul class="unordered-list">
-													<li>¼ÒÈ­Á¦</li>
-													<li>Áö»çÁ¦</li>
-													<li>Á¾ÇÕ°¨±â¾à</li>
-													<li>ÁøÅëÁ¦</li>
-													<li>¿¬°í</li>
-													<li>ÀÏÈ¸¿ë ¹êµå</li>
-													<li>¸Ö¹Ì¾à</li>
-													<li>°³ÀÎ¾à</li>
-													<li>ÆÄ½º</li>
-													<li>ºñ¿ÀÅ³</li>
+													<li>ì†Œí™”ì œ</li>
+													<li>ì§€ì‚¬ì œ</li>
+													<li>ì¢…í•©ê°ê¸°ì•½</li>
+													<li>ì§„í†µì œ</li>
+													<li>ì—°ê³ </li>
+													<li>ì¼íšŒìš© ë°´ë“œ</li>
+													<li>ë©€ë¯¸ì•½</li>
+													<li>ê°œì¸ì•½</li>
+													<li>íŒŒìŠ¤</li>
+													<li>ë¹„ì˜¤í‚¬</li>
 												</ul>
 												</div>
 											</blockquote>
@@ -187,17 +187,17 @@
 											
 											<div class="col-md-4 mt-sm-30">
 											<blockquote class="generic-blockquote">
-												<h4>È­ÀåÇ°</h4>
+												<h4>í™”ìž¥í’ˆ</h4>
 												<div class="">
 												<ul class="unordered-list">
-													<li>½ºÅ², ·Î¼Ç</li>
-													<li>¼±Å©¸²</li>
-													<li>¸ÞÀÌÅ©¾÷¿ëÇ°</li>
-													<li>Çì¾î¿¡¼¾½º</li>
-													<li>Çâ¼ö</li>
-													<li>ºø</li>
-													<li>°Å¿ï</li>
-													<li>¸¶½ºÅ©ÆÑ</li>
+													<li>ìŠ¤í‚¨, ë¡œì…˜</li>
+													<li>ì„ í¬ë¦¼</li>
+													<li>ë©”ì´í¬ì—…ìš©í’ˆ</li>
+													<li>í—¤ì–´ì—ì„¼ìŠ¤</li>
+													<li>í–¥ìˆ˜</li>
+													<li>ë¹—</li>
+													<li>ê±°ìš¸</li>
+													<li>ë§ˆìŠ¤í¬íŒ©</li>
 												</ul>
 												</div>
 											</blockquote>

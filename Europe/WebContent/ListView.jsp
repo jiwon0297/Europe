@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <% request.setCharacterEncoding("euc-kr"); %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>list</title>
 <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -64,16 +64,16 @@ String userPW = (String)session.getAttribute("userPW");
        <jsp:include page="header.jsp"/>
     </div>
    			<% if(userID == null && userPW == null) { %>
-   			<small id="fileHelp" class="form-text text-muted" style="position:relative; float:right; font-size:13pt; right:20px; margin-top:20px; margin-bottom:20px ">¡Ø·Î±×ÀÎÀ» ÇØ¾ß¸¸ ±Û¾²±â°¡ °¡´ÉÇÕ´Ï´Ù.¡Ø</small>
+   			<small id="fileHelp" class="form-text text-muted" style="position:relative; float:right; font-size:13pt; right:20px; margin-top:20px; margin-bottom:20px ">â€»ë¡œê·¸ì¸ì„ í•´ì•¼ë§Œ ê¸€ì“°ê¸°ê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤.â€»</small>
             <%} else { %>
             <a href="AddviewAction.do" class="btn btn-default" role="button" style="margin-bottom:20px;position:relative; right:20px; color:white; background-color:#68a5f3; float:right">Add &raquo;</a>
             <%}%>
             <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Back" onclick="cancel()">
             <table class="table table-hover" style="text-align:center">
 			<tr style="background-color:lightgray">
-				<td style="width:200px; text-align:center; font-size:13pt"><strong>¸»¸Ó¸®</strong></td>
-				<td style="width:300px; text-align:center; font-size:13pt"><strong>ÀÛ¼ºÀÚ</strong></td>
-				<td style="text-align:center; font-size:13pt"><strong>Á¦¸ñ</strong></td>
+				<td style="width:200px; text-align:center; font-size:13pt"><strong>ë§ë¨¸ë¦¬</strong></td>
+				<td style="width:300px; text-align:center; font-size:13pt"><strong>ì‘ì„±ì</strong></td>
+				<td style="text-align:center; font-size:13pt"><strong>ì œëª©</strong></td>
 			</tr>
 				<c:forEach var="re" items="${rList}">
 				<tr role="button" style="background-color:beige" onclick="location='DetailViewAction.do?number=${re.getNumber()}'">

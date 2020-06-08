@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,9 +49,9 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="head_title text-center margin-top-80">
-                                    <h2>¿©Çà ÁØºñ¿¡ ÇÊ¿äÇÑ ¾îÇÃ/»çÀÌÆ®</h2>
+                                    <h2>ì—¬í–‰ ì¤€ë¹„ì— í•„ìš”í•œ ì–´í”Œ/ì‚¬ì´íŠ¸</h2>
                                     <div class="subtitle">
-                                        	¿©Çà Àü ¹Ì¸® È®ÀÎÇÏ¼¼¿ä!
+                                        	ì—¬í–‰ ì „ ë¯¸ë¦¬ í™•ì¸í•˜ì„¸ìš”!
                                     </div>
                                     <div class="separator"></div>
                                 </div><!-- End off Head_title -->
@@ -65,10 +65,10 @@
                                             </a>
                                             </div>
                                             <div class="single_team_text">
-                                                <h4>Æ®¸®ÇÃ</h4>
-                                                <p style="color:black;"><strong>À¯·´ µµ½Ã ¹«·á °¡ÀÌµå</strong>
-                                                	³¯¾¾, È¯À², ±æÃ£±â, ¹ø¿ª, ½ÃÂ÷°è»ê µî ¾îÇÃ ÇÏ³ª·Î ÇØ°á °¡´É<br>
-                                                	Á÷Á¢ ¸Àº¸°í Áñ±ä ½ÇÁ¦ ¸®ºäµéÀÌ °¡µæÇÏ´Ù!
+                                                <h4>íŠ¸ë¦¬í”Œ</h4>
+                                                <p style="color:black;"><strong>ìœ ëŸ½ ë„ì‹œ ë¬´ë£Œ ê°€ì´ë“œ</strong>
+                                                	ë‚ ì”¨, í™˜ìœ¨, ê¸¸ì°¾ê¸°, ë²ˆì—­, ì‹œì°¨ê³„ì‚° ë“± ì–´í”Œ í•˜ë‚˜ë¡œ í•´ê²° ê°€ëŠ¥<br>
+                                                	ì§ì ‘ ë§›ë³´ê³  ì¦ê¸´ ì‹¤ì œ ë¦¬ë·°ë“¤ì´ ê°€ë“í•˜ë‹¤!
                                                 </p>
                                             </div>
                                         </li>
@@ -79,11 +79,11 @@
                                              </a>
                                             </div>
                                             <div class="single_team_text">
-                                                <h4>½ºÅõºñ</h4>
-                                                <p style="color:black;"><strong>»ó»ó ¼Ó À¯·´À» Çö½Ç·Î</strong>
-                                                	À¯·´¿©Çà ¸ÂÃã¾îÇÃ·Î¼­ Áöµµ¸¦ ÅëÇØ
-                                                	³ª¶ó °£ °æ·Î¼³Á¤ ¹× ¼Ò¿ä½Ã°£ °è»ê<br>
-                                                	°°ÀÌ°¡´Â »ç¶÷µé°ú ÀÏÁ¤ °øÀ¯ °¡´É
+                                                <h4>ìŠ¤íˆ¬ë¹„</h4>
+                                                <p style="color:black;"><strong>ìƒìƒ ì† ìœ ëŸ½ì„ í˜„ì‹¤ë¡œ</strong>
+                                                	ìœ ëŸ½ì—¬í–‰ ë§žì¶¤ì–´í”Œë¡œì„œ ì§€ë„ë¥¼ í†µí•´
+                                                	ë‚˜ë¼ ê°„ ê²½ë¡œì„¤ì • ë° ì†Œìš”ì‹œê°„ ê³„ì‚°<br>
+                                                	ê°™ì´ê°€ëŠ” ì‚¬ëžŒë“¤ê³¼ ì¼ì • ê³µìœ  ê°€ëŠ¥
                                                  </p>
                                             </div>
                                         </li>
@@ -94,10 +94,10 @@
                                              </a>
                                             </div>
                                             <div class="single_team_text">
-                                                <h4>¸¶ÀÌ ¸®¾ó Æ®¸³</h4>
-                                                <p style="color:black;"><strong>Ç×°ø,¼÷¼Ò ÃÖÀú°¡ ¿¹¾à</strong>
-                                              	  ±¹³» ¹× ±¹¿Ü ¿©Çà»óÇ° °Ë»ö<br>
-                                                	°¢Á¾ Åõ¾î,Æ¼ÄÏ ÃßÃµ ¹× °£ÆíÇÑ ¿¹¾à Á¦°ø
+                                                <h4>ë§ˆì´ ë¦¬ì–¼ íŠ¸ë¦½</h4>
+                                                <p style="color:black;"><strong>í•­ê³µ,ìˆ™ì†Œ ìµœì €ê°€ ì˜ˆì•½</strong>
+                                              	  êµ­ë‚´ ë° êµ­ì™¸ ì—¬í–‰ìƒí’ˆ ê²€ìƒ‰<br>
+                                                	ê°ì¢… íˆ¬ì–´,í‹°ì¼“ ì¶”ì²œ ë° ê°„íŽ¸í•œ ì˜ˆì•½ ì œê³µ
                                               </p>
                                             </div>
                                         </li>
@@ -108,10 +108,10 @@
                                              </a>
                                             </div>
                                             <div class="single_team_text">
-                                                <h4>Å¬·è</h4>
-                                                <p style="color:black;"><strong>À¯·´ Ã¶µµ ÆÐ½º±Ç ±¸¸Å</strong>
-                                                 	°¢Á¾ ¾×Æ¼ºñÆ¼ ÇÒÀÎ±Ç Á¦°ø ¹× ¿¹¾à Æí¸®<br>
-                                                 	E-Æ¼ÄÏÀ¸·Î ½±°í ºü¸£°Ô Á¢±Ù °¡´É 
+                                                <h4>í´ë£©</h4>
+                                                <p style="color:black;"><strong>ìœ ëŸ½ ì² ë„ íŒ¨ìŠ¤ê¶Œ êµ¬ë§¤</strong>
+                                                 	ê°ì¢… ì•¡í‹°ë¹„í‹° í• ì¸ê¶Œ ì œê³µ ë° ì˜ˆì•½ íŽ¸ë¦¬<br>
+                                                 	E-í‹°ì¼“ìœ¼ë¡œ ì‰½ê³  ë¹ ë¥´ê²Œ ì ‘ê·¼ ê°€ëŠ¥ 
                                                  	</p>
                                             </div>
                                         </li>
@@ -122,10 +122,10 @@
                                              </a>
                                             </div>
                                             <div class="single_team_text">
-                                                <h4>¸»Åå</h4>
-                                                <p style="color:black;"><strong>À¯½É ¹× ÇöÁöÅëÈ­ ±â´É</strong>
-                                                	Á¾·ùº° À¯½É±¸¸Å ¹× Âø½ÅÀüÈ¯¼­ºñ½º Á¦°ø<br>
-                                                	ÇöÁö¹øÈ£ Á¦°ø ¹× µ¥ÀÌÅÍ¼ÒÁø ¾Ë¸²
+                                                <h4>ë§í†¡</h4>
+                                                <p style="color:black;"><strong>ìœ ì‹¬ ë° í˜„ì§€í†µí™” ê¸°ëŠ¥</strong>
+                                                	ì¢…ë¥˜ë³„ ìœ ì‹¬êµ¬ë§¤ ë° ì°©ì‹ ì „í™˜ì„œë¹„ìŠ¤ ì œê³µ<br>
+                                                	í˜„ì§€ë²ˆí˜¸ ì œê³µ ë° ë°ì´í„°ì†Œì§„ ì•Œë¦¼
                                                 </p>
                                             </div>
                                         </li>

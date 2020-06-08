@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -79,7 +79,7 @@
                                                 <h3>ADVANCED JAVA PROJECT</h3>
                                                 <h1>RECORD OF TRAVEL</h1>
                                                 <div class="separator"></div>
-                                                <p>1Á¶ ¹ÚÁö¿ø ¹èÁ¤¿ø ÀÌ½Â¹Ì</p>
+                                                <p>1ì¡° ë°•ì§€ì› ë°°ì •ì› ì´ìŠ¹ë¯¸</p>
                                                 <div class="home_btn">
                                                     <a href="main.jsp" class="btn btn-default">START</a>
                                                 </div>
@@ -114,12 +114,12 @@
                                     <div class="head_title">
                                         <h2>OUR HISTORY</h2>
                                     </div>
-                                    <p>¿ÃÇØ ÃÊ, ¿ì¸®´Â ÇÔ²² À¯·´ ¿©ÇàÀ» ´Ù³à¿Ô´Ù.
-                                    À¯·´ ¿©ÇàÀ» ÁØºñÇÏ¸é¼­ À¯·´ °ü±¤Áö¿¡ ´ëÇÑ Á¤º¸¸¦ ¼öÁýÇÏ´Â Áß, ²Ï ¸¹Àº Á¤º¸µéÀÌ Áßº¹µÇ¾ú°í ±×·Î ÀÎÇØ »õ·Î¿î ¸í¼Ò¸¦ Ã£À¸·Á¸é ´õ º¹ÀâÇÏ°í ½Ã°£À» µé¿© ÀÚ·á¸¦ ¼öÁýÇØ¾ß Çß´Ù. 
-ÇÑ °÷ÀÌ ¾Æ´Ñ ¿©·¯ ÆäÀÌÁö¸¦ µ¹¾Æ´Ù´Ï¸é¼­ Á¤º¸¸¦ ¼öÁýÇÏ´Ù º¸´Ï À¯·´ÀÌ¶ó´Â ±ä ¿©Çà¿¡ ´ëÇØ ÁØºñÇÏ´Â ½Ã°£ÀÌ »ý°¢º¸´Ù ¿À·¡ °É·È´Ù. 
-ÈçÈ÷ ¿Ã¶ó¿Í ÀÖ´Â ºí·Î±×µé¿¡ À¯·´ÀÇ »ö´Ù¸¥ °ü±¤Áö¿¡ ´ëÇÑ Á¤º¸´Â ¸¹Áö ¾Ê¾Ò°í, ½ÇÁ¦·Î À¯·´ ¿©Çà Áß¿¡¼­µµ Æ¯Á¤ ¸í¼Ò¿¡¸¸ »ç¶÷ÀÌ ³Ê¹« ¸¹°Å³ª °úÀåµÈ ±¤°í Á¤º¸·Î ÀÎÇØ ½Ç¸ÁÇÑ Àå¼Òµµ ¿©·µ ÀÖ¾ú´Ù.
-¿äÁò »ç¶÷µéÀº À¥ÆäÀÌÁö Á¤º¸¸¦ Å©°Ô Áß¿ä½ÃÇÏ°í, ±× Á¤º¸¸¦ Åä´ë·Î ¿©Çà°èÈ¹À» ¼¼¿î´Ù. 
-ÀÌ¿¡ ¿ì¸®´Â Á÷Á¢ ¿©ÇàÀ» ÁØºñÇÏ´Â »ç¶÷µé¿¡°Ô ÇÑ °÷¿¡¼­ ¸¹Àº Á¤º¸¸¦ ¾òÀ» ¼ö ÀÖ´Â ¿©ÇàÁ¤º¸ ÆäÀÌÁö¸¦ »ý°¢ÇÏ¿© ±¸ÇöÇÏ°Ô µÇ¾ú´Ù.
+                                    <p>ì˜¬í•´ ì´ˆ, ìš°ë¦¬ëŠ” í•¨ê»˜ ìœ ëŸ½ ì—¬í–‰ì„ ë‹¤ë…€ì™”ë‹¤.
+                                    ìœ ëŸ½ ì—¬í–‰ì„ ì¤€ë¹„í•˜ë©´ì„œ ìœ ëŸ½ ê´€ê´‘ì§€ì— ëŒ€í•œ ì •ë³´ë¥¼ ìˆ˜ì§‘í•˜ëŠ” ì¤‘, ê½¤ ë§Žì€ ì •ë³´ë“¤ì´ ì¤‘ë³µë˜ì—ˆê³  ê·¸ë¡œ ì¸í•´ ìƒˆë¡œìš´ ëª…ì†Œë¥¼ ì°¾ìœ¼ë ¤ë©´ ë” ë³µìž¡í•˜ê³  ì‹œê°„ì„ ë“¤ì—¬ ìžë£Œë¥¼ ìˆ˜ì§‘í•´ì•¼ í–ˆë‹¤. 
+í•œ ê³³ì´ ì•„ë‹Œ ì—¬ëŸ¬ íŽ˜ì´ì§€ë¥¼ ëŒì•„ë‹¤ë‹ˆë©´ì„œ ì •ë³´ë¥¼ ìˆ˜ì§‘í•˜ë‹¤ ë³´ë‹ˆ ìœ ëŸ½ì´ë¼ëŠ” ê¸´ ì—¬í–‰ì— ëŒ€í•´ ì¤€ë¹„í•˜ëŠ” ì‹œê°„ì´ ìƒê°ë³´ë‹¤ ì˜¤ëž˜ ê±¸ë ¸ë‹¤. 
+í”ížˆ ì˜¬ë¼ì™€ ìžˆëŠ” ë¸”ë¡œê·¸ë“¤ì— ìœ ëŸ½ì˜ ìƒ‰ë‹¤ë¥¸ ê´€ê´‘ì§€ì— ëŒ€í•œ ì •ë³´ëŠ” ë§Žì§€ ì•Šì•˜ê³ , ì‹¤ì œë¡œ ìœ ëŸ½ ì—¬í–‰ ì¤‘ì—ì„œë„ íŠ¹ì • ëª…ì†Œì—ë§Œ ì‚¬ëžŒì´ ë„ˆë¬´ ë§Žê±°ë‚˜ ê³¼ìž¥ëœ ê´‘ê³  ì •ë³´ë¡œ ì¸í•´ ì‹¤ë§í•œ ìž¥ì†Œë„ ì—¬ëŸ¿ ìžˆì—ˆë‹¤.
+ìš”ì¦˜ ì‚¬ëžŒë“¤ì€ ì›¹íŽ˜ì´ì§€ ì •ë³´ë¥¼ í¬ê²Œ ì¤‘ìš”ì‹œí•˜ê³ , ê·¸ ì •ë³´ë¥¼ í† ëŒ€ë¡œ ì—¬í–‰ê³„íšì„ ì„¸ìš´ë‹¤. 
+ì´ì— ìš°ë¦¬ëŠ” ì§ì ‘ ì—¬í–‰ì„ ì¤€ë¹„í•˜ëŠ” ì‚¬ëžŒë“¤ì—ê²Œ í•œ ê³³ì—ì„œ ë§Žì€ ì •ë³´ë¥¼ ì–»ì„ ìˆ˜ ìžˆëŠ” ì—¬í–‰ì •ë³´ íŽ˜ì´ì§€ë¥¼ ìƒê°í•˜ì—¬ êµ¬í˜„í•˜ê²Œ ë˜ì—ˆë‹¤.
 </p>
   	                            </div>
                             </div>
@@ -147,8 +147,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
                                                     <article class="single_service_right_text">
                                                         <h4>INFORMATION</h4>
-                                                        <p>»ç¿ëÀÚµéÀÌ ÀÚ½Å¸¸ÀÇ ¸®ºä¸¦ ¿Ã¸®´Â °ø°£. °¢Á¾ ³ª¶óÀÇ ¿©Çà ÈÄ±â³ª ÀÏÁ¤, ¿©·¯ÆÁµéÀ» °øÀ¯ÇÒ ¼ö ÀÖ½À´Ï´Ù.</p>
-                                                        <p>¿©±âÀÖ´Â Á¤º¸¸¸À¸·Îµµ À¯·´¿©Çà ÁØºñ ÇÑ ¹ø¿¡ ÇØ°á!</p>
+                                                        <p>ì‚¬ìš©ìžë“¤ì´ ìžì‹ ë§Œì˜ ë¦¬ë·°ë¥¼ ì˜¬ë¦¬ëŠ” ê³µê°„. ê°ì¢… ë‚˜ë¼ì˜ ì—¬í–‰ í›„ê¸°ë‚˜ ì¼ì •, ì—¬ëŸ¬íŒë“¤ì„ ê³µìœ í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
+                                                        <p>ì—¬ê¸°ìžˆëŠ” ì •ë³´ë§Œìœ¼ë¡œë„ ìœ ëŸ½ì—¬í–‰ ì¤€ë¹„ í•œ ë²ˆì— í•´ê²°!</p>
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">
@@ -165,8 +165,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
                                                     <article class="single_service_right_text">
                                                         <h4>MARKET</h4>
-                                                        <p>´Ù¾çÇÑ ³ª¶ó¿¡¼­¸¸ ¾µ ¼ö ÀÖ´Â ³²Àº µ·°ú ±³ÅëÄ«µå, À¯½É µîÀ» ´Ù¸¥ »ç¿ëÀÚ¿¡°Ô ³ª´®,±³È¯,ÆÇ¸ÅÇÒ ¼ö ÀÖ½À´Ï´Ù.</p>
-                                                       	<p>¿©Çà ÇÏ¸é¼­ »ç¿Â ±â³äÇ°µéÀ» ÆÇ¸Å,³ª´® µî ¿©ÇàÀ» ÁØºñÇÏ´Â »ç¶÷ÀÌ ¾Æ´Ï´õ¶óµµ ÀÌ¿ëÇÒ ¼ö ÀÖ¾î¿ä!</p>
+                                                        <p>ë‹¤ì–‘í•œ ë‚˜ë¼ì—ì„œë§Œ ì“¸ ìˆ˜ ìžˆëŠ” ë‚¨ì€ ëˆê³¼ êµí†µì¹´ë“œ, ìœ ì‹¬ ë“±ì„ ë‹¤ë¥¸ ì‚¬ìš©ìžì—ê²Œ ë‚˜ëˆ”,êµí™˜,íŒë§¤í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
+                                                       	<p>ì—¬í–‰ í•˜ë©´ì„œ ì‚¬ì˜¨ ê¸°ë…í’ˆë“¤ì„ íŒë§¤,ë‚˜ëˆ” ë“± ì—¬í–‰ì„ ì¤€ë¹„í•˜ëŠ” ì‚¬ëžŒì´ ì•„ë‹ˆë”ë¼ë„ ì´ìš©í•  ìˆ˜ ìžˆì–´ìš”!</p>
 														
                                                     </article>
                                                 </div>
@@ -184,8 +184,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
                                                     <article class="single_service_right_text">
                                                         <h4>TOGETHER</h4>
-                                                        <p>À¯·´¿¡¼­´Â ÇÔ²² ÇÏ¸é °¡°ÝÀÌ ÈÎ¾À Àú·ÅÇØÁö´Â °æ¿ì°¡ »ý±â±â ¶§¹®¿¡ µ¿ÇàÀ» ±¸ÇÒ ÀÏÀÌ ¸¹½À´Ï´Ù</p>
-														<p>µ¿Çà±¸ÇÏ±â °Ô½ÃÆÇÀ»  ÅëÇØ ÆíÇÏ°Ô µ¿ÇàÀ» ±¸ÇØº¸¼¼¿ä!</p>
+                                                        <p>ìœ ëŸ½ì—ì„œëŠ” í•¨ê»˜ í•˜ë©´ ê°€ê²©ì´ í›¨ì”¬ ì €ë ´í•´ì§€ëŠ” ê²½ìš°ê°€ ìƒê¸°ê¸° ë•Œë¬¸ì— ë™í–‰ì„ êµ¬í•  ì¼ì´ ë§ŽìŠµë‹ˆë‹¤</p>
+														<p>ë™í–‰êµ¬í•˜ê¸° ê²Œì‹œíŒì„  í†µí•´ íŽ¸í•˜ê²Œ ë™í–‰ì„ êµ¬í•´ë³´ì„¸ìš”!</p>
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">
@@ -202,8 +202,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
                                                     <article class="single_service_right_text">
                                                         <h4>RECOMMEND</h4>
-                                                        <p>Á÷Á¢ À¯·´¿©ÇàÀ» ´Ù³à¿Â ÀúÈñ°¡ ¾Ë·Áµå¸®´Â »ý»ýÇÑ ÈÄ±â¿Í ¾ËÂ¥¹è±â Á¤º¸µéÀÌ ¸ð¿©ÀÖ½À´Ï´Ù</p>
-                                                        <p>ÀÌ ÆäÀÌÁö¿¡¼­¸¸ ¾Ë·Áµå¸®´Â À¯·´¿©Çà ²ÜÆÁ ´ë¹æÃâ! Áö±Ý È®ÀÎÇØº¸¼¼¿ä</p>
+                                                        <p>ì§ì ‘ ìœ ëŸ½ì—¬í–‰ì„ ë‹¤ë…€ì˜¨ ì €í¬ê°€ ì•Œë ¤ë“œë¦¬ëŠ” ìƒìƒí•œ í›„ê¸°ì™€ ì•Œì§œë°°ê¸° ì •ë³´ë“¤ì´ ëª¨ì—¬ìžˆìŠµë‹ˆë‹¤</p>
+                                                        <p>ì´ íŽ˜ì´ì§€ì—ì„œë§Œ ì•Œë ¤ë“œë¦¬ëŠ” ìœ ëŸ½ì—¬í–‰ ê¿€íŒ ëŒ€ë°©ì¶œ! ì§€ê¸ˆ í™•ì¸í•´ë³´ì„¸ìš”</p>
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">

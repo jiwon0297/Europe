@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +72,7 @@
 				<div class="head_title text-center">
 					<h2>Preparation</h2>
 						<div class="subtitle">
-							¿©ÇàÀ» À§ÇØ ÁØºñÇØ¾ß ÇÒ °Íµé
+							ì—¬í–‰ì„ ìœ„í•´ ì¤€ë¹„í•´ì•¼ í•  ê²ƒë“¤
 						</div>
 					<div class="separator"></div>                                   
 				</div>
@@ -90,8 +90,8 @@
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page1.jsp" class="place_btn">ENTER</a>
-                                <h3>¿©Çà °¡±â Àü</h3>
-                                <p>ÇÊ¿äÇÑ ¾îÇÃ/»çÀÌÆ®</p>
+                                <h3>ì—¬í–‰ ê°€ê¸° ì „</h3>
+                                <p>í•„ìš”í•œ ì–´í”Œ/ì‚¬ì´íŠ¸</p>
                             </div>
                         </div>
                     </div>
@@ -102,8 +102,8 @@
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page2.jsp" class="place_btn">ENTER</a>
-                                <h3>¿©Çà °¡±â Àü</h3>
-                                <p>ÇÊ¼ö ÁØºñ¹°</p>
+                                <h3>ì—¬í–‰ ê°€ê¸° ì „</h3>
+                                <p>í•„ìˆ˜ ì¤€ë¹„ë¬¼</p>
                         	</div>
                     	</div>
                 	</div>
@@ -116,8 +116,8 @@
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page3.jsp"  class="place_btn">ENTER</a>
-                                <h3>¿©Çà Áß</h3>
-                                <p>ÇÊ¿äÇÑ ¾îÇÃ</p>
+                                <h3>ì—¬í–‰ ì¤‘</h3>
+                                <p>í•„ìš”í•œ ì–´í”Œ</p>
                            	</div>
                         </div>
                     </div>
@@ -128,8 +128,8 @@
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page4.jsp" class="place_btn">ENTER</a>
-                                <h3>¿©Çà ²ÜÆÁ</h3>
-                                <p>²ÜÆÁ ³Ö±â</p>
+                                <h3>ì—¬í–‰ ê¿€íŒ</h3>
+                                <p>ê¿€íŒ ë„£ê¸°</p>
                             </div>
                         </div>
                     </div>

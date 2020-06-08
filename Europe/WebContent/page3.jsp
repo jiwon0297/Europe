@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,9 +43,9 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="head_title text-center">
-					<h2>¿©ÇàÇÏ¸é¼­ ÇÊ¿äÇÑ ¾îÇÃ</h2>
+					<h2>ì—¬í–‰í•˜ë©´ì„œ í•„ìš”í•œ ì–´í”Œ</h2>
 						<div class="subtitle">
-							¿©ÇàÇÏ¸é¼­ »ý±â´Â ¿©·¯ ¹®Á¦µé! ¹Ì¸® ÁØºñÇØ¼­ ´ëºñÇÕ½Ã´Ù~
+							ì—¬í–‰í•˜ë©´ì„œ ìƒê¸°ëŠ” ì—¬ëŸ¬ ë¬¸ì œë“¤! ë¯¸ë¦¬ ì¤€ë¹„í•´ì„œ ëŒ€ë¹„í•©ì‹œë‹¤~
 						</div>
 					<div class="separator"></div>
 					
@@ -56,28 +56,28 @@
 									<div class="single_ihotel_list">
 										<img src="marine/img/sbb.JPG" alt="">
 										<h3> <a href="#"> SBB Mobile</a></h3>
-										<p>½ºÀ§½º ¿©Çà¿¡ ²À ÇÊ¿äÇÑ ¾îÇÃ</p>
+										<p>ìŠ¤ìœ„ìŠ¤ ì—¬í–‰ì— ê¼­ í•„ìš”í•œ ì–´í”Œ</p>
 									</div>
 								</div>
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
 				                        <img src="marine/img/googlemaps.JPG" alt="">
 				                        <h3> <a href="#"> Goole Maps</a></h3>
-				                        <p>Àü ¼¼°è ¾îµðµç ´Ù Ã£À» ¼ö ÀÖ´Â ÇÊ¼ö Áöµµ ¾îÇÃ</p>
+				                        <p>ì „ ì„¸ê³„ ì–´ë””ë“  ë‹¤ ì°¾ì„ ìˆ˜ ìžˆëŠ” í•„ìˆ˜ ì§€ë„ ì–´í”Œ</p>
 									</div>
 								</div>
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
 				                        <img src="marine/img/db.JPG" alt="">
 				                        <h3> <a href="#"> DB Bahn</a></h3>
-				                        <p>µ¶ÀÏ Ã¶µµÃ»</p>
+				                        <p>ë…ì¼ ì² ë„ì²­</p>
 									</div>
 								</div>
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
 				                        <img src="marine/img/flixbus.JPG" alt="">
 				                        <h3> <a href="#"> Flix Bus</a></h3>
-				                        <p>À¯·´ÀÇ ±¹°æÀ» ³Ñ³ªµå´Â ¹ö½º</p>
+				                        <p>ìœ ëŸ½ì˜ êµ­ê²½ì„ ë„˜ë‚˜ë“œëŠ” ë²„ìŠ¤</p>
 									</div>
 								</div>
 							</div>

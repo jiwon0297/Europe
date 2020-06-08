@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Accommodation</title>
 	<meta name="description" content="">
@@ -44,7 +44,7 @@
                             <div class="head_title text-center">
                                 <h2>Accommodation</h2>
                                 <div class="subtitle">
-                                    	¼÷¹Ú »çÀÌÆ® ÃßÃµ 
+                                    	ìˆ™ë°• ì‚¬ì´íŠ¸ ì¶”ì²œ 
                                 </div>
                                 <div class="separator"></div>
                             </div><!-- End off Head_title -->
@@ -62,9 +62,9 @@
                                                 <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>AIRBNB</h3>
                                                     <div class="separator2"></div>
-                                                    <p>ÇöÁö ¾ÆÆÄÆ®³ª ÁÖÅÃ¿¡¼­ ¼÷¹ÚÀ» ÇÒ ¼ö ÀÖÀ¸¸ç 
-                                                    	Æ¯Á¤ µµ½ÃÀÇ °æ¿ì ÇöÁöÀÎÀÌ Á¦°øÇÏ´Â 
-                                                    	´Ù¾çÇÑ ÇöÁöÅõ¾î³ª ·ÎÄÃÄÃÃ³¸¦ Ã¼ÇèÇÒ ¼ö ÀÖ´Â »çÀÌÆ®</p>
+                                                    <p>í˜„ì§€ ì•„íŒŒíŠ¸ë‚˜ ì£¼íƒì—ì„œ ìˆ™ë°•ì„ í•  ìˆ˜ ìžˆìœ¼ë©° 
+                                                    	íŠ¹ì • ë„ì‹œì˜ ê²½ìš° í˜„ì§€ì¸ì´ ì œê³µí•˜ëŠ” 
+                                                    	ë‹¤ì–‘í•œ í˜„ì§€íˆ¬ì–´ë‚˜ ë¡œì»¬ì»¬ì²˜ë¥¼ ì²´í—˜í•  ìˆ˜ ìžˆëŠ” ì‚¬ì´íŠ¸</p>
 
                                                     <a href="https://www.airbnb.co.kr"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -85,7 +85,7 @@
                                                 <div class="single_blog_text s_b_left" style="height:417px">
                                                     <h3>AGODA</h3>
                                                     <div class="separator2"></div>
-                                                    <p>Àü ¼¼°è È£ÅÚ ½Ç½Ã°£ ¿¹¾à »çÀÌÆ®</p>
+                                                    <p>ì „ ì„¸ê³„ í˜¸í…” ì‹¤ì‹œê°„ ì˜ˆì•½ ì‚¬ì´íŠ¸</p>
 
                                                     <a href="https://www.agoda.com"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -107,8 +107,8 @@
                                                 <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>HOTELS.COM</h3>
                                                     <div class="separator2"></div>
-                                                    <p>¼¼°è ÃÖ´ë ¿Â¶óÀÎ ¼÷¹Ú »çÀÌÆ®.
-                                                    	ÀÌº¥Æ®³ª Æ¯ÀüÀ» ÀÚÁÖ Á¦°ø.</p>
+                                                    <p>ì„¸ê³„ ìµœëŒ€ ì˜¨ë¼ì¸ ìˆ™ë°• ì‚¬ì´íŠ¸.
+                                                    	ì´ë²¤íŠ¸ë‚˜ íŠ¹ì „ì„ ìžì£¼ ì œê³µ.</p>
 
                                                     <a href="https://kr.hotels.com"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
@@ -130,8 +130,8 @@
                                                 <div class="single_blog_text s_b_right" style="height:417px">
                                                     <h3>BOOKING.COM</h3>
                                                     <div class="separator2"></div>
-                                                    <p>¼÷¹Ú ¿¹¾à ½Ã ´Ù¾çÇÑ ¼÷¼Ò¸¦ ¼±ÅÃÇÒ ¼ö ÀÖ°í, ¿¹¾à ¼ö¼ö·á°¡ ¾øÀ½.
-                                                    	¼±¿¹¾à ÈÄ°áÁ¦°¡ °¡´É.</p>
+                                                    <p>ìˆ™ë°• ì˜ˆì•½ ì‹œ ë‹¤ì–‘í•œ ìˆ™ì†Œë¥¼ ì„ íƒí•  ìˆ˜ ìžˆê³ , ì˜ˆì•½ ìˆ˜ìˆ˜ë£Œê°€ ì—†ìŒ.
+                                                    	ì„ ì˜ˆì•½ í›„ê²°ì œê°€ ê°€ëŠ¥.</p>
 
                                                     <a href="https://www.booking.com"><h2 style="color:yellow; position:relative; left:190px; margin-top:150px;">GO >></h2></a>
                                                 </div>
