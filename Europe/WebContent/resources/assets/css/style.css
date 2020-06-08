@@ -1119,7 +1119,15 @@ button.btn-md:hover {
 .single_pricing a{
     margin-top:30px;
 }
-
+.client_review .owl-nav button {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: inline-block;
+  background-color: #b8860b !important;
+  color: #fff !important;
+}
 
 
 /*video section css*/
