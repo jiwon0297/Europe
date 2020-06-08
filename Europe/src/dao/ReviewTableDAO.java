@@ -142,10 +142,12 @@ public class ReviewTableDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "select * from review where cate1=?, country=?";
+			String sql = "select * from review where cate1=? and country=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, category);
-			// pstmt.setString(2, country);
+			pstmt.setString(2, country);
+			System.out.println(category);
+			System.out.println(country);
 			rs = pstmt.executeQuery();
 			List<ReviewElementBean> rList = new ArrayList<>();
 			while (rs.next()) {

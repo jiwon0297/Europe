@@ -138,13 +138,13 @@ public class ListReviewAction implements Action {
 			
 			//swiss
 			else if(mode.contentEquals("swissinfo")) {
-				country = "swiss";
 				category = "information";
+				country = "swiss";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
 				request.setAttribute("rList", rList);
 			} else if(mode.contentEquals("swissmarket")) {
-				country = "swiss";
 				category = "market";
+				country = "swiss";
 				List<ReviewElementBean> rList = dao.selectListByCategory(conn, category, country);
 				request.setAttribute("rList", rList);				
 			} else if(mode.contentEquals("swisstogether")) {
