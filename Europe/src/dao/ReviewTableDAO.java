@@ -139,7 +139,7 @@ public class ReviewTableDAO {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "select * from review where cate1=? and country=?";
+			String sql = "select * from review where cate1=? and country=? order by number desc";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, category);
 			pstmt.setString(2, country);
