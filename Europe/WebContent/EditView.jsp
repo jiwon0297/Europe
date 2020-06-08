@@ -42,14 +42,14 @@ String userPW = (String)session.getAttribute("userPW");
       <label for="Category" class="col-sm-2 com-form-label" style="position: relative; font-size:15pt; left:130px;">나라/주제</label>
       <div style="position: relative; left:95px;">
       <select name="country" style="background-color:#fbfbfb; width:150px; float:left;">
-               <option value="korea"<c:if test="${re.getCountry() =='Korea'}">selected='selected'</c:if>>Korea</option>
-               <option value="england"<c:if test="${re.getCountry() =='England'}">selected='selected'</c:if>>England</option>
-               <option value="france"<c:if test="${re.getCountry() =='France'}">selected='selected'</c:if>>France</option>
-               <option value="swiss"<c:if test="${re.getCountry() =='Swiss'}">selected='selected'</c:if>>Swiss</option>
-               <option value="germany"<c:if test="${re.getCountry() =='Germany'}">selected='selected'</c:if>>Germany</option>
-               <option value="hungary"<c:if test="${re.getCountry() =='Hungary'}">selected='selected'</c:if>>Hungary</option>
-               <option value="czech"<c:if test="${re.getCountry() =='Czech'}">selected='selected'</c:if>>Czech</option>
-               <option value="italy"<c:if test="${re.getCountry() =='Italy'}">selected='selected'</c:if>>Italy</option>
+               <option value="Korea"<c:if test="${re.getCountry() =='Korea'}">selected='selected'</c:if>>Korea</option>
+               <option value="England"<c:if test="${re.getCountry() =='England'}">selected='selected'</c:if>>England</option>
+               <option value="France"<c:if test="${re.getCountry() =='France'}">selected='selected'</c:if>>France</option>
+               <option value="Swiss"<c:if test="${re.getCountry() =='Swiss'}">selected='selected'</c:if>>Swiss</option>
+               <option value="Germany"<c:if test="${re.getCountry() =='Germany'}">selected='selected'</c:if>>Germany</option>
+               <option value="Hungary"<c:if test="${re.getCountry() =='Hungary'}">selected='selected'</c:if>>Hungary</option>
+               <option value="Czech"<c:if test="${re.getCountry() =='Czech'}">selected='selected'</c:if>>Czech</option>
+               <option value="Italy"<c:if test="${re.getCountry() =='Italy'}">selected='selected'</c:if>>Italy</option>
      </select>
      <select name="cate1" style="background-color:#fbfbfb; width:150px; float:left;">
                <option value="information"<c:if test="${re.getCate1() =='Information'}">selected='selected'</c:if>>Information</option>
