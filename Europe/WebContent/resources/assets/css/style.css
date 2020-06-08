@@ -192,9 +192,9 @@ p {
     line-height: 2rem;
     font-size: 0.875rem;
 }
-p:last-child {
+/*p:last-child {
     margin-bottom: 0px;
-}
+}*/
 /*.home-wrap h1,*/
 .home-wrap h2,
 .home-wrap h3,

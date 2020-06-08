@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="marine/css/style.css">
 </head>
 <body>
-<c:forEach var="re" items="${rList}">
+<c:forEach var="re" items="${rList}" begin="0" end="0">
  <!--top place start-->
     <section class="event_part section_padding" style="background-image: url('marine/img/${re.getCountry()}.jpg'); background-size:cover; height:560px;">
         <div class="container">
@@ -92,22 +92,22 @@
        <jsp:include page="header.jsp"/>
     </div>
     <!--::industries start::-->
-    <section class="hotel_list section_padding" style="background-color:#daa521;">
+    <section class="hotel_list section_padding" style="height:5px">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-6"><br><br>
-                    <div class="section_tittle text-center">
-                        <h2 style="font-size:50pt; margin-top:-80px; color:#810102">${re.getCountry()} ${re.getCate1()}</h2>
+                    <div class="section_tittle text-center" >
+                        <h2 style="font-size:30pt; margin-top:-80px; color:#810102">${re.getCountry()} ${re.getCate1()}</h2>
                     </div>
                 </div>
-                <p><a href="AddviewAction.do" class="btn btn-secondary" role="button">Add &raquo;</a></p>
+                <p><a href="AddviewAction.do" class="btn btn-secondary" role="button" style="margin-top:-80px">Add &raquo;</a></p>
             </div>
             </div>
             </section>
        </c:forEach>
 mode : ${mode}
 
-<table class="table table-hover">
+<table class="table table-hover" style="text-align:center">
 	<tr>
 		<td><strong>Title</strong></td>
 		<td><strong>Writer</strong></td>

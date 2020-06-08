@@ -33,7 +33,7 @@
 <body>
 
     <!--top place start-->
-    <section class="event_part section_padding" style="background-image: url('marine/img/towerbridge.jpg'); background-size:cover; height:560px;">
+    <section class="event_part section_padding" style="background-image: url('marine/img/england.jpg'); background-size:cover; height:560px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
