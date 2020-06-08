@@ -3,10 +3,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>page4</title>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>page4</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+	<link rel="stylesheet" href="resources/assets/css/iconfont.css">
+	<link rel="stylesheet" href="resources/assets/css/slick/slick.css">
+	<link rel="stylesheet" href="resources/assets/css/slick/slick-theme.css">
+	<link rel="stylesheet" href="resources/assets/css/stylesheet.css">
+	<link rel="stylesheet" href="resources/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="resources/assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="resources/assets/css/bootstrap.css">
+	<link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/assets/css/magnific-popup.css">
+	<!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+	
+	<!--For Plugins external css-->
+	<link rel="stylesheet" href="resources/ssets/css/plugins.css" />
+
+	<!--Theme custom css -->
+	<link rel="stylesheet" href="resources/assets/css/style.css">
+
+	<!--Theme Responsive css-->
+	<link rel="stylesheet" href="resources/assets/css/responsive.css" />
+
+	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	
+	
+	
+	
 </head>
 <body>
+<jsp:include page="header.jsp" />
+<jsp:include page="recommend.jsp"/>					
+
 [여행 꿀팁]
 1. 런던 해리포터 스튜디오는 제일 저렴한 공홈에서 예약하기!
  => 예약하러가기(https://blog.naver.com/riacebamboo/221474294182)
@@ -20,5 +54,25 @@
  => 융프라우 패스 예매하러 가기(http://www.jungfrau.co.kr/main/main.asp)
 6. 뮌헨에서 근교 퓌센 기차는 사람이 많을 수록 저렴해져요! 저희 사이트에서 동행을 구해보세요!
  => 동행 구하러 가기(우리 사이트 주소)
+ 
+ 
+		
+		
+
+		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="resources/assets/js/jquery.magnific-popup.js"></script>
+        <script src="resources/assets/js/jquery.mixitup.min.js"></script>
+        <script src="resources/assets/js/jquery.easing.1.3.js"></script>
+        <script src="resources/assets/js/jquery.masonry.min.js"></script>
+
+        <!--slick slide js -->
+        <script src="resources/assets/css/slick/slick.js"></script>
+        <script src="resources/assets/css/slick/slick.min.js"></script>
+
+
+        <script src="resources/assets/js/plugins.js"></script>
+        <script src="resources/assets/js/main.js"></script>
 </body>
 </html>
