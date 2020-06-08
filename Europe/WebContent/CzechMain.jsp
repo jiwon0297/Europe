@@ -34,7 +34,7 @@
 <body>
 
     <!--top place start-->
-    <section class="event_part section_padding" style="background-image: url('marine/img/czech.jpg'); background-size:cover; height:560px;">
+    <section class="event_part section_padding" style="background-image: url('marine/img/Czech.jpg'); background-size:cover; height:560px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -100,11 +100,11 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_ihotel_list">
-                        <a href="CzechInfoListViewAction.do"><img src="marine/img/information.jpg" alt=""></a>
+                        <a href="CzechInformationListViewAction.do"><img src="marine/img/information.jpg" alt=""></a>
                         <div class="hotel_text_iner">
                             <h3 style="font-size:23pt;"><a href="CzechInfoListViewAction.do" style="color:darkred"> Travel Information</a></h3>
                             <p style="font-size:13pt; color:gray;">You can share your experience and you can get the information, too</p><br>
-							<a href="CzechInfoListViewAction.do"><h5 style="text-align:right; font-size:13pt;"><span>>> Detail</span></h5></a>
+							<a href="CzechInformationListViewAction.do"><h5 style="text-align:right; font-size:13pt;"><span>>> Detail</span></h5></a>
                         </div>
                     </div>
                 </div>

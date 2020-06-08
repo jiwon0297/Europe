@@ -209,67 +209,67 @@ public class ReviewTableDAO {
 	}
 	
 	public int cate(Connection conn, String category, String country) throws SQLException {
-				if(category.equals("information") && country.equals("england")) {
+				if(category.equals("Information") && country.equals("England")) {
 					return 1;
-				} else if(category.equals("market") && country.equals("england")) {
+				} else if(category.equals("Market") && country.equals("England")) {
 					return 2;
-				} else if(category.equals("together") && country.equals("england")) {
+				} else if(category.equals("Together") && country.equals("England")) {
 					return 3;
 				} 
 				
-				else if(category.equals("information") && country.equals("korea")) {
+				else if(category.equals("Information") && country.equals("Korea")) {
 					return 4;
-				} else if(category.equals("market") && country.equals("korea")) {
+				} else if(category.equals("Market") && country.equals("Korea")) {
 					return 5;
-				} else if(category.equals("together") && country.equals("korea")) {
+				} else if(category.equals("Together") && country.equals("Korea")) {
 					return 6;
 				}
 				
-				else if(category.equals("information") && country.equals("swiss")) {
+				else if(category.equals("Information") && country.equals("Swiss")) {
 					return 7;
-				} else if(category.equals("market") && country.equals("swiss")) {
+				} else if(category.equals("Market") && country.equals("Swiss")) {
 					return 8;
-				} else if(category.equals("together") && country.equals("swiss")) {
+				} else if(category.equals("Together") && country.equals("Swiss")) {
 					return 9;
 				}
 				
-				else if(category.equals("information") && country.equals("czech")) {
+				else if(category.equals("Information") && country.equals("Czech")) {
 					return 10;
-				} else if(category.equals("market") && country.equals("czech")) {
+				} else if(category.equals("Market") && country.equals("Czech")) {
 					return 11;
-				} else if(category.equals("together") && country.equals("czech")) {
+				} else if(category.equals("Together") && country.equals("Czech")) {
 					return 12;
 				}
 				
-				else if(category.equals("information") && country.equals("hungary")) {
+				else if(category.equals("Information") && country.equals("Hungary")) {
 					return 13;
-				} else if(category.equals("market") && country.equals("hungary")) {
+				} else if(category.equals("Market") && country.equals("Hungary")) {
 					return 14;
-				} else if(category.equals("together") && country.equals("hungary")) {
+				} else if(category.equals("Together") && country.equals("Hungary")) {
 					return 15;
 				}
 				
-				else if(category.equals("information") && country.equals("italy")) {
+				else if(category.equals("Information") && country.equals("Italy")) {
 					return 16;
-				} else if(category.equals("market") && country.equals("italy")) {
+				} else if(category.equals("Market") && country.equals("Italy")) {
 					return 17;
-				} else if(category.equals("together") && country.equals("italy")) {
+				} else if(category.equals("Together") && country.equals("Italy")) {
 					return 18;
 				}
 				
-				else if(category.equals("information") && country.equals("germany")) {
+				else if(category.equals("Information") && country.equals("Germany")) {
 					return 19;
-				} else if(category.equals("market") && country.equals("germany")) {
+				} else if(category.equals("Market") && country.equals("Germany")) {
 					return 20;
-				} else if(category.equals("together") && country.equals("germany")) {
+				} else if(category.equals("Together") && country.equals("Germany")) {
 					return 21;
 				}
 				
-				else if(category.equals("information") && country.equals("france")) {
+				else if(category.equals("Information") && country.equals("France")) {
 					return 22;
-				} else if(category.equals("market") && country.equals("france")) {
+				} else if(category.equals("Market") && country.equals("France")) {
 					return 23;
-				} else if(category.equals("together") && country.equals("france")) {
+				} else if(category.equals("Together") && country.equals("France")) {
 					return 24;
 				}
 				

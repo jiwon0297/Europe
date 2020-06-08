@@ -38,7 +38,7 @@
                                      <a href="EnglandMain.jsp">
                                         <div class="grid_item_overlay">
                                             <div class="separator4"></div>
-                                            <h3>UK</h3>
+                                            <h3>England</h3>
                                         </div>
                                     </a>
                                 </div>

@@ -49,19 +49,19 @@ String userPW = (String)session.getAttribute("userPW");
       <label for="Category" class="col-sm-2 com-form-label" style="position: relative; font-size:15pt; left:130px;">나라/주제</label>
       <div style="position: relative; left:95px;">
       <select name="country" style="background-color:#fbfbfb; width:150px; float:left;">
-					<option>korea</option>
-					<option>england</option>
-					<option>france</option>
-					<option>swiss</option>
-					<option>germany</option>
-					<option>hungary</option>
-					<option>czech</option>
-					<option>italy</option>
+					<option>Korea</option>
+					<option>England</option>
+					<option>France</option>
+					<option>Swiss</option>
+					<option>Germany</option>
+					<option>Hungary</option>
+					<option>Czech</option>
+					<option>Italy</option>
 	  </select>
 	  <select name="cate1" style="background-color:#fbfbfb; width:150px; float:left;">
-					<option>information</option>
-					<option>market</option>
-					<option>together</option>
+					<option>Information</option>
+					<option>Market</option>
+					<option>Together</option>
 	  </select>
 	</div>
 	</div>

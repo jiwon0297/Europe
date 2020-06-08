@@ -60,7 +60,7 @@ public class EuropeController extends HttpServlet {
 		Action action = null;
 		
 		//ENGLAND
-		if (command.equals("/EnglandInfoListViewAction.do")) {
+		if (command.equals("/EnglandInformationListViewAction.do")) {
 			action = new ListReviewAction("englandinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=englandinfo");
@@ -78,7 +78,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//FRANCE
-		else if (command.equals("/FranceInfoListViewAction.do")) {
+		else if (command.equals("/FranceInformationListViewAction.do")) {
 			action = new ListReviewAction("franceinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=franceinfo");
@@ -96,7 +96,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//KOREA
-		else if (command.equals("/KoreaInfoListViewAction.do")) {
+		else if (command.equals("/KoreaInformationListViewAction.do")) {
 			action = new ListReviewAction("koreainfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=koreainfo");
@@ -114,7 +114,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//SWISS
-		else if (command.equals("/SwissInfoListViewAction.do")) {
+		else if (command.equals("/SwissInformationListViewAction.do")) {
 			action = new ListReviewAction("swissinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=swissinfo");
@@ -132,7 +132,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//GERMANY
-		else if (command.equals("/GermanyInfoListViewAction.do")) {
+		else if (command.equals("/GermanyInformationListViewAction.do")) {
 			action = new ListReviewAction("germanyinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=germanyinfo");
@@ -150,7 +150,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//HUNGARY
-		else if (command.equals("/HungaryInfoListViewAction.do")) {
+		else if (command.equals("/HungaryInformationListViewAction.do")) {
 			action = new ListReviewAction("hungaryinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=hungaryinfo");
@@ -168,7 +168,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//CZECH
-		else if (command.equals("/CzechInfoListViewAction.do")) {
+		else if (command.equals("/CzechInformationListViewAction.do")) {
 			action = new ListReviewAction("czechinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=czechinfo");
@@ -186,7 +186,7 @@ public class EuropeController extends HttpServlet {
 		} 
 		
 		//ITALY
-		else if (command.equals("/ItalyInfoListViewAction.do")) {
+		else if (command.equals("/ItalyInformationListViewAction.do")) {
 			action = new ListReviewAction("italyinfo");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=italyinfo");
@@ -282,83 +282,12 @@ public class EuropeController extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("Write.jsp");
 			rd.forward(request, response);			
 		}  else if (command.equals("/AddAction.do")) {
+			String country = request.getParameter("country");
+			String category = request.getParameter("cate1");
 			action = new AddReviewAction();
 			action.execute(request,response);
-			HttpSession session = request.getSession(true);
-			int catee = (int)session.getAttribute("catee");
-			if (catee==1) {
-				RequestDispatcher rd = request.getRequestDispatcher("/EnglandInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if (catee==2) {
-				RequestDispatcher rd = request.getRequestDispatcher("/EnglandMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==3) {
-				RequestDispatcher rd = request.getRequestDispatcher("/EnglandTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==4) {
-				RequestDispatcher rd = request.getRequestDispatcher("/KoreaInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==5) {
-				RequestDispatcher rd = request.getRequestDispatcher("/KoreaMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==6) {
-				RequestDispatcher rd = request.getRequestDispatcher("/KoreaTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==7) {
-				RequestDispatcher rd = request.getRequestDispatcher("/SwissInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==8) {
-				RequestDispatcher rd = request.getRequestDispatcher("/SwissMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==9) {
-				RequestDispatcher rd = request.getRequestDispatcher("/SwissTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==10) {
-				RequestDispatcher rd = request.getRequestDispatcher("/CzechInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==11) {
-				RequestDispatcher rd = request.getRequestDispatcher("/CzechMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==12) {
-				RequestDispatcher rd = request.getRequestDispatcher("/CzechTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==13) {
-				RequestDispatcher rd = request.getRequestDispatcher("/HungaryInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==14) {
-				RequestDispatcher rd = request.getRequestDispatcher("/HungaryMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==15) {
-				RequestDispatcher rd = request.getRequestDispatcher("/HungaryTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==16) {
-				RequestDispatcher rd = request.getRequestDispatcher("/ItalyInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==17) {
-				RequestDispatcher rd = request.getRequestDispatcher("/ItalyMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==18) {
-				RequestDispatcher rd = request.getRequestDispatcher("/ItalyTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==19) {
-				RequestDispatcher rd = request.getRequestDispatcher("/GermanyInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==20) {
-				RequestDispatcher rd = request.getRequestDispatcher("/GermanyMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==21) {
-				RequestDispatcher rd = request.getRequestDispatcher("/GermanyTogetherListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==22) {
-				RequestDispatcher rd = request.getRequestDispatcher("/FranceInfoListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==23) {
-				RequestDispatcher rd = request.getRequestDispatcher("/FranceMarketListViewAction.do");
-				rd.forward(request, response);
-			} else if(catee==24) {
-				RequestDispatcher rd = request.getRequestDispatcher("/FranceTogetherListViewAction.do");
-				rd.forward(request, response);
-			} 
+			RequestDispatcher rd = request.getRequestDispatcher("/"+country+category+"ListViewAction.do");
+			rd.forward(request, response);		
 		}
 		
 		//Edit

@@ -34,7 +34,7 @@
 <body>
 
     <!--top place start-->
-    <section class="event_part section_padding" style="background-image: url('marine/img/italy.jpg'); background-size:cover; height:560px;">
+    <section class="event_part section_padding" style="background-image: url('marine/img/Italy.jpg'); background-size:cover; height:560px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -100,7 +100,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_ihotel_list">
-                        <a href="ItalyInfoListViewAction.do"><img src="marine/img/information.jpg" alt=""></a>
+                        <a href="ItalyInformationListViewAction.do"><img src="marine/img/information.jpg" alt=""></a>
                         <div class="hotel_text_iner">
                             <h3 style="font-size:23pt;"><a href="ItalyInfoListViewAction.do" style="color:darkred"> Travel Information</a></h3>
                             <p style="font-size:13pt; color:white;">You can share your experience and you can get the information, too</p><br>

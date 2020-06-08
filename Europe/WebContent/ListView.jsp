@@ -36,11 +36,6 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="marine/css/style.css">
 </head>
-<script type="text/javascript">
-	function cancel(){
-		window.history.back(); 
-	}
-</script>
 <body>
 <%
 String userID = (String)session.getAttribute("userID");
@@ -53,7 +48,7 @@ String userPW = (String)session.getAttribute("userPW");
             <div class="row justify-content-center">
                 <div class="col-xl-6"><br><br>
                     <div class="section_tittle text-center" >
-                        <h2 style="font-size:40pt; color:black; margin-top:20px">${re.getCountry()} ${re.getCate1()}</h2>
+                        <a href="${re.getCountry()}${re.getCate1()}ListViewAction.do"><h2 style="font-size:40pt; color:black; margin-top:20px">${re.getCountry()} ${re.getCate1()}</h2></a>
                     </div>
                 </div>
             </div>
@@ -68,7 +63,7 @@ String userPW = (String)session.getAttribute("userPW");
             <%} else { %>
             <a href="AddviewAction.do" class="btn btn-default" role="button" style="margin-bottom:20px;position:relative; right:20px; color:white; background-color:#68a5f3; float:right">Add &raquo;</a>
             <%}%>
-            <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Back" onclick="cancel()">
+            <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Main으로" onclick="location='${re.getCountry()}Main.jsp'">
             <table class="table table-hover" style="text-align:center">
 			<tr style="background-color:lightgray">
 				<td style="width:200px; text-align:center; font-size:13pt"><strong>말머리</strong></td>
