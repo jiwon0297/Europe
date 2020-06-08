@@ -38,52 +38,56 @@
 <body>
 <jsp:include page="header.jsp" />
 <jsp:include page="recommend.jsp"/>					
-
-<!--::industries start::-->
-    <section class="best_services section_padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="section_tittle text-center">
-                        <h2>여행하면서 필요한 어플</h2>
-                        <p>여행하면서 생기는 여러 문제들! 미리 준비하세요~ (뭐 이런식)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <img src="marine/img/sbb.JPG" alt="">
-                        <h3> <a href="#"> SBB Mobile</a></h3>
-                        <p>스위스 여행에 꼭 필요한 어플</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <img src="marine/img/googlemaps.JPG" alt="">
-                        <h3> <a href="#"> Goole Maps</a></h3>
-                        <p>전 세계 어디든 다 찾을 수 있는 필수 지도 어플</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <img src="marine/img/db.JPG" alt="">
-                        <h3> <a href="#"> DB Bahn</a></h3>
-                        <p>독일 철도청</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_ihotel_list">
-                        <img src="marine/img/flixbus.JPG" alt="">
-                        <h3> <a href="#"> Flix Bus</a></h3>
-                        <p>유럽의 국경을 넘나드는 버스</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--::industries end::-->
-
+<section id="portfolio" class="portfolio sections">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="head_title text-center">
+					<h2>여행하면서 필요한 어플</h2>
+						<div class="subtitle">
+							여행하면서 생기는 여러 문제들! 미리 준비해서 대비합시다~
+						</div>
+					<div class="separator"></div>
+					
+					<section class="best_services section_padding">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 col-sm-6">
+									<div class="single_ihotel_list">
+										<img src="marine/img/sbb.JPG" alt="">
+										<h3> <a href="#"> SBB Mobile</a></h3>
+										<p>스위스 여행에 꼭 필요한 어플</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="single_ihotel_list">
+				                        <img src="marine/img/googlemaps.JPG" alt="">
+				                        <h3> <a href="#"> Goole Maps</a></h3>
+				                        <p>전 세계 어디든 다 찾을 수 있는 필수 지도 어플</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="single_ihotel_list">
+				                        <img src="marine/img/db.JPG" alt="">
+				                        <h3> <a href="#"> DB Bahn</a></h3>
+				                        <p>독일 철도청</p>
+									</div>
+								</div>
+								<div class="col-lg-3 col-sm-6">
+									<div class="single_ihotel_list">
+				                        <img src="marine/img/flixbus.JPG" alt="">
+				                        <h3> <a href="#"> Flix Bus</a></h3>
+				                        <p>유럽의 국경을 넘나드는 버스</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>  
+		</div>
+	</div>
+</section>
 
 		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
