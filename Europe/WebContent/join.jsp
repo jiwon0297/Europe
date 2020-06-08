@@ -119,7 +119,7 @@ div.button{
     </fieldset>
     <div style="position: relative; left:95px;">
 	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Submit">
-	<input type="reset" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Cancel" onclick="location='index.jsp'">
+	<input type="reset" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Cancel" onclick="location='main.jsp'">
 	</div>
 </form>
 

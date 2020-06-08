@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Bino html5 free Template</title>
+        <title>HEADER</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -46,8 +46,8 @@ String userPW = (String)session.getAttribute("userPW");
 		<button class="btn-md fil-cat filter" onclick="location='login.jsp'" style="font-size : 15pt; color:orangered">LOGIN/JOIN</button>
 		<%} else { %>
 		<button class="btn-md fil-cat filter" onclick="location='LogoutAction.do'" style="font-size : 15pt; color:orangered">LOGOUT</button>
+		<button class="btn-md fil-cat filter" onclick="location='MemberDetailViewAction.do'" style="font-size : 15pt;">MYPAGE</button>
 		<%}%>
-		<button class="btn-md fil-cat filter" onclick="location='myinfo.jsp'" style="font-size : 15pt;">MYPAGE</button>
 	</div> 
 </div>
 </body>

@@ -20,18 +20,31 @@ String userID = (String)session.getAttribute("userID");
 String userPW = (String)session.getAttribute("userPW"); 
 %>
 <!-- 회원 정보 -->
-<jsp:include page="header.jsp" />
-<div class="jumbotron" align="center">
-	<div class="container">
-		<h1 class="display-3">MY INFORMATION</h1>
-	</div>
-</div>
-<jsp:include page="menu.jsp" />
-<% if(userID == null && userPW == null)  { %>
-	<br><br>
-	<a class="nav-link" href="login.jsp?login=no" role="button" style="text-align:center;">로그인하러가기</a>
-<%} else { %>
-	<br><br>
+<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <div class="culmn">
+        <jsp:include page="header.jsp" />
+        		 <!-- Counter Section --> 
+            <section id="counter" class="counter">
+                <div class="video_overlay">
+                    <div class="container">
+                        <div class="row">  
+                            <div class="col-sm-12">               
+                                <div class="main_counter_area text-center">
+
+                                    <div class="row">
+									 <div class="head_title text-center" style="color:white; margin-top:80px;">
+                                 	   <h2 style="font-size:50pt;">MY PAGE</h2>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End off container --> 
+            </section>
+        </div>
+<br><br><br><br>
+
 <form method="post" style ="margin:0 auto; width:500px;">
   <fieldset>
     <div class="form-group row">
@@ -82,8 +95,22 @@ String userPW = (String)session.getAttribute("userPW");
 	<input type="button" class="btn btn-primary" value="Logout" onclick="location.href=LogoutAction.do" />
 	</div>
 </form>
-<%}%>
 
 
+        <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="resources/assets/js/jquery.magnific-popup.js"></script>
+        <script src="resources/assets/js/jquery.mixitup.min.js"></script>
+        <script src="resources/assets/js/jquery.easing.1.3.js"></script>
+        <script src="resources/assets/js/jquery.masonry.min.js"></script>
+
+        <!--slick slide js -->
+        <script src="resources/assets/css/slick/slick.js"></script>
+        <script src="resources/assets/css/slick/slick.min.js"></script>
+
+
+        <script src="resources/assets/js/plugins.js"></script>
+        <script src="resources/assets/js/main.js"></script>
 </body>
 </html>
