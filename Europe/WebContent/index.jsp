@@ -51,7 +51,6 @@
 										<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav navbar-right">
                                                 <li><a href="#home">HOME</a></li>
-                                                <li><a href="#country">COUNTRY</a></li>
                                                 <li><a href="#history">ABOUT US</a></li>
                                                 <li><a href="#service">SERVICE</a></li>
                                             </ul>
@@ -115,8 +114,14 @@
                                     <div class="head_title">
                                         <h2>OUR HISTORY</h2>
                                     </div>
-                                    <p>페이지 소개</p>
-                                </div>
+                                    <p>올해 초, 우리는 함께 유럽 여행을 다녀왔다.
+                                    유럽 여행을 준비하면서 유럽 관광지에 대한 정보를 수집하는 중, 꽤 많은 정보들이 중복되었고 그로 인해 새로운 명소를 찾으려면 더 복잡하고 시간을 들여 자료를 수집해야 했다. 
+한 곳이 아닌 여러 페이지를 돌아다니면서 정보를 수집하다 보니 유럽이라는 긴 여행에 대해 준비하는 시간이 생각보다 오래 걸렸다. 
+흔히 올라와 있는 블로그들에 유럽의 색다른 관광지에 대한 정보는 많지 않았고, 실제로 유럽 여행 중에서도 특정 명소에만 사람이 너무 많거나 과장된 광고 정보로 인해 실망한 장소도 여럿 있었다.
+요즘 사람들은 웹페이지 정보를 크게 중요시하고, 그 정보를 토대로 여행계획을 세운다. 
+이에 우리는 직접 여행을 준비하는 사람들에게 한 곳에서 많은 정보를 얻을 수 있는 여행정보 페이지를 생각하여 구현하게 되었다.
+</p>
+  	                            </div>
                             </div>
                         </div>
                     </div><!--End of row -->
@@ -142,7 +147,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
                                                     <article class="single_service_right_text">
                                                         <h4>INFORMATION</h4>
-                                                        <p>인포 설명</p>
+                                                        <p>사용자들이 자신만의 리뷰를 올리는 공간. 각종 나라의 여행 후기나 일정, 여러팁들을 공유할 수 있습니다.</p>
+                                                        <p>여기있는 정보만으로도 유럽여행 준비 한 번에 해결!</p>
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">
@@ -159,7 +165,9 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1">
                                                     <article class="single_service_right_text">
                                                         <h4>MARKET</h4>
-                                                        <p>마켓 설명</p>
+                                                        <p>다양한 나라에서만 쓸 수 있는 남은 돈과 교통카드, 유심 등을 다른 사용자에게 나눔,교환,판매할 수 있습니다.</p>
+                                                       	<p>여행 하면서 사온 기념품들을 판매,나눔 등 여행을 준비하는 사람이 아니더라도 이용할 수 있어요!</p>
+														
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">
@@ -176,7 +184,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
                                                     <article class="single_service_right_text">
                                                         <h4>TOGETHER</h4>
-                                                        <p>투게더 설명</p>
+                                                        <p>유럽에서는 함께 하면 가격이 훨씬 저렴해지는 경우가 생기기 때문에 동행을 구할 일이 많습니다</p>
+														<p>동행구하기 게시판을  통해 편하게 동행을 구해보세요!</p>
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">
@@ -193,7 +202,8 @@
                                                 <div class="col-sm-10 col-sm-offset-1 col-xs-9 col-xs-offset-1 margin-bottom-20">
                                                     <article class="single_service_right_text">
                                                         <h4>RECOMMEND</h4>
-                                                        <p>운영자 추천</p>
+                                                        <p>직접 유럽여행을 다녀온 저희가 알려드리는 생생한 후기와 알짜배기 정보들이 모여있습니다</p>
+                                                        <p>이 페이지에서만 알려드리는 유럽여행 꿀팁 대방출! 지금 확인해보세요</p>
                                                     </article>
                                                 </div>
                                                 <div class="col-sm-1 col-xs-1">
