@@ -19,7 +19,7 @@
                                         <div class="single_counter border_right">
                                             <div class="col-sm-3 col-xs-12">
                                                 <div class="single_counter_item">
-                                                    <i class="icon icon-thumbs-up"></i>
+                                                    <a href="accommodation.jsp"><i class="icon icon-thumbs-up"></i></a>
                                                     <a href="accommodation.jsp"><h4 class="">Accommodation</h4></a>
                                                 </div>
                                             </div>
@@ -28,7 +28,7 @@
                                         <div class="single_counter">
                                             <div class="col-sm-3 col-xs-12">
                                                 <div class="single_counter_item">
-                                                    <i class="icon icon-business-3"></i>
+                                                    <a href="flight.jsp"><i class="icon icon-business-3"></i></a>
                                                     <a href="flight.jsp"><h4 class="">Flight</h4>  </a>
                                                 </div>
                                             </div>
@@ -37,7 +37,7 @@
                                         <div class="single_counter">
                                             <div class="col-sm-3 col-xs-12">
                                                 <div class="single_counter_item">
-                                                    <i class="icon icon-people-32"></i>
+                                                    <a href="tour.jsp"><i class="icon icon-people-32"></i></a>
                                                     <a href="tour.jsp"><h4 class="">Tour</h4></a>
                                                 </div>
 
@@ -47,7 +47,7 @@
                                         <div class="single_counter">
                                             <div class="col-sm-3 col-xs-12">
                                                 <div class="single_counter_item">
-                                                    <i class="icon icon-cup"></i>
+                                                    <a href="preparation.jsp"><i class="icon icon-cup"></i></a>
                                                     <a href="preparation.jsp"><h4 class="">Preparation</h4></a>
 
                                                 </div>
