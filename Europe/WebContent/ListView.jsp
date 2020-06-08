@@ -57,12 +57,12 @@ String userPW = (String)session.getAttribute("userPW");
     <div style="background-color:beige;">
        <jsp:include page="header.jsp"/>
     </div>
-
    			<% if(userID == null && userPW == null) { %>
    			<small id="fileHelp" class="form-text text-muted" style="position:relative; float:right; font-size:13pt; right:20px; margin-top:20px; margin-bottom:20px ">※로그인을 해야만 글쓰기가 가능합니다.※</small>
             <%} else { %>
             <a href="AddviewAction.do" class="btn btn-default" role="button" style="margin-bottom:20px;position:relative; right:20px; color:white; background-color:#68a5f3; float:right">Add &raquo;</a>
             <%}%>
+            <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Back" onclick="cancel()">
             <table class="table table-hover" style="text-align:center">
 			<tr style="background-color:lightgray">
 				<td style="width:200px; text-align:center; font-size:13pt"><strong>말머리</strong></td>
