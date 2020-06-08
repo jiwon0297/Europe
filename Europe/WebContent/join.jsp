@@ -30,6 +30,10 @@ div.button{
 		alert("회원가입이 완료되었습니다. 로그인 해주세요.");
 		return true;
 	}
+	
+	function cancel(){
+		window.history.back(); 
+	}
 </script>
 </head>
 <body>
@@ -119,7 +123,7 @@ div.button{
     </fieldset>
     <div style="position: relative; left:95px;">
 	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Submit">
-	<input type="reset" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Cancel" onclick="location='main.jsp'">
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Cancel" onclick="cancel()">
 	</div>
 </form>
 <br><br><br><br><br>

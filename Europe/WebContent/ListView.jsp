@@ -57,7 +57,7 @@ String userPW = (String)session.getAttribute("userPW");
     <div style="background-color:beige;">
        <jsp:include page="header.jsp"/>
     </div>
-    <!--::industries start::-->
+
    			<% if(userID == null && userPW == null) { %>
    			<small id="fileHelp" class="form-text text-muted" style="position:relative; float:right; font-size:13pt; right:20px; margin-top:20px; margin-bottom:20px ">※로그인을 해야만 글쓰기가 가능합니다.※</small>
             <%} else { %>

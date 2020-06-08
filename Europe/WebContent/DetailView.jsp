@@ -14,6 +14,11 @@
 		else
 			return;	
 	}
+	
+	function cancel(){
+		window.history.back(); 
+	}
+
 </script>
 <%
 String userID = (String)session.getAttribute("userID");
@@ -39,6 +44,7 @@ String userPW = (String)session.getAttribute("userPW");
     <br><br><br><br>
 	<form method="post" style ="margin:0 auto; width:1000px;">
 	<fieldset>
+	<input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="Back" onclick="cancel()">
 	<div class="form-group row">
       <strong><input type="text" class="form-control" id="title" value="[${re.getCountry()}/${re.getCate1()}] ${re.getTitle()}" style="text-align:center; font-size:13pt; background-color:beige; width:700px; position: relative; left:160px;" readonly/></strong>
      </div>
