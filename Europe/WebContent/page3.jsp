@@ -34,32 +34,6 @@
 	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	
 	
-	
-	
-	 <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="marine/img/favicon.png">
-
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="marine/css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="marine/css/owl.carousel.min.css">
-    <!-- themify CSS -->
-    <link rel="stylesheet" href="marine/css/themify-icons.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="marine/css/flaticon.css">
-    <!-- fontawesome CSS -->
-    <link rel="stylesheet" href="marine/fontawesome/css/all.min.css">
-    <!-- magnific CSS -->
-    <link rel="stylesheet" href="marine/css/magnific-popup.css">
-    <link rel="stylesheet" href="marine/css/gijgo.min.css">
-    <!-- niceselect CSS -->
-    <link rel="stylesheet" href="marine/css/nice-select.css">
-    <!-- slick CSS -->
-    <link rel="stylesheet" href="marine/css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="marine/css/style.css">
 </head>
 <body>
 <jsp:include page="header.jsp" />
@@ -110,33 +84,6 @@
     </section>
     <!--::industries end::-->
 
-	 <!-- jquery plugins here-->
-    <script src="marine/js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="marine/js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="marine/js/bootstrap.min.js"></script>
-    <!-- magnific js -->
-    <script src="marine/js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="marine/js/owl.carousel.min.js"></script>
-    <!-- masonry js -->
-    <script src="marine/js/masonry.pkgd.js"></script>
-    <!-- masonry js -->
-    <script src="marine/js/jquery.nice-select.min.js"></script>
-    <script src="marine/js/gijgo.min.js"></script>
-    <!-- contact js -->
-    <script src="marine/js/jquery.ajaxchimp.min.js"></script>
-    <script src="marine/js/jquery.form.js"></script>
-    <script src="marine/js/jquery.validate.min.js"></script>
-    <script src="marine/js/mail-script.js"></script>
-    <script src="marine/js/contact.js"></script>
-    <!-- custom js -->
-    <script src="marine/js/custom.js"></script>
-		
-		
-		
-		
 
 		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
