@@ -15,6 +15,7 @@ import action.LoginAction;
 import action_add.AddMemberAction;
 import action_add.AddReviewAction;
 import action_delete.DeleteReviewAction;
+import action_edit.EditMemberAction;
 import action_edit.EditReviewAction;
 import action_find.FindMemberAction;
 import action_find.FindNewsAction;
@@ -289,6 +290,11 @@ public class EuropeController extends HttpServlet {
 			action = new EditReviewAction();
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
+			rd.forward(request, response);
+		} else if (command.equals("/MemberEditAction.do")) {
+			action = new EditMemberAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("/MemberDetailViewAction.do");
 			rd.forward(request, response);
 		}
 		

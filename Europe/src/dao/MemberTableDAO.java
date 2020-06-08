@@ -54,15 +54,16 @@ public class MemberTableDAO {
 		}
 	}
 
-	// edit password
-	public int passwordedit(Connection conn, String id, String password) throws SQLException {
+	// edit
+	public int passwordedit(Connection conn, String id, String password, String nickname) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
 			String sql = "update member set password=?, nickname=? where id=?";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, password);
-			pstmt.setString(2, id);
+			pstmt.setString(2, nickname);
+			pstmt.setString(3, id);
 			return pstmt.executeUpdate();
 		} finally {
 			if (rs != null) {
@@ -74,25 +75,6 @@ public class MemberTableDAO {
 		}
 	}
 	
-	//edit nickname
-	public int nicknameedit(Connection conn, String id, String nickname) throws SQLException {
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-		try {
-			String sql = "update member set nickname=? where id=?";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, nickname);
-			pstmt.setString(2, id);
-			return pstmt.executeUpdate();
-		} finally {
-			if (rs != null) {
-				rs.close();
-			}
-			if (pstmt != null) {
-				pstmt.close();
-			}
-		}
-	}
 	
 	// select(find/get) 아이디 찾기
 	public MemberElementBean findid(Connection conn, String name, String email, String phone) throws SQLException {
