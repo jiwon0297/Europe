@@ -52,9 +52,9 @@ String userPW = (String)session.getAttribute("userPW");
                <option value="Italy"<c:if test="${re.getCountry() =='Italy'}">selected='selected'</c:if>>Italy</option>
      </select>
      <select name="cate1" style="background-color:#fbfbfb; width:150px; float:left;">
-               <option value="information"<c:if test="${re.getCate1() =='Information'}">selected='selected'</c:if>>Information</option>
-               <option value="market"<c:if test="${re.getCate1() =='Market'}">selected='selected'</c:if>>Market</option>
-               <option value="together"<c:if test="${re.getCate1() =='Together'}">selected='selected'</c:if>>Together</option>
+               <option value="Information"<c:if test="${re.getCate1() =='Information'}">selected='selected'</c:if>>Information</option>
+               <option value="Market"<c:if test="${re.getCate1() =='Market'}">selected='selected'</c:if>>Market</option>
+               <option value="Together"<c:if test="${re.getCate1() =='Together'}">selected='selected'</c:if>>Together</option>
      </select>
 	</div>
 	</div>
