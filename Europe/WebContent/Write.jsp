@@ -83,7 +83,7 @@ String userPW = (String)session.getAttribute("userPW");
     <input type="hidden" name="name" value="${member.getNickname()}">
 	</fieldset>
 	<div style="position: relative; left:350px;">
-	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="글쓰기">
+	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="작성">
 	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="취소" onclick = "cancel()">
 	</div>
 </form>

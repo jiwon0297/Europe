@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,20 +41,20 @@ String userPW = (String)session.getAttribute("userPW");
       <label for="Category" class="col-sm-2 com-form-label" style="position: relative; font-size:15pt; left:130px;">나라/주제</label>
       <div style="position: relative; left:95px;">
       <select name="country" style="background-color:#fbfbfb; width:150px; float:left;">
-					<option>korea</option>
-					<option>england</option>
-					<option>france</option>
-					<option>swiss</option>
-					<option>germany</option>
-					<option>hungary</option>
-					<option>czech</option>
-					<option>italy</option>
-	  </select>
-	  <select name="cate1" style="background-color:#fbfbfb; width:150px; float:left;">
-					<option>information</option>
-					<option>market</option>
-					<option>together</option>
-	  </select>
+               <option value="korea"<c:if test="${re.getCountry() =='korea'}">selected='selected'</c:if>>korea</option>
+               <option value="england"<c:if test="${re.getCountry() =='england'}">selected='selected'</c:if>>england</option>
+               <option value="france"<c:if test="${re.getCountry() =='france'}">selected='selected'</c:if>>france</option>
+               <option value="swiss"<c:if test="${re.getCountry() =='swiss'}">selected='selected'</c:if>>swiss</option>
+               <option value="germany"<c:if test="${re.getCountry() =='germany'}">selected='selected'</c:if>>germany</option>
+               <option value="hungary"<c:if test="${re.getCountry() =='hungary'}">selected='selected'</c:if>>hungary</option>
+               <option value="czech"<c:if test="${re.getCountry() =='czech'}">selected='selected'</c:if>>czech</option>
+               <option value="italy"<c:if test="${re.getCountry() =='italy'}">selected='selected'</c:if>>italy</option>
+     </select>
+     <select name="cate1" style="background-color:#fbfbfb; width:150px; float:left;">
+               <option value="information"<c:if test="${re.getCate1() =='information'}">selected='selected'</c:if>>information</option>
+               <option value="market"<c:if test="${re.getCate1() =='market'}">selected='selected'</c:if>>market</option>
+               <option value="together"<c:if test="${re.getCate1() =='together'}">selected='selected'</c:if>>together</option>
+     </select>
 	</div>
 	</div>
 	<div class="form-group row">
