@@ -79,14 +79,14 @@
 			</div>  
 		</div>
 		<!-- hotel list css start-->
-    <section class="top_place section_padding">
-    
+    <section class="top_place section_padding" style="padding: 0px 0px;">
+
    
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="marine/img/single_place_1.png" alt="">
+                        <img src="marine/img/single1.jpg" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page1.jsp" class="place_btn">ENTER</a>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="marine/img/single_place_3.png" alt="">
+                        <img src="marine/img/single2.jpg" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page2.jsp" class="place_btn">ENTER</a>
@@ -112,7 +112,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="marine/img/single_place_2.png" alt="">
+                        <img src="marine/img/single4.jpg" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page3.jsp"  class="place_btn">ENTER</a>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="single_place">
-                        <img src="marine/img/single_place_4.png" alt="">
+                        <img src="marine/img/single3.jpg" alt="">
                         <div class="hover_Text d-flex align-items-end justify-content-between">
                             <div class="hover_text_iner">
                                 <a href="page4.jsp" class="place_btn">ENTER</a>

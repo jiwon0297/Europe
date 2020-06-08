@@ -61,56 +61,72 @@
                                         <li>
                                             <div class="single_team_img">
                                             <a href="https://www.triple.guide/">
-                                                <img src="resources/assets/images/triple1.jpg" alt="" />
+                                                <img src="resources/assets/images/triple1.jpg" alt="" width="100%" />
                                             </a>
                                             </div>
                                             <div class="single_team_text">
                                                 <h4>트리플</h4>
-                                                <p>트리플 설명</p>
+                                                <p style="color:black;"><strong>유럽 도시 무료 가이드</strong>
+                                                	날씨, 환율, 길찾기, 번역, 시차계산 등 어플 하나로 해결 가능<br>
+                                                	직접 맛보고 즐긴 실제 리뷰들이 가득하다!
+                                                </p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="single_team_img">
                                              <a href="http://www.stubbyplanner.com/">
-                                                <img src="resources/assets/images/stuby.jpg" alt="" />
+                                                <img src="resources/assets/images/stuby.jpg" alt="" width="100%" />
                                              </a>
                                             </div>
                                             <div class="single_team_text">
                                                 <h4>스투비</h4>
-                                                <p>스투비 설명</p>
+                                                <p style="color:black;"><strong>상상 속 유럽을 현실로</strong>
+                                                	유럽여행 맞춤어플로서 지도를 통해
+                                                	나라 간 경로설정 및 소요시간 계산<br>
+                                                	같이가는 사람들과 일정 공유 가능
+                                                 </p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="single_team_img">
                                              <a href="http://www.myrealtrip.com">
-                                                <img src="resources/assets/images/mrt.jpg" alt="" />
+                                                <img src="resources/assets/images/mrt.jpg" alt="" width="100%" />
                                              </a>
                                             </div>
                                             <div class="single_team_text">
                                                 <h4>마이 리얼 트립</h4>
-                                                <p>마이리얼트립 설명</p>
+                                                <p style="color:black;"><strong>항공,숙소 최저가 예약</strong>
+                                              	  국내 및 국외 여행상품 검색<br>
+                                                	각종 투어,티켓 추천 및 간편한 예약 제공
+                                              </p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="single_team_img">
                                              <a href="https://www.klook.com/ko/">
-                                                <img src="resources/assets/images/klook.jpg" alt="" />
+                                                <img src="resources/assets/images/klook.jpg" alt="" width="100%" />
                                              </a>
                                             </div>
                                             <div class="single_team_text">
                                                 <h4>클룩</h4>
-                                                <p>클룩 설명</p>
+                                                <p style="color:black;"><strong>유럽 철도 패스권 구매</strong>
+                                                 	각종 액티비티 할인권 제공 및 예약 편리<br>
+                                                 	E-티켓으로 쉽고 빠르게 접근 가능 
+                                                 	</p>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="single_team_img">
                                              <a href="http://store.maaltalk.com/">
-                                                <img src="resources/assets/images/maltok.jpg" alt="" />
+                                                <img src="resources/assets/images/maltok.jpg" alt="" width="100%"/>
                                              </a>
                                             </div>
                                             <div class="single_team_text">
                                                 <h4>말톡</h4>
-                                                <p>말톡 설명</p>
+                                                <p style="color:black;"><strong>유심 및 현지통화 기능</strong>
+                                                	종류별 유심구매 및 착신전환서비스 제공<br>
+                                                	현지번호 제공 및 데이터소진 알림
+                                                </p>
                                             </div>
                                         </li>
                                     </ul>
