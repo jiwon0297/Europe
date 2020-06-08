@@ -3224,7 +3224,7 @@ ul {
 /******** client review part css *********/
 /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_client_review.scss */
 .client_review {
-  background-color: #0c3e72;
+  background-color: rgb(255, 255, 255);
 }
 
 /* line 5, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_client_review.scss */
@@ -3234,7 +3234,7 @@ ul {
 
 /* line 9, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_client_review.scss */
 .client_review .single_review_slider {
-  background-color: #0e477d;
+  background-color: rgb(126, 177, 194);
   padding: 30px;
 }
 
@@ -3248,7 +3248,7 @@ ul {
 /* line 17, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_client_review.scss */
 .client_review .single_review_slider h5 {
   font-weight: 18px;
-  color: #fff;
+  color: rgb(128, 128, 128);
 }
 
 /* line 21, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_client_review.scss */
