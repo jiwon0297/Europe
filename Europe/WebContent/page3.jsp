@@ -54,29 +54,29 @@
 							<div class="row">
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
-										<img src="marine/img/sbb.JPG" alt="">
-										<h3> <a href="#"> SBB Mobile</a></h3>
+										<a href="https://apps.apple.com/us/app/sbb-mobile/id294855237"><img src="marine/img/sbb.JPG" alt=""></a>
+										<h3> <a href="https://apps.apple.com/us/app/sbb-mobile/id294855237"> SBB Mobile</a></h3>
 										<p>스위스 여행에 꼭 필요한 어플</p>
 									</div>
 								</div>
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
-				                        <img src="marine/img/googlemaps.JPG" alt="">
-				                        <h3> <a href="#"> Goole Maps</a></h3>
+				                        <a href="https://apps.apple.com/kr/app/google-maps/id585027354"><img src="marine/img/googlemaps.JPG" alt=""></a>
+				                        <h3> <a href="https://apps.apple.com/kr/app/google-maps/id585027354"> Goole Maps</a></h3>
 				                        <p>전 세계 어디든 다 찾을 수 있는 필수 지도 어플</p>
 									</div>
 								</div>
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
-				                        <img src="marine/img/db.JPG" alt="">
-				                        <h3> <a href="#"> DB Bahn</a></h3>
+				                        <a href="https://apps.apple.com/de/app/db-navigator/id343555245"><img src="marine/img/db.JPG" alt=""></a>
+				                        <h3> <a href="https://apps.apple.com/de/app/db-navigator/id343555245"> DB Bahn</a></h3>
 				                        <p>독일 철도청</p>
 									</div>
 								</div>
 								<div class="col-lg-3 col-sm-6">
 									<div class="single_ihotel_list">
-				                        <img src="marine/img/flixbus.JPG" alt="">
-				                        <h3> <a href="#"> Flix Bus</a></h3>
+				                        <a href="https://apps.apple.com/kr/app/flixbus-smart-bus-travel/id778437357"><img src="marine/img/flixbus.JPG" alt=""></a>
+				                        <h3> <a href="https://apps.apple.com/kr/app/flixbus-smart-bus-travel/id778437357"> Flix Bus</a></h3>
 				                        <p>유럽의 국경을 넘나드는 버스</p>
 									</div>
 								</div>
