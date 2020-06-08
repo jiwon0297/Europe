@@ -48,7 +48,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="head_title textwhite text-center margin-top-80">
+                                <div class="head_title text-center margin-top-80">
                                     <h2>여행 준비에 필요한 어플/사이트</h2>
                                     <div class="subtitle">
                                         	여행 전 미리 확인하세요!

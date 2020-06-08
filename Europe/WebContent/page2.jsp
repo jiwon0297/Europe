@@ -36,34 +36,171 @@
 	
 	
 	
-	 <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="marine/img/favicon.png">
-
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="marine/css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="marine/css/owl.carousel.min.css">
-    <!-- themify CSS -->
-    <link rel="stylesheet" href="marine/css/themify-icons.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="marine/css/flaticon.css">
-    <!-- fontawesome CSS -->
-    <link rel="stylesheet" href="marine/fontawesome/css/all.min.css">
-    <!-- magnific CSS -->
-    <link rel="stylesheet" href="marine/css/magnific-popup.css">
-    <link rel="stylesheet" href="marine/css/gijgo.min.css">
-    <!-- niceselect CSS -->
-    <link rel="stylesheet" href="marine/css/nice-select.css">
-    <!-- slick CSS -->
-    <link rel="stylesheet" href="marine/css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="marine/css/style.css">
+	
 </head>
 <body>
 <jsp:include page="header.jsp" />
 <jsp:include page="recommend.jsp"/>					
+
+<section id="contact" class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="contact_contant sections">
+                                <div class="head_title text-center">
+                                    <h2>CHECK LIST</h2>
+                                    <div class="subtitle">
+                                       	 여행 출발 전, 체크리스트를 보면서 확인해보세요!  
+                                    </div>
+                                    <div class="separator"></div>
+                                </div><!-- End off Head_title -->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="main_contact_info">
+                                            <div class="row">
+                                                <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>필수준비물 & 중요 서류</h3>
+                                                                <h4>House #13, Streat road, Sydney 
+                                                                    2310 Australia</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>CALL US</h3>
+                                                                <h4>+ 880 168 109 1425</h4>
+                                                                <h4>+ 0216809142</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>EMAIL US</h3>
+                                                                <h4>contactus@email.com</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+									<div class="col-sm-6">
+                                        <div class="main_contact_info">
+                                            <div class="row">
+                                                <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>의류</h3>
+                                                                <h4>House #13, Streat road, Sydney 
+                                                                    2310 Australia</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>CALL US</h3>
+                                                                <h4>+ 880 168 109 1425</h4>
+                                                                <h4>+ 0216809142</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>EMAIL US</h3>
+                                                                <h4>contactus@email.com</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="main_contact_info">
+                                            <div class="row">
+                                                <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>전자기기 & 주변기기</h3>
+                                                                <h4>House #13, Streat road, Sydney 
+                                                                    2310 Australia</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>CALL US</h3>
+                                                                <h4>+ 880 168 109 1425</h4>
+                                                                <h4>+ 0216809142</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>EMAIL US</h3>
+                                                                <h4>contactus@email.com</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+									<div class="col-sm-6">
+                                        <div class="main_contact_info">
+                                            <div class="row">
+                                                <div class="contact_info_content padding-top-90 padding-bottom-60 p_l_r">
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>세면도구 & 위생용품</h3>
+                                                                <h4>House #13, Streat road, Sydney 
+                                                                    2310 Australia</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>CALL US</h3>
+                                                                <h4>+ 880 168 109 1425</h4>
+                                                                <h4>+ 0216809142</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <div class="single_contact_info">
+                                                            <div class="single_info_text">
+                                                                <h3>EMAIL US</h3>
+                                                                <h4>contactus@email.com</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End of contact section -->
+
+
 
 [여행 가기전 필수준비물]
 사이트를 참고해 
@@ -72,34 +209,7 @@ https://m.blog.naver.com/6_yes/221449612661
 
 
 
-	 <!-- jquery plugins here-->
-    <script src="marine/js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="marine/js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="marine/js/bootstrap.min.js"></script>
-    <!-- magnific js -->
-    <script src="marine/js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="marine/js/owl.carousel.min.js"></script>
-    <!-- masonry js -->
-    <script src="marine/js/masonry.pkgd.js"></script>
-    <!-- masonry js -->
-    <script src="marine/js/jquery.nice-select.min.js"></script>
-    <script src="marine/js/gijgo.min.js"></script>
-    <!-- contact js -->
-    <script src="marine/js/jquery.ajaxchimp.min.js"></script>
-    <script src="marine/js/jquery.form.js"></script>
-    <script src="marine/js/jquery.validate.min.js"></script>
-    <script src="marine/js/mail-script.js"></script>
-    <script src="marine/js/contact.js"></script>
-    <!-- custom js -->
-    <script src="marine/js/custom.js"></script>
-		
-		
-		
-		
-
+	
 		<script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
 
