@@ -78,7 +78,7 @@ String userPW = (String)session.getAttribute("userPW");
     <div class="form-group">
       <label for="detail" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">내용</label>
       <br>
-      <input class="form-control" name="detail" placeholder="내용을 입력해주세요." style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;">
+      <textarea class="form-control" name="detail" placeholder="내용을 입력해주세요." style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;"></textarea>
     </div>
     <input type="hidden" name="name" value="${member.getNickname()}">
 	</fieldset>

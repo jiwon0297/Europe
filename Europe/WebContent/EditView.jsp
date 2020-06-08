@@ -70,7 +70,7 @@ String userPW = (String)session.getAttribute("userPW");
     <div class="form-group">
       <label for="detail" style="position: relative; font-size:15pt; left:130px; margin-top:10px;">³»¿ë</label>
       <br>
-      <input class="form-control" name="detail" value="${re.getDetail()}" style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;">
+      <textarea class="form-control" name="detail" style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;">${re.getDetail()}</textarea>
     </div>
         <input type="hidden" name="number" value="${re.getNumber()}">
 	</fieldset>

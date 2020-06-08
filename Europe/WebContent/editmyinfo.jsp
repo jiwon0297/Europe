@@ -58,7 +58,7 @@ String userPW = (String)session.getAttribute("userPW");
     </div>
     <div class="form-group row">
       <label for="name" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">Name</label>
-      <input type="text" name="name" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getName()}" readonly />
+      <input type="text" name="name" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getName()}" disabled />
     </div>
     <div class="form-group row">
       <label for="nickname" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">Nickname</label>
@@ -74,19 +74,19 @@ String userPW = (String)session.getAttribute("userPW");
     </div>
     <div class="form-group row">
       <label for="exampleInputEmail1" class="col-sm-2 com-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">Email address</label>
-      <input type="text" name="email" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getEmail()}" readonly />
+      <input type="text" name="email" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getEmail()}" disabled />
     </div>
     <div class="form-group row">
       <label for="phonenumber" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">Phone Number</label>
-      <input type="text" name="phone" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getPhone()}" readonly />
+      <input type="text" name="phone" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getPhone()}" disabled />
     </div>
     <div class="form-group row">
       <label for="address" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">Address</label>
-      <input type="text" name="address" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getAddress()}" readonly />
+      <input type="text" name="address" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getAddress()}" disabled />
     </div>
     <div class="form-group row">
       <label for="address" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px">Gender</label>
-      <input type="text" name="gender" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getGender()}" readonly />
+      <input type="text" name="gender" style="background-color:#fbfbfb; width:300px; position: relative; left:95px;" class="form-control" value="${member.getGender()}" disabled />
     </div>
  </fieldset>
     <div style="position: relative; left:95px;">
