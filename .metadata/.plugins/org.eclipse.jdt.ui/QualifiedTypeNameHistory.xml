@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="action.AddPeriodicElementAction"/>
+<fullyQualifiedTypeName name="action.DeletePeriodicElementAction"/>
+<fullyQualifiedTypeName name="action.EditPeriodicElementAction"/>
+<fullyQualifiedTypeName name="action.LoginAction"/>
+<fullyQualifiedTypeName name="action.FindPeriodicElementAction"/>
+<fullyQualifiedTypeName name="action.MemberAction"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.swing.Action"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Action"/>
+<fullyQualifiedTypeName name="action.Action"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="jdbc.ConnectionProvider"/>
+<fullyQualifiedTypeName name="dto.PeriodicElementBean"/>
+<fullyQualifiedTypeName name="dao.PeriodicTableDAO"/>
+<fullyQualifiedTypeName name="dto.Phase"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="action.ServiceException"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.messaging.saaj.soap.ver1_1.Envelope1_1Impl"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+<fullyQualifiedTypeName name="dto.MemberBean"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="action.NotFoundException"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="dto.SingerElementBean"/>
+<fullyQualifiedTypeName name="action.ListPeriodicElementAction"/>
+</qualifiedTypeNameHistroy>

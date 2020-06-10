@@ -18,16 +18,18 @@ public class ReviewTableDAO {
 	}
 	
 	// insert
-	public int insert(Connection conn, String country, String cate1, String name, String title, String detail) throws SQLException {
+	public int insert(Connection conn, String country, String cate1, String name, String title, String detail,String fileName, String fileRealName) throws SQLException {
 		PreparedStatement pstmt = null;
 		try {
-			String sql = "insert into review(country, cate1, name,  title, detail) values (?,?,?,?,?)";
+			String sql = "insert into review(country, cate1, name,  title, detail, fileName, fileRealName) values (?,?,?,?,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, country);
 			pstmt.setString(2, cate1);
 			pstmt.setString(3, name);
 			pstmt.setString(4, title);
 			pstmt.setString(5, detail);
+			pstmt.setString(6, fileName);
+			pstmt.setString(7, fileRealName);
 			return pstmt.executeUpdate();
 		} finally {
 			if (pstmt != null) {
@@ -52,17 +54,19 @@ public class ReviewTableDAO {
 	}
 
 	// update
-		public int edit(Connection conn, int number, String country, String cate1, String title, String detail) throws SQLException {
+		public int edit(Connection conn, int number, String country, String cate1, String title, String detail, String fileName, String fileRealName) throws SQLException {
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			try {
-				String sql = "update review set country=?, cate1=?, title=?, detail=? where number=?";
+				String sql = "update review set country=?, cate1=?, title=?, detail=?,fileName=?,fileRealName=? where number=?";
 				pstmt = conn.prepareStatement(sql);
 				pstmt.setString(1, country);
 				pstmt.setString(2, cate1);
 				pstmt.setString(3, title);
 				pstmt.setString(4, detail);
 				pstmt.setInt(5, number);
+				pstmt.setString(6, fileName);
+				pstmt.setString(7, fileRealName);
 				return pstmt.executeUpdate();
 			} finally {
 				if (rs != null) {
@@ -107,7 +111,10 @@ public class ReviewTableDAO {
 		String name = rs.getString("name");
 		String title = rs.getString("title");
 		String detail = rs.getString("detail");
-		ReviewElementBean re = new ReviewElementBean(number,country,cate1,name,title,detail);
+		String fileName = rs.getString("fileName");
+		String fileRealName = rs.getString("fileName");
+		
+		ReviewElementBean re = new ReviewElementBean(number,country,cate1,name,title,detail,fileName,fileRealName);
 		return re;
 	}
 	

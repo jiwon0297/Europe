@@ -21,10 +21,12 @@ public class EditReviewAction implements Action {
 			String cate1 = request.getParameter("cate1");
 			String title = request.getParameter("title");
 			String detail = request.getParameter("detail");
+			String fileName = request.getParameter("fileName");
+			String fileRealName = request.getParameter("fileRealName");
 			
 			conn = ConnectionProvider.getConnection();
 			ReviewTableDAO dao = ReviewTableDAO.getInstance();
-			dao.edit(conn, number, country, cate1, title, detail);
+			dao.edit(conn, number, country, cate1, title, detail,fileName,fileRealName);
 			
 			System.out.println("Success Edit ReviewElement");
 		} catch(SQLException e){

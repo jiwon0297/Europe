@@ -7,12 +7,14 @@ public class ReviewElementBean implements java.io.Serializable{
 	private String name;
 	private String title;
 	private String detail;
+	private String fileName;
+	private String fileRealName;
 	// default constructor
 	   public ReviewElementBean() {
-	      this(-1,null,null,null,null,null);
+	      this(-1,null,null,null,null,null,null,null);
 	   }
 	//constructor
-	   public ReviewElementBean(int number,String country, String cate1, String name, String title, String detail) {
+	   public ReviewElementBean(int number,String country, String cate1, String name, String title, String detail,String fileName,String fileRealName) {
 		   super();
 		   this.number= number;
 		   this.country= country;
@@ -20,6 +22,8 @@ public class ReviewElementBean implements java.io.Serializable{
 		   this.name = name;
 		   this.title = title;
 		   this.detail = detail;
+		   this.fileName = fileName;
+		   this.fileRealName= fileRealName;
 	   }
 	   
 	//getter& setter
@@ -59,11 +63,24 @@ public class ReviewElementBean implements java.io.Serializable{
 	public void setDetail(String detail) {
 		this.detail = detail;
 	}
+	public String getFileName() {
+		return fileName;
+	}
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	public String getFileRealName() {
+		return fileRealName;
+	}
+	public void setFileRealName(String fileRealName) {
+		this.fileRealName = fileRealName;
+	}
 	
 	@Override
 	public String toString() {
 		return "ReviewElementBean [number=" + number + ", country=" 
-	+ country + ", cate1=" + cate1 + ", name=" + name + ", title=" + title + ", detail=" + detail + "]";
+	+ country + ", cate1=" + cate1 + ", name=" + name + ", title=" + title + ", detail=" + detail +
+	",fileName=" + fileName + ",fileRealName= " + fileRealName + "]";
 	}
 	   
 }

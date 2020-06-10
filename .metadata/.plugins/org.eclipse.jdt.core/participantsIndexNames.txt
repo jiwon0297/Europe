@@ -1,0 +1,19 @@
+INDEX VERSION 1.131
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2732357708.index
+\Lab5_2\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3736952215.index
+\Lab6_2\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\648987399.index
+\test\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2630823298.index
+\Europe\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3790372582.index
+\Lab6_2\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1213025226.index
+\Lab4_1\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3577916092.index
+\Lab5_1\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3623865761.index
+\Lab6_2\src
+C:\Users\LG\eclipse-workspace\aj20\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2837679975.index
+\Lab6_1\src

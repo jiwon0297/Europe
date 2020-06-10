@@ -1,0 +1,77 @@
+@charset "EUC-KR";
+h1,h2{
+	color:#5d5d5d;
+	text-align: center;
+	font-family: sans-serif;
+}
+/*header.jsp꾸미기 */
+#header{
+	height: 30px;
+	width: 100%;
+}
+#header ul li{
+	list-style: none;
+	color:black;
+	float:left;
+	line-height: 50px;
+	vertical-align: middle;
+}
+a{
+	text-decoration:none;
+	color: black;
+	font-size:15px;
+	font-family: "Trebuchet MS", Dotum, Arial;
+}
+#header a{
+	width: 100px;
+	text-decoration: none;
+	color:black;
+	/*a링크영역 확장 */
+	display: block;
+	font-size:15px;
+	font-family: "Trebuchet MS", Dotum, Arial;
+	text-align:center;
+}
+#header .link:hover{
+	background-color:gray;
+	color: white;
+	border-radius:20px;
+}
+.active{
+	color:black;
+	width:600px;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+/*main.jsp 꾸미기 */
+.main{
+	width:100%;
+}
+/*사진 가운데정렬*/
+.main td{
+	text-align:center;
+}
+.explain{
+	font-size:14px;
+	background-color:#EAEAEA;
+	text-align:center;
+	font-family: sans-serif;
+}
+/*detail.jsp꾸미기 */
+.detail{
+	padding: 60px;
+}
+.information{
+	margin-left: 150px;
+	font-size:16px;
+	font-family:sans-serif;
+	line-height: 2.3em;
+}
+#button{
+	width:100px;
+	height:50px;
+	background-color:gray;
+	color: white;
+	border-radius:10px;
+	
+}
