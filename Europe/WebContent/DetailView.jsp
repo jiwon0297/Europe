@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +17,6 @@
 	}
 </script>
 <% request.setCharacterEncoding("utf-8"); %>
-<%
-String userID = (String)session.getAttribute("userID");
-String userPW = (String)session.getAttribute("userPW"); 
-%>
  <!--top place start-->
     <section class="event_part section_padding" style="background-image: url('marine/img/${re.getCountry()}.jpg'); background-size:cover; height:400px;">
             <div class="container">
@@ -52,14 +49,15 @@ String userPW = (String)session.getAttribute("userPW");
     </div>
     <input type="hidden" name="number" value="${re.getNumber()}">
 	</fieldset>
-	<% if(userID == null && userPW == null) { %>
+	<c:if test="${userID == null}">
 	<small id="fileHelp" class="form-text text-muted" style="position:relative; font-size:13pt; left:280px;">※로그인을 해야만 글 수정 및 삭제가 가능합니다.※</small>
-	<%} else { %>
+	</c:if>
+	<c:if test="${userID == re.getName()}">
 	<div style="position: relative; left:350px;">
 	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="수정" onclick="location='EditViewAction.do?number=${re.getNumber()}'">
 	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="삭제" onclick="deleteConfirm('${re.getNumber()}','${re.getCountry()}','${re.getCate1()}')">
-	<%}%>
 	</div>
+	</c:if>
 	</form>
        <br><br><br><br><br>
 
