@@ -3,6 +3,7 @@ package action_edit;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Enumeration;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,19 +29,32 @@ public class EditReviewAction implements Action {
 		
 		Connection conn = null;
 		try {
+			multi = new MultipartRequest(request,directory,maxSize,encoding, new DefaultFileRenamePolicy());
 			conn = ConnectionProvider.getConnection();
 			ReviewTableDAO dao = ReviewTableDAO.getInstance();
-			multi = new MultipartRequest(request,directory,maxSize,encoding, new DefaultFileRenamePolicy());
 			
 			int number = Integer.parseInt(multi.getParameter("number"));
 			String country = multi.getParameter("country");
 			String cate1 = multi.getParameter("cate1");
 			String title = multi.getParameter("title");
 			String detail = multi.getParameter("detail");
-			String fileName = multi.getParameter("fileName");
-			String fileRealName = multi.getParameter("fileRealName");
-
-			dao.edit(conn, number, country, cate1, title, detail,fileName,fileRealName);
+			String exfileName = multi.getOriginalFileName("existfile_name");
+			String exfileRealName = multi.getFilesystemName("existfile_real");
+			
+			Enumeration<String> fileNames = multi.getFileNames();
+			if(fileNames.hasMoreElements())
+			{
+				String file_name = fileNames.nextElement();
+				String fileName = multi.getOriginalFileName(file_name);
+				String fileRealName = multi.getFilesystemName(file_name);
+				
+				if(fileRealName == null) {
+					dao.edit(conn, number, country, cate1, title, detail,exfileName,exfileRealName);
+				}
+				else {
+					dao.edit(conn, number, country, cate1, title, detail,fileName,fileRealName);
+				}
+			}
 			
 			System.out.println("Success Edit ReviewElement");
 		} catch(SQLException e){

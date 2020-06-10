@@ -45,7 +45,9 @@
       <input type="text" class="form-control" name="name" value="작성자 : ${re.getName()}" style="background-color:beige; width:700px; position: relative; left:160px;" disabled/>
      </div>
     <div class="form-group row">
+    	<c:if test="${re.getFileRealName()!=null}">
    		<img src="upload/${re.getFileRealName()}">
+   		</c:if>
       <textarea class="form-control" name="content" style="background-color:beige; height:600px; width:700px; position: relative; left:160px; text-align:center; gravity:center;" readonly="readonly" disabled>${re.getDetail()}</textarea>
     </div>
     <input type="hidden" name="number" value="${re.getNumber()}">

@@ -65,7 +65,7 @@ String userPW = (String)session.getAttribute("userPW");
      <div class="form-group">
       <label for="inputfile" style="position: relative; font-size:15pt; left:130px;">파일첨부</label>
       <div class="col-sm-10" style = "position: relative; left:70px; float:right;">
-      <input type="file" class="form-control-file" value = "${re.getFileRealName()}" name="file" aria-describedby="fileHelp">
+      <input type="file" class="form-control-file" name="file" aria-describedby="fileHelp">
       <small id="fileHelp" class="form-text text-muted" style="color:red">※글과 관련된 사진만 첨부하여 주십시오.※</small>
     </div>
     </div>
@@ -75,6 +75,8 @@ String userPW = (String)session.getAttribute("userPW");
       <textarea class="form-control" name="detail" style="background-color:#fbfbfb; height:600px; width:830px; position: relative; left:130px;">${re.getDetail()}</textarea>
     </div>
         <input type="hidden" name="number" value="${re.getNumber()}">
+        <input type="hidden" name="existfile_real" value="${re.getFileRealName()}">
+        <input type="hidden" name="existfile_name" value="${re.getFileName()}">
 	</fieldset>
 	<div style="position: relative; left:350px;">
 	<input type="submit" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="수정">

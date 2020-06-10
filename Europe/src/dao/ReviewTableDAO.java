@@ -64,9 +64,9 @@ public class ReviewTableDAO {
 				pstmt.setString(2, cate1);
 				pstmt.setString(3, title);
 				pstmt.setString(4, detail);
-				pstmt.setInt(5, number);
-				pstmt.setString(6, fileName);
-				pstmt.setString(7, fileRealName);
+				pstmt.setString(5, fileName);
+				pstmt.setString(6, fileRealName);
+				pstmt.setInt(7, number);
 				return pstmt.executeUpdate();
 			} finally {
 				if (rs != null) {
