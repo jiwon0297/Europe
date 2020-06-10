@@ -1,7 +1,8 @@
 package controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,8 +12,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
 import action.Action;
 import action.LoginAction;
+import action.ServiceException;
 import action_add.AddMemberAction;
 import action_add.AddReviewAction;
 import action_delete.DeleteReviewAction;
@@ -23,6 +28,15 @@ import action_find.FindNewsAction;
 import action_find.FindReviewAction;
 import action_list.ListNewsAction;
 import action_list.ListReviewAction;
+import dao.ReviewTableDAO;
+import jdbc.ConnectionProvider;
+
+import java.io.File;
+import java.io.IOException;
+
+//파일이 중복될 경우 저절로 이름을 바꿔주는 import
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+import com.oreilly.servlet.MultipartRequest;
 
 
 @WebServlet("/EuropeController")
@@ -282,21 +296,83 @@ public class EuropeController extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("Write.jsp");
 			rd.forward(request, response);			
 		}  else if (command.equals("/AddAction.do")) {
-			String country = request.getParameter("country");
-			String category = request.getParameter("cate1");
-			action = new AddReviewAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/"+country+category+"ListViewAction.do");
-			rd.forward(request, response);		
+			String directory = request.getServletContext().getRealPath("/upload/");
+			MultipartRequest multi = null;
+
+			int maxSize= 10* 1024 * 1024;
+			String encoding = "UTF-8";
+		
+			Connection conn = null;
+			
+			try {
+				conn = ConnectionProvider.getConnection();
+				ReviewTableDAO dao = ReviewTableDAO.getInstance();
+				multi = new MultipartRequest(request,directory,maxSize,encoding, new DefaultFileRenamePolicy());
+				String country = multi.getParameter("country");
+				String cate1 = multi.getParameter("cate1");
+				String name = multi.getParameter("name");
+				String title = multi.getParameter("title");
+				String detail = multi.getParameter("detail");
+				String fileName = multi.getOriginalFileName("file");
+				String fileRealName = multi.getFilesystemName("file");
+				dao.insert(conn, country, cate1, name, title, detail,fileName,fileRealName);
+				
+				System.out.println(fileName);	
+				System.out.println(fileRealName);	
+				RequestDispatcher rd = request.getRequestDispatcher("/"+country+cate1+"ListViewAction.do");
+				rd.forward(request, response);	
+			} catch(SQLException e){
+				throw new ServiceException("AddReviewAction Error " + e.getMessage());
+			} catch(IOException e1) {
+				e1.printStackTrace();
+			}
+			finally {
+				try {
+					if(conn!=null) conn.close();
+				} catch(SQLException se){
+					se.printStackTrace();
+				}
+			}	
 		}
 		
 		//Edit
 		else if (command.equals("/EditAction.do")) {
-			int number = Integer.parseInt(request.getParameter("number"));
-			action = new EditReviewAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/DetailViewAction.do?number="+number);
-			rd.forward(request, response);
+			String directory = request.getServletContext().getRealPath("/upload/");
+			MultipartRequest multi = null;
+			int maxSize= 10* 1024 * 1024;
+			String encoding = "UTF-8";
+			
+			Connection conn = null;
+			try {
+				multi = new MultipartRequest(request,directory,maxSize,encoding, new DefaultFileRenamePolicy());
+				
+				int number = Integer.parseInt(multi.getParameter("number"));
+				String country = multi.getParameter("country");
+				String cate1 = multi.getParameter("cate1");
+				String title = multi.getParameter("title");
+				String detail = multi.getParameter("detail");
+				String fileName = multi.getParameter("fileName");
+				String fileRealName = multi.getParameter("fileRealName");
+				
+				conn = ConnectionProvider.getConnection();
+				ReviewTableDAO dao = ReviewTableDAO.getInstance();
+				dao.edit(conn, number, country, cate1, title, detail,fileName,fileRealName);
+				
+				System.out.println(title);
+				
+				RequestDispatcher rd = request.getRequestDispatcher("/DetailViewAction.do?number="+number);
+				rd.forward(request, response);
+			} catch(SQLException e){
+				throw new ServiceException("EditReviewAction Error " + e.getMessage());
+			} catch(IOException e1) {
+				e1.printStackTrace();
+			} finally {
+				try {
+					if(conn!=null) conn.close();
+				} catch(SQLException se){
+					se.printStackTrace();
+				}
+			}
 		} else if (command.equals("/MemberEditAction.do")) {
 			action = new EditMemberAction();
 			action.execute(request,response);

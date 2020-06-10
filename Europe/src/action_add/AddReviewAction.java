@@ -24,27 +24,25 @@ public class AddReviewAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		String directory = request.getServletContext().getRealPath("/upload/");
-		int maxSize= 1024 * 1024 * 100;
+		MultipartRequest multi = null;
+		int maxSize= 10* 1024 * 1024;
 		String encoding = "UTF-8";
 	
 		Connection conn = null;
-		String country = request.getParameter("country");
-		String cate1 = request.getParameter("cate1");
-		String name = request.getParameter("name");
-		String title = request.getParameter("title");
-		String detail = request.getParameter("detail");
-		//String fileName = request.getParameter("fileName");
-		//String fileRealName = request.getParameter("fileRealName");
 		
 		try {
 			conn = ConnectionProvider.getConnection();
 			ReviewTableDAO dao = ReviewTableDAO.getInstance();
-			MultipartRequest multipartRequest = 
-					new MultipartRequest(request,directory,maxSize,encoding,
-							new DefaultFileRenamePolicy());
-			String fileName = multipartRequest.getOriginalFileName("file");
-			String fileRealName = multipartRequest.getFilesystemName("file");
-			dao.insert(conn, country, cate1, name, title, detail,fileName,fileRealName);		
+			multi = new MultipartRequest(request,directory,maxSize,encoding, new DefaultFileRenamePolicy());
+			String country = multi.getParameter("country");
+			String cate1 = multi.getParameter("cate1");
+			String name = multi.getParameter("name");
+			String title = multi.getParameter("title");
+			String detail = multi.getParameter("detail");
+			String fileName = multi.getOriginalFileName("file");
+			String fileRealName = multi.getFilesystemName("file");
+			dao.insert(conn, country, cate1, name, title, detail,fileName,fileRealName);
+			
 			System.out.println(fileName);	
 			System.out.println(fileRealName);	
 		} catch(SQLException e){

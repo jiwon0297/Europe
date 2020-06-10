@@ -36,7 +36,7 @@ String userPW = (String)session.getAttribute("userPW");
     </div>
     <br><br><br><br>
     
-<form action="EditAction.do" method="post" style ="margin:0 auto; width:1000px;">
+<form action="EditAction.do" method="post" enctype="multipart/form-data" style ="margin:0 auto; width:1000px;">
 	<fieldset>
 	<div class="form-group row">
       <label for="Category" class="col-sm-2 com-form-label" style="position: relative; font-size:15pt; left:130px;">나라/주제</label>
@@ -65,7 +65,7 @@ String userPW = (String)session.getAttribute("userPW");
      <div class="form-group">
       <label for="inputfile" style="position: relative; font-size:15pt; left:130px;">파일첨부</label>
       <div class="col-sm-10" style = "position: relative; left:70px; float:right;">
-      <input type="file" class="form-control-file" name="inputfile" aria-describedby="fileHelp">
+      <input type="file" class="form-control-file" value = "${re.getFileRealName()}" name="file" aria-describedby="fileHelp">
       <small id="fileHelp" class="form-text text-muted" style="color:red">※글과 관련된 사진만 첨부하여 주십시오.※</small>
     </div>
     </div>
