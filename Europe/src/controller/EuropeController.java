@@ -306,10 +306,12 @@ public class EuropeController extends HttpServlet {
 		
 		//Delete
 		else if (command.equals("/DeleteAction.do")) {
+			String country = request.getParameter("country");
+			String category = request.getParameter("cate1");
 			action = new DeleteReviewAction();
 			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("main.jsp");
-			rd.forward(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("/"+country+category+"ListViewAction.do");
+			rd.forward(request, response);	
 		}
 
 		

@@ -8,14 +8,12 @@
 </head>
 <body>
 <script type="text/javascript">
-	function deleteConfirm(number){
-		if(confirm("Do you want to remove?")==true)
-			location.href = "DeleteAction.do?number=" + number;
+	function deleteConfirm(number, country, category){
+		if(confirm("정말로 이 글을 삭제하시겠습니까? 삭제하면 되돌릴 수 없습니다.")==true)
+			location.href = "DeleteAction.do?number=" + number + "&&country=" + country + "&&cate1=" + category;
 		else
 			return;	
 	}
-
-
 </script>
 <% request.setCharacterEncoding("utf-8"); %>
 <%
@@ -59,7 +57,7 @@ String userPW = (String)session.getAttribute("userPW");
 	<%} else { %>
 	<div style="position: relative; left:350px;">
 	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="수정" onclick="location='EditViewAction.do?number=${re.getNumber()}'">
-	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="삭제"onclick="deleteConfirm('${re.getNumber()}')">
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="삭제" onclick="deleteConfirm('${re.getNumber()}','${re.getCountry()}','${re.getCate1()}')">
 	<%}%>
 	</div>
 	</form>
