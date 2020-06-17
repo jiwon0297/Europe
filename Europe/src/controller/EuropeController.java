@@ -25,9 +25,7 @@ import action_delete.DeleteReviewAction;
 import action_edit.EditMemberAction;
 import action_edit.EditReviewAction;
 import action_find.FindMemberAction;
-import action_find.FindNewsAction;
 import action_find.FindReviewAction;
-import action_list.ListNewsAction;
 import action_list.ListReviewAction;
 import dao.ReviewTableDAO;
 import jdbc.ConnectionProvider;
@@ -227,23 +225,7 @@ public class EuropeController extends HttpServlet {
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode="+kind+"select");
 			rd.forward(request, response);
-			
-		} else if (command.equals("/NewsListViewAction.do")) {
-			action = new ListNewsAction("list");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("news.jsp");
-			rd.forward(request, response);
-		} else if(command.equals("/NewsSelectTitle.do")) {
-			action = new ListNewsAction("titleselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("news.jsp?mode=titleselect");
-			rd.forward(request, response);
-		} else if(command.equals("/NewsSelectWriter.do")) {
-			action = new ListNewsAction("writerselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("news.jsp?mode=writerselect");
-			rd.forward(request, response);
-		}
+		} 
 		
 		//Find
 		else if (command.equals("/DetailViewAction.do")) {
@@ -251,12 +233,7 @@ public class EuropeController extends HttpServlet {
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("DetailView.jsp");
 			rd.forward(request, response);
-		} else if (command.equals("/NewsDetailViewAction.do")) {
-			action = new FindNewsAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("NewsdetailView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/MemberDetailViewAction.do")) {
+		}  else if (command.equals("/MemberDetailViewAction.do")) {
 			action = new FindMemberAction("select");
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("myinfo.jsp");
@@ -271,12 +248,7 @@ public class EuropeController extends HttpServlet {
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("findpw.jsp");
 			rd.forward(request, response);
-		} else if (command.equals("/NewsEditViewAction.do")) {
-			action = new FindNewsAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("NewseditView.jsp");
-			rd.forward(request, response);
-		} else if (command.equals("/EditViewAction.do")) {
+		}  else if (command.equals("/EditViewAction.do")) {
 			action = new FindReviewAction();
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("EditView.jsp");
