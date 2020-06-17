@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import dto.CommentDTO;
+import dto.CommentElementBean;
 import jdbc.ConnectionProvider;
 
 public class CommentDAO {
@@ -18,8 +18,8 @@ public class CommentDAO {
 	}
 	
 	// insert
-		public void insertComment(CommentDTO dto) throws SQLException {
-			int num = dto.getNum();
+		public void insertComment(CommentElementBean cb) throws SQLException {
+			int num = cb.getNum();
 			int number = 0;
 			Connection conn = null;
 			PreparedStatement pstmt = null;
@@ -36,9 +36,9 @@ public class CommentDAO {
 				}
 				String sql = "insert into comment(id, content, ref) values (?,?,?)";
 				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, dto.getId());
-				pstmt.setString(2, dto.getContent());
-				pstmt.setInt(3, dto.getRef());
+				pstmt.setString(1, cb.getId());
+				pstmt.setString(2, cb.getContent());
+				pstmt.setInt(3, cb.getRef());
 				pstmt.executeUpdate();
 			} catch(Exception e) {
 				e.printStackTrace();

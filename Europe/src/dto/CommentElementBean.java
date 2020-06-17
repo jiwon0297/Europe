@@ -2,19 +2,19 @@ package dto;
 
 import java.sql.Date;
 
-public class CommentDTO implements java.io.Serializable {
+public class CommentElementBean implements java.io.Serializable {
 	   private int num;
 	   private String id;
 	   private String content;
 	   private Date reg;
 	   private int ref;
 	   
-		// default constructor
-	   public CommentDTO() {
+	   // default constructor
+	   public CommentElementBean() {
 	      this(-1,null,null,null,-1);
 	   }
 	   
-	   public CommentDTO(int num, String id, String content, Date reg, int ref) {
+	   public CommentElementBean(int num, String id, String content, Date reg, int ref) {
 		super();
 		this.num = num;
 		this.id = id;
