@@ -66,8 +66,8 @@ String userPW = (String)session.getAttribute("userPW");
             <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Main으로" onclick="location='${re.getCountry()}Main.jsp'">
             <form name="search" action="ReviewSelect.do" method="post">
             	<select name="kind" style="background-color:#fbfbfb; width:100px; float:left;">
-					<option name="writer" value="writer">작성자</option>
-					<option name="title" value="title">제목</option>
+					<option value="writer">작성자</option>
+					<option value="title">제목</option>
 	  			</select>&nbsp;
 	  			<input type="text" size="40" name="title"/>&nbsp;
 	  			<input type="hidden" name="country" value="${re.getCountry()}">

@@ -180,7 +180,7 @@ public class ListReviewAction implements Action {
 				request.setAttribute("mode", mode);
 				System.out.println(mode);
 			} else if(mode.contentEquals("writerselect")) {
-				List<ReviewElementBean> rList = dao.writerselect(conn, coun,cate1,name);
+				List<ReviewElementBean> rList = dao.writerselect(conn, coun,cate1,title);
 				request.setAttribute("rList", rList);
 				request.setAttribute("mode", mode);
 				System.out.println(mode);
