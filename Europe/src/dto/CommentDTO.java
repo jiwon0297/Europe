@@ -13,7 +13,8 @@ public class CommentDTO implements java.io.Serializable {
 	   public CommentDTO() {
 	      this(-1,null,null,null,-1);
 	   }
-	public CommentDTO(int num, String id, String content, Date reg, int ref) {
+	   
+	   public CommentDTO(int num, String id, String content, Date reg, int ref) {
 		super();
 		this.num = num;
 		this.id = id;
