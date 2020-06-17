@@ -23,6 +23,8 @@ public class ListReviewAction implements Action {
 		try {
 			String country;
 			String category;
+			String cate1 = request.getParameter("cate1");
+			String coun = request.getParameter("country");
 			String name = request.getParameter("name");
 			String title = request.getParameter("title");
 			conn = ConnectionProvider.getConnection();
@@ -171,15 +173,17 @@ public class ListReviewAction implements Action {
 				request.setAttribute("rList", rList);
 			} 
 			
-			//search
+			//search 
 			else if(mode.contentEquals("titleselect")) {
-				List<ReviewElementBean> rList = dao.titleselect(conn, title);
+				List<ReviewElementBean> rList = dao.titleselect(conn, coun,cate1,title);
 				request.setAttribute("rList", rList);
 				request.setAttribute("mode", mode);
+				System.out.println(mode);
 			} else if(mode.contentEquals("writerselect")) {
-				List<ReviewElementBean> rList = dao.writerselect(conn, name);
+				List<ReviewElementBean> rList = dao.writerselect(conn, coun,cate1,name);
 				request.setAttribute("rList", rList);
 				request.setAttribute("mode", mode);
+				System.out.println(mode);
 			}
 		} catch(SQLException e){
 			throw new ServiceException("ListReviewAction Error " + e.getMessage());

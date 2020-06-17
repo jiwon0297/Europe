@@ -64,6 +64,16 @@ String userPW = (String)session.getAttribute("userPW");
             <a href="AddviewAction.do" class="btn btn-default" role="button" style="margin-bottom:20px;position:relative; right:20px; color:white; background-color:#68a5f3; float:right">Add &raquo;</a>
             <%}%>
             <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Main으로" onclick="location='${re.getCountry()}Main.jsp'">
+            <form name="search" action="ReviewSelect.do" method="post">
+            	<select name="kind" style="background-color:#fbfbfb; width:100px; float:left;">
+					<option name="writer" value="writer">작성자</option>
+					<option name="title" value="title">제목</option>
+	  			</select>&nbsp;
+	  			<input type="text" size="40" name="title"/>&nbsp;
+	  			<input type="hidden" name="country" value="${re.getCountry()}">
+	  			<input type="hidden" name="cate1" value="${re.getCate1()}">
+            	<input type="submit" value="검색"/>
+            </form>
             <table class="table table-hover" style="text-align:center">
 			<tr style="background-color:lightgray">
 				<td style="width:200px; text-align:center; font-size:13pt"><strong>말머리</strong></td>
