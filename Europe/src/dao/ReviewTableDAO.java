@@ -169,13 +169,14 @@ public class ReviewTableDAO {
 	}
 	
 	
-	public List<ReviewElementBean> titleselect(Connection conn, String title) throws SQLException {
+	public List<ReviewElementBean> titleselect(Connection conn, String country, String cate1, String title) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "select * from review where title like'" + title + "%'";
+			String sql = "select * from review where country=? and cate1=? and title like'" + title + "%' ";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, title);
+			pstmt.setString(1, country);
+			pstmt.setString(2,cate1);
 			rs = pstmt.executeQuery();
 			List<ReviewElementBean> mList = new ArrayList<>();
 			while (rs.next()) {
@@ -192,13 +193,14 @@ public class ReviewTableDAO {
 		}
 	}
 	
-	public List<ReviewElementBean> writerselect(Connection conn, String name) throws SQLException {
+	public List<ReviewElementBean> writerselect(Connection conn, String country, String cate1, String name) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
-			String sql = "select * from review where name like'" + name + "%'";
+			String sql = "select * from review where country=? and cate1=? and name like'" + name + "%'";
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, name);
+			pstmt.setString(1, country);
+			pstmt.setString(2,cate1);
 			rs = pstmt.executeQuery();
 			List<ReviewElementBean> mList = new ArrayList<>();
 			while (rs.next()) {

@@ -68,6 +68,7 @@ public class EuropeController extends HttpServlet {
 		String RequestURI = request.getRequestURI();
 		String contextPath = request.getContextPath();
 		String command = RequestURI.substring(contextPath.length());
+		String kind = request.getParameter("kind");
 		
 		response.setContentType("text/html, charset=utf-8");
 		request.setCharacterEncoding("utf-8");
@@ -220,16 +221,13 @@ public class EuropeController extends HttpServlet {
 		
 		
 		//search
-		else if(command.equals("/ReviewSelectTitle.do")) {
-			action = new ListReviewAction("titleselect");
+		else if(command.equals("/ReviewSelect.do")) {
+			System.out.println(kind);
+			action = new ListReviewAction(kind + "select");
 			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("review.jsp?mode=titleselect");
+			RequestDispatcher rd = request.getRequestDispatcher("ListView.jsp?mode=" + kind + "select");
 			rd.forward(request, response);
-		} else if(command.equals("/ReviewSelectWriter.do")) {
-			action = new ListReviewAction("writerselect");
-			action.execute(request, response);
-			RequestDispatcher rd = request.getRequestDispatcher("review.jsp?mode=writerselect");
-			rd.forward(request, response);
+			
 		} else if (command.equals("/NewsListViewAction.do")) {
 			action = new ListNewsAction("list");
 			action.execute(request, response);
