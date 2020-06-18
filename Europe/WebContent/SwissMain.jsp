@@ -102,7 +102,7 @@
                     <div class="single_ihotel_list">
                         <a href="SwissInformationListViewAction.do"><img src="marine/img/information.jpg" alt=""></a>
                         <div class="hotel_text_iner">
-                            <h3 style="font-size:23pt;"><a href=SwissInfoListViewAction.do" style="color:#d9e1ef"> Travel Information</a></h3>
+                            <h3 style="font-size:23pt;"><a href=SwissInformationListViewAction.do" style="color:#d9e1ef"> Travel Information</a></h3>
                             <p style="font-size:13pt; color:lightgray;">You can share your experience and you can get the information, too</p><br>
 							<a href="SwissInformationListViewAction.do"style="color:white"><h5 style="text-align:right; font-size:13pt;">>> Detail</h5></a>
                         </div>
