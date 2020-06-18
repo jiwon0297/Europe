@@ -41,9 +41,15 @@ div.button{
 			return false;
 		}
 		
+		var _width = 270;
+		var _height = 140;
+		
+		var _left = Math.ceil(( window.screen.width - _width )/2);
+		var _top = Math.ceil(( window.screen.width - _height )/4); 
+
 		var id = document.join.id.value;
 		var url = "confirmId.jsp?id=" + id;
-		window.open(url,"confirmID", "width=400, height=350");
+		window.open(url,"confirmID", "height=" + _height  + ", width=" + _width  + ", left="+ _left + ", top="+ _top);
 	}
 	
 </script>
@@ -79,7 +85,7 @@ div.button{
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px;">ID</label>
         <input type="text" class="form-control" name="id" placeholder="ID" style="width:300px; position: relative; left:95px;">
-        <input type="button" class="btn btn-secondary" value="중복확인" name="confirm_id" onclick="confirmId(this.form)">
+        <input type="button" value="중복확인" name="confirm_id" onclick="confirmId(this.form)" style="left:55px; position:relative; margin-top:5px; color: black; background-color:white; float:right;">
     </div>
     <div class="form-group row">
       <label for="name" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px;">Name</label>

@@ -7,10 +7,15 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 </head>
+<script type="text/javascript">
+function cancel(){
+	self.opener = self;
+	self.close();
+	}
+</script>
 <body>
-
+<br><br>
 <div style="text-align: center">
-<h3>* 아이디 중복확인 *</h3>
 <%
 	String id = (String)request.getParameter("id");
 	
@@ -22,9 +27,9 @@
 	}else {
 		out.println("사용 가능한 ID 입니다.");
 	}
-	
-	
 %>
+<br>
+<input type="button" value="확인" name="confirm_id" onclick="cancel()" style="color: black; background-color:lightgray;">
 
 </body>
 </html>
