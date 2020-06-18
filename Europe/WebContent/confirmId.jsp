@@ -29,6 +29,7 @@ function cancel(){
 	}
 %>
 <br>
+<br>
 <input type="button" value="확인" name="confirm_id" onclick="cancel()" style="color: black; background-color:lightgray;">
 
 </body>
