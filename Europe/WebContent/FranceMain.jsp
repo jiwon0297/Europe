@@ -45,9 +45,10 @@
                                     <div class="event_slider_content" style="opacity:0.6; background-color:papayawhip">
                                         <h5>France</h5>
                                         <h2>France</h2>
-                                        <p>France Detail
+                                        <p>다채로운 매력의 컬러풀 프랑스<br>
+                                        	 일년 내내 사랑 받는 도시, 프랑스로 낭만을 즐기러 떠나보세요!
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -57,10 +58,12 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.6; background-color:papayawhip">
                                         <h5>France</h5>
-                                        <h2>France</h2>
-                                        <p>France Detail
+                                        <h2>Paris</h2>
+                                        <p>프랑스하면 바로 생각나는 도시 파리!
+                                        	에펠탑,미술관, 디즈니랜드 등 볼거리 천국!<br>
+                                        	4박 5일로는 부족한 파리여행, 지금 당장 계획 짜러 가자!
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,10 +73,11 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.6; background-color:papayawhip">
                                         <h5>France</h5>
-                                        <h2>France</h2>
-                                        <p>France Detail
+                                        <h2>Lyon</h2>
+                                        <p>나만 알고싶은 도시 리옹<br>
+                                         	여유로운 프랑스 여행을 즐기고 싶은 사람은 리옹으로 가자!
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

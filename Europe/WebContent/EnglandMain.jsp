@@ -45,9 +45,10 @@
                                     <div class="event_slider_content" style="opacity:0.9; background-color:lightgray">
                                         <h5>United Kingdom</h5>
                                         <h2>United Kingdom</h2>
-                                        <p>United Kingdom Detail
+                                        <p>유럽여행의 출발지점이라 할 수 있는 영국!<br>
+                                        	영국에서의 설레는 여행을 시작해볼까요?
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -57,10 +58,12 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.9; background-color:lightgray">
                                         <h5>United Kingdom</h5>
-                                        <h2>United Kingdom</h2>
-                                        <p>United Kingdom Detail
-                                        </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <h2>London</h2>
+                                        <p>여행 향수를 자극하는 런던!<br>
+                                        	영국하면 생각나는 해리포터<br>
+                                        	해리포터스튜디오 입장권을 싸게 살 수 있는 팁이 있다!!
+                                         </p>
+                                        <a href="page4.jsp" class="btn_1">Go to tip</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,10 +73,11 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.9; background-color:lightgray">
                                         <h5>United Kingdom</h5>
-                                        <h2>United Kingdom</h2>
-                                        <p>United Kingdom Detail
+                                        <h2>The Granite City</h2>
+                                        <p>죽기전에 꼭 가봐야할 스코틀랜드<br>
+                                           	자연경관에 둘러싸인 섬과 에든버러 성을 보러가볼까요?	
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
