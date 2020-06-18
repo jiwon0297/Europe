@@ -94,7 +94,7 @@
  
     <div id="commentUpdateForm">
         <form name="updateInfo" target="parentForm">        
-            <textarea rows="7" cols="100" name="comment_content">${comment.content}</textarea>
+            <textarea rows="7" cols="70" name="comment_content">${comment.content}</textarea>
             <br><br>
             <input type="button" value="등록" onclick="checkValue()">
             <input type="button" value="창닫기" onclick="window.close()">

@@ -151,7 +151,7 @@
     
     <br><br><br>
     <!-- 댓글 부분 -->
-    <div id="comment" style="position:relative; left:250px;">
+    <div id="comment" style="position:relative; left:340px;">
         <table border="1" bordercolor="lightgray">
     <!-- 댓글 목록 -->    
     <c:if test="${requestScope.commentList != null}">
