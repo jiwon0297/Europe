@@ -40,7 +40,7 @@
     {
         var form = document.getElementById("writeCommentForm");
         
-        var board = form.comment_board.value
+        var board = form.number.value
         var id = form.comment_id.value
         var content = form.comment_content.value;
         
@@ -51,7 +51,7 @@
         }
         else
         {    
-            var param="comment_board="+board+"&comment_id="+id+"&comment_content="+content;
+            var param="number="+board+"&comment_id="+id+"&comment_content="+content;
                 
             httpRequest = getXMLHttpRequest();
             httpRequest.onreadystatechange = checkFunc;
@@ -147,10 +147,11 @@
             <c:if test="${userID !=null}">
             <tr bgcolor="#F5F5F5">
             <form id="writeCommentForm">
-                <input type="hidden" name="comment_board" value="${re.getNumber()}">
+                <input type="hidden" name="number" value="${re.getNumber()}">
                 <input type="hidden" name="comment_id" value="${userID}">
                 <!-- 아이디-->
                 <td width="150">
+                	<div>
                        <i class="fa fa-user w3-padding-16"></i> ${userID}
                     </div>
                 </td>
@@ -163,7 +164,7 @@
                 <!-- 댓글 등록 버튼 -->
                 <td width="100">
                     <div id="btn" style="text-align:center;">
-                        <p><a href="#" onclick="writeCmt()">[댓글등록]</a></p>    
+                        <p><input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="댓글등록"  onclick="writeCmt()"></p>    
                     </div>
                 </td>
             </form>

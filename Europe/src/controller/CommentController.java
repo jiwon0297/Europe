@@ -24,7 +24,7 @@ public class CommentController extends HttpServlet
      * 최초 실행 init
      */
     public void init(ServletConfig config) throws ServletException {    
-        loadProperties("jsp/board/comment/properties/CommentCommand");
+        loadProperties("controller/CommentCommand");
     }
  
     /**

@@ -18,7 +18,7 @@ public class CommentWriteAction implements Action2{
 	        CommentElementBean comment = new CommentElementBean();
 	        
 	        // 파리미터 값을 가져온다.
-	        int comment_board = Integer.parseInt(request.getParameter("comment_board"));
+	        int comment_board = Integer.parseInt(request.getParameter("number"));
 	        String comment_id = request.getParameter("comment_id");
 	        String comment_content = request.getParameter("comment_content");
 
