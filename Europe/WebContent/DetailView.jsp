@@ -132,7 +132,6 @@
                 <!-- 버튼 -->
                 <td width="100">
                     <div id="btn" style="text-align:center;">
-                        <a href="#">[답변]</a><br>
                     <!-- 댓글 작성자만 수정, 삭제 가능하도록 -->    
                     <c:if test="${userID == re.getName()}">
                         <a href="#">[수정]</a><br>    
