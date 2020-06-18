@@ -34,6 +34,18 @@ div.button{
 	function cancel(){
 		window.history.back(); 
 	}
+	
+	function confirmId(){
+		if(!document.join.id.value){
+			alert("아이디를 입력하세요.");
+			return false;
+		}
+		
+		var id = document.join.id.value;
+		var url = "confirmId.jsp?id=" + id;
+		window.open(url,"confirmID", "width=400, height=350");
+	}
+	
 </script>
 </head>
 <body>
@@ -67,6 +79,7 @@ div.button{
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px;">ID</label>
         <input type="text" class="form-control" name="id" placeholder="ID" style="width:300px; position: relative; left:95px;">
+        <input type="button" class="btn btn-secondary" value="중복확인" name="confirm_id" onclick="confirmId(this.form)">
     </div>
     <div class="form-group row">
       <label for="name" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px;">Name</label>

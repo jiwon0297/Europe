@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dto.MemberElementBean;
+import jdbc.ConnectionProvider;
 
 public class MemberTableDAO {
 	private MemberTableDAO() { 
@@ -223,5 +224,29 @@ public class MemberTableDAO {
 		}
 	}
 	
+	//confirm id
+	public boolean confirmId(String id) throws SQLException {
+		boolean result = false;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		Connection conn = ConnectionProvider.getConnection();
+		try {
+			String sql = "select id from member where id=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				result = true;
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {rs.close();}catch(SQLException s) {}
+			try {pstmt.close();}catch(SQLException s) {}
+			try {conn.close();}catch(SQLException s) {}
+		}
+		return result;
+	}
 	
+
 }
