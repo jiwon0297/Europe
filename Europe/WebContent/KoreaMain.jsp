@@ -43,9 +43,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">Korea</h5>
-                                        <h2 style="color:black; font-size:25pt">Korea</h2>
-                                        <p style="color:gray; font-size:14pt">
+                                        <h5>Korea</h5>
+                                        <h2>Korea</h2>
+                                        <p>
                                         	유럽여행 가기전, 국내여행을 떠나보는 건 어떨까요?<br>
                                         	국내 여름여행지 TOP2를 만나보세요!
                                         </p>
@@ -58,9 +58,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">Korea</h5>
-                                        <h2 style="color:black; font-size:25pt">Jeju Island</h2>
-                                        <p style="color:gray; font-size:14pt">
+                                        <h5>Korea</h5>
+                                        <h2 >Jeju Island</h2>
+                                        <p>
                                            	여름하면 빼놓을 수 없는 국내여행지 제주도-!<br>
                                            	맑고 눈부신 해변을 즐길 수 있는 제주도로 떠나보아요
                                         </p>
@@ -73,9 +73,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#fff1d3">
-                                        <h5 style="font-size:14pt">Korea</h5>
-                                        <h2 style="color:black; font-size:25pt">Gapyeong</h2>		
-                                        <p style="color:gray; font-size:14pt">
+                                        <h5> Korea</h5>
+                                        <h2>Gapyeong</h2>		
+                                        <p>
                                         	  여름단골 여행지 경기도 가평<br>
                                         	 청춘열차 타고 수상레저 즐기러 가볼까요?
                                      	</p>

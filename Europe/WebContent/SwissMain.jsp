@@ -43,9 +43,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#eff5ff">
-                                        <h5 style="font-size:14pt">Swiss</h5>
-                                        <h2 style="color:black; font-size:25pt">Swiss</h2>
-                                        <p style="color:gray; font-size:12pt">
+                                        <h5>Swiss</h5>
+                                        <h>Swiss</h2>
+                                        <p>
                                         	한국인들이 가장 가고싶어하는 여행지1위 스위스!<br>
                                         	알프스의 산들과 눈꽃을 헤쳐나가는 열차를 타러 가자!
                                         </p>
@@ -58,9 +58,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#eff5ff">
-                                        <h5 style="font-size:14pt">Swiss</h5>
-                                        <h2 style="color:black; font-size:25pt">Zurich</h2>
-                                        <p style="color:gray; font-size:12pt">
+                                        <h5>Swiss</h5>
+                                        <h2>Zurich</h2>
+                                        <p>
                                           	평화를 상징하는 도시 취리히!<br>
                                           	반호프 거리를 따라 상점들을 구경하며 걸어볼까요??
                                         </p>
@@ -73,9 +73,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#eff5ff">
-                                        <h5 style="font-size:14pt">Swiss</h5>
-                                        <h2 style="color:black; font-size:25pt">Interaken</h2>
-                                        <p style="color:gray; font-size:12pt">
+                                        <h5>Swiss</h5>
+                                        <h2>Interaken</h2>
+                                        <>
                                          	아름다운 산과 눈이 365일 덮여있는 융프라우 산맥!<br>
                                          	융프라우 갈 땐 꿀팁이 있다! 당장 보러 가볼까요?
                                         </p>

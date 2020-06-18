@@ -43,9 +43,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#cbd8a0">
-                                        <h5 style="font-size:14pt">Germany</h5>
-                                        <h2 style="color:black; font-size:25pt">Germany</h2>
-                                        <p style="color:gray; font-size:14pt">
+                                        <h5>Germany</h5>
+                                        <h2>Germany</h2>
+                                        <p>
                                         		유럽의 중앙부에 위치한 국가, 독일!<br>
                                         		유명한 독일맥주 마시러 떠나볼까요??
                                         </p>
@@ -58,9 +58,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#cbd8a0">
-                                        <h5 style="font-size:14pt">Germany</h5>
-                                        <h2 style="color:black; font-size:25pt">Munchen</h2>
-                                        <p style="color:gray; font-size:14pt">
+                                        <h5>Germany</h5>
+                                        <h2>Munchen</h2>
+                                        <p>
                                         	축구와 맥주가 유명한 도시 뮌헨<br>
                                         	세계최대규모의 맥주축제 옥토버훼스트가 열리는 곳!<br>
                                         	근교 베른의 노인슈반슈타인 성도 다녀올 수 있다!<br> 교통 꿀팁을 보러갈까요??
@@ -74,9 +74,9 @@
                             <div class="row justify-content-end">
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.8; background-color:#cbd8a0">
-                                        <h5 style="font-size:14pt">Germany</h5>
-                                        <h2 style="color:black; font-size:25pt">Berlin</h2>
-                                        <p style="color:gray; font-size:14pt">
+                                        <h5>Germany</h5>
+                                        <h2>Berlin</h2>
+                                        <p>
                                         	국제영화제와 오케스트라로 유명한 도시!<br>
                                         	유럽에서 현대적이고 세련된 분위기를 맛보고 싶다면, <br>	
                                         	베를린으로 떠나는게 어떨까요??
