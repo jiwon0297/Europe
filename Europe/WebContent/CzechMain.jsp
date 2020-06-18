@@ -45,9 +45,10 @@
                                     <div class="event_slider_content" style="opacity:0.9; background-color:ivory">
                                         <h5>Czech</h5>
                                         <h2>Czech</h2>
-                                        <p>Czech Detail
+                                        <p> 몽환적인 빛의 나라, 체코<br>
+                                        	소설의 배경지로도 유명한 체코로 떠나봐요!
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -57,10 +58,11 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.9; background-color:ivory">
                                         <h5>Czech</h5>
-                                        <h2>Czech</h2>
-                                        <p>Czech Detail
+                                        <h2>Praha</h2>
+                                        <p>낭만의 도시이자 사랑이 피어나는 도시, 프라하<br>
+                                        	체스키 크룸로프로 가는 버스는 한대가 아니라고? 확인하러 가자!
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="page4.jsp" class="btn_1">Go to tip</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,10 +72,11 @@
                                 <div class="col-lg-6 col-md-6">
                                     <div class="event_slider_content" style="opacity:0.9; background-color:ivory">
                                         <h5>Czech</h5>
-                                        <h2>Czech</h2>
-                                        <p>Czech Detail
+                                        <h2>Olomouc</h2>
+                                        <p>품위 있는 중세 유럽의 분위기가 물씬 나는 곳<br>
+                                        	모차르트도 반한 도시 올로모우츠로 떠나보자!
                                         </p>
-                                        <a href="#" class="btn_1">Plan Details</a>
+                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
