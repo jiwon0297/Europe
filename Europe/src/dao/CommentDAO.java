@@ -27,31 +27,6 @@ public class CommentDAO {
 	        return instance;
 	    }
 	    
-	    // 시퀀스를 가져온다.
-	    public int getSeq() 
-	    {
-	        int result = 1;
-	        try {
-	            conn = ConnectionProvider.getConnection();
-	            
-	            // 시퀀스 값을 가져온다. (DUAL : 시퀀스 값을 가져오기위한 임시 테이블)
-	            StringBuffer sql = new StringBuffer();
-	            sql.append("SELECT COMMENT_SEQ.NEXTVAL FROM DUAL");
-	 
-	            pstmt = conn.prepareStatement(sql.toString());
-	            rs = pstmt.executeQuery(); // 쿼리 실행
-	 
-	            if (rs.next())    result = rs.getInt(1);
-	 
-	        } catch (Exception e) {
-	            throw new RuntimeException(e.getMessage());
-	        }
-	 
-	        close();
-	        return result;
-	    } // end getSeq
-	    
-	    
 	    // 댓글 등록
 	    public boolean insertComment(CommentElementBean comment)
 	    {
@@ -63,12 +38,11 @@ public class CommentDAO {
 	            // 자동 커밋을 false로 한다.
 	            conn.setAutoCommit(false);
 	            
-	            String sql = "insert into comment(num,id,content,ref) values (?,?,?,?)";
+	            String sql = "insert into comment(id,content,ref) values (?,?,?)";
 	            pstmt = conn.prepareStatement(sql);
-	            pstmt.setInt(1, comment.getNum());
-	            pstmt.setString(2, comment.getId());
-	            pstmt.setString(3, comment.getContent());
-	            pstmt.setInt(4, comment.getRef());
+	            pstmt.setString(1, comment.getId());
+	            pstmt.setString(2, comment.getContent());
+	            pstmt.setInt(3, comment.getRef());
 	            
 	            int flag = pstmt.executeUpdate();
 	            if(flag > 0){
@@ -144,6 +118,104 @@ public class CommentDAO {
 	        return list;
 	    } // end getCommentList
 	    
+	 // 댓글 삭제
+	    public boolean deleteComment(int comment_num) 
+	    {
+	        boolean result = false;
+	 
+	        try {
+	            conn = ConnectionProvider.getConnection();
+	            conn.setAutoCommit(false); // 자동 커밋을 false로 한다.
+	            
+	            String sql = "delete from comment where num=?";
+	            
+	            pstmt = conn.prepareStatement(sql);
+	            pstmt.setInt(1, comment_num);
+	            
+	            int flag = pstmt.executeUpdate();
+	            if(flag > 0){
+	                result = true;
+	                conn.commit(); // 완료시 커밋
+	            }    
+	            
+	        } catch (Exception e) {
+	            try {
+	                conn.rollback(); // 오류시 롤백
+	            } catch (SQLException sqle) {
+	                sqle.printStackTrace();
+	            }
+	            throw new RuntimeException(e.getMessage());
+	        }
+	 
+	        close();
+	        return result;
+	    } // end deleteComment
+	    
+	 // 댓글 1개의 정보를 가져온다.
+	    public CommentElementBean getComment(int comment_num)
+	    {
+	        CommentElementBean comment = null;
+	        
+	        try {
+	            conn = ConnectionProvider.getConnection();
+	            
+	            String sql = "select * from comment where num = ?";
+	           
+	            pstmt = conn.prepareStatement(sql.toString());
+	            pstmt.setInt(1, comment_num);
+	            
+	            rs = pstmt.executeQuery();
+	            while(rs.next())
+	            {
+	                comment = new CommentElementBean();
+	                comment.setNum(rs.getInt("num"));
+	                comment.setRef(rs.getInt("ref"));
+	                comment.setId(rs.getString("id"));
+	                comment.setReg(rs.getDate("reg"));
+	                comment.setContent(rs.getString("content"));
+	            }
+	        } catch (Exception e) {
+	            throw new RuntimeException(e.getMessage());
+	        }
+	        
+	        close();
+	        return comment; 
+	    } // end getComment
+	    
+	 // 댓글 수정
+	    public boolean updateComment(CommentElementBean comment) 
+	    {
+	        boolean result = false;
+	        
+	        try{
+	            conn = ConnectionProvider.getConnection();
+	            conn.setAutoCommit(false); // 자동 커밋을 false로 한다.
+	            
+	            String sql = "update comment set content=? where num=?";
+	 
+	            pstmt = conn.prepareStatement(sql);
+	            pstmt.setString(1, comment.getContent());
+	            pstmt.setInt(2, comment.getNum());
+	 
+	            int flag = pstmt.executeUpdate();
+	            if(flag > 0){
+	                result = true;
+	                conn.commit(); // 완료시 커밋
+	            }
+	            
+	        } catch (Exception e) {
+	            try {
+	                conn.rollback(); // 오류시 롤백
+	            } catch (SQLException sqle) {
+	                sqle.printStackTrace();
+	            }
+	            e.printStackTrace();
+	            throw new RuntimeException(e.getMessage());
+	        }
+	    
+	        close();
+	        return result;
+	    } // end updateComment
 	    
 	    // DB 자원해제
 	    private void close()
