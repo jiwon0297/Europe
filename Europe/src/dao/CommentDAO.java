@@ -63,13 +63,12 @@ public class CommentDAO {
 	            // 자동 커밋을 false로 한다.
 	            conn.setAutoCommit(false);
 	            
-	            String sql = "insert into comment(num,id,content,ref,comment_parent) values (?,?,?,?,?)";
+	            String sql = "insert into comment(num,id,content,ref) values (?,?,?,?)";
 	            pstmt = conn.prepareStatement(sql);
 	            pstmt.setInt(1, comment.getNum());
 	            pstmt.setString(2, comment.getId());
 	            pstmt.setString(3, comment.getContent());
 	            pstmt.setInt(4, comment.getRef());
-	            pstmt.setInt(5, comment.getComment_parent());
 	            
 	            int flag = pstmt.executeUpdate();
 	            if(flag > 0){
@@ -133,7 +132,6 @@ public class CommentDAO {
 	                comment.setId(rs.getString("id"));
 	                comment.setReg(rs.getDate("reg"));
 	                comment.setContent(rs.getString("content"));
-	                comment.setComment_parent(rs.getInt("comment_parent"));
 	                list.add(comment);
 	            }
 	                

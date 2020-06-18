@@ -8,27 +8,25 @@ public class CommentElementBean implements java.io.Serializable {
 	   private String content;
 	   private Date reg;
 	   private int ref;
-	   private int comment_parent;
 	   
 	   // default constructor
 	   public CommentElementBean() {
-	      this(-1,null,null,null,-1,-1);
+	      this(-1,null,null,null,-1);
 	   }
 	   
-	   public CommentElementBean(int num, String id, String content, Date reg, int ref, int comment_parent) {
+	   public CommentElementBean(int num, String id, String content, Date reg, int ref) {
 		super();
 		this.num = num;
 		this.id = id;
 		this.content = content;
 		this.reg = reg;
 		this.ref = ref;
-		this.comment_parent = comment_parent;
 	}
 
 	@Override
 	public String toString() {
 		return "CommentElementBean [num=" + num + ", id=" + id + ", content=" + content + ", reg=" + reg + ", ref="
-				+ ref + ", comment_parent=" + comment_parent + "]";
+				+ ref + "]";
 	}
 
 	public int getNum() {
@@ -69,13 +67,5 @@ public class CommentElementBean implements java.io.Serializable {
 
 	public void setRef(int ref) {
 		this.ref = ref;
-	}
-
-	public int getComment_parent() {
-		return comment_parent;
-	}
-
-	public void setComment_parent(int comment_parent) {
-		this.comment_parent = comment_parent;
 	}
 }
