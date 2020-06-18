@@ -56,10 +56,50 @@
             httpRequest = getXMLHttpRequest();
             httpRequest.onreadystatechange = checkFunc;
             httpRequest.open("POST", "CommentWriteAction.co", true);    
-            httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=EUC-KR'); 
+            httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=utf-8'); 
             httpRequest.send(param);
         }
     }
+    
+    function checkFunc(){
+        if(httpRequest.readyState == 4){
+            // 결과값을 가져온다.
+            var resultText = httpRequest.responseText;
+            if(resultText == 1){ 
+                document.location.reload(); // 상세보기 창 새로고침
+            }
+        }
+    }
+    
+    function cmDeleteOpen(comment_num){
+    	var msg = confirm("댓글을 삭제하시겠습니까?");
+    	
+    	if(msg==true){
+    		deleteCmt(comment_num);
+    	}
+    	else{
+    		return false;
+    	}
+    }
+    
+    function deleteCmt(comment_num)
+    {
+        var param="comment_num="+comment_num;
+        
+        httpRequest = getXMLHttpRequest();
+        httpRequest.onreadystatechange = checkFunc;
+        httpRequest.open("POST", "CommentDeleteAction.co", true);    
+        httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=EUC-KR'); 
+        httpRequest.send(param);
+    }
+    
+ // 댓글 수정창
+    function cmUpdateOpen(comment_num){
+        window.name = "parentForm";
+        window.open("CommentUpdateFormAction.co?num="+comment_num,
+                    "updateForm", "width=570, height=350, resizable = no, scrollbars = no");
+    }
+
 
 </script>
 </head>
@@ -109,8 +149,9 @@
 	</c:if>
 	</form>
     
+    <br><br><br>
     <!-- 댓글 부분 -->
-    <div id="comment">
+    <div id="comment" style="position:relative; left:250px;">
         <table border="1" bordercolor="lightgray">
     <!-- 댓글 목록 -->    
     <c:if test="${requestScope.commentList != null}">
@@ -119,30 +160,43 @@
                 <!-- 아이디, 작성날짜 -->
                 <td width="150">
                     <div>
-                        ${comment.id}<br>
-                        <font size="2" color="lightgray">${comment.ref}</font>
+                        <p style="text-align:center">${comment.id}</p>
+                        <p style="margin-top:-24px; margin-bottom:-8px; position:relative; left:80px; font-size:9pt; color:lightgray">${comment.reg}</p>
                     </div>
                 </td>
                 <!-- 본문내용 -->
                 <td width="550">
                     <div class="text_wrapper">
-                        ${comment.content}
+                        <p style="margin-bottom:-4px; position:relative; left:10px;">${comment.content}</p>
                     </div>
                 </td>
                 <!-- 버튼 -->
                 <td width="100">
                     <div id="btn" style="text-align:center;">
                     <!-- 댓글 작성자만 수정, 삭제 가능하도록 -->    
-                    <c:if test="${userID == re.getName()}">
-                        <a href="#">[수정]</a><br>    
-                        <a href="#">[삭제]</a>
+                    <c:if test="${userID == comment.id}">
+                        <a href="#" onclick="cmUpdateOpen(${comment.num})">수정</a> |    
+                        <a href="#" onclick="cmDeleteOpen(${comment.num})">삭제</a>
                     </c:if>        
                     </div>
                 </td>
             </tr>
         </c:forEach>
     </c:if>
-            
+            <c:if test="${userID == null }">
+            <tr bgcolor="#F5F5F5">
+            <td width="150">
+            	<div style="text-align:center">댓글</div>
+            </td>
+            <td width = "550">
+            	<div>
+            		<textarea rows="4" cols="70">로그인을 해야 작성이 가능합니다.</textarea>
+            	</div>
+            </td>
+            <td width="100">
+            	<div style="text-align:center">작성</div>
+            </td>
+            </c:if>
             <!-- 로그인 했을 경우만 댓글 작성가능 -->
             <c:if test="${userID !=null}">
             <tr bgcolor="#F5F5F5">
@@ -151,20 +205,20 @@
                 <input type="hidden" name="comment_id" value="${userID}">
                 <!-- 아이디-->
                 <td width="150">
-                	<div>
+                	<div style="text-align:center">
                        <i class="fa fa-user w3-padding-16"></i> ${userID}
                     </div>
                 </td>
                 <!-- 본문 작성-->
                 <td width="550">
                     <div>
-                        <textarea name="comment_content" rows="4" cols="70" ></textarea>
+                        <textarea name="comment_content" rows="4" cols="100" ></textarea>
                     </div>
                 </td>
                 <!-- 댓글 등록 버튼 -->
                 <td width="100">
                     <div id="btn" style="text-align:center;">
-                        <p><input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="댓글등록"  onclick="writeCmt()"></p>    
+                    	<a href="#" onclick="writeCmt()">댓글등록</a>  
                     </div>
                 </td>
             </form>
