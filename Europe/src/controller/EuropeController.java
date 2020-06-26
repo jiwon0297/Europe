@@ -23,6 +23,7 @@ import action_add.AddMemberAction;
 import action_add.AddReviewAction;
 import action_add.MyTravelAddAction;
 import action_delete.DeleteReviewAction;
+import action_delete.MyTravelDeleteAction;
 import action_edit.EditMemberAction;
 import action_edit.EditReviewAction;
 import action_find.FindMemberAction;
@@ -421,6 +422,12 @@ public class EuropeController extends HttpServlet {
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("CountryTravel.jsp");
 			rd.forward(request, response);
+		}
+		else if (command.equals("/DeleteTravelAction.do")) {
+			action = new MyTravelDeleteAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("/ListTravelAction.do");
+			rd.forward(request, response);	
 		}
 	}
 

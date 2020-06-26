@@ -39,6 +39,13 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script type="text/javascript">
+function deleteConfirm(number){
+	if(confirm("정말로 이 여행을 삭제하시겠습니까? 삭제하면 되돌릴 수 없습니다.")==true)
+		location.href = "DeleteTravelAction.do?number=" + number;
+	else
+		return;	
+}
+
 function myLocationAddOpen(){
     window.name = "myLocationForm";
     var _width = 1000;
@@ -125,6 +132,7 @@ function deleteLocation(location_num)
 	<h2 style="color:skyblue;">${tList.getCountry()}</h2>
 	<p>${tList.getNights()}박 ${tList.getDays()}일</p>
 	<p>출발 날짜 : ${tList.getStartDate()}</p>
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="삭제" onclick="deleteConfirm('${tList.getNumber()}')">
 	<div class="separator"></div>
 </div>
 <!-- 추가버튼 -->
