@@ -27,6 +27,7 @@ import action_edit.EditReviewAction;
 import action_find.FindMemberAction;
 import action_find.FindReviewAction;
 import action_list.ListReviewAction;
+import action_list.ListTravelAction;
 import dao.ReviewTableDAO;
 import jdbc.ConnectionProvider;
 
@@ -397,6 +398,14 @@ public class EuropeController extends HttpServlet {
 			action = new AddMemberAction("join");
 			action.execute(request, response);
 			RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+			rd.forward(request, response);
+		}
+		
+		else if(command.contentEquals("/ListTravelAction.do")) {
+			String userid = request.getParameter("userid");
+			action = new ListTravelAction();
+			action.execute(request, response);
+			RequestDispatcher rd= request.getRequestDispatcher("MyTravel.jsp?userid="+userid);
 			rd.forward(request, response);
 		}
 	}

@@ -40,7 +40,6 @@ String userPW = (String)session.getAttribute("userPW");
 %>
 <div class="work_menu text-center">
 	<div id="filters" class="toolbar mb2 mt2">
-		<form action="ListTravelAction.do" method="POST">
 		<button class="btn-md fil-cat filter" onclick="location='index.jsp'" style="font-size : 15pt;">HOME</button>
 		<button class="btn-md fil-cat filter" onclick="location='main.jsp'" style="font-size : 15pt;">MENU</button>
 		<% if(userID == null && userPW == null) { %>
@@ -48,9 +47,7 @@ String userPW = (String)session.getAttribute("userPW");
 		<%} else { %>
 		<button class="btn-md fil-cat filter" onclick="location='LogoutAction.do'" style="font-size : 15pt; color:orangered">LOGOUT</button>
 		<button class="btn-md fil-cat filter" onclick="location='MemberDetailViewAction.do'" style="font-size : 15pt;">MYPAGE</button>
-		<input type="hidden" name="userid" value="${userID}">
-		<input type="submit" class="btn-md fil-cat filter" style="background-color:white; color:black; font-size:15pt;" value="MYTRAVEL">
-		</form>
+		<button class="btn-md fil-cat filter" onclick="location='ListTravelAction.do'" style="font-size : 15pt;">MYTRAVEL</button>
 		<%}%>
 	</div> 
 </div>
