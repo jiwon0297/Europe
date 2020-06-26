@@ -5,6 +5,7 @@
 <%@ page import="dto.MemberElementBean" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,9 +63,10 @@
             </section>
         </div>
 <br><br><br><br>
-<form name="login" action="LoginAction.do" method="post" onsubmit = "return checkForm();" style ="margin:0 auto; width:500px;" >
-  
-</form>    
+
+<c:if test="${userID == null}">
+	<small id="fileHelp" class="form-text text-muted" style="position:relative; font-size:13pt; left:280px;">※로그인을 해야만 추가가 가능합니다.※</small>
+</c:if>
 
         <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
