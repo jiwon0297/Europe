@@ -140,7 +140,8 @@ public class TravelTableDAO {
 			}
 		}
 	}
-
+    
+    
 public TravelElementBean createFromResultSet(ResultSet rs) throws SQLException {
 	int number = rs.getInt("number");
 	String userId = rs.getString("userId");

@@ -46,58 +46,20 @@ function deleteConfirm(number){
 		return;	
 }
 
-function myLocationAddOpen(){
+function myLocationAddOpen(location_num){
     window.name = "myLocationForm";
-    var _width = 1000;
-	var _height = 800;
+    var _width = 1200;
+	var _height = 500;
 
 	var _left = Math.ceil(( window.screen.width - _width )/2);
 	var _top = Math.ceil(( window.screen.width - _height )/4); 
 	
-    window.open("CountryTravelAdd.jsp",
+	var number = location_num;
+	
+    window.open("CountryTravelAction.do?number=" + number,
                 "locationAddForm", "resizable = no, height=" + _height  + ", width=" + _width  + ", left="+ _left + ", top="+ _top);
 }
 
-//httpRequest 객체 생성
-function getXMLHttpRequest(){
-    var httpRequest = null;
-
-    if(window.ActiveXObject){
-        try{
-            httpRequest = new ActiveXObject("Msxml2.XMLHTTP");    
-        } catch(e) {
-            try{
-                httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch (e2) { httpRequest = null; }
-        }
-    }
-    else if(window.XMLHttpRequest){
-        httpRequest = new window.XMLHttpRequest();
-    }
-    return httpRequest;    
-}
-
-function lcDeleteOpen(location_num){
-	var msg = confirm("장소를 삭제하시겠습니까?");
-	
-	if(msg==true){
-		deleteLocation(location_num);
-	}
-	else{
-		return false;
-	}
-}
-
-function deleteLocation(location_num)
-{
-    var param="location_num="+location_num;
-    
-    httpRequest = getXMLHttpRequest();
-    httpRequest.onreadystatechange = checkFunc;
-    httpRequest.open("POST", "LocationDeleteAction.co", true);    
-    httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=EUC-KR'); 
-    httpRequest.send(param);
-}
 
 
 </script>
@@ -136,18 +98,13 @@ function deleteLocation(location_num)
 	<div class="separator"></div>
 </div>
 <!-- 추가버튼 -->
-
-
+<c:if test="${tList.getNumber() != null}">
+	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
+</c:if>
 <!-- 장소리스트 출력 -->
 <br><br>
-<c:if test="${requestScope.locationList != null}">
-        <c:forEach var="l" items="${lList}">
-        <p>${l.location }</p>
-        <c:if test="${ce.getNumber() == l.countryNumber}">
-                        <a href="#" onclick="lcDeleteOpen(${l.number})">삭제</a> |    
-		</c:if>
-        </c:forEach>
-</c:if>
+${lList.getNumber() }
+
 
 	
        

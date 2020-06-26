@@ -126,7 +126,38 @@ public class LocationTableDAO {
 	        return result;
 	    } // end deleteComment
 	    
-
+	    public LocationElementBean select(Connection conn, int number) throws SQLException {
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+			try {
+				String sql = "select * from location where countryNumber=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setInt(1, number);
+				rs = pstmt.executeQuery();
+				if (rs.next()) {
+					return createFromResultSet(rs);
+				}
+				else {
+					return null;
+				}
+			} finally {
+				if (rs != null) {
+					rs.close();
+				}
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
+	    
+	    public LocationElementBean createFromResultSet(ResultSet rs) throws SQLException {
+	    	int number = rs.getInt("number");
+	    	int countryNumber = rs.getInt("countryNumber");
+	    	String location = rs.getString("location");
+	    	
+	    	LocationElementBean re = new LocationElementBean(number,countryNumber, location);
+	    	return re;
+	    }
 	    
 	    // DB 자원해제
 	    private void close()

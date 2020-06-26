@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
+<%@ page import="jdbc.ConnectionProvider" %>
+<%@ page import="dao.TravelTableDAO" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,61 +31,22 @@
 	<!-- style CSS -->
 	<link rel="stylesheet" href="marine/css/style.css">
 	
-<script>
-
-// httpRequest 객체 생성
-function getXMLHttpRequest(){
-    var httpRequest = null;
-
-    if(window.ActiveXObject){
-        try{
-            httpRequest = new ActiveXObject("Msxml2.XMLHTTP");    
-        } catch(e) {
-            try{
-                httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-            } catch (e2) { httpRequest = null; }
-        }
-    }
-    else if(window.XMLHttpRequest){
-        httpRequest = new window.XMLHttpRequest();
-    }
-    return httpRequest;    
-}
-
+<script type="text/javascript">
 
 function addLocation()
 {
-    var form = document.getElementById("mylocationadd");
-
-    var location = form.location.value;
-    
-}
-
-function checkFunc(){
-    if(httpRequest.readyState == 4){
-        // 결과값을 가져온다.
-        var resultText = httpRequest.responseText;
-        if(resultText == 1){
-            if (opener != null) {
-                // 부모창 새로고침
-                window.opener.document.location.reload(); 
-                opener.travelAddForm = null;
-                self.close();
-            }
-        }
-    }
+	document.mylocationadd.submit();
+	window.close();
 }
 
 </script>
 </head>
 <body>
 
-<%
-	String country = (String)request.getParameter("country");
-%>
-
-<% if (country == "England") { %>
-	<form name="mylocationadd" target="myLocationForm">
+<c:set var="country" value="${tList.getCountry()}"/>
+<c:if test="${country eq 'England'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+	<input type="hidden" name="countryNumber" value="${tList.getNumber()}">
 	<div class="section-top-border">
 				<h3 class="mb-30">영국 리스트</h3>
 				<div class="progress-table-wrap">
@@ -125,8 +91,10 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} else if (country == "Korea") { %>
-<form name = "place" action = "placeAction.do" >
+</c:if>
+<c:if test="${country eq 'Korea'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border">
 				<h3 class="mb-30">한국 리스트</h3>
 				<div class="progress-table-wrap">
@@ -139,27 +107,35 @@ function checkFunc(){
 						</div>
 						<div class="table-row">
 							<div class="primary-radio">
-								<input type="radio" name="location" value="런던 아이">
+								<input type="radio" name="location" value="대구 이월드">
 							</div>
-							<div class="country"> <img src="resources/countryimg/eng1.png">런던 아이</div>
-							<div class="visit">런던, 템즈 강</div>
-							<div class="percentage">런던 도심 일대의 전경을 내려다볼 수 있는 유럽에서 가장 큰 대관람차</div>
+							<div class="country"> <img src="resources/countryimg/kor1.png">대구 이월드</div>
+							<div class="visit">대구 달서구 두류공원로 200</div>
+							<div class="percentage">매년 열리는 꽃축제와 다양한 놀이기구를 한 번에 즐길 수 있는 놀이공원!</div>
 						</div>
 						<div class="table-row">
 							<div class="primary-radio">
-								<input type="radio" name="location" value="타워 브릿지">
+								<input type="radio" name="location" value="청초수물회">
 							</div>
-							<div class="country"> <img src="resources/countryimg/eng2.png">타워 브릿지</div>
-							<div class="visit">런던, 템즈 강</div>
-							<div class="percentage">런던 일대의 전경을 조망하기에 더할 나위 없는 전망 명소</div>
+							<div class="country"> <img src="resources/countryimg/kor2.png">청초수물회</div>
+							<div class="visit">속초시 엑스포로 12-36</div>
+							<div class="percentage">둘이먹다 하나죽어도 모를 청초수 물회! 해전 물회라 다양한 해산물이 가득!</div>
 						</div>
 						<div class="table-row">
 							<div class="primary-radio">
-								<input type="radio" name="location" value="셜록 홈즈 박물관">
+								<input type="radio" name="location" value="남해 독일 마을">
 							</div>
-							<div class="country"> <img src="resources/countryimg/eng2.png">셜록 홈즈 박물관</div>
-							<div class="visit">런던, 베이커 스트리트</div>
-							<div class="percentage"> ‘셜록 홈즈’의 집과 소설 속 장면을 재현해놓은 박물관</div>
+							<div class="country"> <img src="resources/countryimg/kor2.png">남해 독일 마을</div>
+							<div class="visit">경남 남해군</div>
+							<div class="percentage">한국에서도 느낄 수 있는 독일 분위기</div>
+						</div>
+						<div class="table-row">
+							<div class="primary-radio">
+								<input type="radio" name="location" value="감천 문화 마을">
+							</div>
+							<div class="country"> <img src="resources/countryimg/kor4.png">감천 문화 마을</div>
+							<div class="visit">부산 사하구 </div>
+							<div class="percentage">알록달록한 벽화와 집이 어우러진 아기자기한 분위기를 느낄 수 있는 마을</div>
 						</div>
 						<br>
 						<div class="form-group row">
@@ -170,8 +146,10 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} else if (country == "France") { %>
-<form name = "place" action = "placeAction.do" >
+</c:if>
+<c:if test="${country eq 'France'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border">
 				<h3 class="mb-30">프랑스 리스트</h3>
 				<div class="progress-table-wrap">
@@ -210,7 +188,7 @@ function checkFunc(){
 							<div class="primary-radio">
 								<input type="radio" name="location" value="디즈니랜드">
 							</div>
-							<div class="country"> <img src="countryimg/france4.png">디즈니랜드</div>
+							<div class="country"> <img src="resources/countryimg/france4.png">디즈니랜드</div>
 							<div class="visit">파리, RER선</div>
 							<div class="percentage">디즈니와 함께 떠나는 꿈과 환상의 세계! 퍼레이드 시간과 폐장 때는 곳곳이 화려하게 빛나는 일루미네이션도 있으니 놓치지 마세요!</div>
 						</div>
@@ -218,7 +196,7 @@ function checkFunc(){
 							<div class="primary-radio">
 								<input type="radio" name="location" value="몽생미셸">
 							</div>
-							<div class="country"> <img src="countryimg/france5.png">몽생미셸</div>
+							<div class="country"> <img src="resources/countryimg/france5.png">몽생미셸</div>
 							<div class="visit">노르망디, 몽생미셸</div>
 							<div class="percentage"> ‘천공의 섬’이라고 불리는 1,300년 역사의 수도원</div>
 						</div>
@@ -231,53 +209,10 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} else if (country == "Swiss") { %>
-<form name = "place" action = "placeAction.do" >
-	<div class="section-top-border">
-				<h3 class="mb-30">스위스 리스트</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-row">
-							<div class="primary-radio">
-								<input type="radio" name="location" value="-------------">
-							</div>
-							<div class="percentage">------구분선-------</div>
-						</div>
-						<div class="table-row">
-							<div class="primary-radio">
-								<input type="radio" name="location" value="뮈렌">
-							</div>
-							<div class="country"> <img src="resources/countryimg/swiss1.png">런던 아이</div>
-							<div class="visit">인터라켄, 라우터브루넨에서 BLM 탑승</div>
-							<div class="percentage">알프스 봉우리에 뚤러싸인 아름다운 동화 속 마을, 뮈렌의 전경과 함께 사진을 남길 수 있는 통나무 포토존이 있어요!</div>
-						</div>
-						<div class="table-row">
-							<div class="primary-radio">
-								<input type="radio" name="location" value="융프라우요흐">
-							</div>
-							<div class="country"> <img src="resources/countryimg/swiss2.png">융프라우요흐</div>
-							<div class="visit">인터라켄, 인터라켄 동역</div>
-							<div class="percentage">해발 3,454미터 고지에 있는 유럽에서 가장 높은 전망대</div>
-						</div>
-						<div class="table-row">
-							<div class="primary-radio">
-								<input type="radio" name="location" value="그린델발트">
-							</div>
-							<div class="country"> <img src="resources/countryimg/swiss3.png">그린델발트</div>
-							<div class="visit">인터라켄, 인터라켄 동역</div>
-							<div class="percentage">설산과 초원의 풍경이 어우러진 해발 1,034미터 높이에 있는 산악 마을</div>
-						</div>
-						<br>
-						<div class="form-group row">
-  						<input type="button" value="추가" style="background-color:skyblue; border: 1px solid skyblue;" onclick="addLocation()">
-            			<input type="button" value="취소" style="background-color:skyblue; border: 1px solid skyblue;" onclick="window.close()">
-            			</div>
-					</div>
-				</div>
-			</div>
-	</form>
-<%} else if (country == "Germany") { %>
-<form name = "place" action = "placeAction.do" >
+</c:if>
+<c:if test="${country eq 'Germany'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border">
 				<h3 class="mb-30">독일 리스트</h3>
 				<div class="progress-table-wrap">
@@ -321,10 +256,12 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} else if (country == "Czech") { %>
-<form name = "place" action = "placeAction.do" >
+</c:if>
+<c:if test="${country eq 'Swiss'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border">
-				<h3 class="mb-30">체코 리스트</h3>
+				<h3 class="mb-30">스위스 리스트</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-row">
@@ -335,27 +272,27 @@ function checkFunc(){
 						</div>
 						<div class="table-row">
 							<div class="primary-radio">
-								<input type="radio" name="location" value="하벨 시장">
+								<input type="radio" name="location" value="뮈렌">
 							</div>
-							<div class="country"> <img src="resources/countryimg/cze1.png">하벨 시장</div>
-							<div class="visit">프라하, 구시가지</div>
-							<div class="percentage">프라하만의 독특한 기념품을 구입할 수 있는 전통 시장</div>
+							<div class="country"> <img src="resources/countryimg/swiss1.png">런던 아이</div>
+							<div class="visit">인터라켄, 라우터브루넨에서 BLM 탑승</div>
+							<div class="percentage">알프스 봉우리에 뚤러싸인 아름다운 동화 속 마을, 뮈렌의 전경과 함께 사진을 남길 수 있는 통나무 포토존이 있어요!</div>
 						</div>
 						<div class="table-row">
 							<div class="primary-radio">
-								<input type="radio" name="location" value="체스키 크룸로프 성">
+								<input type="radio" name="location" value="융프라우요흐">
 							</div>
-							<div class="country"> <img src="resources/countryimg/cze2.png">체스키 크룸로프 성</div>
-							<div class="visit">체스키 크룸로프, 버스 터미널</div>
-							<div class="percentage">체스키 크룸로프 뷰 포인트로 인기 있는 탑, 360도로 내려다보이는 주황빛의 체스키 크룸로프!</div>
+							<div class="country"> <img src="resources/countryimg/swiss2.png">융프라우요흐</div>
+							<div class="visit">인터라켄, 인터라켄 동역</div>
+							<div class="percentage">해발 3,454미터 고지에 있는 유럽에서 가장 높은 전망대</div>
 						</div>
 						<div class="table-row">
 							<div class="primary-radio">
-								<input type="radio" name="location" value="프라하 성">
+								<input type="radio" name="location" value="그린델발트">
 							</div>
-							<div class="country"> <img src="resources/countryimg/cze3.png">프라하 성</div>
-							<div class="visit">프라하, Prazsky hrad역</div>
-							<div class="percentage">세계에서 가장 큰 성으로 기네스북에 등재된 프라하 대표 랜드마크, 다양한 건축 양식이 혼재되어 있는 오래된 성채</div>
+							<div class="country"> <img src="resources/countryimg/swiss3.png">그린델발트</div>
+							<div class="visit">인터라켄, 인터라켄 동역</div>
+							<div class="percentage">설산과 초원의 풍경이 어우러진 해발 1,034미터 높이에 있는 산악 마을</div>
 						</div>
 						<br>
 						<div class="form-group row">
@@ -366,8 +303,10 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} else if (country == "Hungary") { %>
-<form name = "place" action = "placeAction.do" >
+</c:if>
+<c:if test="${country eq 'Hungary'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border">
 				<h3 class="mb-30">헝가리 리스트</h3>
 				<div class="progress-table-wrap">
@@ -411,8 +350,57 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} else if (country == "Italy") {%>
-<form name = "place" action = "placeAction.do" >
+</c:if>
+<c:if test="${country eq 'Czech'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
+	<div class="section-top-border">
+				<h3 class="mb-30">체코 리스트</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-row">
+							<div class="primary-radio">
+								<input type="radio" name="location" value="-------------">
+							</div>
+							<div class="percentage">------구분선-------</div>
+						</div>
+						<div class="table-row">
+							<div class="primary-radio">
+								<input type="radio" name="location" value="하벨 시장">
+							</div>
+							<div class="country"> <img src="resources/countryimg/cze1.png">하벨 시장</div>
+							<div class="visit">프라하, 구시가지</div>
+							<div class="percentage">프라하만의 독특한 기념품을 구입할 수 있는 전통 시장</div>
+						</div>
+						<div class="table-row">
+							<div class="primary-radio">
+								<input type="radio" name="location" value="체스키 크룸로프 성">
+							</div>
+							<div class="country"> <img src="resources/countryimg/cze2.png">체스키 크룸로프 성</div>
+							<div class="visit">체스키 크룸로프, 버스 터미널</div>
+							<div class="percentage">체스키 크룸로프 뷰 포인트로 인기 있는 탑, 360도로 내려다보이는 주황빛의 체스키 크룸로프!</div>
+						</div>
+						<div class="table-row">
+							<div class="primary-radio">
+								<input type="radio" name="location" value="프라하 성">
+							</div>
+							<div class="country"> <img src="resources/countryimg/cze3.png">프라하 성</div>
+							<div class="visit">프라하, Prazsky hrad역</div>
+							<div class="percentage">세계에서 가장 큰 성으로 기네스북에 등재된 프라하 대표 랜드마크, 다양한 건축 양식이 혼재되어 있는 오래된 성채</div>
+						</div>
+						<br>
+						<div class="form-group row">
+  						<input type="button" value="추가" style="background-color:skyblue; border: 1px solid skyblue;" onclick="addLocation()">
+            			<input type="button" value="취소" style="background-color:skyblue; border: 1px solid skyblue;" onclick="window.close()">
+            			</div>
+					</div>
+				</div>
+			</div>
+	</form>
+</c:if>
+<c:if test="${country eq 'Italy'}">
+<form name="mylocationadd" action="MyCountryAddAction.do">
+<input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border">
 				<h3 class="mb-30">이탈리아 리스트</h3>
 				<div class="progress-table-wrap">
@@ -464,7 +452,7 @@ function checkFunc(){
 				</div>
 			</div>
 	</form>
-<%} %>
+</c:if>
 
 
 <!-- jquery plugins here-->

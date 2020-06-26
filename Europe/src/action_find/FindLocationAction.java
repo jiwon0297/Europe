@@ -9,11 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 import action.Action;
 import action.NotFoundException;
 import action.ServiceException;
+import dao.LocationTableDAO;
 import dao.TravelTableDAO;
+import dto.LocationElementBean;
 import dto.TravelElementBean;
 import jdbc.ConnectionProvider;
 
-public class FindTravelAction implements Action{
+public class FindLocationAction implements Action{
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 			Connection conn = null;
@@ -21,13 +23,13 @@ public class FindTravelAction implements Action{
 				int number = Integer.parseInt(request.getParameter("number"));
 				
 				conn = ConnectionProvider.getConnection();
-				TravelTableDAO dao = TravelTableDAO.getInstance();
-				TravelElementBean tList = dao.select(conn, number);
+				LocationTableDAO dao = LocationTableDAO.getInstance();
+				LocationElementBean lList = dao.select(conn, number);
 
-				if (tList == null) {
+				if (lList == null) {
 					throw new NotFoundException("Element Not found : " + number);
 				}
-				request.setAttribute("tList", tList);
+				request.setAttribute("lList", lList);
 				request.setAttribute("number", number);
 			} catch(SQLException e){
 				throw new ServiceException("FindPeriodicElement Error " + e.getMessage());

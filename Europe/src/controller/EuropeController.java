@@ -21,14 +21,18 @@ import action.LoginAction;
 import action.ServiceException;
 import action_add.AddMemberAction;
 import action_add.AddReviewAction;
+import action_add.MyCountryAddAction;
 import action_add.MyTravelAddAction;
 import action_delete.DeleteReviewAction;
+import action_delete.MyCountryDeleteAction;
 import action_delete.MyTravelDeleteAction;
 import action_edit.EditMemberAction;
 import action_edit.EditReviewAction;
+import action_find.FindLocationAction;
 import action_find.FindMemberAction;
 import action_find.FindReviewAction;
 import action_find.FindTravelAction;
+import action_list.ListLocationAction;
 import action_list.ListReviewAction;
 import action_list.ListTravelAction;
 import dao.ReviewTableDAO;
@@ -377,7 +381,13 @@ public class EuropeController extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("/"+country+category+"ListViewAction.do");
 			rd.forward(request, response);	
 		}
-
+		else if (command.equals("/DeleteLocationAction.do")) {
+			int number = Integer.parseInt(request.getParameter("number"));
+			action = new MyCountryDeleteAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("/ListLocationAction.do");
+			rd.forward(request, response);	
+		}
 		
 		//Login
 		else if (command.equals("/LoginAction.do")) {
@@ -411,6 +421,13 @@ public class EuropeController extends HttpServlet {
 			RequestDispatcher rd= request.getRequestDispatcher("MyTravel.jsp?userid="+userid);
 			rd.forward(request, response);
 		}
+		else if(command.contentEquals("/ListLocationAction.do")) {
+			String number = request.getParameter("countryNumber");
+			action = new ListLocationAction();
+			action.execute(request, response);
+			RequestDispatcher rd= request.getRequestDispatcher("CountryTravel.jsp?countryNumber="+number);
+			rd.forward(request, response);
+		}
 		else if(command.contentEquals("/MyTravelAddAction.do")) {
 			action = new MyTravelAddAction();
 			action.execute(request, response);
@@ -423,12 +440,25 @@ public class EuropeController extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("CountryTravel.jsp");
 			rd.forward(request, response);
 		}
-		else if (command.equals("/DeleteTravelAction.do")) {
-			action = new MyTravelDeleteAction();
-			action.execute(request,response);
-			RequestDispatcher rd = request.getRequestDispatcher("/ListTravelAction.do");
-			rd.forward(request, response);	
+		else if(command.contentEquals("/MyCountryAddAction.do")) {	// 장소 추가
+			action = new MyCountryAddAction();
+			action.execute(request, response);
+			RequestDispatcher rd= request.getRequestDispatcher("/ListLocationAction.do");
+			rd.forward(request, response);
 		}
+		else if (command.equals("/CountryTravelAction.do")) {	// countryTravel -> countryTravelAdd
+			action = new FindTravelAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("CountryTravelAdd.jsp");
+			rd.forward(request, response);
+		}
+		else if (command.contentEquals("/LocationMatchesAction.do")) {
+			action = new FindLocationAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("CountryTravel.jsp");
+			rd.forward(request, response);
+		}
+		
 	}
 
 }
