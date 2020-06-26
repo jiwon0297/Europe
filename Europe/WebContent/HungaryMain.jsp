@@ -7,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Martine</title>
+    <title>Hungary</title>
     <link rel="icon" href="marine/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="marine/css/bootstrap.min.css">

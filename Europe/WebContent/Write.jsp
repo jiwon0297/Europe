@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Write Form</title>
 </head>
 <script type="text/javascript">
 function cancel(){

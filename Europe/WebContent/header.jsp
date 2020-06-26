@@ -46,8 +46,8 @@ String userPW = (String)session.getAttribute("userPW");
 		<button class="btn-md fil-cat filter" onclick="location='login.jsp'" style="font-size : 15pt; color:orangered">LOGIN/JOIN</button>
 		<%} else { %>
 		<button class="btn-md fil-cat filter" onclick="location='LogoutAction.do'" style="font-size : 15pt; color:orangered">LOGOUT</button>
-		<button class="btn-md fil-cat filter" onclick="location='MemberDetailViewAction.do'" style="font-size : 15pt;">MYPAGE</button>
-		<button class="btn-md fil-cat filter" onclick="location='ListTravelAction.do'" style="font-size : 15pt;">MYTRAVEL</button>
+		<button class="btn-md fil-cat filter" onclick="location='MemberDetailViewAction.do'" style="font-size : 15pt;">MY PAGE</button>
+		<button class="btn-md fil-cat filter" onclick="location='ListTravelAction.do'" style="font-size : 15pt;">MY TRAVEL</button>
 		<%}%>
 	</div> 
 </div>

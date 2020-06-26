@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Insert title here</title>
+<title>Edit</title>
 </head>
 <script type="text/javascript">
 	function cancel(){

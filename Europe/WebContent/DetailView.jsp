@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Detail</title>
 <script type="text/javascript">
 	function deleteConfirm(number, country, category){
 		if(confirm("정말로 이 글을 삭제하시겠습니까? 삭제하면 되돌릴 수 없습니다.")==true)
