@@ -49,6 +49,39 @@
             window.open("MyTravelAdd.jsp",
                         "travelAddForm", "resizable = no, scrollbars = no, height=" + _height  + ", width=" + _width  + ", left="+ _left + ", top="+ _top);
         }
+        
+        var httpRequest = null;
+        
+        // httpRequest 객체 생성
+        function getXMLHttpRequest(){
+            var httpRequest = null;
+        
+            if(window.ActiveXObject){
+                try{
+                    httpRequest = new ActiveXObject("Msxml2.XMLHTTP");    
+                } catch(e) {
+                    try{
+                        httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+                    } catch (e2) { httpRequest = null; }
+                }
+            }
+            else if(window.XMLHttpRequest){
+                httpRequest = new window.XMLHttpRequest();
+            }
+            return httpRequest;    
+        }
+        
+        
+        function checkFunc(){
+            if(httpRequest.readyState == 4){
+                // 결과값을 가져온다.
+                var resultText = httpRequest.responseText;
+                if(resultText == 1){ 
+                    document.location.reload(); // 상세보기 창 새로고침
+                }
+            }
+        }
+        
         </script>
 </head>
 <body>

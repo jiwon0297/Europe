@@ -47,7 +47,7 @@ public class TravelTableDAO {
             pstmt.setString(2, travel.getCountry());
             pstmt.setInt(3, travel.getNights());
             pstmt.setInt(4, travel.getDays());
-            pstmt.setString(5,  travel.getStartDate());
+            pstmt.setDate(5,  travel.getStartDate());
             int flag = pstmt.executeUpdate();
             if(flag > 0){
                 result = true;
@@ -89,7 +89,7 @@ public class TravelTableDAO {
                 re.setCountry(rs.getString("country"));
                 re.setNights(rs.getInt("nights"));
                 re.setDays(rs.getInt("days"));
-                re.setStartDate(rs.getString("startDate"));
+                re.setStartDate(rs.getDate("startDate"));
                 list.add(re);
             }
                 
@@ -158,7 +158,7 @@ public class TravelTableDAO {
                 re.setCountry(rs.getString("country"));
                 re.setNights(rs.getInt("nights"));
                 re.setDays(rs.getInt("days"));
-                re.setStartDate(rs.getString("startDate"));
+                re.setStartDate(rs.getDate("startDate"));
             }
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());

@@ -1,6 +1,7 @@
 package action_add;
 
 import java.io.PrintWriter;
+import java.sql.Date;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,11 +19,13 @@ public class TravelAddAction implements Action2 {
 		TravelElementBean travel = new TravelElementBean();
         
         // 파리미터 값을 가져온다.
-        String userId = request.getParameter("userId");
+        String userId = request.getParameter("userid");
         String country = request.getParameter("country"); 
         int nights = Integer.parseInt(request.getParameter("nights"));
         int days = Integer.parseInt(request.getParameter("days"));
-        String startDate = request.getParameter("startDate");
+        String travelDate = request.getParameter("travelDate");
+        java.sql.Date startDate = java.sql.Date.valueOf(travelDate);
+        
         travel.setUserId(userId);
         travel.setCountry(country);
         travel.setNights(nights);

@@ -121,7 +121,7 @@
   			<br>
   			<div class="form-group row">
   			<label for="Category" class="col-sm-2 com-form-label" style="font-size:12pt;">출발 일자</label>
-  			<input type="date" name="traveldate" min="2020-06-01">
+  			<input type="date" name="travelDate" min="2020-06-01">
   			</div>
   			<br>
   			<br>
