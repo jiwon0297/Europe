@@ -5,6 +5,8 @@
 <%@ page import="dto.MemberElementBean" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="java.util.*" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,6 +38,60 @@
         <link rel="stylesheet" href="resources/assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<script type="text/javascript">
+function myLocationAddOpen(){
+    window.name = "myLocationForm";
+    var _width = 1000;
+	var _height = 800;
+
+	var _left = Math.ceil(( window.screen.width - _width )/2);
+	var _top = Math.ceil(( window.screen.width - _height )/4); 
+	
+    window.open("CountryTravelAdd.jsp",
+                "locationAddForm", "resizable = no, height=" + _height  + ", width=" + _width  + ", left="+ _left + ", top="+ _top);
+}
+
+//httpRequest 객체 생성
+function getXMLHttpRequest(){
+    var httpRequest = null;
+
+    if(window.ActiveXObject){
+        try{
+            httpRequest = new ActiveXObject("Msxml2.XMLHTTP");    
+        } catch(e) {
+            try{
+                httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+            } catch (e2) { httpRequest = null; }
+        }
+    }
+    else if(window.XMLHttpRequest){
+        httpRequest = new window.XMLHttpRequest();
+    }
+    return httpRequest;    
+}
+
+function lcDeleteOpen(location_num){
+	var msg = confirm("장소를 삭제하시겠습니까?");
+	
+	if(msg==true){
+		deleteLocation(location_num);
+	}
+	else{
+		return false;
+	}
+}
+
+function deleteLocation(location_num)
+{
+    var param="location_num="+location_num;
+    
+    httpRequest = getXMLHttpRequest();
+    httpRequest.onreadystatechange = checkFunc;
+    httpRequest.open("POST", "LocationDeleteAction.co", true);    
+    httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=EUC-KR'); 
+    httpRequest.send(param);
+}
+</script>
 </head>
 <body>
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
@@ -61,8 +117,29 @@
                 </div><!-- End off container --> 
             </section>
         </div>
-<br><br><br><br>
+<br><br>
+<!-- 나라/날짜 출력 -->
+<div class="head_title text-center" style="margin:auto;">
+	<h2 style="color:skyblue;">${ce.getCountry()}</h2>
+	<p>몇박 몇일</p>
+	<div class="separator"></div>
+</div>
+<!-- 추가버튼 -->
 
+
+<!-- 장소리스트 출력 -->
+<br><br>
+<c:if test="${requestScope.locationList != null}">
+        <c:forEach var="l" items="${lList}">
+        <p>${l.location }</p>
+        <c:if test="${ce.getNumber() == l.countryNumber}">
+                        <a href="#" onclick="lcDeleteOpen(${l.number})">삭제</a> |    
+		</c:if>
+        </c:forEach>
+</c:if>
+
+	
+       
 
         <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="resources/assets/js/vendor/bootstrap.min.js"></script>
