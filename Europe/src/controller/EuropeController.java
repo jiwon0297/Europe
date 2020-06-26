@@ -27,6 +27,7 @@ import action_edit.EditMemberAction;
 import action_edit.EditReviewAction;
 import action_find.FindMemberAction;
 import action_find.FindReviewAction;
+import action_find.FindTravelAction;
 import action_list.ListReviewAction;
 import action_list.ListTravelAction;
 import dao.ReviewTableDAO;
@@ -413,6 +414,12 @@ public class EuropeController extends HttpServlet {
 			action = new MyTravelAddAction();
 			action.execute(request, response);
 			RequestDispatcher rd= request.getRequestDispatcher("/ListTravelAction.do");
+			rd.forward(request, response);
+		}
+		else if (command.equals("/DetailTravelAction.do")) {
+			action = new FindTravelAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("CountryTravel.jsp");
 			rd.forward(request, response);
 		}
 	}

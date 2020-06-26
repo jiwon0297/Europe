@@ -135,36 +135,41 @@ public class TravelTableDAO {
     } // end deleteComment
     
  // 나라  1개의 여행정보를 가져온다.
-    public TravelElementBean getTravel(int number)
-    {
-        TravelElementBean travel = null;
-        
-        try {
-            conn = ConnectionProvider.getConnection();
-            
-            String sql = "select * from travel where number=?";
-           
-            pstmt = conn.prepareStatement(sql.toString());
-            pstmt.setInt(1, number);
-            
-            rs = pstmt.executeQuery();
-            while(rs.next())
-            {
-            	TravelElementBean re = new TravelElementBean();
-                re.setNumber(rs.getInt("number"));
-                re.setUserId(rs.getString("userId"));
-                re.setCountry(rs.getString("country"));
-                re.setNights(rs.getInt("nights"));
-                re.setDays(rs.getInt("days"));
-                re.setStartDate(rs.getString("startDate"));
-            }
-        } catch (Exception e) {
-            throw new RuntimeException(e.getMessage());
-        }
-        
-        close();
-        return travel; 
-    } // end getComment
+    public TravelElementBean select(Connection conn, int number) throws SQLException {
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			String sql = "select * from travel where number=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, number);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				return createFromResultSet(rs);
+			}
+			else {
+				return null;
+			}
+		} finally {
+			if (rs != null) {
+				rs.close();
+			}
+			if (pstmt != null) {
+				pstmt.close();
+			}
+		}
+	}
+
+public TravelElementBean createFromResultSet(ResultSet rs) throws SQLException {
+	int number = rs.getInt("number");
+	String userId = rs.getString("userId");
+	String country = rs.getString("country");
+	int nights = rs.getInt("nights");
+	int days = rs.getInt("days");
+	String startDate = rs.getString("startDate");
+	
+	TravelElementBean re = new TravelElementBean(number,userId,country,nights,days,startDate);
+	return re;
+}
     
     // DB 자원해제
     private void close()

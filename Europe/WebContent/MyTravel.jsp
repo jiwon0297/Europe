@@ -99,7 +99,7 @@
 			<c:if test="${i%j == 0 }">
 			<tr> </c:if>
 				<td style="text-align:center;width:300px; height:300px;background:url('resources/assets/images/folder.png'); background-size:200px 200px; background-repeat:no-repeat; background-position:center center;">
-				<a href = ""><h2 style="margin-top:60px">${tl.getCountry()}</h2></td>
+				<a href = "DetailTravelAction.do?number=${tl.getNumber()}"><h2 style="margin-top:60px">${tl.getCountry()}</h2></td>
 			<c:if test="${i%j == j-1}">
 			</tr></c:if>
 		<c:set var="i" value="${i+1}" />

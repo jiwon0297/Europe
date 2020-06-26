@@ -91,6 +91,8 @@ function deleteLocation(location_num)
     httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=EUC-KR'); 
     httpRequest.send(param);
 }
+
+
 </script>
 </head>
 <body>
@@ -120,8 +122,9 @@ function deleteLocation(location_num)
 <br><br>
 <!-- 나라/날짜 출력 -->
 <div class="head_title text-center" style="margin:auto;">
-	<h2 style="color:skyblue;">${ce.getCountry()}</h2>
-	<p>몇박 몇일</p>
+	<h2 style="color:skyblue;">${tList.getCountry()}</h2>
+	<p>${tList.getNights()}박 ${tList.getDays()}일</p>
+	<p>출발 날짜 : ${tList.getStartDate()}</p>
 	<div class="separator"></div>
 </div>
 <!-- 추가버튼 -->
