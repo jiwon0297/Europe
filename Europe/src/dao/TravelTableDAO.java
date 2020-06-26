@@ -135,18 +135,17 @@ public class TravelTableDAO {
     } // end deleteComment
     
  // 나라  1개의 여행정보를 가져온다.
-    public TravelElementBean getTravel(String country, String userId)
+    public TravelElementBean getTravel(int number)
     {
         TravelElementBean travel = null;
         
         try {
             conn = ConnectionProvider.getConnection();
             
-            String sql = "select * from travel where country = ? and userId = ?";
+            String sql = "select * from travel where number=?";
            
             pstmt = conn.prepareStatement(sql.toString());
-            pstmt.setString(1, country);
-            pstmt.setString(2, userId);
+            pstmt.setInt(1, number);
             
             rs = pstmt.executeQuery();
             while(rs.next())
