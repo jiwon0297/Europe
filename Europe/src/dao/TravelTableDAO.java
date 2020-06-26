@@ -1,7 +1,6 @@
 package dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -47,7 +46,7 @@ public class TravelTableDAO {
             pstmt.setString(2, travel.getCountry());
             pstmt.setInt(3, travel.getNights());
             pstmt.setInt(4, travel.getDays());
-            pstmt.setDate(5,  travel.getStartDate());
+            pstmt.setString(5,  travel.getStartDate());
             int flag = pstmt.executeUpdate();
             if(flag > 0){
                 result = true;
@@ -89,7 +88,7 @@ public class TravelTableDAO {
                 re.setCountry(rs.getString("country"));
                 re.setNights(rs.getInt("nights"));
                 re.setDays(rs.getInt("days"));
-                re.setStartDate(rs.getDate("startDate"));
+                re.setStartDate(rs.getString("startDate"));
                 list.add(re);
             }
                 
@@ -158,7 +157,7 @@ public class TravelTableDAO {
                 re.setCountry(rs.getString("country"));
                 re.setNights(rs.getInt("nights"));
                 re.setDays(rs.getInt("days"));
-                re.setStartDate(rs.getDate("startDate"));
+                re.setStartDate(rs.getString("startDate"));
             }
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage());

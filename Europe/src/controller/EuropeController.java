@@ -21,6 +21,7 @@ import action.LoginAction;
 import action.ServiceException;
 import action_add.AddMemberAction;
 import action_add.AddReviewAction;
+import action_add.MyTravelAddAction;
 import action_delete.DeleteReviewAction;
 import action_edit.EditMemberAction;
 import action_edit.EditReviewAction;
@@ -406,6 +407,12 @@ public class EuropeController extends HttpServlet {
 			action = new ListTravelAction();
 			action.execute(request, response);
 			RequestDispatcher rd= request.getRequestDispatcher("MyTravel.jsp?userid="+userid);
+			rd.forward(request, response);
+		}
+		else if(command.contentEquals("/MyTravelAddAction.do")) {
+			action = new MyTravelAddAction();
+			action.execute(request, response);
+			RequestDispatcher rd= request.getRequestDispatcher("/ListTravelAction.do");
 			rd.forward(request, response);
 		}
 	}

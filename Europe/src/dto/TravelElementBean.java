@@ -1,21 +1,19 @@
 package dto;
 
-import java.sql.Date;
-
 public class TravelElementBean implements java.io.Serializable{
 	private int number;
 	private String userId;
 	private String country;
 	private int nights;
 	private int days;
-	private Date startDate;
+	private String startDate;
 	
 	// default constructor
 	   public TravelElementBean() {
 	      this(-1,null,null,-1,-1,null);
 	   }
 	   
-	   public TravelElementBean(int number, String userId, String country, int nights, int days, Date startDate) {
+	   public TravelElementBean(int number, String userId, String country, int nights, int days, String startDate) {
 			super();
 			this.number = number;
 			this.userId = userId;
@@ -71,11 +69,11 @@ public class TravelElementBean implements java.io.Serializable{
 		this.days = days;
 	}
 
-	public Date getStartDate() {
+	public String getStartDate() {
 		return startDate;
 	}
 
-	public void setStartDate(Date startDate) {
+	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 	   
