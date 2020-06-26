@@ -103,7 +103,7 @@ public class TravelTableDAO {
     } // end getCommentList
     
  // 여행 삭제
-    public boolean deleteComment(int number) 
+    public boolean deleteTravel(int number) 
     {
         boolean result = false;
  
@@ -136,9 +136,9 @@ public class TravelTableDAO {
     } // end deleteComment
     
  // 나라  1개의 여행정보를 가져온다.
-    public CommentElementBean getComment(String country, String userId)
+    public TravelElementBean getTravel(String country, String userId)
     {
-        CommentElementBean comment = null;
+        TravelElementBean travel = null;
         
         try {
             conn = ConnectionProvider.getConnection();
@@ -165,7 +165,7 @@ public class TravelTableDAO {
         }
         
         close();
-        return comment; 
+        return travel; 
     } // end getComment
     
     // DB 자원해제
