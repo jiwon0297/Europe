@@ -55,15 +55,17 @@ String userPW = (String)session.getAttribute("userPW");
             </div>
     </section>
     <!--top place end-->
-    <div style="background-color:beige;">
+    <div style="background-color:lightgray;">
        <jsp:include page="header.jsp"/>
     </div>
    			<% if(userID == null && userPW == null) { %>
    			<small id="fileHelp" class="form-text text-muted" style="position:relative; float:right; font-size:13pt; right:20px; margin-top:20px; margin-bottom:20px ">※로그인을 해야만 글쓰기가 가능합니다.※</small>
             <%} else { %>
-            <a href="AddviewAction.do" class="btn btn-default" role="button" style="margin-bottom:20px;position:relative; right:20px; color:white; background-color:#68a5f3; float:right">Add &raquo;</a>
+            <br><a href="AddviewAction.do" role="button" style="margin-bottom:20px;position:relative; right:20px; border: 1px solid skyblue; font-size:13pt; width:80px; padding:5px; text-align:center; background-color: skyblue; color:white; float:right; 
+            border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">Add &raquo;</a>
             <%}%>
-            <input type = "button" class="btn btn-default" style="color:white; background-color:#68a5f3; position:relative; left:20px; margin-bottom:20px" value="Main으로" onclick="location='${re.getCountry()}Main.jsp'">
+            <br><input type = "button" style="border: 1px solid skyblue; background-color: skyblue; color:white; position:relative; left:20px; font-size:13pt; padding:5px; text-align:center; margin-bottom:20px; text-weight:bold;
+            border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="Main으로" onclick="location='${re.getCountry()}Main.jsp'">
             <form name="search" action="ReviewSelect.do" method="post" style="position:relative; left:20px; margin-bottom:20px">
             	<select name="kind" style="background-color:#fbfbfb; width:100px; float:left;">
 					<option value="writer">작성자</option>
@@ -72,7 +74,7 @@ String userPW = (String)session.getAttribute("userPW");
 	  			<input type="text" style="background-color:#fbfbfb;" size="40" name="title"/>&nbsp;
 	  			<input type="hidden" name="country" value="${re.getCountry()}">
 	  			<input type="hidden" name="cate1" value="${re.getCate1()}">
-            	<input type="submit" style="color:white; background-color:#68a5f3;" value="검색"/>
+            	<input type="submit" style="border: 1px solid skyblue; background-color: skyblue; color:white;" value="검색"/>
             </form>
             <table class="table table-hover" style="text-align:center">
 			<tr style="background-color:lightgray">
@@ -81,7 +83,7 @@ String userPW = (String)session.getAttribute("userPW");
 				<td style="text-align:center; font-size:13pt"><strong>제목</strong></td>
 			</tr>
 				<c:forEach var="re" items="${rList}">
-				<tr role="button" style="background-color:beige" onclick="location='DetailViewAction.do?number=${re.getNumber()}'">
+				<tr role="button" style="background-color:#fbfbfb" onclick="location='DetailViewAction.do?number=${re.getNumber()}'">
 					<td style="width:200px; text-align:center; font-size:13pt">[${re.getCountry()}/${re.getCate1()}]</td>
 					<td style="width:300px; text-align:center; font-size:13pt">${re.getName()}</td>
 					<td style="text-align:center; font-size:13pt">${re.getTitle()}</td>

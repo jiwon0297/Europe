@@ -125,16 +125,17 @@
     <br><br><br><br>
 	<form method="post" style ="margin:0 auto; width:1000px;">
 	<fieldset>
-	<input type = "button"  class="btn btn-default" style="position:relative; right:20px; color:white; background-color:#68a5f3;" value="목록으로" onclick="location='${re.getCountry()}${re.getCate1()}ListViewAction.do'">
+	<input type = "button" style="font-size:13pt; padding:5px; text-align:center; border: 1px solid skyblue; background-color: skyblue; color:white; position:relative; right:20px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="목록으로" onclick="location='${re.getCountry()}${re.getCate1()}ListViewAction.do'">
 	<div class="form-group row">
-      <strong><input type="text" class="form-control" name="title" value="[${re.getCountry()}/${re.getCate1()}] ${re.getTitle()}" style="text-align:center; font-size:13pt; background-color:beige; width:700px; position: relative; left:160px;" disabled/></strong>
+      <strong><input type="text" class="form-control" name="title" value="[${re.getCountry()}/${re.getCate1()}] ${re.getTitle()}" style="text-align:center; font-size:13pt; background-color:#fbfbfb; width:700px; position: relative; left:160px;" disabled/></strong>
      </div>
      <div class="form-group row" >
-      <input type="text" class="form-control" name="name" value="작성자 : ${re.getName()}" style="background-color:beige; width:700px; position: relative; left:160px;" disabled/>
+      <input type="text" class="form-control" name="name" value="작성자 : ${re.getName()}" style="background-color:#fbfbfb; width:700px; position: relative; left:160px;" disabled/>
      </div>
     <div class="form-group row">
    		<img src="upload/${re.getFileRealName()}" onerror="this.remove? this.remove() : this.removeNode();" />
-   		<textarea class="form-control" name="content" style="background-color:beige; height:600px; width:700px; position: relative; left:160px; text-align:center; gravity:center;" readonly="readonly" disabled>${re.getDetail()}</textarea>
+   		<textarea class="form-control" name="content" style="background-color:#fbfbfb; height:600px; width:700px; position: relative; left:160px; text-align:center; gravity:center;" readonly="readonly" disabled>${re.getDetail()}</textarea>
     </div>
     <input type="hidden" name="number" value="${re.getNumber()}">
 	</fieldset>
