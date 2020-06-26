@@ -48,7 +48,7 @@
                                         <p>유럽여행의 출발지점이라 할 수 있는 영국!<br>
                                         	영국에서의 설레는 여행을 시작해볼까요?
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                                         <p>죽기전에 꼭 가봐야할 스코틀랜드<br>
                                            	자연경관에 둘러싸인 섬과 에든버러 성을 보러가볼까요?	
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

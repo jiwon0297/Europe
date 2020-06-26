@@ -48,7 +48,7 @@
                                         <p> 몽환적인 빛의 나라, 체코<br>
                                         	소설의 배경지로도 유명한 체코로 떠나봐요!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                                         <p>품위 있는 중세 유럽의 분위기가 물씬 나는 곳<br>
                                         	모차르트도 반한 도시 올로모우츠로 떠나보자!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

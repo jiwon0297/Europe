@@ -49,7 +49,7 @@
                                         <p>동유럽 여행의 중심지, 헝가리 <br>
                                            	세계적인 야경 명소가 당신을 기다리고 있어요!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                         <p>헝가리를 대표하는 수도, 부다페스트! <br>
                                            	밤이면 황금빛 야경이 펼쳐지는 부다페스트로 떠나보세요!	
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                                         <p>숨겨진 헝가리의 또 다른 명소!<br>
                                            	1년 내내 크리스마스 분위기를 풍기는 센텐드레로 당일치기 여행가자!	
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

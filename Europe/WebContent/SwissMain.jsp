@@ -49,7 +49,7 @@
                                         	한국인들이 가장 가고싶어하는 여행지1위 스위스!<br>
                                         	알프스의 산들과 눈꽃을 헤쳐나가는 열차를 타러 가자!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                           	평화를 상징하는 도시 취리히!<br>
                                           	반호프 거리를 따라 상점들을 구경하며 걸어볼까요??
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

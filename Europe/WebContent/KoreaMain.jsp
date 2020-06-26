@@ -49,7 +49,7 @@
                                         	유럽여행 가기전, 국내여행을 떠나보는 건 어떨까요?<br>
                                         	국내 여름여행지 TOP2를 만나보세요!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                            	여름하면 빼놓을 수 없는 국내여행지 제주도-!<br>
                                            	맑고 눈부신 해변을 즐길 수 있는 제주도로 떠나보아요
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@
                                         	  여름단골 여행지 경기도 가평<br>
                                         	 청춘열차 타고 수상레저 즐기러 가볼까요?
                                      	</p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

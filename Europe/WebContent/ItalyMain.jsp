@@ -49,7 +49,7 @@
                                          		유럽 역사와 문화의 중심지, 이탈리아!<br>
                                          		도시 곳곳이 관광지인 이탈리아로 떠나볼까요?
                                         </p>
-                                       <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                       <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                         	118개의 섬들이 이어져 있는<br> 세계적인 물의 도시 베네치아!<br>
                                         	수상버스,곤돌라를 타러 베니스로 떠나보아요-
                                         </p>
-                                         <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                         <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@
                                          	 유럽역사를 이야기 할 때 빼놓을 수 없는 곳 로마!<br>
                                          	거대하고 웅장한 경기장, 콜로세움을 구경할 수 있어요.
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>

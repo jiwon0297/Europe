@@ -48,7 +48,7 @@
                                         <p>다채로운 매력의 컬러풀 프랑스<br>
                                         	 일년 내내 사랑 받는 도시, 프랑스로 낭만을 즐기러 떠나보세요!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                         	에펠탑,미술관, 디즈니랜드 등 볼거리 천국!<br>
                                         	4박 5일로는 부족한 파리여행, 지금 당장 계획 짜러 가자!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
                                         <p>나만 알고싶은 도시 리옹<br>
                                          	여유로운 프랑스 여행을 즐기고 싶은 사람은 리옹으로 가자!
                                         </p>
-                                        <a href="MyTravelAdd.jsp" class="btn_1">Add to MyTravel</a>
+                                        <a href="ListTravelAction.do" class="btn_1">Add to MyTravel</a>
                                     </div>
                                 </div>
                             </div>
