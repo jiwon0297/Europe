@@ -40,8 +40,8 @@
     {
         var form = document.getElementById("writeCommentForm");
         
-        var board = form.number.value
-        var id = form.comment_id.value
+        var board = form.number.value;
+        var id = form.comment_id.value;
         var content = form.comment_content.value;
         
         if(!content)
