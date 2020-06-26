@@ -85,7 +85,8 @@ div.button{
     <div class="form-group row">
       <label for="id" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px;">ID</label>
         <input type="text" class="form-control" name="id" placeholder="ID" style="width:300px; position: relative; left:95px;">
-        <input type="button" value="중복확인" name="confirm_id" onclick="confirmId(this.form)" style="left:55px; position:relative; margin-top:5px; color: black; background-color:white; float:right;">
+        <input type="button" value="중복확인" name="confirm_id" onclick="confirmId(this.form)" style="left:55px; position:relative; margin-top:5px; border: 1px solid skyblue; background-color: skyblue; color:white; padding:3px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;; float:right;">
     </div>
     <div class="form-group row">
       <label for="name" class="col-sm-2 col-form-label" style="position:relative; font-size:15pt; left:40px; margin-top:10px;">Name</label>

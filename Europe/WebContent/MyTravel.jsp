@@ -37,6 +37,19 @@
         <link rel="stylesheet" href="resources/assets/css/responsive.css" />
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript">
+        function myTravelAddOpen(){
+            window.name = "mytravelForm";
+            var _width = 570;
+    		var _height = 300;
+
+    		var _left = Math.ceil(( window.screen.width - _width )/2);
+    		var _top = Math.ceil(( window.screen.width - _height )/4); 
+
+            window.open("MyTravelAdd.jsp",
+                        "travelAddForm", "resizable = no, scrollbars = no, height=" + _height  + ", width=" + _width  + ", left="+ _left + ", top="+ _top);
+        }
+        </script>
 </head>
 <body>
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
@@ -62,10 +75,35 @@
                 </div><!-- End off container --> 
             </section>
         </div>
-<br><br><br><br>
+<br><br>
+<div class="head_title text-center" style="margin:auto;">
+	<h2 style="color:skyblue;">Travel List</h2>
+	<div class="separator"></div>
+</div>
 
 <c:if test="${userID == null}">
-	<small id="fileHelp" class="form-text text-muted" style="position:relative; font-size:13pt; left:280px;">※로그인을 해야만 추가가 가능합니다.※</small>
+	<div class="head_title text-center">
+	<small id="fileHelp" class="form-text text-muted" style="font-size:13pt;">※로그인을 해야만 추가가 가능합니다.※</small>
+	</div>
+</c:if>
+
+<c:if test="${userID != null}">
+	<c:set var="i" value="0" />
+	<c:set var="j" value="3" />
+	<button style="position:relative; left:1300px; border: 1px solid skyblue; background-color: skyblue; color:white; padding:3px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" onclick="myTravelAddOpen();">
+	<h3 style="font-style:bold; font-size:11pt; font-weight:bold;">여행 추가하기</h3></button>
+	<table border="0" style="width:70%; margin:auto;">
+		<c:forEach var="tl" items="${tList}">
+			<c:if test="${i%j == 0 }">
+			<tr> </c:if>
+				<td style="text-align:center;width:300px; height:300px;background:url('resources/assets/images/folder.png'); background-size:200px 200px; background-repeat:no-repeat; background-position:center center;">
+				<a href = ""><h2 style="margin-top:60px">${tl.getCountry()}</h2></td>
+			<c:if test="${i%j == j-1}">
+			</tr></c:if>
+		<c:set var="i" value="${i+1}" />
+		</c:forEach>
+	</table>
 </c:if>
 
         <script src="resources/assets/js/vendor/jquery-1.11.2.min.js"></script>
