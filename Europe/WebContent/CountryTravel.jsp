@@ -98,7 +98,9 @@ function myLocationAddOpen(location_num){
 <br><br>
 <!-- 나라/날짜 출력 -->
 <div class="head_title text-center" style="margin:auto;">
-	<br><br><br>
+	<br>
+	<a href="ListTravelAction.do" style="position:relative; right:400px; color:#d4446c; font-size:11pt"><< 여행 목록으로 돌아가기</a>
+	<br><br>
 	<p style="position:relative; right:400px; color:#d4446c; font-size:11pt">>> 계획되어있는 여행</p>
 	<br><h2 style="background-color:#e5e6ec; font-family:Serif; font-weight: bold; float:left; position:relative; left:530px; color:#635575; font-size:57pt">${tList.getCountry()}</h2>
 	<input type="button" style="position:relative; left:50px; margin-top:18px; border: 1px solid #a6a6d0; background-color: #a6a6d0; color:white; padding:3px;
