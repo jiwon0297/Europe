@@ -70,7 +70,7 @@ public class LocationTableDAO {
 	        try {
 	            conn = ConnectionProvider.getConnection();
 	            
-	            String sql = "select location from location where countryNumber = ?";
+	            String sql = "select * from location where countryNumber = ?";
 	            pstmt = conn.prepareStatement(sql);
 	            pstmt.setInt(1, boardNum);
 	            
@@ -93,38 +93,20 @@ public class LocationTableDAO {
 	        return list;
 	    } // end getCommentList
 	    
-	 // 장소 삭제
-	    public boolean deleteLocation(int number) 
-	    {
-	        boolean result = false;
-	 
-	        try {
-	            conn = ConnectionProvider.getConnection();
-	            conn.setAutoCommit(false); // 자동 커밋을 false로 한다.
-	            
-	            String sql = "delete from location where number=?";
-	            
-	            pstmt = conn.prepareStatement(sql);
-	            pstmt.setInt(1, number);
-	            
-	            int flag = pstmt.executeUpdate();
-	            if(flag > 0){
-	                result = true;
-	                conn.commit(); // 완료시 커밋
-	            }    
-	            
-	        } catch (Exception e) {
-	            try {
-	                conn.rollback(); // 오류시 롤백
-	            } catch (SQLException sqle) {
-	                sqle.printStackTrace();
-	            }
-	            throw new RuntimeException(e.getMessage());
-	        }
-	 
-	        close();
-	        return result;
-	    } // end deleteComment
+	    // 장소 삭제
+		public int delete(Connection conn, int number) throws SQLException {
+			PreparedStatement pstmt = null;
+			try {
+				String sql = "delete from location where number=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setInt(1, number);
+				return pstmt.executeUpdate();
+			} finally {
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
 	    
 	    public LocationElementBean select(Connection conn, int number) throws SQLException {
 			PreparedStatement pstmt = null;

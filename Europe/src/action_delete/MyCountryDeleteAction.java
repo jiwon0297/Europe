@@ -29,7 +29,8 @@ public class MyCountryDeleteAction implements Action {
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);
 			LocationTableDAO dao = LocationTableDAO.getInstance();
-			dao.deleteLocation(number);
+			dao.delete(conn, number);
+			conn.commit();
 
 			System.out.println("Success Delete Element");
 		} catch(SQLException e){

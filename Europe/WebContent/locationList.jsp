@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 function lcDeleteConfirm(number){
-	if(confirm("Á¤¸»·Î ÀÌ Àå¼Ò¸¦ »èÁ¦ÇÏ½Ã°Ú½À´Ï±î? »èÁ¦ÇÏ¸é µÇµ¹¸± ¼ö ¾ø½À´Ï´Ù.")==true)
+	if(confirm("ì •ë§ë¡œ ì´ ì¥ì†Œë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ? ì‚­ì œí•˜ë©´ ë˜ëŒë¦´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.")==true)
 		location.href = "DeleteLocationAction.do?number=" + number;
 	else
 		return;	
@@ -22,7 +22,7 @@ function lcDeleteConfirm(number){
 	<c:forEach var="l" items="${lList}">
 		<tr>
 			<td style="text-align:center;width:300px; height:300px; background-size:200px 200px; background-repeat:no-repeat; background-position:center center;">
-				<h2>${l.getLocation()}</h2><a href="lcDeleteConfirm(${l.getNumber()})">[»èÁ¦]</a>
+				<h2>${l.getLocation()}</h2><a href="lcDeleteConfirm(${l.getNumber()})">[ì‚­ì œ]</a>
 			</td>
 		<tr>
 	</c:forEach>

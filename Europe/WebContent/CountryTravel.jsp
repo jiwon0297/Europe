@@ -46,6 +46,13 @@ function deleteConfirm(number){
 		return;	
 }
 
+function lcDeleteConfirm(number,travelnumber){
+	if(confirm("정말로 이 장소를 삭제하시겠습니까? 삭제하면 되돌릴 수 없습니다.")==true)
+		location.href = "DeleteLocationAction.do?number=" + number + "&&travelnumber=" + travelnumber;
+	else
+		return;	
+}
+
 function myLocationAddOpen(location_num){
     window.name = "myLocationForm";
     var _width = 1200;
@@ -99,11 +106,20 @@ function myLocationAddOpen(location_num){
 </div>
 <!-- 추가버튼 -->
 <c:if test="${tList.getNumber() != null}">
-	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
+	<input type="button" style=" border: 1px solid skyblue; background-color: skyblue; color:white; padding:3px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
 </c:if>
 <!-- 장소리스트 출력 -->
-<a href = "DetailLocationAction.do?number=${tList.getNumber()}"><h2>누르세여</h2></a>
-<jsp:include page="locationList.jsp" />
+<br><br>
+<table border="0" style="width:70%; margin:auto;">
+	<c:forEach var="l" items="${lList}">
+		<tr>
+			<td style="text-align:center;width:300px; height:300px; background-size:200px 200px; background-repeat:no-repeat; background-position:center center;">
+				<h2>${l.getLocation()}</h2><input type="button" style="color:blue;  border: 1px solid white; background-color:white;" value="[삭제]" onclick="lcDeleteConfirm('${l.getNumber()}','${tList.getNumber()}')">
+			</td>
+		<tr>
+	</c:forEach>
+</table>
 
 
 	
