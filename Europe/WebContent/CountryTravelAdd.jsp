@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="jdbc.ConnectionProvider" %>
 <%@ page import="dao.TravelTableDAO" %>
@@ -38,8 +38,8 @@ function addLocation()
 {
    window.opener.document.location.reload(); 
    document.mylocationadd.submit();
-    opener.locationAddForm = null;
-    self.close();
+   opener.locationAddForm = null;
+   self.close();
 }
 
 </script>
@@ -55,10 +55,9 @@ input[type=radio] {
     margin-right:20px;
     margin-top: 20px;
     text-align: center;
-    }
+}
 .form-group{
 	margin: auto;
-	width: 70%;
 	text-align: center;	
 }
 input[type=button]{
@@ -71,19 +70,19 @@ div{
 	font-size: 12pt;
 }
 .country{
-	font-size: 15pt;
+	font-size: 13pt;
 	font-weight: bold; 
 	color:#635575;
 	background-color:#e5e6ec;
 	text-align: center;
 }
 .visit{
-	font-size: 15pt;
+	font-size: 13pt;
 	text-align: center;
 }
 .percentage{
-	font-size: 15pt;
-	text-align: left;
+	font-size: 13pt;
+	text-align:left;
 }
 </style>
 </head>
@@ -155,7 +154,7 @@ div{
 							<div >
 								<input type="radio" name="location" value="대구 이월드" >
 							</div>
-							<div class="country"> <img src="resources/countryimg/kor1.jpg" width="150">대구 이월드</div>
+							<div class="country"><img src="resources/countryimg/kor1.jpg" width="150">대구 이월드</div>
 							<div class="visit">대구 달서구 두류공원로 200</div>
 							<div class="percentage">매년 열리는 꽃축제와 다양한 놀이기구를 한 번에 즐길 수 있는 놀이공원!</div>
 						</div>
