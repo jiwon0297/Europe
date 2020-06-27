@@ -110,14 +110,14 @@ function myLocationAddOpen(location_num){
 </div>
 <!-- 추가버튼 -->
 <c:if test="${tList.getNumber() != null}">
-	<h3 style="font-weight:540; color:#635575; float:left; left: 400px; position:relative; margin-top: 20px; font-size:25pt ">추가된 일정</h3>
+	<h3 style="font-weight:540; color:#635575; float:left; left: 430px; position:relative; margin-top: 20px; font-size:25pt ">추가된 일정</h3>
 	<input type="button" style="position:relative; left:460px; margin-top:25px; border: 1px solid #a6a6d0; background-color: #a6a6d0; color:white; padding:3px;
 	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="장소추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
 
 </c:if>
 <!-- 장소리스트 출력 -->
 <br><br>
-<div style="background-color:beige;width:500px; position:relative; left:500px;">
+<div style="background-color:beige;width:600px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; position:relative; left:500px;">
 <table border="0" style="width:70%; margin:auto;">
 	<c:forEach var="l" items="${lList}">
 		<tr style="text-align:center; width:300px; height:100px;">
