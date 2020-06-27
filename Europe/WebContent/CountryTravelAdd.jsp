@@ -36,10 +36,8 @@
 
 function addLocation()
 {
-   window.opener.document.location.reload(); 
-   document.mylocationadd.submit();
-   opener.locationAddForm = null;
-   self.close();
+	   document.mylocationadd.submit();
+	   window.close();
 }
 
 </script>
@@ -90,7 +88,7 @@ div{
 <% request.setCharacterEncoding("utf-8"); %>
 <c:set var="country" value="${tList.getCountry()}"/>
 <c:if test="${country eq 'England'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 	<input type="hidden" name="countryNumber" value="${tList.getNumber()}">
 	<div class="section-top-border" style="background-color:whitesmoke; height:40px;">
 				<h2 class="mb-30">England Place</h2>
@@ -128,7 +126,7 @@ div{
 						</div>
 						<br>
 						<div class="form-group">
-  						<input type="button" class="btn btn-outline-secondary" value="Add to MyCountry &raquo;" onclick="addLocation()">
+  						<input type="button" class="btn btn-outline-secondary" value="Add to MyCountry" onclick="addLocation()">
             			<input type="button" class="btn btn-outline-secondary" value="Cancel &raquo;" onclick="window.close()">
             			</div>
 					</div>
@@ -138,7 +136,7 @@ div{
 	</form>
 </c:if>
 <c:if test="${country eq 'Korea'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
    <div class="section-top-border" style="background-color:#e6a76b; height:40px;">
             <h2 class="mb-30">Korea Place</h2>
@@ -170,7 +168,7 @@ div{
 							<div>
 								<input type="radio" name="location" value="남해 독일마을">
 							</div>
-							<div class="country"> <img src="resources/countryimg/eng3.png" width="150">남해 독일마을</div>
+							<div class="country"> <img src="resources/countryimg/kor3.jpg" width="150">남해 독일마을</div>
 							<div class="visit">경남 남해군</div>
 							<div class="percentage"> 한국에서도 느낄 수 있는 독일 분위기</div>
 						</div>
@@ -194,7 +192,7 @@ div{
 </c:if>
 
 <c:if test="${country eq 'France'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border" style="background-color:#e6d6d6;height:40px;">
 				<h2 class="mb-30">France Place</h2>
@@ -245,7 +243,7 @@ div{
 	</form>
 </c:if>
 <c:if test="${country eq 'Germany'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border" style="background-color:#dcdcb6; height:40px;">
 				<h2 class="mb-30">Germany Place</h2>
@@ -284,7 +282,7 @@ div{
 	</form>
 </c:if>
 <c:if test="${country eq 'Swiss'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border" style="background-color:#d9e1ef; height:40px;">
 				<h2 class="mb-30">Swiss Place</h2>
@@ -296,7 +294,7 @@ div{
 						</div>
 						<div class="table-row">
 								<input type="radio" name="location" value="뮈렌">
-							<div class="country"> <img src="resources/countryimg/swiss1.png" width="150">런던 아이</div>
+							<div class="country"> <img src="resources/countryimg/swiss1.png" width="150">뮈렌</div>
 							<div class="visit">인터라켄, 라우터브루넨에서 BLM 탑승</div>
 							<div class="percentage">알프스 봉우리에 뚤러싸인 아름다운 동화 속 마을, 뮈렌의 전경과 함께 사진을 남길 수 있는 통나무 포토존이 있어요!</div>
 						</div>
@@ -323,7 +321,7 @@ div{
 	</form>
 </c:if>
 <c:if test="${country eq 'Hungary'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border" style="background-color:#dcdcb6; height:40px;">
 				<h2 class="mb-30">Hungary Place</h2>
@@ -362,7 +360,7 @@ div{
 	</form>
 </c:if>
 <c:if test="${country eq 'Czech'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border" style="background-color:#eee8aa; height:40px;">
 				<h2 class="mb-30">Czech Place</h2>
@@ -401,7 +399,7 @@ div{
 	</form>
 </c:if>
 <c:if test="${country eq 'Italy'}">
-<form name="mylocationadd" action="MyCountryAddAction.do">
+<form name="mylocationadd" action="MyCountryAddAction.do" method="POST" target="myLocationForm">
 <input type="hidden" name="countryNumber" value="${tList.getNumber() }">
 	<div class="section-top-border" style="background-color:#c3ab6f; height:40px;">
 				<h2 class="mb-30">Italy Place</h2>

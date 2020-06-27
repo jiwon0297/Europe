@@ -55,11 +55,11 @@ function lcDeleteConfirm(number,travelnumber){
 
 function myLocationAddOpen(location_num){
     window.name = "myLocationForm";
-    var _width = 1000;
-	var _height = 550;
+    var _width = 1050;
+	var _height = 650;
 
 	var _left = Math.ceil(( window.screen.width - _width )/2);
-	var _top = Math.ceil(( window.screen.width - _height )/7); 
+	var _top = Math.ceil(( window.screen.width - _height )/9); 
 	
 	var number = location_num;
 	
@@ -71,7 +71,7 @@ function myLocationAddOpen(location_num){
 
 </script>
 </head>
-<body style="height:1300px">
+<body style="height:1700px">
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div class="culmn">
         <jsp:include page="header.jsp" />
