@@ -55,8 +55,8 @@ function lcDeleteConfirm(number,travelnumber){
 
 function myLocationAddOpen(location_num){
     window.name = "myLocationForm";
-    var _width = 900;
-	var _height = 500;
+    var _width = 750;
+	var _height = 850;
 
 	var _left = Math.ceil(( window.screen.width - _width )/2);
 	var _top = Math.ceil(( window.screen.width - _height )/4); 
