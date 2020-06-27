@@ -102,8 +102,8 @@ function myLocationAddOpen(location_num){
 	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
 </c:if>
 <!-- 장소리스트 출력 -->
-<br><br>
-${lList.getNumber() }
+<a href = "DetailLocationAction.do?number=${tList.getNumber()}"><h2>누르세여</h2></a>
+<jsp:include page="locationList.jsp" />
 
 
 	

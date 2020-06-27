@@ -452,13 +452,12 @@ public class EuropeController extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("CountryTravelAdd.jsp");
 			rd.forward(request, response);
 		}
-		else if (command.contentEquals("/LocationMatchesAction.do")) {
+		else if (command.contentEquals("/DetailLocationAction.do")) {
 			action = new FindLocationAction();
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("CountryTravel.jsp");
 			rd.forward(request, response);
 		}
-		
 	}
 
 }
