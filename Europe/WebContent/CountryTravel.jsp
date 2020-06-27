@@ -55,7 +55,7 @@ function lcDeleteConfirm(number,travelnumber){
 
 function myLocationAddOpen(location_num){
     window.name = "myLocationForm";
-    var _width = 1200;
+    var _width = 900;
 	var _height = 500;
 
 	var _left = Math.ceil(( window.screen.width - _width )/2);
@@ -71,7 +71,7 @@ function myLocationAddOpen(location_num){
 
 </script>
 </head>
-<body>
+<body style="height:1300px">
 <div class='preloader'><div class='loaded'>&nbsp;</div></div>
         <div class="culmn">
         <jsp:include page="header.jsp" />
@@ -98,28 +98,36 @@ function myLocationAddOpen(location_num){
 <br><br>
 <!-- 나라/날짜 출력 -->
 <div class="head_title text-center" style="margin:auto;">
-	<h2 style="color:skyblue;">${tList.getCountry()}</h2>
-	<p>${tList.getNights()}박 ${tList.getDays()}일</p>
-	<p>출발 날짜 : ${tList.getStartDate()}</p>
-	<input type="button" class="btn btn-default" style="color:white; background-color:#68a5f3;" value="삭제" onclick="deleteConfirm('${tList.getNumber()}')">
-	<div class="separator"></div>
+	<br><br><br>
+	<p style="position:relative; right:400px; color:#d4446c; font-size:11pt">>> 계획되어있는 여행</p>
+	<br><h2 style="background-color:#e5e6ec; font-family:Serif; font-weight: bold; float:left; position:relative; left:530px; color:#635575; font-size:57pt">${tList.getCountry()}</h2>
+	<input type="button" style="position:relative; left:50px; margin-top:18px; border: 1px solid #a6a6d0; background-color: #a6a6d0; color:white; padding:3px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="여행 삭제하기" onclick="deleteConfirm('${tList.getNumber()}')">
+	<p style="color:gray; position:relative; margin-top: 20px; font-size:12pt ">${tList.getStartDate()} 에 출발하는 ${tList.getNights()}박 ${tList.getDays()}일 간의 여행</p>
+	<hr size="1" width="1000">
 </div>
 <!-- 추가버튼 -->
 <c:if test="${tList.getNumber() != null}">
-	<input type="button" style=" border: 1px solid skyblue; background-color: skyblue; color:white; padding:3px;
-	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
+	<h3 style="font-weight:540; color:#635575; float:left; left: 400px; position:relative; margin-top: 20px; font-size:25pt ">추가된 일정</h3>
+	<input type="button" style="position:relative; left:460px; margin-top:25px; border: 1px solid #a6a6d0; background-color: #a6a6d0; color:white; padding:3px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="장소추가하기" onclick = "myLocationAddOpen('${tList.getNumber()}')">
+
 </c:if>
 <!-- 장소리스트 출력 -->
 <br><br>
+<div style="background-color:beige;width:500px; position:relative; left:500px;">
 <table border="0" style="width:70%; margin:auto;">
 	<c:forEach var="l" items="${lList}">
-		<tr>
-			<td style="text-align:center;width:300px; height:300px; background-size:200px 200px; background-repeat:no-repeat; background-position:center center;">
-				<h2>${l.getLocation()}</h2><input type="button" style="color:blue;  border: 1px solid white; background-color:white;" value="[삭제]" onclick="lcDeleteConfirm('${l.getNumber()}','${tList.getNumber()}')">
-			</td>
-		<tr>
+		<tr style="text-align:center; width:300px; height:100px;">
+		<td>
+				<h2 style="float:left; color:#9a5454; font-size:14pt; font-weight:550; position:relative;">• ${l.getLocation()}</h2>
+				<input type="button" style="position:relative; right:60px; margin-top:5px; border: 1px solid #a6a6d0; background-color: #a6a6d0; color:white; padding:3px;
+	border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" value="삭제" onclick="lcDeleteConfirm('${l.getNumber()}','${tList.getNumber()}')">
+		</td>
+		</tr>
 	</c:forEach>
 </table>
+</div>
 
 
 	
