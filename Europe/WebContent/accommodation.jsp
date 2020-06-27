@@ -23,7 +23,7 @@
 	<!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 	
 	<!--For Plugins external css-->
-	<link rel="stylesheet" href="resources/ssets/css/plugins.css" />
+
 
 	<!--Theme custom css -->
 	<link rel="stylesheet" href="resources/assets/css/style.css">
@@ -31,7 +31,7 @@
 	<!--Theme Responsive css-->
 	<link rel="stylesheet" href="resources/assets/css/responsive.css" />
 
-	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 </head>
 <body>
 <jsp:include page="header.jsp" />

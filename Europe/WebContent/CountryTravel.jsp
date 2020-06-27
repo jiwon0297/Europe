@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="resources/assets/css/magnific-popup.css">
         <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
         <!--For Plugins external css-->
-        <link rel="stylesheet" href="resources/ssets/css/plugins.css" />
+
 
         <!--Theme custom css -->
         <link rel="stylesheet" href="resources/assets/css/style.css">
@@ -37,7 +37,6 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="resources/assets/css/responsive.css" />
 
-        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script type="text/javascript">
 function deleteConfirm(number){
 	if(confirm("정말로 이 여행을 삭제하시겠습니까? 삭제하면 되돌릴 수 없습니다.")==true)
