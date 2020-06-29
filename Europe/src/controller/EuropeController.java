@@ -24,6 +24,7 @@ import action_add.AddReviewAction;
 import action_add.MyCountryAddAction;
 import action_add.MyTravelAddAction;
 import action_delete.DeleteReviewAction;
+import action_delete.LocationAllDeleteAction;
 import action_delete.MyCountryDeleteAction;
 import action_delete.MyTravelDeleteAction;
 import action_edit.EditMemberAction;
@@ -390,6 +391,12 @@ public class EuropeController extends HttpServlet {
 			action = new MyTravelDeleteAction();
 			action.execute(request,response);
 			RequestDispatcher rd = request.getRequestDispatcher("/ListTravelAction.do");
+			rd.forward(request, response);	
+		}
+		else if (command.equals("/DeleteLocationAllAction.do")) {
+			action = new LocationAllDeleteAction();
+			action.execute(request,response);
+			RequestDispatcher rd = request.getRequestDispatcher("/DeleteTravelAction.do");
 			rd.forward(request, response);	
 		}
 		

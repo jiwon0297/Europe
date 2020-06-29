@@ -107,6 +107,20 @@ public class LocationTableDAO {
 				}
 			}
 		}
+		
+		public int deleteall(Connection conn, int number) throws SQLException {
+			PreparedStatement pstmt = null;
+			try {
+				String sql = "delete from location where countryNumber=?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setInt(1, number);
+				return pstmt.executeUpdate();
+			} finally {
+				if (pstmt != null) {
+					pstmt.close();
+				}
+			}
+		}
 	    
 	    public LocationElementBean select(Connection conn, int number) throws SQLException {
 			PreparedStatement pstmt = null;

@@ -8,10 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import action.Action;
 import dao.LocationTableDAO;
-import dao.TravelTableDAO;
 import jdbc.ConnectionProvider;
 
-public class MyTravelDeleteAction implements Action {
+public class LocationAllDeleteAction implements Action {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		Connection conn = null;
@@ -20,9 +19,7 @@ public class MyTravelDeleteAction implements Action {
 			
 			conn = ConnectionProvider.getConnection();
 			conn.setAutoCommit(false);
-			TravelTableDAO dao = TravelTableDAO.getInstance();
 			LocationTableDAO ldao = LocationTableDAO.getInstance();
-			dao.delete(conn, number);
 			ldao.deleteall(conn, number);
 			conn.commit();
 			System.out.println("Success Delete Element");

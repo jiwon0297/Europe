@@ -40,7 +40,7 @@
 <script type="text/javascript">
 function deleteConfirm(number){
 	if(confirm("정말로 이 여행을 삭제하시겠습니까? 삭제하면 되돌릴 수 없습니다.")==true)
-		location.href = "DeleteTravelAction.do?number=" + number;
+		location.href = "DeleteLocationAllAction.do?number=" + number;
 	else
 		return;	
 }
